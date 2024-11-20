@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body { margin: 0; }
+.fixed_banner { position: fixed; top:0; left:0; }
+    </style>
+    <script src="https://www.miraeij.com/js/jquery-1.12.0.min.js" type="text/javascript"></script>
+    <script>
+      $(function() {
+	$.fn.Scrolling = function(obj, tar) {
+		var _this = this;
+		$(window).scroll(function(e) {
+			var end = obj + tar;
+            console.log(end);
+			$(window).scrollTop() >= obj ? _this.addClass("fixed_banner") : _this.removeClass("fixed_banner");
+			if($(window).scrollTop() >= end) _this.removeClass("fixed_banner");
+		});
+	};
+
+	$("#test1").Scrolling($("#test1").offset().top, ($(".aa").height() - $("#test1").height()));
+	// $("#test2").Scrolling($("#test2").offset().top, ($(".bb").height() - $("#test2").height()));
+});
+    </script>
+</head>
+<body>
+    <div style="background: red; width: 200px; height: 440px;">test</div>
+<div class="aa" style="background: #ccc; width: 100%; height: 700px;">
+	<div id="test1" style="border: 1px solid #000; width: 90%; height: 200px; background: #fff;">배너</div>
+</div>
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+<div class="bb" style="background: #ccc; width: 100%; height: 700px;">
+	<div id="test2" style="border: 1px solid #000; width: 90%; height: 100px; background: #fff;">asdfasf</div>
+</div>
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+Lorem ipsum etc etc<br />
+</body>
+</html>

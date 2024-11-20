@@ -1,0 +1,834 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*****************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+.retendard  { font-family: 'Pretendard', 'Noto Sans KR', sans-serif; }
+
+@font-face {
+    font-family: 'LAB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css');
+.nanums {  font-family: 'NanumSquare', sans-serif;  }
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ft_gmarket{font-family:'GmarketSansMedium', 'Noto Sans KR', sans-serif;}
+.ft_gmarket_b {font-family:'GmarketSansBold', 'Noto Sans KR', sans-serif;}
+.ft_gmarket_l {font-family:'GmarketSansLight', 'Noto Sans KR', sans-serif;}
+.lab {font-family:'LAB', 'Noto Sans KR', sans-serif;}
+
+
+.basic_img{opacity:0; visibility:hidden; height:auto;}
+.back_img{ background-repeat:no-repeat; background-size:cover; background-position:50% 50%;}
+
+.video_wrap {width:100%; padding-bottom:56.25%; box-sizing:border-box; position:relative;  /*margin: 20px 0;*/ border:0;}
+.video_wrap video, .video_wrap iframe, .video_wrap embed {position:absolute; left:0; top:0; width:100%; height:100%; border:0; outline:0;}
+
+
+#sub .pc {  display: inline-block;}
+#sub .ta {  display: none;}
+#sub .mo {  display: none;}
+
+#sub .sec_wrap { padding-bottom: 0px;}
+#sub .section { width: 100%; text-align: center; position: relative;}
+#sub .section{
+	position: relative;
+}
+
+
+.slider figcaption {padding: 10px;}
+.slider figcaption em {font-size: 18px;}
+.slider figcaption span {font-size: 14px;}
+
+#sub .section0 {
+	width: 100%; height: auto; display : block
+}
+.slide {width: 100%;height: auto; }
+.slide div {width: 100%;height: auto; opacity:0; transition: all 0.5s ease; }
+.slide img {max-width: 100%;height: auto;}
+.slide div.active{opacity:1;}
+
+/* .dot {position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);}
+.dot li {
+	background: #ccc; width: 20px; height: 20px; border: 2px solid #ccc; box-sizing: border-box; border-radius: 50%;
+    margin: 10px; float: left; cursor: pointer; transition: all 0.5s ease;
+}
+.dot li.active {
+    background: #fff;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+} */
+
+.link1{
+	position: absolute;
+	top: 45%;
+    left: 21.5%;
+    width: 12.5%;
+    height: 12.5%;
+	background: red;
+	opacity: 0;
+}
+.link2{
+	position: absolute;
+	top: 45%;
+    left: 36%;
+    width: 12.5%;
+    height: 12.5%;
+	background: red;
+	opacity: 0;
+}
+.link3{
+	position: absolute;
+	top: 45%;
+    left: 51%;
+    width: 12.5%;
+    height: 12.5%;
+	background: red;
+	opacity: 0;
+}
+.link4{
+	position: absolute;
+	top: 45%;
+    left: 66%;
+    width: 12.5%;
+    height: 12.5%;
+	background: red;
+	opacity: 0;
+}
+.link5{
+	position: absolute;
+	top: 44.5%;
+    left: 43%;
+    width: 34%;
+    height: 4.5%;
+	background: red;
+	opacity: 0;
+}
+.video1{
+	position: absolute;
+	top: 70.4%;
+    left: 27.5%;
+    width: 45%;
+    height: 27%;
+	background: #000;
+}
+.link1_1{
+	position: absolute;
+	top: 7%;
+    left: 21.5%;
+    width: 12.5%;
+    height: 21%;
+	background: red;
+	opacity: 0;
+}
+.link2_1{
+	position: absolute;
+	top: 7%;
+    left: 36%;
+    width: 12.5%;
+    height: 21%;
+	background: red;
+	opacity: 0;
+}
+.link3_1{
+	position: absolute;
+	top: 7%;
+    left: 51%;
+    width: 12.5%;
+    height: 21%;
+	background: red;
+	opacity: 0;
+}
+.link4_1{
+	position: absolute;
+	top: 7%;
+    left: 66%;
+    width: 12.5%;
+    height: 21%;
+	background: red;
+	opacity: 0;
+}
+.link1_2{
+	position: absolute;
+	top: 4%;
+    left: 21.5%;
+    width: 12.5%;
+    height: 21%;
+	background: red;
+	opacity: 0;
+}
+.link2_2{
+	position: absolute;
+	top: 4%;
+    left: 36%;
+    width: 12.5%;
+    height: 21%;
+	background: red;
+	opacity: 0;
+}
+.link3_2{
+	position: absolute;
+	top: 4%;
+    left: 51%;
+    width: 12.5%;
+    height: 21%;
+	background: red;
+	opacity: 0;
+}
+.link4_2{
+	position: absolute;
+	top: 4%;
+    left: 66%;
+    width: 12.5%;
+    height: 21%;
+	background: red;
+	opacity: 0;
+}
+.link1_3{
+	position: absolute;
+	top: 3%;
+    left: 21.5%;
+    width: 12.5%;
+    height: 21%;
+	background: red;
+	opacity: 0;
+}
+.link2_3{
+	position: absolute;
+	top: 3%;
+    left: 36%;
+    width: 12.5%;
+    height: 21%;
+	background: red;
+	opacity: 0;
+}
+.link3_3{
+	position: absolute;
+	top: 3%;
+    left: 51%;
+    width: 12.5%;
+    height: 21%;
+	background: red;
+	opacity: 0;
+}
+.link4_3{
+	position: absolute;
+	top: 3%;
+    left: 65.5%;
+    width: 12.5%;
+    height: 21%;
+	background: red;
+	opacity: 0;
+}
+.link1_4{
+	position: absolute;
+	top: 86.5%;
+    left: 33%;
+    width: 34%;
+    height: 5%;
+	background: red;
+	opacity: 0;
+}
+.link1_5{
+	position: absolute;
+	top: 3%;
+    left: 19.5%;
+    width: 14%;
+    height: 21%;
+	background: red;
+	opacity: 0;
+}
+.link2_5{
+	position: absolute;
+	top: 3%;
+    left: 35%;
+    width: 14%;
+    height: 21%;
+	background: red;
+	opacity: 0;
+}
+.link3_5{
+	position: absolute;
+	top: 3%;
+    left: 50.5%;
+    width: 14%;
+    height: 21%;
+	background: red;
+	opacity: 0;
+}
+.link4_5{
+	position: absolute;
+	top: 3%;
+    left: 66%;
+    width: 14%;
+    height: 17%;
+	background: red;
+	opacity: 0;
+}
+.link1_6{
+	position: absolute;
+	top: 3%;
+    left: 19.5%;
+    width: 14%;
+    height: 17%;
+	background: red;
+	opacity: 0;
+}
+.link2_6{
+	position: absolute;
+	top: 3%;
+    left: 35%;
+    width: 14%;
+    height: 17%;
+	background: red;
+	opacity: 0;
+}
+.link3_6{
+	position: absolute;
+	top: 3%;
+    left: 50.5%;
+    width: 14%;
+    height: 17%;
+	background: red;
+	opacity: 0;
+}
+.link4_6{
+	position: absolute;
+	top: 3%;
+    left: 66%;
+    width: 14%;
+    height: 17%;
+	background: red;
+	opacity: 0;
+}
+.link1_7{
+	position: absolute;
+	top: 4%;
+    left: 19.5%;
+    width: 14%;
+    height: 17%;
+	background: red;
+	opacity: 0;
+}
+.link2_7{
+	position: absolute;
+	top: 4%;
+    left: 35%;
+    width: 14%;
+    height: 17%;
+	background: red;
+	opacity: 0;
+}
+.link3_7{
+	position: absolute;
+	top: 4%;
+    left: 50.5%;
+    width: 14%;
+    height: 17%;
+	background: red;
+	opacity: 0;
+}
+.link4_7{
+	position: absolute;
+	top: 4%;
+    left: 66%;
+    width: 14%;
+    height: 17%;
+	background: red;
+	opacity: 0;
+}
+.link1_8{
+	position: absolute;
+	top: 2%;
+    left: 19.5%;
+    width: 14%;
+    height: 12%;
+	background: red;
+	opacity: 0;
+}
+.link2_8{
+	position: absolute;
+	top: 2%;
+    left: 35%;
+    width: 14%;
+    height: 12%;
+	background: red;
+	opacity: 0;
+}
+.link3_8{
+	position: absolute;
+	top: 2%;
+    left: 50.5%;
+    width: 14%;
+    height: 12%;
+	background: red;
+	opacity: 0;
+}
+.link4_8{
+	position: absolute;
+	top: 2%;
+    left: 66%;
+    width: 14%;
+    height: 12%;
+	background: red;
+	opacity: 0;
+}
+.link1_9{
+	position: absolute;
+	top: 88%;
+    left: 26%;
+    width: 48%;
+    height: 7%;
+	background: red;
+	opacity: 0;
+}
+
+
+
+/**************scrollout**********/
+
+/* [data-scroll] {
+  opacity: 0;
+  will-change: transform, scale, opacity;
+  transform: translateY(6rem) scale(0.2);
+  transition: all .5s .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+[data-scroll='in'] {
+  opacity: 1;
+  transform: translateY(0) scale(1.0);
+}
+
+[data-scroll='out'] {
+  opacity: 0;
+} */
+
+.b_section {position: relative;}
+#sub .section.band_banner { width: 100%; height: auto; position: fixed;  bottom: 0; left: 0; z-index: 100; }
+.b_link1{
+	position: absolute;
+	top: 0%;
+    left: 28%;
+    width: 23%;
+    height: 100%;
+	background: red;
+	opacity: 0;
+}
+.b_link2{
+	position: absolute;
+	top: 0%;
+    left: 53%;
+    width: 23%;
+    height: 100%;
+	background: red;
+	opacity: 0;
+}
+
+
+/*****************************************************************************************************************************************/
+
+@media screen and (max-width: 2400px){
+
+}
+
+@media screen and (max-width: 1200px){
+
+
+}
+
+@media screen and (max-width: 960px){
+	 #sub .bbs_wrap .linkform input[type="text"] {height:55px; line-height:55px; font-size:2rem;}
+	 #sub .bbs_wrap .linkform input[type="text"]::placeholder{font-size:2rem;}
+	 #sub .bbs_wrap .linkform input[type="button"]{padding-left:20px; height:55px; line-height:55px; font-size:3rem; letter-spacing:8px;}
+}
+
+@media screen and (max-width: 768px){
+
+	#sub .bbs_wrap { padding-top: 0}
+	#sub .bbs_wrap .board_area .tab_set a { width: 245px; }
+	#sub .bbs_wrap .linkform { padding: 0 5%; }
+	#sub .bbs_wrap .board_area { padding: 10% 10px 0 10px; }
+	#sub .bbs_wrap .bbs .list_bg { padding: 20px 15px; }
+
+ }
+
+@media screen and (max-width: 720px){
+	#sub .pc {  display: none !important}
+	#sub .mo {  display: inline-block !important;}
+
+	.slide_size {height: 528px;}
+	/* #sub .bbs_wrap .board_area{padding: 0; width: 98%; box-sizing:border-box;} */
+
+	.link1{
+		position: absolute;
+		top: 47%;
+		left: 5%;
+		width: 19%;
+		height: 9%;
+		background: red;
+		opacity: 0;
+	}
+	.link2{
+		position: absolute;
+		top: 47%;
+		left: 28.5%;
+		width: 19%;
+		height: 9%;
+		background: red;
+		opacity: 0;
+	}
+	.link3{
+		position: absolute;
+		top: 47%;
+		left: 52%;
+		width: 19%;
+		height: 9%;
+		background: red;
+		opacity: 0;
+	}
+	.link4{
+		position: absolute;
+		top: 47%;
+		left: 75.5%;
+		width: 19%;
+		height: 9%;
+		background: red;
+		opacity: 0;
+	}
+	.link5{
+		position: absolute;
+		top: 47%;
+		left: 37%;
+		width: 60%;
+		height: 4%;
+		background: red;
+		opacity: 0;
+	}
+	.video1{
+		position: absolute;
+		top: 68.4%;
+		left: 0;
+		width: 100%;
+		height: 28%;
+		background: #000;
+	}
+	.link1_1{
+		position: absolute;
+		top: 4%;
+		left: 5%;
+		width: 19%;
+		height: 16.5%;
+		background: red;
+		opacity: 0;
+	}
+	.link2_1{
+		position: absolute;
+		top: 4%;
+		left: 28.5%;
+		width: 19%;
+		height: 16.5%;
+		background: red;
+		opacity: 0;
+	}
+	.link3_1{
+		position: absolute;
+		top: 4%;
+		left: 52%;
+		width: 19%;
+		height: 16.5%;
+		background: red;
+		opacity: 0;
+	}
+	.link4_1{
+		position: absolute;
+		top: 4%;
+		left: 75.5%;
+		width: 19%;
+		height: 16.5%;
+		background: red;
+		opacity: 0;
+	}
+	.link1_2{
+		position: absolute;
+		top: 2%;
+		left: 5%;
+		width: 19%;
+		height: 16%;
+		background: red;
+		opacity: 0;
+	}
+	.link2_2{
+		position: absolute;
+		top: 2%;
+		left: 28.5%;
+		width: 19%;
+		height: 16%;
+		background: red;
+		opacity: 0;
+	}
+	.link3_2{
+		position: absolute;
+		top: 2%;
+		left: 52%;
+		width: 19%;
+		height: 16%;
+		background: red;
+		opacity: 0;
+	}
+	.link4_2{
+		position: absolute;
+		top: 2%;
+		left: 75.5%;
+		width: 19%;
+		height: 16%;
+		background: red;
+		opacity: 0;
+	}
+	.link1_3{
+		position: absolute;
+		top: 1%;
+		left: 5%;
+		width: 19%;
+		height: 16%;
+		background: red;
+		opacity: 0;
+	}
+	.link2_3{
+		position: absolute;
+		top: 1%;
+		left: 28.5%;
+		width: 19%;
+		height: 16%;
+		background: red;
+		opacity: 0;
+	}
+	.link3_3{
+		position: absolute;
+		top: 1%;
+		left: 52%;
+		width: 19%;
+		height: 16%;
+		background: red;
+		opacity: 0;
+	}
+	.link4_3{
+		position: absolute;
+		top: 1%;
+		left: 75.5%;
+		width: 19%;
+		height: 16%;
+		background: red;
+		opacity: 0;
+	}
+	.link1_4{
+		position: absolute;
+		top: 92%;
+		left: 10%;
+		width: 80%;
+		height: 4%;
+		background: red;
+		opacity: 0;
+	}
+	.link1_5{
+		position: absolute;
+		top: 3%;
+		left: 2%;
+		width: 22%;
+		height: 12%;
+		background: red;
+		opacity: 0;
+	}
+	.link2_5{
+		position: absolute;
+		top: 3%;
+		left: 27%;
+		width: 22%;
+		height: 12%;
+		background: red;
+		opacity: 0;
+	}
+	.link3_5{
+		position: absolute;
+		top: 3%;
+		left: 51%;
+		width: 22%;
+		height: 12%;
+		background: red;
+		opacity: 0;
+	}
+	.link4_5{
+		position: absolute;
+		top: 3%;
+		left: 75.5%;
+		width: 22%;
+		height: 12%;
+		background: red;
+		opacity: 0;
+	}
+	.link1_6{
+		position: absolute;
+		top: 4%;
+		left: 2%;
+		width: 22%;
+		height: 12%;
+		background: red;
+		opacity: 0;
+	}
+	.link2_6{
+		position: absolute;
+		top: 4%;
+		left: 27%;
+		width: 22%;
+		height: 12%;
+		background: red;
+		opacity: 0;
+	}
+	.link3_6{
+		position: absolute;
+		top: 4%;
+		left: 51%;
+		width: 22%;
+		height: 12%;
+		background: red;
+		opacity: 0;
+	}
+	.link4_6{
+		position: absolute;
+		top: 4%;
+		left: 75.5%;
+		width: 22%;
+		height: 12%;
+		background: red;
+		opacity: 0;
+	}
+	.link1_7{
+		position: absolute;
+		top: 6%;
+		left: 2%;
+		width: 22%;
+		height: 12%;
+		background: red;
+		opacity: 0;
+	}
+	.link2_7{
+		position: absolute;
+		top: 6%;
+		left: 27%;
+		width: 22%;
+		height: 12%;
+		background: red;
+		opacity: 0;
+	}
+	.link3_7{
+		position: absolute;
+		top: 6%;
+		left: 51%;
+		width: 22%;
+		height: 12%;
+		background: red;
+		opacity: 0;
+	}
+	.link4_7{
+		position: absolute;
+		top: 6%;
+		left: 75.5%;
+		width: 22%;
+		height: 12%;
+		background: red;
+		opacity: 0;
+	}
+	.link1_8{
+		position: absolute;
+		top: 1.5%;
+		left: 2%;
+		width: 22%;
+		height: 6%;
+		background: red;
+		opacity: 0;
+	}
+	.link2_8{
+		position: absolute;
+		top: 1.5%;
+		left: 27%;
+		width: 22%;
+		height: 6%;
+		background: red;
+		opacity: 0;
+	}
+	.link3_8{
+		position: absolute;
+		top: 1.5%;
+		left: 51%;
+		width: 22%;
+		height: 6%;
+		background: red;
+		opacity: 0;
+	}
+	.link4_8{
+		position: absolute;
+		top: 1.5%;
+		left: 75.5%;
+		width: 22%;
+		height: 6%;
+		background: red;
+		opacity: 0;
+	}
+	.link1_9{
+		position: absolute;
+		top: 90%;
+		left: 5%;
+		width: 90%;
+		height: 5%;
+		background: red;
+		opacity: 0;
+	}
+
+    #sub .section.band_banner { width: 100%; bottom:70px; height: auto;}
+	.b_link1{
+		position: absolute;
+		top: 0%;
+		left: 10%;
+		width: 40%;
+		height: 100%;
+		background: red;
+		opacity: 0;
+	}
+	.b_link2{
+		position: absolute;
+		top: 0%;
+		left: 53%;
+		width: 40%;
+		height: 100%;
+		background: red;
+		opacity: 0;
+	}
+
+
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box { width:350px; background:rgba(255,255,255,0.92); }
+        .boxIn { padding:20px; }
+        .boxIn h3 { border-bottom:1px solid #ddd; padding-bottom:20px; margin-bottom:20px; }
+        .boxIn ul { height:150px; }
+        .boxIn ul li {  }
+        .boxIn ul li a { display:block; font-size:13px; line-height:2em; }
+        /* .boxIn ul li:first-child a { font-size:18px; line-height:1.4em; font-weight:bold; } */
+
+        .boxIn ul li:nth-child(2) a { font-size:18px; line-height:1.4em; font-weight:bold; }
+        .boxIn ul li:nth-child(3) a { font-size:15px; line-height:1.4em; margin-top:4px; }
+        .boxIn ul li:nth-child(4) a { font-size:13px; line-height:1.4em; margin-top:4px; }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="boxIn">
+            <h3>Hot Keyword</h3>
+            <ul>
+                <li><a href="/">1. 리스트</a></li>
+                <li><a href="/">2. 리스트</a></li>
+                <li><a href="/">3. 리스트</a></li>
+                <li><a href="/">4. 리스트</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <script src="https://www.miraeij.com/js/jquery-1.12.0.min.js" type="text/javascript"></script>
+    <script>
+        setInterval(function() { /* setInterval 시작 */
+
+var boxIn = $('.boxIn ul'); /* boxIn 변수에 .boxIn ul 요소 저장 */
+
+var boxRow = $('.boxIn ul li:first'); /* boxRow 변수에 첫번째 .boxIn ul li 요소 저장  */
+
+var ARea = function(){ /* ARea 변수에 함수 저장 */
+    boxRow.appendTo(boxIn).show(300); /* boxRow 요소를 boxIn 요소 마지막에 추가하며 show 메서드 적용합니다. */
+};
+
+$(boxRow).hide(300, ARea); /* boxRow 요소가 300ms로 숨겨지고나면 변수 ARea에 저장 된 콜백 함수가 실행됩니다. */
+
+},3000); /* setInterval 이 3초마다 실행됩니다. */
+    </script>
+</body>
+</html>

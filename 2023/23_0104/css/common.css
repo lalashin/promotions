@@ -1,0 +1,673 @@
+.event-view{
+    background: #f7f5dd;
+}
+#sub.prm_page {
+    margin-top: 159px;
+}
+.event-view{max-width:1920px; margin:0 auto;}
+.event-view .sec .inner{max-width:1280px; margin:0 auto; position: relative;}
+.event-view img {
+    width: 100%;
+}
+.event-view iframe {
+    bordeR:0;
+}
+.event-view .sec1 {
+    background: url('../img/pc-section-img1.jpg') center no-repeat;
+}
+
+.event-view .sec8 {
+    background: url('../img/tab.jpg') top center no-repeat;
+}
+.floating_wrap{
+    position: fixed;
+    top:170px;
+    right:30px;
+    width: 11.614%;
+    z-index: 3;
+}
+.floating_wrap .floating_btn1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: red;
+    opacity: 0;
+}
+.floating_wrap .floating_btn2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 48.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec1 .txt1{
+    position: absolute;
+    top: 49.5%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: url('../img/pc-sec1-txt1.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+.sec1 .txt2{
+    position: absolute;
+    top: 62.3%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: url('../img/pc-sec1-txt2.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+.sec2 .imgwrap{position: relative;}
+.sec2 .imgwrap img{opacity: 0;}
+.sec2 .imgwrap .img1{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    background: url('../img/pc-sec2_img1.png') 0 0 no-repeat;
+}
+.sec2 .imgwrap .img2{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    background: url('../img/pc-sec2_img2.png') 0 0 no-repeat;
+}
+.sec2 .imgwrap .img3{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    background: url('../img/pc-sec2_img3.png') 0 0 no-repeat;
+}
+.sec2 .imgwrap .img4{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    background: url('../img/pc-sec2_img4.png') 0 0 no-repeat;
+}
+
+
+.event-view .mo-img {
+    display: none;
+}
+
+.arrow-event{
+    position: absolute;
+    width:100%; height:100%;
+    bottom:0;
+    left:0;
+    background: url('../img/pc-section-arrow.png') bottom center no-repeat;
+    background-size: 100%;
+    animation:vb 2s;
+}
+
+@keyframes vb {
+	0%{
+		height:0;
+	}
+	100% {
+		height:100%;
+	}
+}
+
+/*20220104 추가 */
+.sec3 .youtube_area{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height:100%;
+    background: url(../img/maxresdefault.jpg) no-repeat;
+    background-size : 90%;
+    background-position: center;
+}
+.sec3 .youtube_area img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10%;
+    cursor: pointer;
+}
+/****************************/
+
+.sec6 img{opacity: 0;}
+.sec6-slide{
+    position: absolute;
+    top:0; left:5%;
+    width:90%;
+    height:100%;
+    z-index: 2;
+    overflow: hidden;
+}
+.sec6 .swiper{
+    height:100%;
+}
+/*20220104 추가 및 변경*/
+.sec6 .swiper .swiper_review_title {
+    width: 100%;
+    height: 160px;
+    font-family: GmarketSansMedium ;
+    margin-bottom: 20px;
+
+}
+.sec6 .swiper .swiper_review_title img {
+    margin: auto;
+    display: block;
+    opacity: 1;
+    width: 85%;
+
+}
+.sec6 .swiper .swiper_iframe_wrap {
+    height: 620px;
+}
+.sec6 .swiper .swiper_iframe_wrap .video_area{
+    height:100%;
+    width:100%;
+    background: #000;
+}
+/*******************/
+.sec6 .swiper-button-prev, .sec6 .swiper-button-next{
+    width:176px; height:237px;
+    top:60%;
+    transform: translateY(-50%);
+}
+.sec6 .swiper-button-prev{
+    left:-40px;
+
+    background: url('../img/arrow-prev.png') no-repeat;
+}
+.sec6 .swiper-button-next{
+    right:-40px;
+    background: url('../img/arrow-next.png') no-repeat;
+}
+.sec6 .swiper-button-prev:after{
+    display: none;
+}
+.sec6 .swiper-button-next:after{
+    display: none;
+}
+
+.sec7 .link1{
+    position: absolute;
+    top: 16%;
+    left: 16%;
+    width: 67%;
+    height: 13%;
+    background: red;
+    opacity: 0;
+}
+
+
+.pos_rel{position: relative;}
+.sec8 .pos_rel{max-width: 1130px; margin:0 auto;}
+.sec8 .tab-nav{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+
+
+}
+.sec8 .tab-nav li{
+    display: block;
+    width:20%;
+    height:100%;
+    float:left;
+    background: url('../img/tab-off.jpg') no-repeat;
+    background-size: 500%;
+}
+.sec8 .tab-nav li:nth-child(2){
+    background: url('../img/tab-off.jpg') no-repeat;
+    background-position: 25%;
+    background-size: 500%;
+}
+.sec8 .tab-nav li:nth-child(3){
+    background: url('../img/tab-off.jpg') no-repeat;
+    background-position: 50%;
+    background-size: 500%;
+}
+.sec8 .tab-nav li:nth-child(4){
+    background: url('../img/tab-off.jpg') no-repeat;
+    background-position: 75%;
+    background-size: 500%;
+}
+.sec8 .tab-nav li:nth-child(5){
+    background: url('../img/tab-off.jpg') no-repeat;
+    background-position: 100%;
+    background-size: 500%;
+}
+.sec8 .tab-nav li.on{
+    opacity: 0;
+}
+.sec8 .tab-nav li a{
+    display: block;
+    width:100%; height:100%;
+    opacity: 0;
+}
+.sec8 .tab .tab-cont div{
+    display: none;
+}
+.sec8 .tab .tab-cont .on{
+    display: block;
+}
+.sec8 .tab .tab-cont a{
+    position: absolute;
+    top: 21%;
+    left: 6%;
+    width: 25%;
+    height: 34%;
+    background: red;
+    opacity: 0;
+}
+.sec8 .tab .tab-cont iframe{
+    position: absolute;
+    top: 23.9%;
+    left: 38.9%;
+    width: 50.1%;
+    height: 28.3%;
+}
+
+.event-view .sec9 .pos_rel img{display: none;}
+.event-view .sec9 .pos_rel img.on{display: block;}
+
+.sec9 .tab-nav{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    height:100%;
+    width:87.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec9 .tab-nav li{
+    display: block;
+    width:50%;
+    height:100%;
+    flex-shrink: 0;
+}
+.sec9 .tab-nav li a{
+    display: block;
+    width:100%; height:100%;
+    opacity: 0;
+}
+.sec9 .tab .tab-cont div{
+    display: none;
+}
+.sec9 .tab .tab-cont .on{
+    display: block;
+}
+.sec9 .tab .tab-cont .link1{
+    position: absolute;
+    top: 24.3%;
+    left: 62%;
+    width: 25%;
+    height: 3.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .tab .tab-cont .link2{
+    position: absolute;
+    top: 29.7%;
+    left: 62%;
+    width: 25%;
+    height: 3.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .tab .tab-cont .link3{
+    position: absolute;
+    top: 34.6%;
+    left: 62%;
+    width: 25%;
+    height: 3.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .tab .tab-cont .link4{
+    position: absolute;
+    top: 40%;
+    left: 62%;
+    width: 25%;
+    height: 3.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .tab .tab-cont .link5{
+    position: absolute;
+    top: 45%;
+    left: 62%;
+    width: 25%;
+    height: 3.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .tab .tab-cont .link6{
+    position: absolute;
+    top: 31.7%;
+    left: 56.7%;
+    width: 31%;
+    height: 3.9%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .tab .tab-cont .link7{
+    position: absolute;
+    top: 37.1%;
+    left: 56.7%;
+    width: 31%;
+    height: 3.9%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .tab .tab-cont .link8{
+    position: absolute;
+    top: 42.2%;
+    left: 56.7%;
+    width: 31%;
+    height: 3.9%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link9{
+    position: absolute;
+    top: 78.2%;
+    left: 71.7%;
+    width: 21%;
+    height: 6.9%;
+    background: red;
+    opacity: 0;
+}
+@media screen and (max-width: 720px){
+    .event-view .mo-img {
+        display: block;
+    }
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    .sec1 .txt1{
+        position: absolute;
+        top: 71.5%;
+        left: 1.7%;
+        width: 100%;
+        height: 20%;
+        background: url('../img/mo-sec1-txt1.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+    .sec1 .txt2{
+        position: absolute;
+        top: 86%;
+        left: 1.5%;
+        width: 100%;
+        height: 20%;
+        background: url('../img/mo-sec1-txt2.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+    .sec3 .inner > div{
+        position: relative;
+        left: 0;
+        top: 0;
+        width:100%;
+        height:0;
+        padding-bottom:53.75%;
+    }
+    .sec3 iframe{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width:100%;
+        height:100%;
+    }
+
+    .sec6 .swiper .swiper_review_title {
+        height: 60px;
+        margin-bottom: 0;
+    }
+
+    .sec6 .swiper-button-prev, .sec6 .swiper-button-next{
+        width:50px; height:60px;
+        top:60%;
+        transform: translateY(-50%);
+    }
+    .sec6 .swiper-button-prev{
+        left:0;
+        background: url('../img/arrow-prev.png') no-repeat;
+        background-size: 100%;
+    }
+    .sec6 .swiper-button-next{
+        right:0;
+        background: url('../img/arrow-next.png') no-repeat;
+        background-size: 100%;
+    }
+
+    .sec7 .link1{
+        position: absolute;
+        top: 10%;
+        left: 14%;
+        width: 71%;
+        height: 12%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec8 .tab-nav li{
+        background: url('../img/mo-tab-off.jpg') no-repeat;
+        background-size: 500%;
+    }
+    .sec8 .tab-nav li:nth-child(2){
+        background: url('../img/mo-tab-off.jpg') no-repeat;
+        background-position: 25%;
+        background-size: 500%;
+    }
+    .sec8 .tab-nav li:nth-child(3){
+        background: url('../img/mo-tab-off.jpg') no-repeat;
+        background-position: 50%;
+        background-size: 500%;
+    }
+    .sec8 .tab-nav li:nth-child(4){
+        background: url('../img/mo-tab-off.jpg') no-repeat;
+        background-position: 75%;
+        background-size: 500%;
+    }
+    .sec8 .tab-nav li:nth-child(5){
+        background: url('../img/mo-tab-off.jpg') no-repeat;
+        background-position: 100%;
+        background-size: 500%;
+    }
+    .sec8 .tab .tab-cont a{
+        position: absolute;
+        top: 11%;
+        left: 30%;
+        width: 38%;
+        height: 29%;
+        background: red;
+        opacity: 0;
+    }
+    .sec8 .tab .tab-cont iframe{
+        position: absolute;
+        top: 40.8%;
+        left: 0;
+        width: 100%;
+        height: 30%;
+    }
+
+    .sec9 .tab-nav{
+        width:93.5%;
+    }
+
+    .sec9 .tab .tab-cont .link1{
+        position: absolute;
+        top: 18.1%;
+        left: 66%;
+        width: 28%;
+        height: 2.6%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .tab .tab-cont .link2{
+        position: absolute;
+        top: 25.4%;
+        left: 66%;
+        width: 28%;
+        height: 2.6%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .tab .tab-cont .link3{
+        position: absolute;
+        top: 32.6%;
+        left: 66%;
+        width: 28%;
+        height: 2.6%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .tab .tab-cont .link4{
+        position: absolute;
+        top: 40.1%;
+        left: 66%;
+        width: 28%;
+        height: 2.6%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .tab .tab-cont .link5{
+        position: absolute;
+        top: 47.6%;
+        left: 66%;
+        width: 28%;
+        height: 2.6%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .tab .tab-cont .link6{
+        position: absolute;
+        top: 36.9%;
+        left: 19.7%;
+        width: 60.7%;
+        height: 3%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .tab .tab-cont .link7{
+        position: absolute;
+        top: 41.3%;
+        left: 19.7%;
+        width: 60.7%;
+        height: 3%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .tab .tab-cont .link8{
+        position: absolute;
+        top: 45.6%;
+        left: 19.7%;
+        width: 60.7%;
+        height: 3%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .link9{
+        position: absolute;
+        top: 93.2%;
+        left: 66.7%;
+        width: 28%;
+        height: 4.9%;
+        background: red;
+        opacity: 0;
+    }
+
+    .arrow-event{
+        background: url('../img/mo-section-arrow.png') bottom center no-repeat;
+        background-size: 100%;
+        animation:vb 2s;
+    }
+
+    .floating_wrap{
+        position: fixed;
+        top:170px;
+        right:10px;
+        width: 20.83%;
+    }
+
+    .sec2 .imgwrap .img1{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img1.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+    .sec2 .imgwrap .img2{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img2.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+    .sec2 .imgwrap .img3{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img3.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+    .sec2 .imgwrap .img4{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img4.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+}
+
+@media (max-width: 1280px) {
+    #sub.prm_page {
+        margin-top: 201px;
+    }
+}
+
+@media (max-width: 768px) {
+    #sub.prm_page {
+        margin-top: 134px;
+    }
+
+}
+
+@media (max-width: 430px) {
+    #sub.prm_page {
+        margin-top: 126px;
+    }
+
+}

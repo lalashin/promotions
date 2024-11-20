@@ -1,0 +1,129 @@
+/*footer*/
+footer .footer_wrapper {width: 100%;}
+footer .footer_wrapper {padding: 41px 0 53px;
+    box-sizing: border-box;background: #f2f2f2;}
+footer .footer_upper { position: relative; width:100%; max-width:1176px; height:auto;display: flex; justify-content:space-between; margin:0 auto; }
+
+footer .ft_style span, footer .ft_style em, footer .ft_style a, footer .ft_style b, footer .ft_style p{display:block; font-size:13px; font-weight:400; color:#1d1e1b; letter-spacing:-0.5px; line-height:1;}
+footer .left{float:left;}
+footer .right{display: flex; width:100%; max-width:280px; padding-top:80px; box-sizing:border-box;}
+footer .left .f_info{padding-left:210px; padding-top:12px; background-image:url('/img/f_logo.png'); background-repeat:no-repeat; background-position:0 0;}
+footer .left .f_info span{position:relative;}
+footer .left .f_info span::before{content:''; display:block; clear:both; width:1px; height:12px; position:absolute; left:0; top:0; background-color:rgba(102, 102, 102, 0.3);}
+footer .left .f_info .privacy a{float:left;}
+footer .left .f_info .privacy a span{font-weight:500; padding:0 10px; box-sizing:border-box;}
+footer .left .f_info .privacy a:first-child span{padding-left:0;}
+footer .left .f_info .privacy a:nth-child(2) span{ font-weight: 700;}
+footer .left .f_info .privacy a:first-child span::before{display:none;}
+footer .left .f_info .privacy a:hover span{color:#164194;}
+footer .left .f_info .info_list{margin-top:25px; font-size:0;}
+footer .left .f_info .info_list p{margin-top:7px; font-size:0;}
+footer .left .f_info .info_list p:first-child{margin-top:0;}
+footer .left .f_info .info_list span{display:inline-block; padding:0 7.5px; box-sizing:border-box;}
+footer .left .f_info .info_list span:first-child{padding-left:0;}
+footer .left .f_info .info_list span:first-child::before{display:none;}
+
+footer .left .f_info .info_list .ft_style span      {color:#a4a4a4;}
+footer .left .f_info .info_list .ft_style span .tel {color:#1d1e1b;}
+
+/* 2023-01-20 SNS 추가 */
+footer .left .f_info {position: relative;}
+footer .left .f_info .info_sns {position:absolute; top: 88px;left: 0; width: 164px; height: 40px; text-align:center;}
+footer .left .f_info .info_sns ul{padding:0;display:inline-block;}
+footer .left .f_info .info_sns ul:after {content:"";clear:both;}
+footer .left .f_info .info_sns li{float: left; width: 32px;height: 32px; }
+footer .left .f_info .info_sns li a{display: block; width: 32px; height: 32px;}
+footer .left .f_info .info_sns .info_sns_1 {background:url('/img/mian_icon_insta.png');background-position:center center; background-size:cover; margin-right:10px;}
+footer .left .f_info .info_sns .info_sns_2 {background:url('/img/mian_icon_pf.png');   background-position:center center; background-size:cover; margin-right:10px;}
+footer .left .f_info .info_sns .info_sns_3 {background:url('/img/mian_icon_blog.png?'); background-position:center center; background-size:cover;}
+
+footer .left .f_info .copy p{margin-top:25px; font-weight:300;}
+footer .left .f_info .ft_style a{display:inline-block;}
+
+/* 231011 주석처리요청
+footer .right .contact_info{font-size:14px;}
+footer .right .contact_info .c_tel{display:inline-block; margin-top:11px; font-size:14px; font-weight:500;}
+footer .right .contact_info p{margin-top:8px;}
+footer .right .contact_info p span{margin-top:6px;}
+footer .right .contact_info p span:first-child{margin-top:0;}
+footer .right .contact_info p span b{display:inline-block; margin-left:7px; margin-right:13px;}
+footer .right .contact_info a span{display:inline-block; color:#164194; font-size:14px; font-weight: 600; letter-spacing: 1px; padding-right:10px;}
+footer .right .contact_info span{color:#164194; font-size:14px; font-weight: 600; padding-top:10px; display: block;}
+footer .right .contact_info span.sfont{font-size:12px; font-weight: 300; color:#666;}
+footer .right .contact_info a {color:#164194;}
+footer .right .link_btns{margin-top:20px;}
+footer .right .link_btns a{float:left; padding:0 22px; box-sizing:border-box; height:31px; line-height:29px; border:1px solid rgba(102, 102, 102, 0.3); border-radius:5px; text-align:right; background-repeat:no-repeat;}
+footer .right .link_btns a:first-child {width:142px; background-image:url('/img/ico_question.png'); background-position:19px 50%}
+footer .right .link_btns a.btn2{width:106px; margin-left:4px; background-image:url('/img/ico_consult2.png'); background-position:16px 50%}
+footer .cs_wrap{margin-top:35px; box-shadow:5px -5px 20px rgba(206, 206, 206, 0.4);}
+footer .cs_wrap ul li{float:left; width:25%;}
+footer .cs_wrap ul li a{ background: #fff; display:block; text-align:center; border-left:1px solid #cecece; padding:10px 0 8px; font-size:13px;}
+footer .cs_wrap ul li:first-child a{border-left:0;}
+footer .cs_wrap ul li a span{display:block; height:20px; line-height:20px; font-size:15px; font-weight:400; color:#1d1e1b; letter-spacing:-0.5px; background-repeat:no-repeat; background-position:center top; }
+*/
+/* .cs_wrap ul li.li1 a{background-color:#164194;}*/
+/*footer .cs_wrap ul li.li1 a span{font-size:16px; color:#164194; font-weight: 500;}
+footer .cs_wrap ul li.li2 a span{box-sizing:border-box; background-image:url('/img/mo_faq.png'); padding-top:20px; font-size:13px; height:42px; background-size:22px;}
+footer .cs_wrap ul li.li3 a span{box-sizing:border-box; background-image:url('/img/mo_consult.png');  padding-top:20px; font-size:13px; height:42px; background-size:28px;}*/
+
+footer .right > div {
+	margin-right: 10px;
+}
+
+/* Media Query */
+@media (max-width: 1290px){}
+
+@media (max-width: 1024px){}
+
+@media (max-width: 960px){}
+
+@media (max-width: 768px){
+
+     footer .pc{display:none;}
+	 footer .mo{display:block;}
+     footer .footer_upper {justify-content: center; position: relative;}
+	 footer .inner{padding:25px 0 80px 0;}
+	 footer .left .f_info{padding-left:0; padding-top:60px; text-align:center;background-image: url(/police/images/miraeij_logo_police.svg); background-size: 45%; }
+	 footer .left .f_info .link_area {display: flex; justify-content: space-between;}
+	 footer .left .f_info .privacy{display:inline-block; margin-top: 50px;}
+	 footer .left .f_info .privacy span{font-size:16px;}
+	 footer .left .f_info .info_list{margin-top:17px;}
+	 footer .left .f_info .info_list p{margin-top:6px;}
+	 footer .left .f_info .info_list p span{line-height:1.2;}
+	 footer .left .f_info .info_list p span::before{top:3px;}
+	 footer .left .f_info .info_list p span.pic{margin-top:9px; display:block;}
+	 footer .left .f_info .info_list p span.pic::before{display:none;}
+	 footer .left .f_info .info_list p span.pic2{display:none;}
+	 footer .left .f_info .copy p{margin-top:18px; font-size:13px;}
+	 footer .right{position: absolute;justify-content: flex-end; top: 47px; right: 57px; width: auto; padding-top:0 ;}
+	 footer .right > div { margin-right: 10px; width:10.4167vw ; height: 12.3698vw;}
+	 footer .ft_style span, footer .ft_style em, footer .ft_style a, footer .ft_style b, footer .ft_style p{font-size:15px;}
+
+    /* 2023-01-20 SNS 추가 */
+     footer .left .f_info .info_sns {position:static; width: auto; padding-bottom:20px ;}
+     footer .left .f_info .info_sns ul {margin: 0 auto; }
+	 footer .left .f_info .info_sns li {width: 6.5104vw; height: 6.5104vw;}
+	 footer .left .f_info .info_sns li a {width: 100%; height: 100%;}
+
+	
+}
+
+@media (max-width: 600px){
+	footer .left .f_info { padding-left: 15px; background-position: 15px 0;	}
+	footer .right{right: 15px;}
+}
+
+
+
+@media (max-width: 480px){
+	footer .left .f_info .privacy { margin-top: 20px; }
+	footer .ft_style span, footer .ft_style em, footer .ft_style a, footer .ft_style b, footer .ft_style p{font-size:1.2rem; letter-spacing: -1px;}
+}
+
+@media (max-width: 360px){
+	footer .left .f_info { padding-top: 44px; }
+	footer .left .f_info .info_sns {padding-left: 5px;}
+	footer .left .f_info .privacy span {font-size: 13px;}
+	footer .right { top: 35px;	}
+	footer .right > div { margin-right: 5px; }
+}

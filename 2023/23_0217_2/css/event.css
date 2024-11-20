@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*****************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+.retendard  { font-family: 'Pretendard', 'Noto Sans KR', sans-serif; }
+
+@font-face {
+    font-family: 'LAB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css');
+.nanums {  font-family: 'NanumSquare', sans-serif;  }
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.ft_gmarket{font-family:'GmarketSansMedium', 'Noto Sans KR', sans-serif;}
+.ft_gmarket_b {font-family:'GmarketSansBold', 'Noto Sans KR', sans-serif;}
+.ft_gmarket_l {font-family:'GmarketSansLight', 'Noto Sans KR', sans-serif;}
+.lab {font-family:'LAB', 'Noto Sans KR', sans-serif;}
+
+.basic_img{opacity:0; visibility:hidden; height:auto;}
+.back_img{ background-repeat:no-repeat; background-size:cover; background-position:50% 50%;}
+
+.video_wrap {width:100%; padding-bottom:56.25%; box-sizing:border-box; position:relative;  /*margin: 20px 0;*/ border:0;}
+.video_wrap video, .video_wrap iframe, .video_wrap embed {position:absolute; left:0; top:0; width:100%; height:100%; border:0; outline:0;}
+
+#sub .pc {  display: inline-block;}
+#sub .ta {  display: none;}
+#sub .mo {  display: none;}
+
+#sub .section { width: 100%; text-align: center; position: relative;}
+
+.section2 .link1{
+	position: absolute;
+	top: 26%;
+    left: 47%;
+    width: 9%;
+    height: 11%;
+	background: red;
+	opacity: 0;
+}
+.section2 .link2{
+	position: absolute;
+	top: 65%;
+    left: 39%;
+    width: 22%;
+    height: 11%;
+	background: red;
+	opacity: 0;
+}
+.section5 .link1{
+	position: absolute;
+	top: 48%;
+    left: 36%;
+    width: 29%;
+    height: 8%;
+	background: red;
+	opacity: 0;
+}
+.section9 .link1{
+	position: absolute;
+	top: 82%;
+    left: 30.5%;
+    width: 37%;
+    height: 7%;
+	background: red;
+	opacity: 0;
+}
+
+.request_pop { display: block;  width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; background: rgba(10, 10, 10, 0.8); z-index: 500  }
+.request_pop .pop_wrap { background: #fff;  width: 100%; max-width:800px; height: 850px;  position: absolute; top: 50%; left: 50%;  transform:translate(-50%, -50%) ; -webkit-transform:translate(-50%, -50%); -o-transform:translate(-50%, -50%); -ms-transform:translate(-50%, -50%); -moz-transform:translate(-50%, -50%);border-bottom-left-radius: 40px;  border-top-right-radius: 40px; overflow: hidden; box-sizing: border-box}
+
+.request_pop .tit_wrap { background: #10264f; height: 80px; line-height: 80px; position: relative; padding: 0 30px;  }
+.request_pop .tit_wrap > p {  font-size: 2.2rem;  line-height: 80px;  letter-spacing: -0.5px; color: #fff }
+.request_pop .tit_wrap > a {display: block; width: 40px; height: 40px; border-radius: 50%; border: 1px solid #fff; text-align: center; line-height: 39px; box-sizing: border-box; position: absolute; right: 30px; top: 50%; margin-top: -20px}
+
+.request_pop .desc_wrap{ padding: 15px 30px 55px 30px; height: 700px; overflow-y: auto;}
+.request_pop .desc_wrap::-webkit-scrollbar {  width: 6px; }
+.request_pop .desc_wrap::-webkit-scrollbar-thumb {  background-color: rgba(22, 65, 148, 0.2);  border-radius: 2.5px; }
+.request_pop .desc_wrap::-webkit-scrollbar-track { border-radius: 2.5px;   }
+
+.request_pop .desc_wrap .top {  background: #ececec;  border-bottom: 2px solid #164194; position: relative;  border-top-right-radius: 30px;  box-sizing: border-box; padding: 0 0 20px 0px; text-align: center; font-size: 1.5rem; line-height: 22px; letter-spacing: -0.5px;  color: #10264f;   font-weight: 500}
+.request_pop .desc_wrap .top p{ padding-top: 15px;}
+.request_pop .desc_wrap .btm .write > div { padding: 0px; border-bottom: 1px solid rgba(204, 204, 204, 0.5); color: #333 }
+.request_pop .desc_wrap .btm .write > div:last-child { border-bottom: none; }
+.request_pop .desc_wrap .btm .write > div > b { width: 170px; float: left;  font-size: 1.5rem;  line-height: 22px;   letter-spacing: -0.5px;  }
+.request_pop .desc_wrap .btm .write > div > div {  width: calc(100% - 170px);  float: left; }
+.request_pop .btn_box{ float: none; width: 100%; text-align: center !important; margin-top: 10px}
+
+.request_pop .bbs .write { border-top: none;}
+.request_pop .bbs .write th { padding:13px 25px}
+.request_pop .bbs .write td { padding: 5px 10px; }
+.request_pop .bbs .write tr .agree { padding: 0 20px; margin: 0px }
+.request_pop .bbs .write tr .agree .txt_wrap { color: #333;  border: 1px solid #ccc; border-radius: 4px; width: 100%; height: 180px; margin: 0 auto; padding: 15px; font-size: 1.5rem; font-weight: 400; line-height: 22px;   letter-spacing: -0.3px; box-sizing: border-box;overflow-y: auto; }
+.request_pop .bbs .write tr .agree .txt_wrap::-webkit-scrollbar {  width: 6px; }
+.request_pop .bbs .write tr .agree .txt_wrap::-webkit-scrollbar-thumb {  background-color: rgba(22, 65, 148, 0.2);  border-radius: 2.5px; }
+.request_pop .bbs .write tr .agree .txt_wrap::-webkit-scrollbar-track { border-radius: 2.5px;   }
+.request_pop .bbs .write tr .agree .txt_wrap h3 { font-size: 1.8rem; font-weight: 700; line-height: 22px;   letter-spacing: -0.3px;   }
+.request_pop .bbs .write tr .agree .txt_wrap li span { display: block; }
+.request_pop .bbs .write tr .agree .check { margin: 5px 0; }
+.request_pop span.icon { display: inline-block;  width: 20px;  height: 20px;   border-radius: 50%;  background: #164194;  text-align: center;    line-height: 19px;  margin-right: 0px;}
+.request_pop span.icon img { margin-left: -1px; }
+.request_pop  input[type="checkbox"] + label { width: 100%  !important;}
+
+.request_pop .bbs .write td textarea {height: 50px;}
+.request_pop .bbs .write td em {color:red;font-size: 1.3rem;}
+
+.request_pop .regi_btn {
+    width: 30%;
+    height: 50px;
+    background: #000;
+}
+
+
+
+/*****************************************************************************************************************************************/
+@media screen and (max-width: 2400px){
+
+}
+
+@media screen and (max-width: 1200px){
+
+
+}
+
+@media screen and (max-width: 960px){
+
+}
+
+@media screen and (max-width: 768px){
+
+	.request_pop .pop_wrap { width: 90%;}
+	.request_pop .desc_wrap .top {  padding: 0 0 10px 0px; }
+	.request_pop .desc_wrap { padding: 10px; overflow-x: hidden; }
+	.request_pop .bbs .write th { padding:13px 0px 5px 0}
+	.request_pop .bbs .write td { padding: 5px 0px; }
+	.request_pop .bbs .write tr .agree { padding: 0px; margin: 0px }
+
+ }
+
+@media screen and (max-width: 720px){
+	#sub .pc {  display: none !important}
+	#sub .mo {  display: inline-block !important;}
+
+	.section2 .link1{
+		position: absolute;
+		top: 36%;
+		left: 40%;
+		width: 22%;
+		height: 8%;
+		background: red;
+		opacity: 0;
+	}
+	.section2 .link2{
+		position: absolute;
+		top: 78%;
+		left: 20%;
+		width: 63%;
+		height: 11%;
+		background: red;
+		opacity: 0;
+	}
+
+	.section5 .link1{
+		position: absolute;
+		top: 43%;
+		left: 13%;
+		width: 74%;
+		height: 11%;
+		background: red;
+		opacity: 0;
+	}
+
+	.section9 .link1{
+		position: absolute;
+		top: 75%;
+		left: 12.5%;
+		width: 76%;
+		height: 7%;
+		background: red;
+		opacity: 0;
+	}
+
+
+}
+
+@media screen and (max-width: 640px){
+
+}
+
+
+@media screen and (max-width: 480px){
+
+}
+
+

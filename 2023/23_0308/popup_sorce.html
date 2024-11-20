@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <title>미래인재경찰학원 | 경찰학원 NO.1</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+<!-- Styles -->
+<link rel="stylesheet" href="https://www.miraeij.com/css/reset.css?1659522810">
+
+<style>
+ /* inptu / select / textarea */
+input[type='text'],input[type='password'], input[type='tel'], input[type='email'], input[type='number'], input[type='url'], select {border:1px solid #cccccc; height:40px; line-height: 40px; vertical-align: middle; padding:0 5px; width:100%; box-sizing:border-box;}
+textarea{border:1px solid #cccccc; width: 100% !important; }
+input[readonly], input[readonly="readonly"], input:read-only {background:#fafafa; border:1px solid #e0e0e0;}
+.login_form input[type='text'], .login_form input[type='password'], .login_form select { border: none; border-bottom: 1px solid #bebdbd}
+.pop_refund textarea{border:1px solid #cccccc; width: 99% !important; min-height: 100px !important }
+
+/* 셀렉트박스 */
+.select{display:inline-block;  position:relative; height:40px; width:100%; vertical-align: middle;}
+.select select{display: block; cursor: pointer;  max-width:100%;  -moz-appearance:none; /* Firefox */   -webkit-appearance:none; /* Safari and Chrome */  appearance:none;}
+select::-ms-expand { display:none; }
+.select select:not([multiple]){padding-right:5px;}
+
+/* 체크박스 */
+.check_box { position:relative;}
+.check_box input[type="checkbox"]{display:inline-block; position:absolute; left:-9999px; opacity:0; visibility:hidden; width:1px; height:1px; filter:alpha(opacity=0); -ms-filter:alpha(opacity=0); overflow:hidden; }
+.check_box label {display:inline-block; padding-left:30px; font-size:1.4rem; font-weight: 400; color:#333; cursor:pointer; position:relative; line-height:24px;}
+.check_box label:before  {position:absolute; left:0; top:50%; width:24px; height:24px; box-sizing:border-box; margin-top:-12px; border:1px solid #cccccc; line-height:20px; text-align:center; clear:both; content:''; display:block;}
+.check_box input[type="checkbox"]:checked + label:before {content:'\2714'; font-size:18px; font-weight: 500;}
+.member .check_box label { border: none }
+
+/* 라디오버튼 */
+.radio_box { position:relative;}
+.radio_box input[type="radio"]{display:inline-block; position:absolute; left:-9999px; opacity:0; visibility:hidden; width:1px; height:1px; filter:alpha(opacity=0); -ms-filter:alpha(opacity=0); overflow:hidden; }
+.radio_box label {display:inline-block; padding-left:30px; color:#333; cursor:pointer; position:relative; line-height:24px;}
+.radio_box label:before  {position:absolute; left:0; top:50%; width:24px; height:24px; box-sizing:border-box; border-radius: 12px; margin-top:-12px; border:1px solid #cccccc; line-height:20px; text-align:center; clear:both; content:''; display:block;}
+.radio_box label:after{position:absolute; content:'\2022'; font-size:30px; left:6px; top:0; line-height: 16px; font-weight: 500; display:none;}
+.radio_box input[type="radio"]:checked + label:after {display:block;}
+.swiper-wrapper { display: -webkit-box;}
+
+/* input type="file"*/
+.fileBox{position:relative;}
+.fileBox .inputBox{float:left; box-sizing: border-box;}
+.fileBox input[type="text"]{float:left;overflow:hidden;box-sizing:border-box;height:32px;padding:8px 10px;border:1px solid #cccccc;line-height:1;background:#fafafa;  box-sizing: border-box;}
+.fileBox .fileBtn{float:left;margin-left:5px;  box-sizing: border-box;}
+.fileBox .fileBtn label{display:inline-block;width:110px;font-size:14px;line-height:40px; height:40px; letter-spacing:-1px;color:#fff;background:#757880;text-align:center; border-radius: 4px;  box-sizing: border-box;}
+.fileBox .fileBtn input[type="file"]{visibility:hidden;width:0;height:0;padding:0;margin:0;}
+
+
+/*공통*/
+
+.clear:after {clear:both;content:'';display:block;}
+.br4 { border-radius: 4px !important;  }
+.popup {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(10, 10, 10, 0.8);
+    z-index: 500;
+}
+.popup .pop_wrap {
+    width: 100%;
+    height: 540px;
+    margin: 0 auto;
+    min-height: 560px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -270px;
+    margin-left: -500px;
+    max-width: 1000px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.popup .tit_wrap {
+    background: #10264f;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    padding: 0 30px;
+}
+.popup .tit_wrap > p {
+    font-size: 2.2rem;
+    line-height: 80px;
+    letter-spacing: -0.5px;
+    color: #fff;
+}
+
+.popup .tit_wrap > a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 39px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    margin-top: -20px
+}
+
+.popup .desc_wrap {
+    padding: 35px 30px 55px 30px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.popup .desc_wrap .con {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.popup .desc_wrap .agree_txt {
+    height: auto;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+}
+
+.popup .desc_wrap .agree_txt h2 {
+    margin-top: 30px
+}
+
+.popup .desc_wrap .agree_txt h2:first-child {
+    margin-top: 0px
+}
+
+.popup .desc_wrap .agree_txt ul li > ul {
+    padding-left: 15px
+}
+
+.popup .desc_wrap .agree_txt table.list {
+    border: 1px solid rgba(28, 67, 165, 0.5);
+    text-align: center;
+    margin-top: 20px;
+    border-top: 2px solid #164194;
+    border-bottom: 1px solid #d0d9ea;
+}
+
+.popup .desc_wrap .agree_txt table tr:first-child {
+    font-weight: 700;
+}
+
+.popup .desc_wrap .agree_txt table tr th {
+    font-size: 1.5rem;
+    color: #333;
+    padding: 10px;
+}
+
+.popup .desc_wrap .agree_txt table tr td {
+    font-size: 1.5rem;
+    padding: 9px 25px;
+}
+
+.popup .desc_wrap .con::-webkit-scrollbar {
+    width: 6px;
+}
+
+.popup .desc_wrap .con::-webkit-scrollbar-thumb {
+    background-color: rgba(22, 65, 148, 0.2);
+    border-radius: 2.5px;
+}
+
+.popup .desc_wrap .con::-webkit-scrollbar-track {
+    border-radius: 2.5px;
+}
+
+.btn {
+    text-decoration: none !important;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: baseline;
+    position: relative;
+    cursor: pointer;
+    padding: 12px 10px;
+    min-width: 140px;
+    min-height: 50px;
+    line-height: 25px;
+    background: rgba(22,65,148,1.0);
+    color: #fff !important;
+    margin: 0 2px;
+    text-align: center;
+    font-weight: 400;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+.popup .desc_wrap .top { background: #f4f6f9;  border-bottom: 2px solid #164194; position: relative;  box-sizing: border-box; padding: 20px 30px 20px 30px;font-size: 1.5rem; line-height: 22px; letter-spacing: -0.5px;  color: #10264f;   font-weight: 500}
+.popup .desc_wrap .btm > div { padding: 15px 20px 15px 20px; border-bottom: 1px solid rgba(204, 204, 204, 0.5); color: #333 }
+.popup .desc_wrap .btm > div:last-child { border-bottom: none; }
+.popup .desc_wrap .btm > div > b { width: 170px; float: left;  font-size: 1.5rem;  line-height: 22px;   letter-spacing: -0.5px;  }
+.popup .desc_wrap .btm > div > div {  width: calc(100% - 170px);  float: left; }
+.popup .desc_wrap .inid{height:40px;padding:8px 10px;border:1px solid #cccccc;line-height:1; max-width:300px;}
+
+.popup .desc_wrap .fileBox_wrap { position:relative; }
+.popup .desc_wrap .fileBtn{display:block; width:110px; height:40px; float:left;}
+.popup .desc_wrap .fileBox_wrap p.ptxt{clear: both;  display:block; margin-top:10px; color:#164194; font-weight: 400;}
+.popup .desc_wrap .fileBox .inputBox{float:left; box-sizing: border-box; }
+.popup .desc_wrap .fileBox input[type="text"]{float:left;overflow:hidden;box-sizing:border-box;height:32px;padding:8px 10px;border:1px solid #cccccc;line-height:1;background:#fafafa;  box-sizing: border-box; }
+.popup .desc_wrap .fileBox_wrap .inputBox{float:left;width: calc(100% - 170px);  box-sizing: border-box;}
+
+.popup .desc_wrap .fileBox p.ptxt{clear: both;  display:block; margin-top:10px; color:#164194; font-weight: 400;}
+.popup .desc_wrap .fileBtn{float:left;margin-left:5px;  box-sizing: border-box;}
+.popup .desc_wrap .fileBtn label{display:inline-block;width:150px;font-size:14px;line-height:40px; height:40px; letter-spacing:-1px;color:#f6f6f6;background:#757880;text-align:center; border-radius: 4px;  box-sizing: border-box;}
+.popup .desc_wrap .fileBtn input[type="file"]{visibility:hidden;width:0;height:0;padding:0;margin:0;}
+
+.popup.pop_transfer .btn_box{ text-align: center; margin-top: 10px}
+.popup.pop_transfer .tit_wrap > p.p2,
+.popup.pop_transfer.type4 .tit_wrap > p,
+.popup.pop_transfer.type4 .desc_wrap .top { display: none }
+
+@media screen and (max-width: 1280px){
+    .popup {left: 0;}
+}
+
+@media screen and (max-width: 1024px){
+    .popup .pop_wrap { max-width: 100%;  margin-left: 0px;  left: 0 ;padding: 10px; }
+	.popup div.box_list::-webkit-scrollbar { height: 6px }
+	.popup .con_list .add_list { padding: 0 10px; }
+}
+
+@media screen and (max-width: 768px){
+    .pop_wrap{left:0; margin-left:3%; width: 94%}
+    .popup .desc_wrap { padding: 10px; }
+    .popup.pop_review .desc_wrap { overflow-y: auto;}
+}
+
+@media screen and (max-width: 720px){
+    .popup .desc_wrap .top{padding:20px 15px; font-size:1.3rem; line-height: 1.6;}
+    .popup .desc_wrap .btm > div {padding: 10px;}
+	.popup .desc_wrap .btm > div > b{width:100%; float:none; display: block;}
+	.popup .desc_wrap .btm > div > div{width:100%; float:none; display: block;}
+	.popup .pop_wrap{height:680px; margin-top:-340px;}
+	.popup .desc_wrap .fileBox_wrap .inputBox{width:100%; float:none; display: block;}
+	.popup .desc_wrap .fileBtn{margin-left:0;}
+}
+
+@media screen and (max-width: 540px) {
+    .popup .desc_wrap .fileBox_wrap .inputBox { width: 100%; float: none; display: block; }
+}
+@media screen and (max-width: 480px){
+    .popup:not(.pop_pass):not(.pop_profile) .desc_wrap { height: 545px; }
+	.popup.pop_review .desc_wrap { height: 75vh; }
+    .popup:not(.pop_pass):not(.pop_profile) .desc_wrap { height: 600px;}
+}
+
+</style>
+
+</head>
+
+<body>
+
+        <!-- //230309 -->
+        <div id="sub" class="">
+
+           바닥
+
+        </div>
+        <!-- //230309 -->
+
+        <!--환승팝업-->
+         <div class="popup pop_transfer" style="display: block;">
+            <div class="size">
+                <div class="pop_wrap">
+                    <div class="tit_wrap">
+                        <p class="fw500">타학원 환승 수강인증하기</p>
+                        <a href="javascript:;" class="pop_closebtn"><img src="https://www.miraeij.com/img/icon_close.png"></a>
+                    </div>
+                    <div class="desc_wrap clear">
+                        <div class="top">
+                            타학원 갱신 가능한 PASS 회원 중 결제내역 및 환불 인증이 가능한 이미지를 첨부해주세요.<br>
+                            첨부파일은 jpg, gif, png 파일만 등록 가능하며 5MB 이하의 파일만 등록 가능합니다.
+                            <span style="color:#ff3838; display: block;">※ 반드시 타학원의 패스명과 수강생 본인의 이름, 결제내역 또는 환불내역이
+                            모두 보이게 캡쳐하여 업로드 해주셔야 인증이 완료됩니다.</span>
+                        </div>
+                        <div class="btm">
+                            <div class="clear">
+                                <b class="fw500">아이디</b>
+                                <div class="fw400 fon1_8">
+                                    <input type="text" name="id" id="id" value="<?=$_SESSION['member_id']?>" readonly="" class="inid br4">
+                                </div>
+                            </div>
+                            <div class="clear">
+                                <b class="fw500">내용</b>
+                                <div class="fw400 fon1_8">
+                                    <textarea name="contents" id="contents" class="br4"></textarea>
+                                </div>
+                            </div>
+                            <div class="clear">
+                                <b class="fw500">첨부파일</b>
+                                <div class="fw400 fon1_8 clear fileBox_wrap">
+                                    <div class="inputBox">
+                                        <input type="text" id="addFile" disabled="" value="" class="br4">
+                                    </div>
+                                    <div class="fileBtn">
+                                        <label>파일찾기<input type="file" name="filename" id="file" accept=".jpg, .gif, .png"></label>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn_box">
+                                <a href="javascript:;" class="btn goSave">저장</a>
+                                <a href="javascript:;" class="btn btn1 cancel_btn">취소</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//환승팝업-->
+
+
+
+</body>
+
+</html>

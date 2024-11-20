@@ -1,0 +1,51 @@
+
+#sub             {top:0 !important;margin-top:0 !important;}
+#sub .sub_visual {top:0 !important;margin-top:0 !important; position:relative !important}
+#sub.fixed   .sub_visual {top:0 !important;}
+#sub.fixed > .sub_wrap {margin-top:0 !important;}
+#sub .prc_nav.before { top:0 !important; }
+
+@media screen and (max-width: 430px) {
+    #sub             {top:0 !important;margin-top:0 !important;}
+    #sub .sub_visual {top:0 !important;margin-top:0 !important; position:relative !important}
+    #sub.fixed   .sub_visual {top:0 !important;}
+    #sub.fixed > .sub_wrap   {margin-top:0 !important;}
+    #sub .prc_nav.before { top: 0 !important; }
+}
+@media screen and (max-width: 768px) {
+    #sub             {top:0 !important;margin-top:0 !important;}
+    #sub .sub_visual {top:0 !important;margin-top:0 !important; position:relative !important}
+    #sub.fixed   .sub_visual {top:0 !important;}
+    #sub.fixed > .sub_wrap {margin-top:0 !important;}
+    #sub .prc_nav.before { top: 0 !important; }
+}
+@media screen and (max-width: 1280px) {
+    #sub             {top:0 !important;margin-top:0 !important;}
+    #sub .sub_visual {top:0 !important;margin-top:0 !important; position:relative !important}
+    #sub.fixed   .sub_visual {top:0 !important;}
+    #sub.fixed > .sub_wrap {margin-top:0 !important;}
+    #sub .prc_nav.before { top: 0 !important; }
+}
+@media screen and (max-width: 1280px) {
+    #sub             {top:0 !important;margin-top:0 !important;}
+    #sub .sub_visual {top:0 !important;margin-top:0 !important; position:relative !important}
+    #sub.fixed   .sub_visual {top:0 !important;}
+    #sub.fixed > .sub_wrap {margin-top:0 !important;}
+    #sub .prc_nav.before { top: 0 !important; }
+}
+
+/*
+#sub.fixed > .sub_visual{ position: fixed;  left: 0px; top: 50px; margin-top: 0px }
+#sub.fixed > .sub_wrap{margin-top: 170px; }
+
+#sub.notice.fixed > .sub_wrap{margin-top: 200px; }
+
+#sub.fixed.prc_idx > .sub_visual, #sub.fixed.prc_view > .sub_visual { position: relative;  left: 0px; top: 0px;     margin-top: 160px; }
+#sub.fixed.prc_idx > .sub_wrap, #sub.fixed.prc_view > .sub_wrap {margin-top: 0px; }
+
+content3.css:           #sub .prc_nav.before { position: fixed; margin-left: 0; top: 50px; left: 0; width: 100%; }
+responsive2.css:        #sub .prc_nav.before { position: fixed; margin-left: 0; top: 155px; }
+responsive2.css:        #sub .prc_nav.before { position: fixed; margin-left: 0; top: 50px; }
+responsive2.css:        #sub .prc_nav.before { top: 55px; }
+*/
+

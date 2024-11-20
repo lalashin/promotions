@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/* CSS Document */
+/* ==================================================
+	웹 폰트
+================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*
+ * @font-face {
+ *     font-family: 'InkLipquid';
+ *     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+ *     font-weight: normal;
+ *     font-style: normal;
+ * }
+ * @font-face {
+ *     font-family: 'GmarketSansMedium';
+ *     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+ *     font-weight: normal;
+ *     font-style: normal;
+ * }
+ * @font-face {
+ *     font-family: 'GmarketSansBold';
+ *     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+ *     font-weight: normal;
+ *     font-style: normal;
+ * }
+ */
+
+button {
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    background: none;
+    vertical-align: middle;
+}
+.clr_nv {color: #000099;}
+.clr_rd {color: #ff0000;}
+
+.pc_img {display: block !important;}
+.mo_img {display: none !important;}
+.pc_only {display: block !important;}
+.mo_only {display: none !important;}
+
+.sub_visual {white-space:nowrap;}
+
+.videoPlayIcon {position:relative;display:inline-block;}
+.videoPlayIcon::after{content:""; height:20%;width:18%;
+                 background:url('/police/img/youtube_icon.png') center no-repeat;
+                 background-size:cover;-ms-background-size:cover;-o-background-size:cover;-moz-background-size:cover;-webkit-background-size:cover;
+                 position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+}
+.videoPlayIcon iframe {position:relative;z-index:1;}
+.videoPlayIcon iframe + img {display:none;}
+
+/* Media Query */
+@media (max-width: 1290px){}
+
+@media (max-width: 1024px){}
+
+@media (max-width: 960px){}
+
+@media (max-width: 768px){
+
+    .pc_img {display: none !important;}
+    .mo_img {display: block !important;}
+    .pc_only {display: none !important;}
+    .mo_only {display: block !important;}
+
+    .videoPlayIcon::after{content:""; height:18%;width:15%;}
+
+}
+
+@media (max-width: 600px){}
+
+@media (max-width: 480px){}
+
+@media (max-width: 320px){}
+
+.xi-icon {font-family: xeicon!important;}
+

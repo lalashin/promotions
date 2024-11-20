@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+
+
+.survey_pop { display: block;  width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; background: rgba(10, 10, 10, 0.8); z-index: 500  }
+.survey_pop .pop_wrap { background: #fff;  width: 100%; max-width:800px; height: 750px;  position: absolute; top: 50%; left: 50%;  transform:translate(-50%, -50%) ; -webkit-transform:translate(-50%, -50%); -o-transform:translate(-50%, -50%); -ms-transform:translate(-50%, -50%); -moz-transform:translate(-50%, -50%);border-bottom-left-radius: 40px;  border-top-right-radius: 40px; overflow: hidden; box-sizing: border-box}
+
+.survey_pop .tit_wrap { background: #10264f; height: 80px; line-height: 80px; position: relative; padding: 0 30px;  }
+.survey_pop .tit_wrap > p {  font-size: 2.2rem;  line-height: 80px;  letter-spacing: -0.5px; color: #fff }
+.survey_pop .tit_wrap > a {display: block; width: 40px; height: 40px; border-radius: 50%; border: 1px solid #fff; text-align: center; line-height: 39px; box-sizing: border-box; position: absolute; right: 30px; top: 50%; margin-top: -20px}
+
+.survey_pop .desc_wrap{ padding: 15px 30px 55px 30px; height: 700px; overflow-y: auto;}
+.survey_pop .desc_wrap::-webkit-scrollbar {  width: 6px; }
+.survey_pop .desc_wrap::-webkit-scrollbar-thumb {  background-color: rgba(22, 65, 148, 0.2);  border-radius: 2.5px; }
+.survey_pop .desc_wrap::-webkit-scrollbar-track { border-radius: 2.5px;   }
+
+.survey_pop .desc_wrap .top {  background: #ececec;  border-bottom: 2px solid #164194; position: relative;  border-top-right-radius: 30px;  box-sizing: border-box; padding: 0 0 20px 0px; text-align: center; font-size: 1.5rem; line-height: 22px; letter-spacing: -0.5px;  color: #10264f;   font-weight: 500}
+.survey_pop .desc_wrap .top p{ padding-top: 15px;}
+.survey_pop .desc_wrap .btm .write > div { padding: 0px; border-bottom: 1px solid rgba(204, 204, 204, 0.5); color: #333 }
+.survey_pop .desc_wrap .btm .write > div:last-child { border-bottom: none; }
+.survey_pop .desc_wrap .btm .write > div > b { width: 170px; float: left;  font-size: 1.5rem;  line-height: 22px;   letter-spacing: -0.5px;  }
+.survey_pop .desc_wrap .btm .write > div > div {  width: calc(100% - 170px);  float: left; }
+.survey_pop .btn_box{ float: none; width: 100%; text-align: center !important; margin-top: 10px}
+
+
+.survey_pop .bbs .write { margin-top: 1.5vw; border-top: none; }
+.survey_pop .bbs .write th { padding:13px 25px}
+.survey_pop .bbs .write td { padding: 8px 10px; }
+.survey_pop .bbs .write td em {position: relative; margin-right: 5px;}
+.survey_pop .bbs .write td em:after{
+    content: '*';
+    position: absolute;
+    top: -0.2vw; left: 0.6vw;
+    color: red;
+    font-size: 2rem;
+}
+.survey_pop .bbs .write td label {margin-right: 3.5vw;}
+.survey_pop .bbs .write td label:nth-child(1){margin-left: 3.5vw;}
+.survey_pop .bbs .write td textarea { height: 70px;}
+
+.survey_pop .pop_wrap .btn_box .btn {
+    text-decoration: none !important;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: baseline;
+    position: relative;
+    cursor: pointer;
+    padding: 12px 10px;
+    min-width: 140px;
+    min-height: 50px;
+    line-height: 25px;
+    background: rgba(22,65,148,1.0);
+    color: #fff !important;
+    margin: 0 2px;
+    text-align: center;
+    font-weight: 400;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+    .survey_pop .bbs .write td input {width: auto;}
+}
+
+
+@media (max-width:720px) {
+
+    .survey_pop .pop_wrap { width: 90%;}
+	.survey_pop .desc_wrap .top {  padding: 0 0 10px 0px; }
+	.survey_pop .desc_wrap { padding: 10px; overflow-x: hidden; }
+
+	.survey_pop .bbs .write td { padding: 6px 5px; }
+    .survey_pop .bbs .write td em:after{
+        content: '*';
+        position: absolute;
+        top: -0.2vw; left: 2vw;
+        color: red;
+        font-size: 2rem;
+    }
+    .survey_pop .bbs .write td label {margin-right: 1vw;}
+    .survey_pop .bbs .write td label:nth-child(1){margin-left: 1vw;}
+    .survey_pop .bbs .write td textarea { height: 65px;}
+
+
+}
+
+
+@media (max-width:620px) {
+    .survey_pop .pop_wrap { height: 620px;}
+    .survey_pop .pop_wrap .tit_wrap { height: 65px;}
+    .survey_pop .desc_wrap .top p {
+        padding-top: 10px;
+    }
+    .survey_pop .tit_wrap > p { font-size: 2rem;  line-height: 65px; }
+
+    .survey_pop .bbs .write td {font-size: 1.4rem; padding: 5px 0;;}
+    .survey_pop .bbs .write td textarea { height: 55px;}
+    .survey_pop .bbs .write td em:after{
+        content: '*';
+        position: absolute;
+        top: -0.6vw; left: 3vw;
+        color: red;
+        font-size: 2rem;
+    }
+    .survey_pop .pop_wrap .btn_box .btn {
+        min-width: 120px;
+        min-height: 30px;
+        padding: 8px 10px;
+    }
+
+}

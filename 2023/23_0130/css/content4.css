@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+.nanum{font-family:'Nanumsquare', 'Noto Sans KR', sans-serif;}
+
+#sub.intro .mo{display:none !important;}
+
+#sub.intro .sec_wrap{padding-bottom:0;}
+#sub.intro .col_wrap::after{content:''; display:block; clear:both;}
+#sub.intro .col_wrap > *{float:left;}
+#sub.intro .col_wrap.col2 > *{width:50%;}
+#sub.intro .col_wrap.col3 > *{width:33.3333%;}
+#sub.intro .col_wrap.col4 > *{width:25%;}
+#sub.intro .col_wrap > li > a{display:block;}
+
+#sub.intro .section{ background-color: #f4f4f4; background-repeat:no-repeat; background-position:50% 50%; background-size:cover; text-align:center; font-size:0;}
+#sub.intro .section .size{max-width:1200px; position:relative; padding:0;}
+#sub.intro .section .imgs{display:inline-block;}
+#sub.intro .section1{background-image:url('../img/bg_sec_01.jpg');}
+#sub.intro .section1 .size{max-width:1408px;}
+#sub.intro .section1 .hot_ani{
+    position:absolute;
+    top:0;
+    right:0;
+    width:0;
+    opacity: 0;
+    transform: scale(5);
+    transition: all 1s ease;
+}
+#sub.intro .section1 .hot_ani.show {
+    position:absolute;
+    top:40%;
+    right:31.33333%;
+    width:25.498%;
+    opacity: 1;
+    transform: scale(1) ;
+}
+/* #sub.intro .section1 .hot_ani a{display:block;} */
+#sub.intro .section2 .cont_wrap > div{display:none;}
+#sub.intro .section2 .cont_wrap > div.active{display:block;}
+#sub.intro .section2 .tab_area ul li.li1 a{background-image:url('../img/img_tab_1.jpg');}
+#sub.intro .section2 .tab_area ul li.li1 a.on{background-image:url('../img/img_tab_1_on.jpg');}
+#sub.intro .section2 .tab_area ul li.li2 a{background-image:url('../img/img_tab_2.jpg');}
+#sub.intro .section2 .tab_area ul li.li2 a.on{background-image:url('../img/img_tab_2_on.jpg');}
+#sub.intro .section2 .cont2_tab{padding:37px 0 27px; box-sizing:border-box; background-color:#272728; }
+#sub.intro .section2 .cont2_tab ul li{box-sizing:border-box; position:relative;}
+#sub.intro .section2 .cont2_tab ul li a{height:128px; border-left:3px solid #fff; box-sizing:border-box;}
+#sub.intro .section2 .cont2_tab ul li:first-child a{border-left:0;}
+#sub.intro .section2 .cont2_tab ul li a span{display:block; font-size:2.2rem; line-height:1.5; color:#fff;}
+#sub.intro .section2 .cont2_tab ul li a b{display:block; margin-top:10px; font-size:4.5rem; font-weight:900; line-height:1; color:#fff;}
+#sub.intro .section2 .cont2_tab ul li a.on span{color:#a3ff15;}
+#sub.intro .section2 .cont2_tab ul li a.on b{color:#a3ff15;}
+#sub.intro .section2 .cont2_con > div{display:none;}
+#sub.intro .section2 .cont2_con > div.active{display:block;}
+#sub.intro .section2 .cont2_con > div.active #container { display:block; }
+#sub.intro .section2 .cont2_con .img_video{position:relative;}
+#sub.intro .section2 .cont2_con .img_video .video_wrap{position:absolute; right:7%; top:48.5%; width:55%; padding-bottom:31.2% /* background-color:#959595; */}
+#sub.intro .section2 .cont2_con .img_video .video_wrap a{display:block; width:100%; height:100%;}
+#sub.intro .section2 .cont2_con .img_video .tLink{ position: absolute; top: 69%;left: 24.5%;width: 13%;height: 7%; background: red; opacity: .7;}
+#sub.intro .section2_2 .cont2 .cont2_1{background-color:#f4f4f4;}
+#sub.intro .section2_2 .cont2 .cont2_1 .btn_area{font-size:0; text-align:center;}
+#sub.intro .section2_2 .cont2 .cont2_1 .btn_area a{display:inline-block; width:19%;}
+
+#sub.intro .section3{background-image:url('../img/bg_sec_03.jpg');}
+#sub.intro .section3 .hot_ani{
+    position:absolute;
+    top:39%;
+    left:6%;
+    width:35%;
+    opacity: 0;
+    transform: scale(5);
+    transition: all 1s ease;
+}
+#sub.intro .section3 .hot_ani.show {
+    position:absolute;
+    top:39%;
+    left:6%;
+    width:35%;
+    opacity: 1;
+    transform: scale(1) ;
+}
+.cont1 {position: relative;}
+.link1 .lk_1{
+    position: absolute;
+    top: 82%;
+    left: 0;
+    width: 25%;
+    height: 20%;
+    background: red;
+    opacity: 0;
+}
+.link1 .lk_2{
+    position: absolute;
+    top: 82%;
+    left: 25.2%;
+    width: 24.7%;
+    height: 20%;
+    background: red;
+    opacity: 0;
+}
+.link1 .lk_3{
+    position: absolute;
+    top: 82%;
+    left: 50.2%;
+    width: 24.7%;
+    height: 20%;
+    background: red;
+    opacity: 0;
+}
+.link1 .lk_4{
+    position: absolute;
+    top: 82%;
+    left: 75.2%;
+    width: 24.7%;
+    height: 20%;
+    background: red;
+    opacity: 0;
+}
+.link3 .lk_1{
+    position: absolute;
+    top: 82%;
+    left: 0;
+    width: 25%;
+    height: 20%;
+    background: red;
+    opacity: 0;
+}
+.link3 .lk_2{
+    position: absolute;
+    top: 82%;
+    left: 25.2%;
+    width: 24.7%;
+    height: 20%;
+    background: red;
+    opacity: 0;
+}
+.link3 .lk_3{
+    position: absolute;
+    top: 82%;
+    left: 50.2%;
+    width: 24.7%;
+    height: 20%;
+    background: red;
+    opacity: 0;
+}
+.link3 .lk_4{
+    position: absolute;
+    top: 82%;
+    left: 75.2%;
+    width: 24.7%;
+    height: 20%;
+    background: red;
+    opacity: 0;
+}
+.link5 .lk_1{
+    position: absolute;
+    top: 85%;
+    left: 0;
+    width: 25%;
+    height: 15%;
+    background: red;
+    opacity: 0;
+}
+.link5 .lk_2{
+    position: absolute;
+    top: 85%;
+    left: 25.2%;
+    width: 24.7%;
+    height: 15%;
+    background: red;
+    opacity: 0;
+}
+.link5 .lk_3{
+    position: absolute;
+    top: 85%;
+    left: 50.2%;
+    width: 24.7%;
+    height: 15%;
+    background: red;
+    opacity: 0;
+}
+.link5 .lk_4{
+    position: absolute;
+    top: 85%;
+    left: 75.2%;
+    width: 24.7%;
+    height: 15%;
+    background: red;
+    opacity: 0;
+}
+.link7 .lk_1{
+    position: absolute;
+    top: 85%;
+    left: 0;
+    width: 25%;
+    height: 15%;
+    background: red;
+    opacity: 0;
+}
+.link7 .lk_2{
+    position: absolute;
+    top: 85%;
+    left: 25.2%;
+    width: 24.7%;
+    height: 15%;
+    background: red;
+    opacity: 0;
+}
+.link7 .lk_3{
+    position: absolute;
+    top: 85%;
+    left: 50.2%;
+    width: 24.7%;
+    height: 15%;
+    background: red;
+    opacity: 0;
+}
+.link7 .lk_4{
+    position: absolute;
+    top: 85%;
+    left: 75.2%;
+    width: 24.7%;
+    height: 15%;
+    background: red;
+    opacity: 0;
+}
+.go_link1{
+    position: absolute;
+    top: 28%;
+    left: 90%;
+    width: 9.7%;
+    height: 2%;
+    background: red;
+    opacity: 0;
+}
+.go_link2{
+    position: absolute;
+    top: 91%;
+    left: 59%;
+    width: 23.7%;
+    height: 2%;
+    background: red;
+    opacity: 0;
+}
+.go_link3{
+    position: absolute;
+    top: 45.5%;
+    left: 32%;
+    width: 34.7%;
+    height: 2.2%;
+    background: red;
+    opacity: 0;
+}
+

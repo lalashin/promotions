@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Styles -->
+<link rel="stylesheet" href="https://www.miraeij.com/css/reset.css?1659522810">
+<link rel="stylesheet" href="https://www.miraeij.com/css/common.css?1675686428">
+<link rel="stylesheet" href="https://www.miraeij.com/css/content.css?1674696310">
+<link rel="stylesheet" href="https://www.miraeij.com/css/content2.css?1672364002">
+<link rel="stylesheet" href="https://www.miraeij.com/css/content3.css?1672279479">
+<link rel="stylesheet" href="https://www.miraeij.com/css/program.css?1672279590">
+<link rel="stylesheet" href="https://www.miraeij.com/css/custom.css?1672279572" />
+<link rel="stylesheet" href="https://www.miraeij.com/css/responsive.css?1675686392">
+<link rel="stylesheet" href="https://www.miraeij.com/css/responsive2.css?1673512507">
+<script type="text/javascript" src="https://www.miraeij.com/js/swiper.min.js"></script>
+<link rel="stylesheet" href="https://www.miraeij.com/css/swiper.css" />
+<!-- Docs styles -->
+
+<!-- scripts -->
+<script src="https://www.miraeij.com/js/jquery-1.12.0.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://www.miraeij.com/js/common.js?v=1676506683"></script>
+
+    <style>
+
+
+#sub.event-view .pc {  display: inline-block ;}
+
+#sub.event-view .sec { width: 100%; background:#f4f4f4; padding:0;}
+#sub.event-view .sec .inner { width: 100%;  max-width: 1200px;  height: auto;  padding: 0 0px;   box-sizing: border-box;   margin: 0 auto; text-align: center; position: relative;}
+
+
+#sub.event-view .sec.visual {background: url('../images/pc-sec0-bg.png?') center no-repeat; }
+#sub.event-view .sec.visual .slide2{display: none;}
+#sub.event-view .sec.visual .obj1, #sub.event-view .sec.visual .obj2{
+	position: absolute;
+	top: 5%;
+    left: 14.8%;
+	width:19.416%;
+	display: none;
+}
+
+
+@media screen and (max-width: 768px){
+    #sub.event-view .sec.visual { min-height: 100vw; padding: 40px 0 50px 0; }
+	#sub.event-view .sec.visual .ab.s2 { top: 35vw;}
+	#sub.event-view .sec.visual .ab.s3 { top: 48vw; }
+	#sub.event-view .sec.visual .ab.s3 img { max-width: 90%; }
+}
+
+@media screen and (max-width: 720px){
+    #sub.event-view .sec img.pc {  display: none !important;}
+	#sub.event-view .sec img.mo {  display: inline-block !important;}
+
+	#sub.event-view .sec .inner{padding:0 !important;}
+
+
+	#sub.event-view .sec.visual{height:auto; padding:0; min-height: auto; background: url('../images/mo-sec0-bg.jpg') no-repeat; background-size: 100%;}
+	#sub.event-view .sec.visual .inner{
+		height:0;
+		padding-bottom:62.77777777777778% !important;
+	}
+	#sub.event-view .sec.visual .inner img.mo.img1{opacity: 1;}
+	#sub.event-view .sec.visual .inner img.mo{
+		position: absolute; top:0; left:0; opacity: 0;
+	}
+}
+
+    </style>
+
+<script>
+    $(function () {
+        // jQuery(window).trigger('scroll');
+
+        // setInterval(function () {
+        //     $('.ani1').delay(300).fadeIn('fast', function () {
+        //         $('.ani1').delay(300).fadeOut('fast');
+        //     });
+        // }, 300);
+
+
+
+
+        //$('.visual').find('*[class*="ani-"]').addClass('done');
+        // 22.12.08 스크립트
+        $(function () {
+            setTimeout(() => {
+                $('.slide1').fadeOut(400, () => {
+                    $('.slide2').fadeIn(400);
+                    $('.obj1').fadeIn(400);
+                })
+                $('.mo.img1').animate({
+                    opacity : '1'
+                }, 1000, function () {
+                    $('.mo.img1').animate({
+                        opacity : '0'
+                    }, 1000);
+                    $('.mo.img2').animate({
+                        opacity : '1'
+                    }, 1000, function () {
+                    });
+                });
+            }, 1000);
+
+            let sec0Event = () => {
+                setTimeout(() => {
+                    $('.obj1').fadeOut(500, () => {
+                        $('.obj2').fadeIn(500, () => {
+                            setTimeout(() => {
+                                $('.obj2').fadeOut(500, () => {
+                                    $('.obj1').fadeIn(500, () => {
+                                        sec0Event()
+                                    });
+                                });
+                            }, 1000);
+
+                        });
+                    })
+                }, 1000);
+            }
+            let moEvent = () => {
+                setTimeout(() => {
+                    $('.mo.img2').animate({
+                        opacity : '0'
+                    }, 500);
+                    $('.mo.img3').animate({
+                        opacity : '1'
+                    }, 500, function () {
+                        setTimeout(() => {
+                            $('.mo.img2').animate({
+                                opacity : '1'
+                            }, 500);
+                            $('.mo.img3').animate({
+                                opacity : '0'
+                            }, 500, function () {
+                                moEvent();
+                            });
+                        }, 2000)
+
+                    });
+                }, 2000)
+            }
+        })
+    });
+</script>
+</head>
+
+<body>
+    <div id="sub" class="event-view">
+
+                <div class="sec visual animate">
+                    <div class="inner">
+                        <img src="images/pc-sec0-img1.png" alt="" class="pc slide1">
+                        <img src="images/pc-sec0-img2.png" alt="" class="pc slide2">
+
+                        <img src="images/mo-sec0-img1.png" alt="" class="mo img1">
+                        <img src="images/mo-sec0-img2.png" alt="" class="mo img2">
+
+                    </div>
+                </div>
+
+
+
+    </div>
+
+</body>
+</html>

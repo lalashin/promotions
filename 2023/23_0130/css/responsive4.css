@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+.pc{display:block;} /*pc 노출 = 테블릿, 모바일 미노출*/
+.pcta{display:block;} /*pc, 테블릿 노출 = 모바일 미노출*/
+.mo{display:none;} /*모바일 노출 0= pc,테블릿 미노출*/
+.ta{display:none;} /*테블릿, 모바일 노출 = pc 미노출*/
+
+@media screen and (max-width: 1440px){
+}
+@media screen and (max-width: 1280px){
+}
+@media screen and (max-width: 1024px){
+	 #sub.intro .section2 .cont2_tab ul li a{height:80px;}
+}
+@media screen and (max-width: 960px){
+}
+@media screen and (max-width: 820px){
+	 #sub.intro .section1{background-image:url('../img/bg_sec_01_mo.jpg');}
+	 #sub.intro .section1 .go_link{width:29.8612%; right:2.78%; top:2.628%;}
+	 #sub.intro .section2 .cont2_tab{padding:22px 0 17px;}
+	 #sub.intro .section2 .cont2_tab ul li::before{width:30px; height:3px; margin-left:-15px;}
+	 #sub.intro .section2 .cont2_tab ul li a{height:66px;}
+	 #sub.intro .section2 .cont2_tab ul li a span{font-size:1.2rem;}
+	 #sub.intro .section2 .cont2_tab ul li a b{margin-top:7px; font-size:2.5rem;}
+}
+@media screen and (max-width: 540px){
+	 #sub.intro .section2 .cont2_tab{padding:22px 0 17px;}
+	 #sub.intro .section2 .cont2_tab ul li::before{width:30px; height:3px; margin-left:-15px;}
+	 #sub.intro .section2 .cont2_tab ul li a{height:55px;}
+	 #sub.intro .section2 .cont2_tab ul li a span{font-size:13px;}
+	 #sub.intro .section2 .cont2_tab ul li a b{font-size:1.8rem;}
+	 #sub.intro .section3 .cont2_con{padding-bottom:125px;}
+}
+@media screen and (max-width: 430px){
+}
+@media screen and (max-width: 375px){
+	 #sub.intro .section2 .cont2_tab ul li::before{width:20px; height:2px; margin-left:-10px;}
+	 #sub.intro .section2 .cont2_tab ul li a{height:45px;}
+	 #sub.intro .section2 .cont2_tab ul li a span{font-size:11px; }
+	 #sub.intro .section2 .cont2_tab ul li a b{font-size:1.5rem;}
+	 #sub.intro .section2 .cont2_tab ul li a b.p1{line-height: -2;margin-top:0px;}
+}

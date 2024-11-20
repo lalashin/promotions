@@ -1,0 +1,992 @@
+.event-view{
+    background: #f4f4f4;
+}
+#sub.prm_page {
+    margin-top: 159px;
+}
+.event-view{max-width:1920px; margin:0 auto;}
+.event-view .sec .inner{  max-width:1280px; margin:0 auto; position: relative;}
+.event-view img {
+    width: 100%;
+}
+.event-view iframe {
+    bordeR:0;
+}
+.event-view .sec1 {
+    background: url('../img/pc-section-bg01.jpg') center no-repeat;
+}
+.event-view .sec2 {
+    background: url('../img/pc-section-bg02.jpg') center no-repeat;
+}
+.event-view .sec3 {
+    background: url('../img/pc-section-bg03.jpg') center no-repeat;
+}
+.event-view .sec4 {
+    background: url('../img/pc-section-bg04.jpg') center no-repeat;
+}
+.event-view .sec5 {
+    background: url('../img/pc-section-bg05.jpg') center no-repeat;
+}
+.event-view .sec8 {
+    background: url('../img/tab.jpg') top center no-repeat;
+}
+
+
+.sec1 .imgwrap{position: relative;}
+.sec1 .imgwrap img{opacity: 0;}
+.sec1 .imgwrap .img1{
+    position: absolute;
+    top:7%;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    background: url('../img/pc-sec2_img1.png') 0 0 no-repeat;
+}
+.sec1 .imgwrap .img2{
+    position: absolute;
+    top:7%;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    background: url('../img/pc-sec2_img2.png') 0 0 no-repeat;
+}
+.sec1 .imgwrap .img3{
+    position: absolute;
+    top:7%;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    background: url('../img/pc-sec2_img3.png') 0 0 no-repeat;
+}
+.sec1 .imgwrap .img4{
+    position: absolute;
+    top:7%;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    background: url('../img/pc-sec2_img4.png') 0 0 no-repeat;
+}
+
+.sec1 .link1 {
+    position: absolute;
+    top: 93.5%;
+    left: 62%;
+    width: 14%;
+    height: 5%;
+    background: red;
+    opacity: 0;
+}
+.sec1 .link2 {
+    position: absolute;
+    top: 93.5%;
+    left: 77%;
+    width: 14%;
+    height: 5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec2 .review_area {
+    position: absolute;
+    top: 66%;
+    left: 7%;
+    width: 86%;
+    height: 27%;
+    /* border: 1px solid #000; */
+}
+
+/*sec2 세로롤링*/
+.box { width:100%;  }
+    .boxIn { padding:0;}
+    .boxIn ul { height:500px; }
+    .boxIn ul li  {  margin: auto 0; width: 100%; display:block; text-align: center; margin-bottom: 15px;}
+    .boxIn ul li:first-child  img{margin: auto 0;width: 20%;opacity: 0;}
+    .boxIn ul li:nth-child(2) img{ margin: auto 0;width: 60%; height: 20%;font-size:16px; line-height:1.4em; margin-top:4px;  border: 1px solid #55bbc6;  opacity: .3;}
+    .boxIn ul li:nth-child(3) img{margin: auto 0;width: 100%; height: 25%; font-size:18px; border: 1px solid #55bbc6; box-shadow: 10px 10px 10px #000;  }
+    .boxIn ul li:nth-child(4) img{margin: auto 0;width: 80%; height: 20%;font-size:16px; line-height:1.4em; margin-top:4px; border: 1px solid #55bbc6; box-shadow: 6px 6px 60px #000;  opacity: .7;}
+    .boxIn ul li:nth-child(5) img{margin: auto 0;width: 60%; height: 15%;font-size:16px; line-height:1.4em; margin-top:4px; border: 1px solid #55bbc6; opacity: .3;}
+    .boxIn ul li:nth-child(6) img{margin: auto 0;width: 60%; height: 15%;  opacity: 0;}
+    .boxIn ul li:nth-child(7) img{margin: auto 0;width: 60%; height: 15%;  opacity: 0;}
+    .boxIn ul li:nth-child(8) img{margin: auto 0;width: 60%; height: 15%;  opacity: 0;}
+    .boxIn ul li:nth-child(9) img{margin: auto 0;width: 60%; height: 15%;  opacity: 0;}
+    .boxIn ul li:nth-child(10) img{margin: auto 0;width: 60%; height: 15%;  opacity: 0;}
+
+    .boxIn ul li:last-child img{margin: auto 0;width: 80%;opacity: 0;}
+
+/**************/
+
+.sec3 .youtube_area1 {
+    position: absolute;
+    top: 71%;
+    left: 7%;
+    width: 39%;
+    height: 17%;
+}
+
+.sec3 .youtube_area2 {
+    position: absolute;
+    top: 71%;
+    left: 55%;
+    width: 39%;
+    height: 17%;
+}
+.sec1 .txt1{
+    position: absolute;
+    top: 49.5%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: url('../img/pc-sec1-txt1.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+.sec1 .txt2{
+    position: absolute;
+    top: 62.3%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: url('../img/pc-sec1-txt2.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+/*20220104 추가 */
+
+.video_area .playbtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12%;
+    cursor: pointer;
+}
+.sec5 .t_link {
+    position: absolute;
+    top: 6%;
+    left: 0;
+    width: 1%;
+    height: 1%;
+    background: red;
+    opacity: 0;
+}
+.sec6 .video_area .playbtn { top:60%; }
+.sec6 img:not(.playbtn){opacity: 0;}
+.sec6-slide.pc {display: block;}
+.sec6-slide.mo {display: none;}
+.sec6-slide{
+    position: absolute;
+    top:0; left:5%;
+    width:90%;
+    height:100%;
+    z-index: 2;
+    overflow: hidden;
+}
+.sec6 .swiper{
+    height:100%;
+}
+.sec6 .swiper .swiper_review_title {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 20px;
+}
+.sec6 .swiper .swiper_review_title img {
+    margin: auto;
+    display: block;
+    opacity: 1;
+    width: 85%;
+}
+.sec6 .swiper .swiper_iframe_wrap {
+    height: 620px;
+}
+.sec6 .swiper .swiper_iframe_wrap .video_area{
+    height:100%;
+    width:100%;
+    background: #000;
+    background-position: center center;
+    background-size: cover;
+}
+.sec6 .swiper .swiper_iframe_wrap .video_area .playbtn {
+    width: 22%;
+}
+
+/*******************/
+.sec6 .swiper-button-prev, .sec6 .swiper-button-next{
+    width:176px; height:237px;
+    top:60%;
+    transform: translateY(-50%);
+}
+.sec6 .swiper-button-prev{
+    left:-40px;
+
+    background: url('../img/arrow-prev.png') no-repeat;
+}
+.sec6 .swiper-button-next{
+    right:-40px;
+    background: url('../img/arrow-next.png') no-repeat;
+}
+.sec6 .swiper-button-prev:after{
+    display: none;
+}
+.sec6 .swiper-button-next:after{
+    display: none;
+}
+.sec7 .link1{
+    position: absolute;
+    top: 10%;
+    left: 16%;
+    width: 67%;
+    height: 13%;
+    background: red;
+    opacity: 0;
+}
+
+.pos_rel{position: relative;}
+.sec8 .pos_rel{max-width: 1130px; margin:0 auto;}
+.sec8 .tab-nav{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+}
+.sec8 .tab-nav li{
+    display: block;
+    width:20%;
+    height:100%;
+    float:left;
+    background: url('../img/tab-off.jpg') no-repeat;
+    background-size: 500%;
+}
+.sec8 .tab-nav li:nth-child(2){
+    background: url('../img/tab-off.jpg') no-repeat;
+    background-position: 25%;
+    background-size: 500%;
+}
+.sec8 .tab-nav li:nth-child(3){
+    background: url('../img/tab-off.jpg') no-repeat;
+    background-position: 50%;
+    background-size: 500%;
+}
+.sec8 .tab-nav li:nth-child(4){
+    background: url('../img/tab-off.jpg') no-repeat;
+    background-position: 75%;
+    background-size: 500%;
+}
+.sec8 .tab-nav li:nth-child(5){
+    background: url('../img/tab-off.jpg') no-repeat;
+    background-position: 100%;
+    background-size: 500%;
+}
+.sec8 .tab-nav li.on{
+    opacity: 0;
+}
+.sec8 .tab-nav li a{
+    display: block;
+    width:100%; height:100%;
+    opacity: 0;
+}
+.sec8 .tab .tab-cont div{
+    display: none;
+}
+.sec8 .tab .tab-cont .on{
+    display: block;
+}
+.sec8 .tab .tab-cont a{
+    position: absolute;
+    top: 21%;
+    left: 6%;
+    width: 25%;
+    height: 34%;
+    background: red;
+    opacity: 0;
+}
+.sec8 .tab .tab-cont .video_area{
+    position: absolute;
+    top: 23.9%;
+    left: 38.9%;
+    width: 50.1%;
+    height: 28.3%;
+    display:block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.event-view .sec9 .pos_rel img{display: none;}
+.event-view .sec9 .pos_rel img.on{display: block;}
+
+.sec9 .tab-nav{
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    height:100%;
+    width:87.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec9 .tab-nav li{
+    display: block;
+    width:33.3333333%;
+    height:100%;
+    flex-shrink: 0;
+}
+.sec9 .tab-nav li a{
+    display: block;
+    width:100%; height:100%;
+    opacity: 0;
+}
+.sec9 .tab .tab-cont div{
+    display: none;
+}
+.sec9 .tab .tab-cont .on{
+    display: block;
+}
+.sec9 .link1{
+    position: absolute;
+    top: 24.3%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link2{
+    position: absolute;
+    top: 36.7%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link3{
+    position: absolute;
+    top: 49.6%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link4{
+    position: absolute;
+    top: 63%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link5{
+    position: absolute;
+    top: 75%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link6{
+    position: absolute;
+    top: 24.3%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link7{
+    position: absolute;
+    top: 36.7%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link8{
+    position: absolute;
+    top: 49.6%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link9{
+    position: absolute;
+    top: 63%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link10{
+    position: absolute;
+    top: 75%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link11{
+    position: absolute;
+    top: 19.3%;
+    left: 66%;
+    width: 25%;
+    height: 6.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link12{
+    position: absolute;
+    top: 28.7%;
+    left: 66%;
+    width: 25%;
+    height: 6.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link13{
+    position: absolute;
+    top: 38.6%;
+    left: 66%;
+    width: 25%;
+    height: 6.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link14{
+    position: absolute;
+    top: 48%;
+    left: 66%;
+    width: 25%;
+    height: 6.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link15{
+    position: absolute;
+    top: 59%;
+    left: 66%;
+    width: 25%;
+    height: 6.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link16{
+    position: absolute;
+    top: 69%;
+    left: 66%;
+    width: 25%;
+    height: 6.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link17{
+    position: absolute;
+    top: 79%;
+    left: 66%;
+    width: 25%;
+    height: 6.5%;
+    background: red;
+    opacity: 0;
+}
+.sec9 .link18{
+    position: absolute;
+    top: 89%;
+    left: 66%;
+    width: 25%;
+    height: 6.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link1 {
+    position: absolute;
+    top: 8.7%;
+    left: 17%;
+    width: 66%;
+    height: 49.5%;
+    background: red;
+    opacity: 0;
+}
+
+@media screen and (max-width: 720px){
+    .event-view .mo-img {
+        display: block;
+    }
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    .sec1 .imgwrap {
+        position: absolute;
+        top: 9%;
+        left: -1%;
+        width: 100%;
+        height: 50%;
+        /* border: 1px solid #000; */
+    }
+    .sec1 .imgwrap .img1{
+        position: absolute;
+        top:7%;
+        left:0;
+        width:100%;
+        height:100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img1.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+    .sec1 .imgwrap .img2{
+        position: absolute;
+        top:7%;
+        left:0;
+        width:100%;
+        height:100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img2.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+    .sec1 .imgwrap .img3{
+        position: absolute;
+        top:7%;
+        left:0;
+        width:100%;
+        height:100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img3.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+    .sec1 .imgwrap .img4{
+        position: absolute;
+        top:7%;
+        left:0;
+        width:100%;
+        height:100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img4.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+
+    .sec1 .link1 {
+        position: absolute;
+        top: 92.5%;
+        left: 26%;
+        width: 23%;
+        height: 5%;
+        background: red;
+        opacity: 0;
+    }
+    .sec1 .link2 {
+        position: absolute;
+        top: 92.5%;
+        left: 51%;
+        width: 23%;
+        height: 5%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec2 .review_area {
+        position: absolute;
+        top: 27%;
+        left: 6%;
+        width: 86%;
+        height: 74%;
+        /* border: 1px solid #fff; */
+    }
+
+    /*sec2 세로롤링*/
+    .box { width:100%;  }
+        .boxIn { padding:0;}
+        .boxIn ul {margin: auto 0; height:500px; }
+        .boxIn ul li  {  margin: auto 0; width: 100%; display:block; text-align: center; margin-bottom: 15px;}
+        .boxIn ul li:first-child  img{margin: auto 0;width: 20%;opacity: 0}
+        .boxIn ul li:nth-child(2) img{ margin: auto 0;width: 60%; height: 20%;font-size:16px; line-height:1.4em; margin-top:4px;  border: 1px solid #55bbc6;  opacity: 0;}
+        .boxIn ul li:nth-child(3) img{margin: auto 0;width: 100%; height: 25%; font-size:18px; border: 1px solid #55bbc6; box-shadow: 10px 10px 10px #000;  }
+        .boxIn ul li:nth-child(4) img{margin: auto 0;width: 80%; height: 20%;font-size:16px; line-height:1.4em; margin-top:4px; border: 1px solid #55bbc6; box-shadow: 6px 6px 60px #000;  opacity: 0;}
+        .boxIn ul li:nth-child(5) img{margin: auto 0;width: 60%; height: 15%;font-size:16px; line-height:1.4em; margin-top:4px; border: 1px solid #55bbc6; opacity: 0;}
+        .boxIn ul li:nth-child(6) img{margin: auto 0;width: 60%; height: 15%;  opacity: 0;}
+        .boxIn ul li:nth-child(7) img{margin: auto 0;width: 60%; height: 15%;  opacity: 0;}
+        .boxIn ul li:nth-child(8) img{margin: auto 0;width: 60%; height: 15%;  opacity: 0;}
+        .boxIn ul li:nth-child(9) img{margin: auto 0;width: 60%; height: 15%;  opacity: 0;}
+        .boxIn ul li:nth-child(10) img{margin: auto 0;width: 60%; height: 15%;  opacity: 0;}
+
+        .boxIn ul li:last-child img{margin: auto 0;width: 80%;opacity: 0;}
+
+    /**************/
+    .sec3 .youtube_area1 {
+        position: absolute;
+        top: 52%;
+        left: 0;
+        width: 100%;
+        height: 16.5%;
+    }
+
+    .sec3 .youtube_area2 {
+        position: absolute;
+        top: 76%;
+        left: 0;
+        width: 100%;
+        height: 16.5%;
+    }
+
+    .sec5 .t_link {
+        position: absolute;
+        top: 48%;
+        left: 0;
+        width: 1%;
+        height: 1%;
+        background: red;
+        opacity: 0;
+    }
+    .sec6-slide.pc {display:none ;}
+    .sec6-slide.mo {display: block;}
+    .sec6 .video_area .playbtn { top:65%; }
+    .sec6 .swiper .swiper_review_title {
+        height: 60px;
+        margin-bottom: 0;
+    }
+
+    .sec6 .swiper .swiper_iframe_wrap .video_area{
+        height:42%;
+        width:100%;
+        background: #000;
+        background-position: center center;
+        background-size: cover;
+    }
+    .sec6 .swiper .swiper_iframe_wrap .video_area .playbtn {
+        width: 32%;
+    }
+    .sec6 .swiper-button-prev, .sec6 .swiper-button-next{
+        width:50px; height:60px;
+        top:60%;
+        transform: translateY(-50%);
+    }
+    .sec6 .swiper-button-prev{
+        left:0;
+        background: url('../img/arrow-prev.png') no-repeat;
+        background-size: 100%;
+    }
+    .sec6 .swiper-button-next{
+        right:0;
+        background: url('../img/arrow-next.png') no-repeat;
+        background-size: 100%;
+    }
+
+    .sec7 .link1{
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 88%;
+        height: 42%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec8 .tab-nav li{
+        background: url('../img/mo-tab-off.jpg') no-repeat;
+        background-size: 500%;
+    }
+    .sec8 .tab-nav li:nth-child(2){
+        background: url('../img/mo-tab-off.jpg') no-repeat;
+        background-position: 25%;
+        background-size: 500%;
+    }
+    .sec8 .tab-nav li:nth-child(3){
+        background: url('../img/mo-tab-off.jpg') no-repeat;
+        background-position: 50%;
+        background-size: 500%;
+    }
+    .sec8 .tab-nav li:nth-child(4){
+        background: url('../img/mo-tab-off.jpg') no-repeat;
+        background-position: 75%;
+        background-size: 500%;
+    }
+    .sec8 .tab-nav li:nth-child(5){
+        background: url('../img/mo-tab-off.jpg') no-repeat;
+        background-position: 100%;
+        background-size: 500%;
+    }
+    .sec8 .tab .tab-cont a{
+        position: absolute;
+        top: 11%;
+        left: 30%;
+        width: 38%;
+        height: 29%;
+        background: red;
+        opacity: 0;
+    }
+    .sec8 .tab .tab-cont .video_area{
+        position: absolute;
+        top: 37.8%;
+        left: 0;
+        width: 100%;
+        height: 29%;
+    }
+
+    .sec9 .tab-nav{
+        width:93.5%;
+    }
+
+    .sec9  .link1{
+        position: absolute;
+        top: 20.1%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9  .link2{
+        position: absolute;
+        top: 35.4%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9  .link3{
+        position: absolute;
+        top: 51.6%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .link4{
+        position: absolute;
+        top: 67.1%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .link5{
+        position: absolute;
+        top: 84.3%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9  .link6{
+        position: absolute;
+        top: 20.1%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9  .link7{
+        position: absolute;
+        top: 35.4%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9  .link8{
+        position: absolute;
+        top: 51.6%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .link9{
+        position: absolute;
+        top: 67.1%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .link10{
+        position: absolute;
+        top: 84.3%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .link11{
+        position: absolute;
+        top: 13.3%;
+        left: 29%;
+        width: 42%;
+        height: 3.5%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .link12{
+        position: absolute;
+        top: 24.7%;
+        left: 29%;
+        width: 42%;
+        height: 3.5%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .link13{
+        position: absolute;
+        top: 35.6%;
+        left: 29%;
+        width: 42%;
+        height: 3.5%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .link14{
+        position: absolute;
+        top: 47%;
+        left: 29%;
+        width: 42%;
+        height: 3.5%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .link15{
+        position: absolute;
+        top: 58%;
+        left: 29%;
+        width: 42%;
+        height: 3.5%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .link16{
+        position: absolute;
+        top: 69%;
+        left: 29%;
+        width: 42%;
+        height: 3.5%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .link17{
+        position: absolute;
+        top: 81%;
+        left: 29%;
+        width: 42%;
+        height: 3.5%;
+        background: red;
+        opacity: 0;
+    }
+    .sec9 .link18{
+        position: absolute;
+        top: 93%;
+        left: 29%;
+        width: 42%;
+        height: 3.5%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link1 {
+        position: absolute;
+        top: 8.7%;
+        left: 5%;
+        width: 88%;
+        height: 49.5%;
+        background: red;
+        opacity: 0;
+    }
+
+    .arrow-event{
+        background: url('../img/mo-section-arrow.png') bottom center no-repeat;
+        background-size: 100%;
+        animation:vb 2s;
+    }
+
+    .floating_wrap{
+        /*
+        position: fixed;
+        top:170px;
+        right:10px;
+        width: 20.83%;
+        */
+        display:none;
+    }
+
+    .sec2 .imgwrap .img1{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img1.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+    .sec2 .imgwrap .img2{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img2.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+    .sec2 .imgwrap .img3{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img3.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+    .sec2 .imgwrap .img4{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img4.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+}
+
+@media (max-width: 1280px) {
+    #sub.prm_page {
+        margin-top: 201px;
+    }
+}
+
+@media (max-width: 768px) {
+    #sub.prm_page {
+        margin-top: 134px;
+    }
+
+}
+
+@media (max-width: 430px) {
+    #sub.prm_page {
+        margin-top: 126px;
+    }
+
+}

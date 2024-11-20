@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://www.miraeij.com/css/reset.css?v=1672279271">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/common.css?v=1672279271">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/content.css?v=1672279271">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/content2.css?v=1672279271">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/content3.css?v=1672279271">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/program.css?v=1672279271">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/custom.css?v=1672279271">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/responsive.css?v=1672279271">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/responsive2.css?v=1672279271">
+
+    <link rel="stylesheet" href="css/tap.css">
+
+    <title>Document</title>
+</head>
+<body>
+<div id="sub" class="prm_page event-view fixed">
+    <div class="sec sec9">
+        <div class="inner">
+            <!-- <img src="./img/pc-section-img9.jpg" class="pc-img">
+            <img src="./img/mo-section-img9.jpg" class="mo-img"> -->
+            <div class="tab">
+                <div class="pos_rel">
+                    <div class="pc-img">
+                        <img src="./img/tab2-img1.jpg" class="on">
+                        <img src="./img/tab2-img2.jpg">
+                    </div>
+                    <div class="mo-img">
+                        <img src="./img/mo-tab2-img1.png" class="on">
+                        <img src="./img/mo-tab2-img2.png">
+                    </div>
+
+                    <ul class="tab-nav">
+                        <li>
+                            <a href="#">온라인 강좌</a>
+                        </li>
+                        <li class="on">
+                            <a href="#">오프라인(학원) 강좌</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-cont">
+                    <div class="on">
+                        <img src="./img/tab2-cont1.jpg" class="pc-img">
+                        <img src="./img/mo-tab2-cont1.png" class="mo-img">
+
+                    </div>
+                    <div>
+                        <img src="./img/tab2-cont2.jpg" class="pc-img">
+                        <img src="./img/mo-tab2-cont2.png" class="mo-img">
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="/js/jquery-1.12.0.min.js" type="text/javascript"></script>
+<script>
+
+    $(function () {
+
+
+                $('.sec9 .tab-nav li a').click(function () {
+                    var idx = $(this).parent().index();
+                    $('.sec9 .tab-nav li').removeClass('on')
+                    $(this).parent().addClass('on')
+                    $('.sec9 .pos_rel .pc-img img').removeClass('on').eq(idx).addClass('on');
+                    $('.sec9 .pos_rel .mo-img img').removeClass('on').eq(idx).addClass('on');
+                    $('.sec9 .tab-cont div').removeClass('on').eq(idx).addClass('on');
+                    return false;
+                })
+
+
+
+            })
+</script>
+</body>
+</html>

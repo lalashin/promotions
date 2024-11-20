@@ -1,0 +1,306 @@
+.event-view{
+    background: #f4f4f4;
+}
+/* #sub.prm_page {
+    margin-top: 159px;
+} */
+.event-view{max-width:1920px; margin:0 auto;}
+.event-view .sec .inner{max-width:1300px; margin:0 auto; position: relative;}
+.event-view img {
+    width: 100%;
+}
+
+/*백그라운드*/
+.event-view .sec1 {
+    background: url('../images/pc-section-img_1.jpg') center no-repeat;
+}
+.event-view .sec2 {background: #f4f4f4;}
+.event-view .sec3 {
+    background: url('../images/pc-section-img_3.jpg') center no-repeat;
+}
+.event-view .sec4 {
+    background: url('../images/pc-section-img_4.jpg') center no-repeat;
+}
+.event-view .sec5 {
+    background: url('../images/pc-section-img_5.jpg') center no-repeat;
+}
+.event-view .sec6 {
+    background: url('../images/pc-section-img_6.jpg') center no-repeat;
+}
+.event-view .sec7 {
+    background: url('../images/pc-section-img_7.jpg') center no-repeat;
+}
+
+.sec2 .link1{
+    position: absolute;
+    top: 80%;left: 21%;
+    width: 60%;
+    height: 13%;
+    background: red;
+    opacity: 0;
+}
+
+.sec3 .tabLink1{
+    position: absolute;
+    top: 34.5%;left: 4.5%;
+    width: 22.5%;
+    height: 10%;
+    background: red;
+    opacity: 0;
+}
+.sec3 .tabLink2{
+    position: absolute;
+    top: 34.5%;left: 27.5%;
+    width: 22.5%;
+    height: 10%;
+    background: red;
+    opacity: 0;
+}
+.sec3 .tabLink3{
+    position: absolute;
+    top: 34.5%;left: 50.2%;
+    width: 22.5%;
+    height: 10%;
+    background: red;
+    opacity: 0;
+}
+.sec3 .tabLink4{
+    position: absolute;
+    top: 34.5%;left: 73%;
+    width: 22.5%;
+    height: 10%;
+    background: red;
+    opacity: 0;
+}
+.sec4 .tabLink1{
+    position: absolute;
+    top: 16%;left: 4.5%;
+    width: 22.5%;
+    height: 5%;
+    background: red;
+    opacity: 0;
+}
+.sec4 .tabLink2{
+    position: absolute;
+    top: 16%;left: 27.5%;
+    width: 22.5%;
+    height: 5%;
+    background: red;
+    opacity: 0;
+}
+.sec4 .tabLink3{
+    position: absolute;
+    top: 16%;left: 50.2%;
+    width: 22.5%;
+    height: 5%;
+    background: red;
+    opacity: 0;
+}
+.sec4 .tabLink4{
+    position: absolute;
+    top: 16%;left: 73%;
+    width: 22.5%;
+    height: 5%;
+    background: red;
+    opacity: 0;
+}
+.sec5 .tabLink1{
+    position: absolute;
+    top: 30%;left: 4.5%;
+    width: 22.5%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+.sec5 .tabLink2{
+    position: absolute;
+    top: 30%;left: 27.5%;
+    width: 22.5%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+.sec5 .tabLink3{
+    position: absolute;
+    top: 30%;left: 50.2%;
+    width: 22.5%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+.sec5 .tabLink4{
+    position: absolute;
+    top: 30%;left: 73%;
+    width: 22.5%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+.sec6 .tabLink1{
+    position: absolute;
+    top: 26.5%;left: 4.5%;
+    width: 22.5%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+.sec6 .tabLink2{
+    position: absolute;
+    top: 26.5%;left: 27.5%;
+    width: 22.5%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+.sec6 .tabLink3{
+    position: absolute;
+    top: 26.5%;left: 50.2%;
+    width: 22.5%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+.sec6 .tabLink4{
+    position: absolute;
+    top: 26.5%;left: 73%;
+    width: 22.5%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+.sec7 .link1{
+    position: absolute;
+    top: 87%;left: 20%;
+    width: 60%;
+    height: 7%;
+    background: red;
+    opacity: 0;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+
+@media screen and (max-width: 720px){
+    .event-view .mo-img {
+        display: block;
+    }
+    .event-view .pc-img {
+        display: none !important;
+    }
+    .sec2 .link1{
+        top: 89%;left: 21%;
+        width: 58%;
+        height: 8%;
+    }
+
+    .sec3 .tabLink1{
+        top: 34.5%;left: 1%;
+        width: 22.5%;
+        height: 10%;
+    }
+    .sec3 .tabLink2{
+        position: absolute;
+        top: 34.5%;left: 26.5%;
+        width: 23%;
+        height: 10%;
+    }
+    .sec3 .tabLink3{
+        top: 34.5%;left: 51.2%;
+        width: 22.5%;
+        height: 10%;
+    }
+    .sec3 .tabLink4{
+        top: 34.5%;left: 76%;
+        width: 22.5%;
+        height: 10%;
+    }
+    .sec4 .tabLink1{
+        top: 16%;left: 1%;
+        width: 22.5%;
+        height: 5%;
+    }
+    .sec4 .tabLink2{
+        top: 1%;left: 26.5%;
+        width: 22.5%;
+        height: 5%;
+    }
+    .sec4 .tabLink3{
+
+        top: 16%;left: 51.2%;
+        width: 22.5%;
+        height: 5%;
+    }
+    .sec4 .tabLink4{
+        top: 16%;left: 76%;
+        width: 22.5%;
+        height: 5%;
+    }
+    .sec5 .tabLink1{
+        top: 28.5%;left: 1%;
+        width: 22.5%;
+        height: 9%;
+    }
+    .sec5 .tabLink2{
+        top: 28.5%;left: 26.5%;
+        width: 22.5%;
+        height: 9%;
+    }
+    .sec5 .tabLink3{
+        top: 28.5%;left: 51.2%;
+        width: 22.5%;
+        height: 9%;
+    }
+    .sec5 .tabLink4{
+        top: 28.5%;left: 76%;
+        width: 22.5%;
+        height: 9%;
+    }
+    .sec6 .tabLink1{
+        top: 15.5%;left: 1%;
+        width: 22.5%;
+        height: 5.5%;
+    }
+    .sec6 .tabLink2{
+        top: 15.5%;left: 26.5%;
+        width: 22.5%;
+        height: 5.5%;
+    }
+    .sec6 .tabLink3{
+        top: 15.5%;left: 51.2%;
+        width: 22.5%;
+        height: 5.5%;
+    }
+    .sec6 .tabLink4{
+        top: 15.5%;left: 76%;
+        width: 22.5%;
+        height: 5.5%;
+    }
+    .sec7 .link1{
+        top: 87%;left: 17%;
+        width: 66%;
+        height: 7%;
+    }
+
+}
+/*
+@media (max-width: 1280px) {
+    #sub.prm_page {
+        margin-top: 201px;
+    }
+}
+
+@media (max-width: 768px) {
+    #sub.prm_page {
+        margin-top: 134px;
+    }
+
+}
+
+@media (max-width: 430px) {
+    #sub.prm_page {
+        margin-top: 126px;
+    }
+
+} */
