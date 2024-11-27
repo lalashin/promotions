@@ -1,0 +1,1187 @@
+.event-view {
+    background: #fff;
+}
+
+#sub.prm_page {
+    margin-top: 159px;
+}
+
+.event-view {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+.event-view .sec1 {
+    background: url('../images/pc-section-bg_01.jpg') center no-repeat;
+}
+
+.event-view .sec2 {
+    background: url('../images/pc-section-bg_02.jpg') center no-repeat;
+}
+
+
+
+.event-view .sec4 {
+    background: #f1f1f1;
+}
+
+.event-view .sec5 {
+    background: url('../images/pc-section-bg_05.jpg') center no-repeat;
+}
+
+.event-view .sec6 {
+    background: #f1f1f1;
+}
+
+.event-view .sec7 {
+    background: url('../images/pc-section-bg_07.jpg') center no-repeat;
+}
+
+.event-view .sec8 {
+    background: url('../images/pc-section-bg_08.jpg') top center no-repeat;
+}
+
+.event-view .sec9 {
+    background: url('../images/pc-section-bg_09.jpg') top center no-repeat;
+}
+
+.event-view .sec9_1 {
+    background: url('../images/pc-section-bg_09_1.jpg') top center no-repeat;
+}
+
+.event-view .sec11 {
+    background: #f1f1f1;
+}
+
+.sec1 .imgwrap {
+    position: relative;
+}
+
+.sec1 .imgwrap img {
+    opacity: 0;
+}
+
+.sec1 .imgwrap .img1 {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: url('../images/pc-sec2_img1.png') 0 0 no-repeat;
+}
+
+.sec1 .imgwrap .img2 {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: url('../images/pc-sec2_img2.png') 0 0 no-repeat;
+}
+
+.sec1 .imgwrap .img3 {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: url('../images/pc-sec2_img3.png') 0 0 no-repeat;
+}
+
+.sec1 .imgwrap .img4 {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: url('../images/pc-sec2_img4.png') 0 0 no-repeat;
+}
+
+
+.event-view .sec.sec2 {
+    position: relative;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.bannerFix_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background: #292597;
+    z-index: 50;
+}
+
+.bannerFix_wrapper.fixed {
+    position: fixed;
+}
+
+.bannerImg {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+
+.bannerImg .link1 {
+    position: absolute;
+    top: 21.5%;
+    left: 62.5%;
+    width: 13%;
+    height: 58%;
+    background: red;
+    opacity: 0;
+}
+
+.bannerImg .link2 {
+    position: absolute;
+    top: 21.5%;
+    left: 77.3%;
+    width: 13%;
+    height: 58%;
+    background: red;
+    opacity: 0;
+}
+
+/*말풍선애니메이션*/
+.sec2 p {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.sec2 .txt1 {
+    top: 28%;
+    left: 11%;
+    width: 32%;
+    height: 16%;
+
+    transition: all 1s 0.1s;
+}
+
+.sec2 .txt2 {
+    top: 29%;
+    left: 64%;
+    width: 31%;
+    height: 15%;
+
+    transition: all 1s 0.4s;
+}
+
+.sec2 .txt3 {
+    top: 13%;
+    left: 18%;
+    width: 30%;
+    height: 15%;
+
+    transition: all .5s 0.7s;
+}
+
+.sec2 .txt4 {
+    top: 15%;
+    left: 49%;
+    width: 31%;
+    height: 17%;
+
+    transition: all 1s 0.5s;
+}
+
+.sec2 .txt5 {
+    top: 60%;
+    left: 21%;
+    width: 29%;
+    height: 18%;
+
+    transition: all .7s 0.3s;
+}
+
+.sec2 .txt6 {
+    top: 60%;
+    left: 52%;
+    width: 30%;
+    height: 16%;
+
+    transition: all 1s 0.5s;
+}
+
+.sec2 .txt7 {
+    top: 76%;
+    left: 28%;
+    width: 33%;
+    height: 15%;
+
+    transition: all 1s 0.4s;
+}
+
+.sec2 .txt8 {
+    top: 76%;
+    left: 66%;
+    width: 31%;
+    height: 15%;
+    transition: all 1s 0.4s;
+
+}
+
+.sec2 .txt9 {
+    top: 88%;
+    left: 18%;
+    width: 30%;
+    height: 17%;
+
+    transition: all 1s 0.1s;
+}
+
+.sec2 .txt10 {
+    top: 90%;
+    left: 57%;
+    width: 31%;
+    height: 13%;
+    transition: all 1.2s 1s;
+
+}
+
+.sec2.show p {
+    position: absolute;
+    opacity: 1;
+    transform: translateY(-50px);
+}
+
+
+/**************/
+
+.sec3 .youtube_area1 {
+    position: absolute;
+    top: 35.7%;
+    left: 3%;
+    width: 48%;
+    height: 32%;
+}
+
+.sec4 .youtube_area1 {
+    position: absolute;
+    top: 37%;
+    left: 10%;
+    width: 79%;
+    height: 51%;
+}
+
+.sec1 .txt1 {
+    position: absolute;
+    top: 49.5%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: url('../img/pc-sec1-txt1.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.sec1 .txt2 {
+    position: absolute;
+    top: 62.3%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: url('../img/pc-sec1-txt2.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+/*20220104 추가 */
+
+.video_area .playbtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12%;
+    cursor: pointer;
+}
+
+.sec5 .t_link {
+    position: absolute;
+    top: 6%;
+    left: 0;
+    width: 1%;
+    height: 1%;
+    background: red;
+    opacity: 0;
+}
+
+
+
+.sec7 .link1 {
+    position: absolute;
+    top: 10%;
+    left: 16%;
+    width: 67%;
+    height: 13%;
+    background: red;
+    opacity: 0;
+}
+
+
+
+.sec8 .event_link1 {
+    position: absolute;
+    top: 71.4%;
+    left: 14%;
+    width: 35.1%;
+    height: 4.2%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .event_link2 {
+    position: absolute;
+    top: 71.4%;
+    left: 50%;
+    width: 35.1%;
+    height: 4.2%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sns_link1 {
+    position: absolute;
+    top: 87.8%;
+    left: 17%;
+    width: 11.1%;
+    height: 9.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sns_link2 {
+    position: absolute;
+    top: 87.8%;
+    left: 30%;
+    width: 11.1%;
+    height: 9.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sns_link3 {
+    position: absolute;
+    top: 87.8%;
+    left: 44%;
+    width: 11.1%;
+    height: 9.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sns_link4 {
+    position: absolute;
+    top: 87.8%;
+    left: 57%;
+    width: 11.1%;
+    height: 9.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sns_link5 {
+    position: absolute;
+    top: 87.8%;
+    left: 71%;
+    width: 11.1%;
+    height: 9.7%;
+    background: red;
+    opacity: 0;
+}
+
+
+.sec8 .tag_copy {
+    position: absolute;
+    top: 64%;
+    left: 1.5%;
+    width: 24%;
+    height: 4%;
+    background: red;
+    opacity: 0;
+}
+
+/*********************************/
+
+.sec9 .linkform {
+    position: absolute;
+    top: 62.8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 69%;
+    padding: 0 30px;
+    /*box-sizing: border-box;*/
+}
+
+.sec9 .linkform .inner {
+    /* border: 4px solid #311f11; */
+    box-sizing: border-box;
+    position: relative;
+    font-size: 0;
+    border-radius: 50px;
+}
+
+.sec9 .linkform input::placeholder {
+    font-size: 29px;
+    font-weight: 300;
+}
+
+.sec9 .linkform input[type="text"] {
+    width: 80%;
+    border: none;
+    height: 80px;
+    line-height: 78px;
+    padding: 0 50px;
+    font-size: 2.9rem;
+    color: #666666;
+    background: #fff;
+    border: 1px solid #272f42;
+    box-sizing: border-box;
+    /* border-bottom-left-radius: 45px;
+    border-top-left-radius: 45px; */
+}
+
+.sec9 .linkform input[type="button"] {
+    width: 20%;
+    padding-left: 20px;
+    border: none;
+    background: none;
+    height: 80px;
+    line-height: 67px;
+    font-family: 'GmarketSansMedium';
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 500;
+    background-color: #000a4f;
+    /* border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px; */
+}
+
+
+
+#sub .bbs_wrap {
+    padding-bottom: 0;
+    padding-top: 0px;
+    box-sizing: border-box;
+    position: relative;
+    background: #f1f1f1;
+}
+
+#sub .bbs_wrap .board {
+    margin-top: 0;
+}
+
+#sub .bbs_wrap .bbs .list_bg {
+    padding: 0 40px;
+    /* background: #fff; */
+}
+
+#sub .bbs_wrap .bbs .list {
+    background: #fff;
+}
+
+#sub .bbs_wrap .bbs .list thead {
+    border-top: none;
+    border-bottom: 2px solid #000;
+}
+
+#sub .bbs_wrap .bbs .list thead th {
+    color: #000
+}
+
+#sub .bbs_wrap .bbs .list tbody td.title {
+    display: block;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#sub .bbs_wrap .bbs .list tbody td.date::after {
+    display: none;
+}
+
+#sub .bbs_wrap .bbs .pagenate {
+    margin: 0 auto 0;
+    padding: 20px 0;
+    background: #f1f1f1;
+}
+
+.pagenate li a {
+    color: #000;
+}
+
+.pagenate li a:hover {
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.pagenate li a.current {
+    color: #fff;
+    background-color: #000;
+    font-weight: 500;
+    border: 1px solid #000;
+}
+
+
+/**********************************/
+.event-view .sec10 .pos_rel img {
+    display: none;
+}
+
+.event-view .sec10 .pos_rel img.on {
+    display: block;
+}
+
+.sec10 .tab-nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 87.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec10 .tab-nav li {
+    display: block;
+    width: 50%;
+    height: 100%;
+    flex-shrink: 0;
+    /* border: 1px solid #000; */
+}
+
+.sec10 .tab-nav li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.sec10 .tab .tab-cont div {
+    display: none;
+}
+
+.sec10 .tab .tab-cont .on {
+    display: block;
+}
+
+.sec10 .link1 {
+    position: absolute;
+    top: 13.3%;
+    left: 72%;
+    width: 25%;
+    height: 13.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link2 {
+    position: absolute;
+    top: 27.7%;
+    left: 72%;
+    width: 25%;
+    height: 13.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link3 {
+    position: absolute;
+    top: 41.6%;
+    left: 72%;
+    width: 25%;
+    height: 13.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link4 {
+    position: absolute;
+    top: 57%;
+    left: 72%;
+    width: 25%;
+    height: 13.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link5 {
+    position: absolute;
+    top: 71%;
+    left: 72%;
+    width: 25%;
+    height: 13.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link6 {
+    position: absolute;
+    top: 63.3%;
+    left: 35%;
+    width: 30%;
+    height: 13.5%;
+    background: red;
+    opacity: 0;
+}
+
+
+
+.sec11 .link1 {
+    position: absolute;
+    top: 70.7%;
+    left: 17%;
+    width: 66%;
+    height: 8.5%;
+    background: red;
+    opacity: 0.3;
+}
+
+
+.float_wrap {
+    position: fixed;
+    right: 20px;
+    top: 30%;
+    z-index: 50;
+    padding-top: 20px;
+    z-index: 99999;
+}
+
+.float_wrap .banner {
+    position: relative;
+}
+
+.float_wrap .f_link1 {
+    position: absolute;
+    top: 2%;
+    left: 7%;
+    width: 86%;
+    height: 41%;
+    background: red;
+    opacity: 0;
+}
+
+.float_wrap .f_link2 {
+    position: absolute;
+    top: 53%;
+    left: 7%;
+    width: 86%;
+    height: 47%;
+    background: red;
+    opacity: 0;
+}
+
+@media (max-width: 1280px) {
+    #sub.prm_page {
+        margin-top: 201px;
+    }
+
+    .bannerFix_wrapper {
+        height: 7.8125vw;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    #sub .bbs_wrap .linkform input[type="text"] {
+        height: 55px;
+        line-height: 55px;
+        font-size: 2rem;
+    }
+
+    #sub .bbs_wrap .linkform input[type="text"]::placeholder {
+        font-size: 2rem;
+    }
+
+    #sub .bbs_wrap .linkform input[type="button"] {
+        padding-left: 20px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 3rem;
+        letter-spacing: 8px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .event-view .mo-img {
+        display: block;
+    }
+
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    .sec1 .imgwrap {
+        position: absolute;
+        top: 9%;
+        left: -1%;
+        width: 100%;
+        height: 50%;
+        /* border: 1px solid #000; */
+    }
+
+    .sec1 .imgwrap .img1 {
+        position: absolute;
+        top: 7%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: url('../images/mo-sec2_img1.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+
+    .sec1 .imgwrap .img2 {
+        position: absolute;
+        top: 7%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: url('../images/mo-sec2_img2.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+
+    .sec1 .imgwrap .img3 {
+        position: absolute;
+        top: 7%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: url('../images/mo-sec2_img3.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+
+    .sec1 .imgwrap .img4 {
+        position: absolute;
+        top: 7%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: url('../images/mo-sec2_img4.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+
+    .sec2 .link1 {
+        position: absolute;
+        top: 50.5%;
+        left: 21%;
+        width: 28%;
+        height: 32%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec2 .link2 {
+        position: absolute;
+        top: 50.5%;
+        left: 51%;
+        width: 28%;
+        height: 32%;
+        background: red;
+        opacity: 0;
+    }
+
+    .bannerFix_wrapper {
+        position: absolute;
+        width: 100%;
+        height: 13.8889vw;
+        top: 0;
+        left: 0;
+        background: #151515;
+        z-index: 50;
+    }
+
+    .bannerImg {
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 0;
+    }
+
+    /*말풍선애니메이션*/
+    .sec2 .txt1 {
+        top: 18%;
+        left: 1%;
+        width: 50%;
+        height: 20%;
+
+        transition: all 1s 0.1s;
+    }
+
+    .sec2 .txt2 {
+        top: 16%;
+        left: 52%;
+        width: 47%;
+        height: 14%;
+
+        transition: all 1s 0.4s;
+    }
+
+    .sec2 .txt3 {
+        top: 29%;
+        left: 50%;
+        width: 46%;
+        height: 15%;
+
+        transition: all .5s 0.7s;
+    }
+
+    .sec2 .txt4 {
+        top: 58%;
+        left: 52%;
+        width: 47%;
+        height: 17%;
+
+        transition: all 1s 0.5s;
+    }
+
+    .sec2 .txt5 {
+        top: 64%;
+        left: 1%;
+        width: 50%;
+        height: 18%;
+
+        transition: all .7s 0.3s;
+    }
+
+    /**************/
+    .sec3 .youtube_area1 {
+        position: absolute;
+        top: 20%;
+        left: 0;
+        width: 100%;
+        height: 29.5%;
+    }
+
+    .sec4 .youtube_area1 {
+        position: absolute;
+        top: 45%;
+        left: 0;
+        width: 100%;
+        height: 55%;
+    }
+
+    .sec5 .t_link {
+        position: absolute;
+        top: 48%;
+        left: 0;
+        width: 1%;
+        height: 1%;
+        background: red;
+        opacity: 0;
+    }
+
+
+
+    .sec7 .link1 {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 88%;
+        height: 42%;
+        background: red;
+        opacity: 0;
+    }
+
+
+
+
+    .sec8 .event_link1 {
+        position: absolute;
+        top: 72.4%;
+        left: 2%;
+        width: 47.1%;
+        height: 3.2%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec8 .event_link2 {
+        position: absolute;
+        top: 72.4%;
+        left: 50%;
+        width: 47.1%;
+        height: 3.2%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec8 .sns_link1 {
+        position: absolute;
+        top: 86.8%;
+        left: 2%;
+        width: 18.1%;
+        height: 9.7%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec8 .sns_link2 {
+        position: absolute;
+        top: 86.8%;
+        left: 21%;
+        width: 18.1%;
+        height: 9.7%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec8 .sns_link3 {
+        position: absolute;
+        top: 86.8%;
+        left: 40%;
+        width: 18.1%;
+        height: 9.7%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec8 .sns_link4 {
+        position: absolute;
+        top: 86.8%;
+        left: 60%;
+        width: 18.1%;
+        height: 9.7%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec8 .sns_link5 {
+        position: absolute;
+        top: 86.8%;
+        left: 80%;
+        width: 18.1%;
+        height: 9.7%;
+        background: red;
+        opacity: 0;
+    }
+
+
+    /**********************************/
+    .sec9 .linkform {
+        position: absolute;
+        top: 62.8%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 91%;
+        padding: 0 30px;
+        /* box-sizing: border-box; */
+    }
+
+    .sec9 .linkform input::placeholder {
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    .sec9 .linkform input[type="text"] {
+        width: 70%;
+        border: none;
+        height: 60px;
+        line-height: 78px;
+        padding: 0 50px;
+        font-size: 2.4rem;
+        color: #666666;
+        background: #fff;
+        border: 1px solid #272f42;
+        box-sizing: border-box;
+    }
+
+    .sec9 .linkform input[type="button"] {
+        width: 30%;
+        padding-left: 10px;
+        border: none;
+        background: none;
+        height: 60px;
+        line-height: 66px;
+        font-family: 'GmarketSansMedium';
+        font-size: 2.4rem;
+        color: #fff;
+        font-weight: 500;
+        background-color: #000a4f;
+    }
+
+    #sub .bbs_wrap {
+        padding-top: 0
+    }
+
+    #sub .bbs_wrap .linkform {
+        padding: 0 0;
+    }
+
+    #sub .bbs_wrap .bbs .list_bg {
+        padding: 20px 15px;
+    }
+
+    /***************************/
+
+    .sec10 .tab-nav {
+        width: 93.5%;
+    }
+
+    .sec10 .link1 {
+        position: absolute;
+        top: 14.1%;
+        left: 73%;
+        width: 26%;
+        height: 13.8%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link2 {
+        position: absolute;
+        top: 28.1%;
+        left: 73%;
+        width: 26%;
+        height: 13.8%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link3 {
+        position: absolute;
+        top: 42.1%;
+        left: 73%;
+        width: 26%;
+        height: 13.8%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link4 {
+        position: absolute;
+        top: 57.1%;
+        left: 73%;
+        width: 26%;
+        height: 13.8%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link5 {
+        position: absolute;
+        top: 71.1%;
+        left: 73%;
+        width: 26%;
+        height: 13.8%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link6 {
+        position: absolute;
+        top: 64.1%;
+        left: 28%;
+        width: 42%;
+        height: 14.8%;
+        background: red;
+        opacity: 0;
+    }
+
+
+    .sec11 .link1 {
+        position: absolute;
+        top: 60.7%;
+        left: 5%;
+        width: 88%;
+        height: 14.5%;
+        background: red;
+        opacity: 0.3;
+    }
+
+    .arrow-event {
+        background: url('../img/mo-section-arrow.png') bottom center no-repeat;
+        background-size: 100%;
+        animation: vb 2s;
+    }
+
+    .sec2 .imgwrap .img1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img1.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+
+    .sec2 .imgwrap .img2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img2.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+
+    .sec2 .imgwrap .img3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img3.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+
+    .sec2 .imgwrap .img4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img4.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #sub.prm_page {
+        margin-top: 134px;
+    }
+
+}
+
+@media (max-width: 430px) {
+    #sub.prm_page {
+        margin-top: 126px;
+    }
+
+}

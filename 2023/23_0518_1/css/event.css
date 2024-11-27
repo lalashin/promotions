@@ -1,0 +1,291 @@
+.event-view {
+    background: #fff;
+}
+
+#sub.prm_page {
+    margin-top: 159px;
+
+}
+
+.event-view {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.event-view .sec .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    border: 0;
+}
+
+.event-view .sec1 {
+    background: url('../images/pc_bg_01.jpg') top center no-repeat;
+}
+
+.event-view .sec2 {
+    background: url('../images/pc_bg_02.jpg') top center no-repeat;
+}
+
+.event-view .sec3 {
+    background: url('../images/pc_bg_03.jpg') top center no-repeat;
+}
+
+.event-view .sec7 {
+    background: url('../images/pc_bg_07.jpg') top center no-repeat;
+}
+
+.event-view .sec8 {
+    background: #f1f1f1;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.sec ul li {
+    width: 25%;
+    background: red;
+    opacity: 0;
+}
+
+.sec ul li+li {
+    margin-left: 1%;
+}
+
+.sec ul li a {
+    display: block;
+    height: 100%;
+}
+
+.sec4 .img1 ul {
+    position: absolute;
+    top: 19.9%;
+    left: 0%;
+    width: 100%;
+    height: 12.1%;
+    display: flex;
+}
+
+
+
+.sec5 .img2 ul {
+    position: absolute;
+    top: 4.9%;
+    left: 0%;
+    width: 100%;
+    height: 29.1%;
+    display: flex;
+}
+
+.sec6 .img3 ul {
+    position: absolute;
+    top: 1.9%;
+    left: 0%;
+    width: 100%;
+    height: 15.1%;
+    display: flex;
+}
+
+.sec7 .img4 ul {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 10.1%;
+    display: flex;
+}
+
+.sec9 .link1 {
+    position: absolute;
+    top: 55.9%;
+    left: 20%;
+    width: 60%;
+    height: 6.1%;
+    background: red;
+    opacity: 0;
+
+}
+
+.sec9 .link2 {
+    position: absolute;
+    top: 70.9%;
+    left: 20%;
+    width: 26%;
+    height: 6.1%;
+    background: red;
+    opacity: 0;
+}
+
+.sec9 .link3 {
+    position: absolute;
+    top: 70.9%;
+    left: 54%;
+    width: 27%;
+    height: 6.1%;
+    background: red;
+    opacity: 0;
+}
+
+.sec9 .link4 {
+    position: absolute;
+    top: 81.9%;
+    left: 20%;
+    width: 60%;
+    height: 6.1%;
+    background: red;
+    opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .event-view .mo-img {
+        display: block;
+    }
+
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    .sec4 .img1 ul {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        height: 9.1%;
+        display: flex;
+    }
+
+
+
+    .sec5 .img2 ul {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        height: 20.1%;
+        display: flex;
+    }
+
+    .sec6 .img3 ul {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        height: 15.1%;
+        display: flex;
+    }
+
+    .sec7 .img4 ul {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        height: 9.1%;
+        display: flex;
+    }
+
+    .sec9 .link1 {
+        position: absolute;
+        top: 47.9%;
+        left: 4%;
+        width: 93%;
+        height: 6.1%;
+        background: red;
+        opacity: 0;
+
+    }
+
+    .sec9 .link2 {
+        position: absolute;
+        top: 60.5%;
+        left: 28%;
+        width: 47%;
+        height: 4.1%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec9 .link3 {
+        position: absolute;
+        top: 70.9%;
+        left: 28%;
+        width: 47%;
+        height: 4.1%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec9 .link4 {
+        position: absolute;
+        top: 79.9%;
+        left: 4%;
+        width: 93%;
+        height: 6.1%;
+        background: red;
+        opacity: 0;
+    }
+
+    /* .event-view .link1 {
+        position: absolute;
+        top: 25.4%;
+        left: 19.6%;
+        width: 56.4%;
+        height: 6.3%;
+        background: red;
+        opacity: 0;
+    }
+
+    .event-view .link2 {
+        position: absolute;
+        top: 32.6%;
+        left: 7%;
+        width: 48.4%;
+        height: 4.6%;
+        background: red;
+        opacity: 0;
+    }
+
+    .event-view .link3 {
+        position: absolute;
+        top: 32.6%;
+        left: 58.5%;
+        width: 34.1%;
+        height: 4.6%;
+        background: red;
+        opacity: 0;
+    } */
+}
+
+
+@media (max-width: 1280px) {
+    #sub.prm_page {
+        /* margin-top: 201px; */
+    }
+}
+
+@media (max-width: 768px) {
+    #sub.prm_page {
+        margin-top: 134px;
+    }
+
+}
+
+@media (max-width: 720px) {
+    #sub.prm_page {
+        /* margin-top: 234px; */
+    }
+
+}
+
+@media (max-width: 430px) {
+    #sub.prm_page {
+        /* margin-top: 226px; */
+    }
+}

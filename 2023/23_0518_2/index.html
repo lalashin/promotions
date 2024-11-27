@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://www.miraeij.com/css/reset.css?1659522810">
+    <link rel="stylesheet" href="https://www.miraeij.com//css/common.css?1676618243">
+    <link rel="stylesheet" href="https://www.miraeij.com//css/content.css?1674696310">
+    <link rel="stylesheet" href="https://www.miraeij.com//css/content2.css?1679035601">
+    <link rel="stylesheet" href="https://www.miraeij.com//css/content3.css?1672279479">
+    <link rel="stylesheet" href="https://www.miraeij.com//css/program.css?1672279590">
+    <link rel="stylesheet" href="https://www.miraeij.com//css/custom.css?1672279572">
+    <link rel="stylesheet" href="https://www.miraeij.com//css/responsive.css?1675686392">
+    <link rel="stylesheet" href="https://www.miraeij.com//css/responsive2.css?1673512507">
+
+    <!--link rel="stylesheet" href="/police/css/reset.css?1680867484"-->
+    <link rel="stylesheet" href="https://www.miraeij.com//police/css/layout.css?1680767915">
+    <link rel="stylesheet" href="https://www.miraeij.com//police/css/compat.css?1680160990">
+    <link rel="stylesheet" href="https://www.miraeij.com//police/css/header.css?1681879703">
+    <link rel="stylesheet" href="https://www.miraeij.com//police/css/footer.css?1680597830">
+
+
+    <!--link rel="stylesheet" href="/police/css/swiper-bundle.min.css"-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+    <!-- Docs styles -->
+    <!--link rel="stylesheet" href="/css/dist/demo.css" /-->
+    <!--link rel="stylesheet" href="https://cab-starplayer.service.concdn.com/starplayer/1.0.0/starplyr.css" /-->
+
+    <!-- scripts -->
+    <script type="text/javascript" src="https://www.miraeij.com//js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com//js/easing.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://www.miraeij.com//js/common_0329.js?1682472182"></script>
+    <script type="text/javascript" src="https://www.miraeij.com//js/function_jquery.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com//js/function.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com//smarteditor/js/HuskyEZCreator.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com//js/calendar_beans_v2.0.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com//js/jquery.form.js"></script>
+    <!--script type="text/javascript" src="/js/jquery-ui.min.js"></script-->
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript" src="https://www.miraeij.com//js/custom.js"></script>
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+
+    <script type="text/javascript" src="https://www.miraeij.com//js/jquery.ajaxQueue.min.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com//js/CommonMJ.js"></script>
+</head>
+<body>
+
+    <link rel="stylesheet" href="css/common.css">
+<script type="text/javascript" src="js/TweenMax.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.5/mobile-detect.min.js"></script>
+<!-- //230517 -->
+<div id="sub" class="prm_page event-view fixed">
+    <div class="sec sec1">
+        <div class="inner">
+
+        <img src="images/mo_exercise_01.jpg" class="mo-img">
+            <div class="imgwrap">
+                <img src="images/pc_exercise_01.jpg" class="pc-img">
+                <div class="img1"></div>
+                <div class="img2"></div>
+                <div class="img3"></div>
+                <div class="img4"></div>
+                <!-- <div class="img5"></div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="sec sec2"><!--리뷰-->
+        <div class="bannerFix_wrapper">
+            <div class="bannerImg">
+                <img src="images/pc-section2-banner.jpg" class="pc-img" alt="">
+                <img src="images/mo-section2-banner.jpg" class="mo-img" alt="">
+                <a href="#" class="link1" onclick="return page_move('.t_link')">자세히보기</a>
+            <a href="#" class="link2" onclick="return page_move('.sec9')">신청하기</a>
+            </div>
+        </div>
+        <div class="inner">
+            <img src="images/pc_exercise_02.jpg" class="pc-img">
+            <img src="images/mo_exercise_02.jpg" class="mo-img">
+            <p class="txt1">1</p>
+            <p class="txt2">2</p>
+            <p class="txt3">3</p>
+            <p class="txt4">4</p>
+            <p class="txt5">5</p>
+            <p class="txt6">6</p>
+            <p class="txt7">7</p>
+            <p class="txt8">8</p>
+            <p class="txt9">9</p>
+            <p class="txt10">10</p>
+        </div>
+        <script>
+            var isVisible = false;
+
+$(window).on('scroll',function() {
+    if (checkVisible($('.sec2'))&&!isVisible) {
+        // alert("Visible!!!");
+        $('.sec2').addClass("show");
+        isVisible=true;
+    }
+    // else{
+    //     $('.sec2').removeClass("show");
+    //     isVisible=false;
+    // }
+});
+function checkVisible( elm, eval ) {
+    eval = eval || "object visible";
+    var viewportHeight = $(window).height() - 500, // Viewport Height
+        scrolltop = $(window).scrollTop(), // Scroll Top
+        y = $(elm).offset().top,
+        elementHeight = $(elm).height();
+
+    if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+    if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+}
+        </script>
+    </div>
+    <div class="sec sec3"><!--영상1-->
+        <div class="inner">
+            <img src="images/pc_exercise_03.jpg" class="pc-img">
+            <img src="images/mo_exercise_03.jpg" class="mo-img">
+            <div class="youtube_area1">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6vkxA9eL-qc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec sec4"><!--영상1-->
+        <div class="inner">
+            <img src="images/pc_exercise_04.jpg" class="pc-img">
+            <img src="images/mo_exercise_04.jpg" class="mo-img">
+            <div class="youtube_area1">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6vkxA9eL-qc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec sec5"><!--1단계-->
+        <div class="inner">
+            <img src="images/pc_exercise_05.jpg" class="pc-img">
+            <img src="images/mo_exercise_05.jpg" class="mo-img">
+            <div class="t_link"></div>
+        </div>
+    </div>
+
+    <div class="sec sec6"><!--2단계-->
+        <div class="inner">
+            <img src="images/pc_exercise_06.jpg" class="pc-img">
+            <img src="images/mo_exercise_06.jpg" class="mo-img">
+
+
+
+        </div>
+    </div>
+    <div class="sec sec7"><!--3단계-->
+        <div class="inner">
+            <img src="images/pc_exercise_07.jpg" class="pc-img">
+            <img src="images/mo_exercise_07.jpg" class="mo-img">
+            <a href="/police/guide/memoirs/" class="link1"></a>
+        </div>
+    </div>
+<!--소문내기게시판-->
+    <div class="sec sec8">
+        <div class="inner">
+            <img src="images/pc_exercise_08.jpg" class="pc-img">
+            <img src="images/mo_exercise_08.jpg" class="mo-img">
+            <a href="0510.jpg" class="event_link1" download="법원직모의고사_소문내기이미지.jpg">소문내기이미지다운로드</a>
+            <a href="#" class="event_link2">페이지URL복사</a>
+            <a href="#" class="tag_copy" data-tag=":  #법원직 모의고사 #법원직 합격 #미래인재#전국 모의고사 " onclick="return CommonMJ.copyClipboard(jQuery(this).data('tag'));">태그복사하기</a>
+            <a href="https://gall.dcinside.com/board/lists/?id=government_new1" target="_blank" class="sns_link1">공무원갤러리</a>
+            <a href="https://cafe.naver.com/gugrade" target="_blank" class="sns_link2">네이버공드림</a>
+            <a href="https://cafe.naver.com/kts9719" target="_blank" class="sns_link3">네이버닥공사</a>
+            <a href="https://cafe.daum.net/9glade/_rec" target="_blank" class="sns_link4">다음구꿈사</a>
+            <a href="https://cafe.naver.com/m2school" target="_blank" class="sns_link5">네이버독공사</a>
+            <a href="https://section.blog.naver.com/BlogHome.naver?directoryNo=0&currentPage=1&groupId=0" target="_blank" class="sns_link6">네이버블로그</a>
+        </div>
+    </div>
+    <div class="sec sec9">
+        <div class="inner">
+            <img src="images/pc_exercise_09.jpg" class="pc-img">
+            <img src="images/mo_exercise_09.jpg" class="mo-img">
+            <div class="linkform">
+                <div class="inner nanum">
+                    <input type="text" name="contents" value="" placeholder="소문 낸 URL 입력!">
+                    <input type="button" value="등 록" class="jqClick regFire"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sec  bbs_wrap">
+        <div class="inner">
+            <!--게시판-->
+            <div class="board">
+                <div class="bbs bbs2 on">
+                    <!--게시판리스트-->
+                    <div class="list_bg">
+                        <table class="list">
+                            <caption>게시판 목록</caption>
+                            <colgroup>
+                                <col width="80px" />
+                                <col width="*" />
+                                <col width="120px" />
+                                <col width="140px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>내용</th>
+                                    <th>참여자</th>
+                                    <th>작성일</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="no">1113</td>
+                                    <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                    <td class="name">*********</td>
+                                    <td class="date">2023-01-02</td>
+                                </tr>
+                                <tr >
+                                    <td class="no">1113</td>
+                                    <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                    <td class="name">*********</td>
+                                    <td class="date">2023-01-02</td>
+                                </tr>
+                                <tr >
+                                    <td class="no">1113</td>
+                                    <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                    <td class="name">*********</td>
+                                    <td class="date">2023-01-02</td>
+                                </tr>
+                                <tr >
+                                    <td class="no">1113</td>
+                                    <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                    <td class="name">*********</td>
+                                    <td class="date">2023-01-02</td>
+                                </tr>
+                                <tr >
+                                    <td class="no">1113</td>
+                                    <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                    <td class="name">*********</td>
+                                    <td class="date">2023-01-02</td>
+                                </tr>
+                                <tr >
+                                    <td class="no">1113</td>
+                                    <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                    <td class="name">*********</td>
+                                    <td class="date">2023-01-02</td>
+                                </tr>
+                                <tr >
+                                    <td class="no">1113</td>
+                                    <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                    <td class="name">*********</td>
+                                    <td class="date">2023-01-02</td>
+                                </tr>
+                                <tr >
+                                    <td class="no">1113</td>
+                                    <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                    <td class="name">*********</td>
+                                    <td class="date">2023-01-02</td>
+                                </tr>
+                                <tr >
+                                    <td class="no">1113</td>
+                                    <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                    <td class="name">*********</td>
+                                    <td class="date">2023-01-02</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--//게시판리스트-->
+                    <!--페이징-->
+                    <div class="pagenate clear">
+                        <ul class='paging'>
+                            <li><a href='#' class='current'>1</a></li>
+                            <li><a href='#'>2</a></li>
+                            <li><a href='#'>3</a></li>
+                            <li><a href='#'>4</a></li>
+                        </ul>
+                    </div>
+                    <!--//페이징-->
+
+                </div>
+                <input type="hidden" id="showCategory" value="2" />
+            </div>
+            <!--//게시판-->
+        </div>
+    </div>
+
+    <div class="sec sec9_1"><!--유의사항-->
+        <div class="inner">
+            <img src="images/pc_exercise_09_1.jpg" class="pc-img">
+            <img src="images/mo_exercise_09_1.jpg" class="mo-img">
+        </div>
+    </div>
+
+    <div class="sec sec10">
+        <div class="inner">
+            <img src="images/pc_exercise_10.jpg" class="pc-img">
+            <img src="images/mo_exercise_10.jpg" class="mo-img">
+            <div class="tab">
+                <div class="pos_rel">
+                    <div class="pc-img">
+                        <img src="img/tab2-img1.jpg">
+                        <img src="img/tab2-img2.jpg">
+                        <img src="img/tab2-img3.jpg" class="on">
+                    </div>
+                    <div class="mo-img">
+                        <img src="img/mo-tab2-img1.png" >
+                        <img src="img/mo-tab2-img2.png">
+                        <img src="img/mo-tab2-img3.png" class="on">
+                    </div>
+
+                    <ul class="tab-nav">
+                        <li><a href="#">문제풀이1단계</a></li>
+                        <li><a href="#">문제풀이2단계</a></li>
+                        <li class="on"><a href="#">문제풀이3단계</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-cont">
+                    <div>
+                        <img src="img/tab2-cont1.jpg" class="pc-img">
+                        <img src="img/mo-tab2-cont1.png" class="mo-img">
+                        <a href="/police/classes/online/monotechnic/view.php?stype=all&ssite_code=1&skind=1&sgrade=5&smock=2&no=684" class="link1"></a>
+                        <a href="/police/classes/online/monotechnic/view.php?stype=all&ssite_code=1&skind=1&sgrade=5&smock=2&no=673" class="link2"></a>
+                        <a href="/police/classes/online/monotechnic/view.php?stype=all&ssite_code=1&skind=1&sgrade=5&smock=2&no=656" class="link3"></a>
+                        <a href="/police/classes/online/monotechnic/view.php?stype=all&ssite_code=1&skind=1&sgrade=5&smock=2&no=679" class="link4"></a>
+                        <a href="/police/classes/online/monotechnic/view.php?stype=all&ssite_code=1&skind=1&sgrade=5&smock=2&no=675" class="link5"></a>
+                    </div>
+                    <div>
+                        <img src="img/tab2-cont2.jpg" class="pc-img">
+                        <img src="img/mo-tab2-cont2.png" class="mo-img">
+                        <a href="/police/classes/online/monotechnic/view.php?ssite_code=1&skind=1&smock=2&no=759" class="link6"></a>
+                        <a href="/police/classes/online/monotechnic/view.php?ssite_code=1&skind=1&smock=2&no=760" class="link7"></a>
+                        <a href="/police/classes/online/monotechnic/view.php?ssite_code=1&skind=1&smock=2&no=657" class="link8"></a>
+                        <a href="/police/classes/online/monotechnic/view.php?ssite_code=1&skind=1&smock=2&no=849" class="link9"></a>
+                        <a href="/police/classes/online/monotechnic/view.php?ssite_code=1&skind=1&smock=2&no=850" class="link10"></a>
+
+                    </div>
+                    <div class="on">
+                        <img src="img/tab2-cont3.jpg" class="pc-img">
+                        <img src="img/mo-tab2-cont3.png" class="mo-img">
+                        <a href="/police/shop/proc.php?code=ONS2302231643338" class="link11"></a>
+                        <a href="/police/shop/proc.php?code=ONS2303021018238" class="link12"></a>
+                        <a href="/police/shop/proc.php?code=ONS2302231648292" class="link13"></a>
+                        <a href="/police/classes/online/monotechnic/view.php?no=978&ssite_code=&sgrade=&sexam_name=&smajor_name=&steacher_name=" class="link14"></a>
+                        <a href="/police/classes/online/monotechnic/view.php?no=979&ssite_code=&sgrade=&sexam_name=&smajor_name=&steacher_name=%EC%9E%A5%EC%A0%95%ED%9B%88&stype=all&sval=" class="link15"></a>
+                        <a href="/police/classes/online/monotechnic/view.php?no=980&ssite_code=&sgrade=&sexam_name=&smajor_name=&steacher_name=%EC%A0%84%ED%9A%A8%EC%A7%84&stype=all&sval=" class="link16"></a>
+                        <a href="/police/classes/online/monotechnic/view.php?no=981&ssite_code=&sgrade=&sexam_name=&smajor_name=&steacher_name=%EB%AC%B8%ED%83%9C%ED%99%98&stype=all&sval=" class="link17"></a>
+                        <a href="/police/classes/online/monotechnic/view.php?no=982&ssite_code=&sgrade=&sexam_name=&smajor_name=&steacher_name=%EB%B0%95%EC%83%81%EB%AF%BC&stype=all&sval=" class="link18"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec sec11">
+        <div class="inner">
+            <img src="images/pc_exercise_11.jpg" class="pc-img">
+            <img src="images/mo_exercise_11.jpg" class="mo-img">
+            <a href="/police/classes/offline/synthetic/index.php?ssite_code=1&sgrade=&sexam_code=&stype=all&sval=3%EB%8B%A8%EA%B3%84" class="link1"></a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    var chk = 0;
+    var isFirst = false;
+    var add = 0;
+
+    function page_move(target) {
+
+        chk += 1;
+        if (chk == 1) { add = 135 }
+        else { add = 0 }
+
+        var page_top = $(target).offset().top;
+        var basic = $('#header .btm').outerHeight() + $('.sub_visual').outerHeight() + add;
+        $('html,body').stop().animate({ scrollTop: page_top - basic }, 500);
+        return false;
+    }
+
+
+
+
+    jQuery(function () {
+        var _Sec8 = jQuery('.sec8')
+            .on('click', '.tab-nav li a', function (event) { event.preventDefault(); var _this = jQuery(this);
+                var idx = _this.parent().index();
+
+                _this.parent().addClass('on').siblings('.on').removeClass('on');
+                jQuery('.tab-cont > div', _Sec8).removeClass('on').eq(idx).addClass('on');
+            });
+
+        var _Sec9 = jQuery('.sec9')
+            .on('click', '.tab-nav li a', function (event) { event.preventDefault(); var _this = jQuery(this);
+                var idx = _this.parent().index();
+
+                _this.parent().addClass('on').siblings('.on').removeClass('on');
+                jQuery('.pos_rel .pc-img img', _Sec9).removeClass('on').eq(idx).addClass('on');
+                jQuery('.pos_rel .mo-img img', _Sec9).removeClass('on').eq(idx).addClass('on');
+                jQuery('.tab-cont > div', _Sec9).removeClass('on').eq(idx).addClass('on');
+            });
+
+        TweenMax.fromTo($('.sec1 .txt1'), 1, {opacity:0, y:100}, { opacity:1, y:0, ease: Power3.easeOut,delay: 1.2 });
+        TweenMax.fromTo($('.sec1 .txt2'), 1, {opacity:0, y:100}, { opacity:1, y:0, ease: Power3.easeOut,delay: 1.4 });
+
+        var tf = true;
+
+        $(window).load(function(){
+                tf = false;
+                TweenMax.fromTo($('.sec1 .imgwrap .img1'), 1, {opacity:0, y:100}, { opacity:1, y:0, ease: Power3.easeOut,delay: 0.3 });
+                TweenMax.fromTo($('.sec1 .imgwrap .img2'), 1, {opacity:0, y:100}, { opacity:1, y:0, ease: Power3.easeOut,delay: 0.5 });
+                TweenMax.fromTo($('.sec1 .imgwrap .img3'), 1, {opacity:0, y:100}, { opacity:1, y:0, ease: Power3.easeOut,delay: 0.7 });
+                TweenMax.fromTo($('.sec1 .imgwrap .img4'), 1, {opacity:0, y:100}, { opacity:1, y:0, ease: Power3.easeOut,delay: 0.9 });
+
+        })
+
+    })
+
+
+</script>
+<!-- //230517 -->
+</body>
+</html>

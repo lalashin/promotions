@@ -1,0 +1,1635 @@
+.event-view {
+    background: #fff;
+}
+
+#sub.prm_page {
+    margin-top: 159px;
+}
+
+.event-view {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+.event-view .sec1 {
+    background: url('../images/pc-section-bg_01.jpg') center no-repeat;
+}
+
+.event-view .sec2 {
+    background: url('../images/pc-section-bg_02.jpg') center no-repeat;
+}
+
+
+
+.event-view .sec4 {
+    background: #f1f1f1;
+}
+
+.event-view .sec5 {
+    background: url('../images/pc-section-bg_05.jpg') center no-repeat;
+}
+
+.event-view .sec6 {
+    background: #f1f1f1;
+}
+
+.event-view .sec7 {
+    background: url('../images/pc-section-bg_07.jpg') center no-repeat;
+}
+
+.event-view .sec8 {
+    background: url('../images/pc-section-bg_08.jpg') top center no-repeat;
+}
+
+.event-view .sec9 {
+    background: url('../images/pc-section-bg_09.jpg') top center no-repeat;
+}
+
+.event-view .sec9_1 {
+    background: url('../images/pc-section-bg_09_1.jpg') top center no-repeat;
+}
+
+.event-view .sec11 {
+    background: #f1f1f1;
+}
+
+.sec1 .imgwrap {
+    position: relative;
+}
+
+.sec1 .imgwrap img {
+    opacity: 0;
+}
+
+.sec1 .imgwrap .img1 {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: url('../images/pc-sec2_img1.png') 0 0 no-repeat;
+}
+
+.sec1 .imgwrap .img2 {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: url('../images/pc-sec2_img2.png') 0 0 no-repeat;
+}
+
+.sec1 .imgwrap .img3 {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: url('../images/pc-sec2_img3.png') 0 0 no-repeat;
+}
+
+.sec1 .imgwrap .img4 {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: url('../images/pc-sec2_img4.png') 0 0 no-repeat;
+}
+
+
+.event-view .sec.sec2 {
+    position: relative;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.bannerFix_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    background: #292597;
+    z-index: 50;
+}
+
+.bannerFix_wrapper.fixed {
+    position: fixed;
+}
+
+.bannerImg {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+
+.bannerImg .link1 {
+    position: absolute;
+    top: 29.5%;
+    left: 62.5%;
+    width: 14%;
+    height: 45%;
+    background: red;
+    opacity: 0.3;
+}
+
+.bannerImg .link2 {
+    position: absolute;
+    top: 29.5%;
+    left: 77.3%;
+    width: 14%;
+    height: 45%;
+    background: red;
+    opacity: 0.3;
+}
+
+/*말풍선애니메이션*/
+.sec2 p {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.sec2 .txt1 {
+    top: 5%;
+    left: 5%;
+    width: 20%;
+    height: 10%;
+    background: blue;
+    transition: all 1s 0.1s;
+}
+
+.sec2 .txt2 {
+    top: 10%;
+    left: 25%;
+    width: 20%;
+    height: 10%;
+    background: purple;
+    transition: all 1s 0.4s;
+}
+
+.sec2 .txt3 {
+    top: 11%;
+    left: 50%;
+    width: 25%;
+    height: 10%;
+    background: pink;
+    transition: all .5s 0.7s;
+}
+
+.sec2 .txt4 {
+    top: 8%;
+    left: 75%;
+    width: 25%;
+    height: 10%;
+    background: yellow;
+    transition: all 1s 0.5s;
+}
+
+.sec2 .txt5 {
+    top: 45%;
+    left: 5%;
+    width: 20%;
+    height: 10%;
+    background: gray;
+    transition: all .7s 0.3s;
+}
+
+.sec2 .txt6 {
+    top: 40%;
+    left: 25%;
+    width: 20%;
+    height: 10%;
+    background: tomato;
+    transition: all 1s 0.5s;
+}
+
+.sec2 .txt7 {
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: 10%;
+    background: pink;
+    transition: all 1s 0.4s;
+}
+
+.sec2 .txt8 {
+    top: 40%;
+    left: 50%;
+    width: 25%;
+    height: 10%;
+    background: yellow;
+    transition: all 1.2s 1s;
+}
+
+.sec2 .txt9 {
+    top: 48%;
+    left: 45%;
+    width: 25%;
+    height: 10%;
+    background: red;
+    transition: all 1s 0.1s;
+}
+
+.sec2 .txt10 {
+    top: 48%;
+    left: 75%;
+    width: 25%;
+    height: 10%;
+    background: brown;
+    transition: all 1s 0.4s;
+}
+
+.sec2.show p {
+    position: absolute;
+    opacity: 1;
+    transform: translateY(-50px);
+}
+
+
+/**************/
+
+.sec3 .youtube_area1 {
+    position: absolute;
+    top: 71%;
+    left: 7%;
+    width: 39%;
+    height: 17%;
+}
+
+.sec4 .youtube_area1 {
+    position: absolute;
+    top: 71%;
+    left: 55%;
+    width: 39%;
+    height: 17%;
+}
+
+.sec1 .txt1 {
+    position: absolute;
+    top: 49.5%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: url('../img/pc-sec1-txt1.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.sec1 .txt2 {
+    position: absolute;
+    top: 62.3%;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: url('../img/pc-sec1-txt2.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+/*20220104 추가 */
+
+.video_area .playbtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12%;
+    cursor: pointer;
+}
+
+.sec5 .t_link {
+    position: absolute;
+    top: 6%;
+    left: 0;
+    width: 1%;
+    height: 1%;
+    background: red;
+    opacity: 0;
+}
+
+/* .sec6 .video_area .playbtn {
+    top: 60%;
+}
+
+.sec6 img:not(.playbtn) {
+    opacity: 0;
+} */
+
+/* .sec6-slide.pc {
+    display: block;
+}
+
+.sec6-slide.mo {
+    display: none;
+}
+
+.sec6-slide {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.sec6 .swiper {
+    height: 100%;
+}
+
+.sec6 .swiper .swiper_review_title {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 20px;
+}
+
+.sec6 .swiper .swiper_review_title img {
+    margin: auto;
+    display: block;
+    opacity: 1;
+    width: 85%;
+}
+
+.sec6 .swiper .swiper_iframe_wrap {
+    height: 620px;
+}
+
+.sec6 .swiper .swiper_iframe_wrap .video_area {
+    height: 100%;
+    width: 100%;
+    background: #000;
+    background-position: center center;
+    background-size: cover;
+}
+
+.sec6 .swiper .swiper_iframe_wrap .video_area .playbtn {
+    width: 22%;
+} */
+
+/*******************/
+/* .sec6 .swiper-button-prev,
+.sec6 .swiper-button-next {
+    width: 176px;
+    height: 237px;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.sec6 .swiper-button-prev {
+    left: -40px;
+
+    background: url('../img/arrow-prev.png') no-repeat;
+}
+
+.sec6 .swiper-button-next {
+    right: -40px;
+    background: url('../img/arrow-next.png') no-repeat;
+}
+
+.sec6 .swiper-button-prev:after {
+    display: none;
+}
+
+.sec6 .swiper-button-next:after {
+    display: none;
+} */
+
+.sec7 .link1 {
+    position: absolute;
+    top: 10%;
+    left: 16%;
+    width: 67%;
+    height: 13%;
+    background: red;
+    opacity: 0;
+}
+
+/* .pos_rel {
+    position: relative;
+}
+
+.sec8 .pos_rel {
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+.sec8 .tab-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.sec8 .tab-nav li {
+    display: block;
+    width: 20%;
+    height: 100%;
+    float: left;
+    background: url('../img/tab-off.jpg') no-repeat;
+    background-size: 500%;
+}
+
+.sec8 .tab-nav li:nth-child(2) {
+    background: url('../img/tab-off.jpg') no-repeat;
+    background-position: 25%;
+    background-size: 500%;
+}
+
+.sec8 .tab-nav li:nth-child(3) {
+    background: url('../img/tab-off.jpg') no-repeat;
+    background-position: 50%;
+    background-size: 500%;
+}
+
+.sec8 .tab-nav li:nth-child(4) {
+    background: url('../img/tab-off.jpg') no-repeat;
+    background-position: 75%;
+    background-size: 500%;
+}
+
+.sec8 .tab-nav li:nth-child(5) {
+    background: url('../img/tab-off.jpg') no-repeat;
+    background-position: 100%;
+    background-size: 500%;
+}
+
+.sec8 .tab-nav li.on {
+    opacity: 0;
+}
+
+.sec8 .tab-nav li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.sec8 .tab .tab-cont div {
+    display: none;
+}
+
+.sec8 .tab .tab-cont .on {
+    display: block;
+}
+
+.sec8 .tab .tab-cont a {
+    position: absolute;
+    top: 21%;
+    left: 6%;
+    width: 25%;
+    height: 34%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .tab .tab-cont .video_area {
+    position: absolute;
+    top: 23.9%;
+    left: 38.9%;
+    width: 50.1%;
+    height: 28.3%;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}*/
+
+.sec8 .event_link1 {
+    position: absolute;
+    top: 54.4%;
+    left: 0;
+    width: 47.1%;
+    height: 4.2%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .event_link2 {
+    position: absolute;
+    top: 54.4%;
+    left: 53%;
+    width: 47.1%;
+    height: 4.2%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sns_link1 {
+    position: absolute;
+    top: 91.8%;
+    left: 2%;
+    width: 30.1%;
+    height: 2.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sns_link2 {
+    position: absolute;
+    top: 91.8%;
+    left: 35%;
+    width: 30.1%;
+    height: 2.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sns_link3 {
+    position: absolute;
+    top: 91.8%;
+    left: 67%;
+    width: 30.1%;
+    height: 2.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sns_link4 {
+    position: absolute;
+    top: 94.8%;
+    left: 2%;
+    width: 30.1%;
+    height: 2.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sns_link5 {
+    position: absolute;
+    top: 94.8%;
+    left: 35%;
+    width: 30.1%;
+    height: 2.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sns_link6 {
+    position: absolute;
+    top: 94.8%;
+    left: 67%;
+    width: 30.1%;
+    height: 2.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .tag_copy {
+    position: absolute;
+    top: 64%;
+    left: 1.5%;
+    width: 24%;
+    height: 4%;
+    background: red;
+    opacity: 0;
+}
+
+/*********************************/
+
+.sec9 .linkform {
+    position: absolute;
+    top: 18.8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    padding: 0 30px;
+    /*box-sizing: border-box;*/
+}
+
+.sec9 .linkform .inner {
+    /* border: 4px solid #311f11; */
+    box-sizing: border-box;
+    position: relative;
+    font-size: 0;
+    border-radius: 50px;
+}
+
+.sec9 .linkform input::placeholder {
+    font-size: 29px;
+    font-weight: 300;
+}
+
+.sec9 .linkform input[type="text"] {
+    width: 80%;
+    border: none;
+    height: 60px;
+    line-height: 78px;
+    padding: 0 50px;
+    font-size: 2.9rem;
+    color: #666666;
+    background: #fff;
+    border: 1px solid #272f42;
+    box-sizing: border-box;
+    /* border-bottom-left-radius: 45px;
+    border-top-left-radius: 45px; */
+}
+
+.sec9 .linkform input[type="button"] {
+    width: 20%;
+    padding-left: 20px;
+    border: none;
+    background: none;
+    height: 60px;
+    line-height: 67px;
+    font-family: 'GmarketSansMedium';
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 500;
+    background-color: #363861;
+    /* border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px; */
+}
+
+
+
+#sub .bbs_wrap {
+    padding-bottom: 0;
+    padding-top: 0px;
+    box-sizing: border-box;
+    position: relative;
+    background: #8bcf32;
+}
+
+#sub .bbs_wrap .board {
+    margin-top: 0;
+}
+
+#sub .bbs_wrap .bbs .list_bg {
+    padding: 45px 30px;
+    background: #7fc129;
+}
+
+#sub .bbs_wrap .bbs .list {
+    background: #fff;
+}
+
+#sub .bbs_wrap .bbs .list thead {
+    border-top: none;
+    border-bottom: 2px solid #000;
+}
+
+#sub .bbs_wrap .bbs .list thead th {
+    color: #000
+}
+
+#sub .bbs_wrap .bbs .list tbody td.title {
+    display: block;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#sub .bbs_wrap .bbs .list tbody td.date::after {
+    display: none;
+}
+
+#sub .bbs_wrap .bbs .pagenate {
+    margin: 0 auto 0;
+    padding: 20px 0;
+    background: #7fc129;
+}
+
+.pagenate li a {
+    color: #fff;
+}
+
+.pagenate li a:hover {
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.pagenate li a.current {
+    color: #fff;
+    background-color: #000;
+    font-weight: 500;
+    border: 1px solid #000;
+}
+
+
+/**********************************/
+.event-view .sec10 .pos_rel img {
+    display: none;
+}
+
+.event-view .sec10 .pos_rel img.on {
+    display: block;
+}
+
+.sec10 .tab-nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 87.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec10 .tab-nav li {
+    display: block;
+    width: 33.3333333%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.sec10 .tab-nav li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.sec10 .tab .tab-cont div {
+    display: none;
+}
+
+.sec10 .tab .tab-cont .on {
+    display: block;
+}
+
+.sec10 .link1 {
+    position: absolute;
+    top: 24.3%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link2 {
+    position: absolute;
+    top: 36.7%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link3 {
+    position: absolute;
+    top: 49.6%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link4 {
+    position: absolute;
+    top: 63%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link5 {
+    position: absolute;
+    top: 75%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link6 {
+    position: absolute;
+    top: 24.3%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link7 {
+    position: absolute;
+    top: 36.7%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link8 {
+    position: absolute;
+    top: 49.6%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link9 {
+    position: absolute;
+    top: 63%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link10 {
+    position: absolute;
+    top: 75%;
+    left: 66%;
+    width: 25%;
+    height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link11 {
+    position: absolute;
+    top: 19.3%;
+    left: 66%;
+    width: 25%;
+    height: 6.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link12 {
+    position: absolute;
+    top: 28.7%;
+    left: 66%;
+    width: 25%;
+    height: 6.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link13 {
+    position: absolute;
+    top: 38.6%;
+    left: 66%;
+    width: 25%;
+    height: 6.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link14 {
+    position: absolute;
+    top: 48%;
+    left: 66%;
+    width: 25%;
+    height: 6.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link15 {
+    position: absolute;
+    top: 59%;
+    left: 66%;
+    width: 25%;
+    height: 6.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link16 {
+    position: absolute;
+    top: 69%;
+    left: 66%;
+    width: 25%;
+    height: 6.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link17 {
+    position: absolute;
+    top: 79%;
+    left: 66%;
+    width: 25%;
+    height: 6.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .link18 {
+    position: absolute;
+    top: 89%;
+    left: 66%;
+    width: 25%;
+    height: 6.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec11 .link1 {
+    position: absolute;
+    top: 8.7%;
+    left: 17%;
+    width: 66%;
+    height: 49.5%;
+    background: red;
+    opacity: 0;
+}
+
+@media (max-width: 1280px) {
+    #sub.prm_page {
+        margin-top: 201px;
+    }
+
+    .bannerFix_wrapper {
+        height: 7.8125vw;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    #sub .bbs_wrap .linkform input[type="text"] {
+        height: 55px;
+        line-height: 55px;
+        font-size: 2rem;
+    }
+
+    #sub .bbs_wrap .linkform input[type="text"]::placeholder {
+        font-size: 2rem;
+    }
+
+    #sub .bbs_wrap .linkform input[type="button"] {
+        padding-left: 20px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 3rem;
+        letter-spacing: 8px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .event-view .mo-img {
+        display: block;
+    }
+
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    .sec1 .imgwrap {
+        position: absolute;
+        top: 9%;
+        left: -1%;
+        width: 100%;
+        height: 50%;
+        /* border: 1px solid #000; */
+    }
+
+    .sec1 .imgwrap .img1 {
+        position: absolute;
+        top: 7%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img1.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+
+    .sec1 .imgwrap .img2 {
+        position: absolute;
+        top: 7%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img2.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+
+    .sec1 .imgwrap .img3 {
+        position: absolute;
+        top: 7%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img3.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+
+    .sec1 .imgwrap .img4 {
+        position: absolute;
+        top: 7%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img4.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+
+    .sec2 .link1 {
+        position: absolute;
+        top: 54.5%;
+        left: 24%;
+        width: 25%;
+        height: 32%;
+        background: red;
+        opacity: 0.3;
+    }
+
+    .sec2 .link2 {
+        position: absolute;
+        top: 54.5%;
+        left: 51%;
+        width: 25%;
+        height: 32%;
+        background: red;
+        opacity: 0.3;
+    }
+
+    .bannerFix_wrapper {
+        position: absolute;
+        width: 100%;
+        height: 13.8889vw;
+        top: 0;
+        left: 0;
+        background: #151515;
+        z-index: 50;
+    }
+
+    .bannerImg {
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 0;
+    }
+
+    /*말풍선애니메이션*/
+
+    /**************/
+    .sec3 .youtube_area1 {
+        position: absolute;
+        top: 52%;
+        left: 0;
+        width: 100%;
+        height: 16.5%;
+    }
+
+    .sec3 .youtube_area2 {
+        position: absolute;
+        top: 76%;
+        left: 0;
+        width: 100%;
+        height: 16.5%;
+    }
+
+    .sec5 .t_link {
+        position: absolute;
+        top: 48%;
+        left: 0;
+        width: 1%;
+        height: 1%;
+        background: red;
+        opacity: 0;
+    }
+
+    /* .sec6-slide.pc {
+        display: none;
+    }
+
+    .sec6-slide.mo {
+        display: block;
+    }
+
+    .sec6 .video_area .playbtn {
+        top: 65%;
+    }
+
+    .sec6 .swiper .swiper_review_title {
+        height: 60px;
+        margin-bottom: 0;
+    }
+
+    .sec6 .swiper .swiper_iframe_wrap .video_area {
+        height: 42%;
+        width: 100%;
+        background: #000;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .sec6 .swiper .swiper_iframe_wrap .video_area .playbtn {
+        width: 32%;
+    }
+
+    .sec6 .swiper-button-prev,
+    .sec6 .swiper-button-next {
+        width: 50px;
+        height: 60px;
+        top: 60%;
+        transform: translateY(-50%);
+    }
+
+    .sec6 .swiper-button-prev {
+        left: 0;
+        background: url('../img/arrow-prev.png') no-repeat;
+        background-size: 100%;
+    }
+
+    .sec6 .swiper-button-next {
+        right: 0;
+        background: url('../img/arrow-next.png') no-repeat;
+        background-size: 100%;
+    } */
+
+    .sec7 .link1 {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 88%;
+        height: 42%;
+        background: red;
+        opacity: 0;
+    }
+
+    /* .sec8 .tab-nav li {
+        background: url('../img/mo-tab-off.jpg') no-repeat;
+        background-size: 500%;
+    }
+
+    .sec8 .tab-nav li:nth-child(2) {
+        background: url('../img/mo-tab-off.jpg') no-repeat;
+        background-position: 25%;
+        background-size: 500%;
+    }
+
+    .sec8 .tab-nav li:nth-child(3) {
+        background: url('../img/mo-tab-off.jpg') no-repeat;
+        background-position: 50%;
+        background-size: 500%;
+    }
+
+    .sec8 .tab-nav li:nth-child(4) {
+        background: url('../img/mo-tab-off.jpg') no-repeat;
+        background-position: 75%;
+        background-size: 500%;
+    }
+
+    .sec8 .tab-nav li:nth-child(5) {
+        background: url('../img/mo-tab-off.jpg') no-repeat;
+        background-position: 100%;
+        background-size: 500%;
+    }
+
+    .sec8 .tab .tab-cont a {
+        position: absolute;
+        top: 11%;
+        left: 30%;
+        width: 38%;
+        height: 29%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec8 .tab .tab-cont .video_area {
+        position: absolute;
+        top: 37.8%;
+        left: 0;
+        width: 100%;
+        height: 29%;
+    } */
+
+
+    .sec8 .event_link1 {
+        position: absolute;
+        top: 65.4%;
+        left: 2%;
+        width: 47.1%;
+        height: 6.2%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec8 .event_link2 {
+        position: absolute;
+        top: 65.4%;
+        left: 50%;
+        width: 47.1%;
+        height: 6.2%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec8 .sns_link1 {
+        position: absolute;
+        top: 86.8%;
+        left: 2%;
+        width: 47.1%;
+        height: 3.7%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec8 .sns_link2 {
+        position: absolute;
+        top: 86.8%;
+        left: 50%;
+        width: 47.1%;
+        height: 3.7%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec8 .sns_link3 {
+        position: absolute;
+        top: 90.8%;
+        left: 2%;
+        width: 47.1%;
+        height: 3.7%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec8 .sns_link4 {
+        position: absolute;
+        top: 90.8%;
+        left: 50%;
+        width: 47.1%;
+        height: 3.7%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec8 .sns_link5 {
+        position: absolute;
+        top: 94.8%;
+        left: 2%;
+        width: 47.1%;
+        height: 3.7%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec8 .sns_link6 {
+        position: absolute;
+        top: 94.8%;
+        left: 50%;
+        width: 47.1%;
+        height: 3.7%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec8 .tag_copy {
+        position: absolute;
+        top: 73%;
+        left: 1.5%;
+        width: 37%;
+        height: 4%;
+        background: red;
+        opacity: 0;
+    }
+
+    /**********************************/
+
+    .sec9 .linkform input[type="text"] {
+        width: 80%;
+        border: none;
+        height: 60px;
+        line-height: 78px;
+        padding: 0 50px;
+        font-size: 2.4rem;
+        color: #666666;
+        background: #fff;
+        border: 1px solid #272f42;
+        box-sizing: border-box;
+    }
+
+    .sec9 .linkform input[type="button"] {
+        width: 20%;
+        padding-left: 10px;
+        border: none;
+        background: none;
+        height: 60px;
+        line-height: 67px;
+        font-family: 'GmarketSansMedium';
+        font-size: 2.4rem;
+        color: #fff;
+        font-weight: 500;
+        background-color: #363861;
+    }
+
+    #sub .bbs_wrap {
+        padding-top: 0
+    }
+
+    #sub .bbs_wrap .linkform {
+        padding: 0 0;
+    }
+
+    #sub .bbs_wrap .bbs .list_bg {
+        padding: 20px 15px;
+    }
+
+    /***************************/
+
+    .sec10 .tab-nav {
+        width: 93.5%;
+    }
+
+    .sec10 .link1 {
+        position: absolute;
+        top: 20.1%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link2 {
+        position: absolute;
+        top: 35.4%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link3 {
+        position: absolute;
+        top: 51.6%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link4 {
+        position: absolute;
+        top: 67.1%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link5 {
+        position: absolute;
+        top: 84.3%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link6 {
+        position: absolute;
+        top: 20.1%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link7 {
+        position: absolute;
+        top: 35.4%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link8 {
+        position: absolute;
+        top: 51.6%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link9 {
+        position: absolute;
+        top: 67.1%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link10 {
+        position: absolute;
+        top: 84.3%;
+        left: 28%;
+        width: 42%;
+        height: 4.8%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link11 {
+        position: absolute;
+        top: 13.3%;
+        left: 29%;
+        width: 42%;
+        height: 3.5%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link12 {
+        position: absolute;
+        top: 24.7%;
+        left: 29%;
+        width: 42%;
+        height: 3.5%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link13 {
+        position: absolute;
+        top: 35.6%;
+        left: 29%;
+        width: 42%;
+        height: 3.5%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link14 {
+        position: absolute;
+        top: 47%;
+        left: 29%;
+        width: 42%;
+        height: 3.5%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link15 {
+        position: absolute;
+        top: 58%;
+        left: 29%;
+        width: 42%;
+        height: 3.5%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link16 {
+        position: absolute;
+        top: 69%;
+        left: 29%;
+        width: 42%;
+        height: 3.5%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link17 {
+        position: absolute;
+        top: 81%;
+        left: 29%;
+        width: 42%;
+        height: 3.5%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec10 .link18 {
+        position: absolute;
+        top: 93%;
+        left: 29%;
+        width: 42%;
+        height: 3.5%;
+        background: red;
+        opacity: 0;
+    }
+
+    .sec11 .link1 {
+        position: absolute;
+        top: 8.7%;
+        left: 5%;
+        width: 88%;
+        height: 49.5%;
+        background: red;
+        opacity: 0;
+    }
+
+    .arrow-event {
+        background: url('../img/mo-section-arrow.png') bottom center no-repeat;
+        background-size: 100%;
+        animation: vb 2s;
+    }
+
+    .floating_wrap {
+        /*
+        position: fixed;
+        top:170px;
+        right:10px;
+        width: 20.83%;
+        */
+        display: none;
+    }
+
+    .sec2 .imgwrap .img1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img1.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+
+    .sec2 .imgwrap .img2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img2.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+
+    .sec2 .imgwrap .img3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img3.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+
+    .sec2 .imgwrap .img4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        background: url('../img/mo-sec2_img4.png') 0 0 no-repeat;
+        background-size: 100%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #sub.prm_page {
+        margin-top: 134px;
+    }
+
+}
+
+@media (max-width: 430px) {
+    #sub.prm_page {
+        margin-top: 126px;
+    }
+
+}
