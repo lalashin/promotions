@@ -1,1 +1,1 @@
-https://promotion-collection.netlify.app
+https://lala-promotions.netlify.app/
