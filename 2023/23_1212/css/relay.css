@@ -1,0 +1,720 @@
+.event-view {
+    background: #fff;
+}
+
+.event-view {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.event-view .sec .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+.event-view .sec1{background: url('../images/relay_bg_01.jpg') center no-repeat;}
+.event-view .sec2{background: url('../images/relay_bg_02.jpg') center no-repeat;}
+.event-view .sec4{background: #f6f6f6;}
+.event-view .sec5{background: url('../images/relay_bg_05.jpg') center no-repeat;}
+.event-view .sec6{background: #e1e1e1;}
+.event-view .sec7{background: url('../images/relay_bg_07.jpg') center no-repeat;}
+.event-view .sec8{background: url('../images/relay_bg_08.jpg') center no-repeat;}
+
+.event-view .sec9,
+.event-view .sec10,
+.event-view .sec11,
+.event-view .sec12,
+.event-view .sec13 {
+    background: #fbd6e5;
+}
+.event-view .sec14 {
+    background: #fbd6e5;
+
+}
+
+/*sec4*/
+.sec4 .link1 {
+    position: absolute;
+    top: 84.4%;
+    left: 0.3%;
+    width: 23.1%;
+    height: 5.2%;
+    background: red;
+    opacity: 0;
+}
+.sec4 .link2 {
+    position: absolute;
+    top: 84.4%;
+    left: 25.3%;
+    width: 23.3%;
+    height: 5.2%;
+    background: red;
+    opacity: 0;
+}
+.sec4 .link3 {
+    position: absolute;
+    top: 84.4%;
+    left: 51.3%;
+    width: 23.1%;
+    height: 5.2%;
+    background: red;
+    opacity: 0;
+}
+.sec4 .link4 {
+    position: absolute;
+    top: 84.4%;
+    left: 77%;
+    width: 23.1%;
+    height: 5.2%;
+    background: red;
+    opacity: 0;
+}
+
+/*sec6*/
+.sec6 .link1 {
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 87.1%;
+    height: 7.2%;
+    background: red;
+    opacity: 0;
+}
+
+/*sec7*/
+.sec7 .link1 {
+    position: absolute;
+    top: 24%;
+    left: 42%;
+    width: 51.1%;
+    height: 6.2%;
+    background: red;
+    opacity: 0;
+}
+
+.sec7 .off_link1 {
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    width: 17.1%;
+    height: 7.7%;
+    background: red;
+    opacity: 0;
+}
+.sec7 .on_link1 {
+    position: absolute;
+    top: 40%;
+    left: 83%;
+    width: 17.1%;
+    height: 7.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec7 .off_link2 {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    width: 17.1%;
+    height: 7.7%;
+    background: red;
+    opacity: 0;
+}
+.sec7 .on_link2 {
+    position: absolute;
+    top: 50%;
+    left: 83%;
+    width: 17.1%;
+    height: 7.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec7 .off_link3 {
+    position: absolute;
+    top: 60.5%;
+    left: 65%;
+    width: 17.1%;
+    height: 7.7%;
+    background: red;
+    opacity: 0;
+}
+.sec7 .on_link3 {
+    position: absolute;
+    top: 60.5%;
+    left: 83%;
+    width: 17.1%;
+    height: 7.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec7 .on_link4 {
+    position: absolute;
+    top: 71%;
+    left: 83%;
+    width: 17.1%;
+    height: 7.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec7 .off_link5 {
+    position: absolute;
+    top: 82%;
+    left: 65%;
+    width: 17.1%;
+    height: 7.7%;
+    background: red;
+    opacity: 0;
+}
+.sec7 .on_link5 {
+    position: absolute;
+    top: 82%;
+    left: 83%;
+    width: 17.1%;
+    height: 7.7%;
+    background: red;
+    opacity: 0;
+}
+
+
+/*sec10 소문내기 SNS링크*/
+.sec10 .event_link1 {
+    position: absolute;
+    top: 25.4%;
+    left: 13.3%;
+    width: 36.1%;
+    height: 12.2%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .event_link2 {
+    position: absolute;
+    top: 25.4%;
+    left: 50.5%;
+    width: 36.1%;
+    height: 12.2%;
+    background: red;
+    opacity: 0;
+}
+
+
+
+.sec10 .sns_link1 {
+    position: absolute;
+    top: 54.8%;
+    left: 22.7%;
+    width: 9.1%;
+    height: 23.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .sns_link2 {
+    position: absolute;
+    top: 54.8%;
+    left: 33.7%;
+    width: 9.1%;
+    height: 23.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .sns_link3 {
+    position: absolute;
+    top: 54.8%;
+    left: 45.6%;
+    width: 9.1%;
+    height: 23.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .sns_link4 {
+    position: absolute;
+    top: 54.8%;
+    left: 57.2%;
+    width: 9.1%;
+    height: 23.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .sns_link5 {
+    position: absolute;
+    top: 54.8%;
+    left: 68.2%;
+    width: 9.1%;
+    height: 23.7%;
+    background: red;
+    opacity: 0;
+}
+
+.sec10 .copy-btn {
+	position: absolute;
+	top: 85.3%;
+    left: 36.9%;
+    width: 10.6%;
+    height: 5.3%;
+    opacity: 0;
+    background: red;
+	overflow: hidden;
+}
+
+/*소문내기 등록*/
+
+.sec11 .linkform {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88%;
+    padding: 0 30px;
+
+}
+
+.sec11 .linkform .inner {
+    box-sizing: border-box;
+    position: relative;
+    font-size: 0;
+    padding-bottom: 0;
+
+    border: 2px solid #222;
+}
+
+.sec11 .linkform input::placeholder {
+    font-size: 2.0rem;
+    font-weight: 300;
+    color: #454545;
+}
+
+.sec11 .linkform input[type="text"] {
+    width: 77%;
+    border: none;
+    height: 70px;
+    line-height: 78px;
+    padding: 0 50px;
+    font-size: 2.9rem;
+    color: #666666;
+    background: #fff;
+    /* border: 1px solid #222; */
+    box-sizing: border-box;
+}
+
+.sec11 .linkform input[type="button"] {
+    width: 23%;
+    padding-left: 15px;
+    border: none;
+    background: none;
+    height: 70px;
+    line-height: 75px;
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: 500;
+    background-color: #222;
+
+}
+
+
+.sec13.bbs_wrap .inner {
+    /* background: url(../img/maritime_12.jpg) repeat-y ; */
+    padding-bottom: 0;
+}
+
+.sec13 .pr_board_area{
+    position: static;
+    margin: auto;
+    width:99.8%;
+    height: auto;
+    background: #fff;
+
+}
+
+
+
+.sec13 .bbs {
+    margin-top: 0;
+}
+
+
+
+#sub .bbs_wrap .bbs table.list {
+    margin: auto;
+    width: 97%;
+    table-layout: fixed
+}
+
+#sub .bbs_wrap .bbs .list_bg {
+    padding: 0 40px 0;
+    /* background: #fff; */
+    height: auto;
+}
+
+#sub .bbs_wrap .bbs .list {
+    background: #fff;
+    padding: 20px;
+}
+
+#sub .bbs_wrap .bbs .list thead {
+    border-top: none;
+    border-bottom: 2px solid #000;
+}
+
+#sub .bbs_wrap .bbs .list thead th {
+    color: #000
+}
+
+#sub .bbs_wrap .bbs .list tbody td.title {
+    display: block;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+
+#sub .bbs_wrap .bbs .list tbody td.date::after {
+    display: none;
+}
+
+#sub .bbs_wrap .bbs .pagenate {
+    margin: 0 auto 0;
+    padding: 40px 0;
+    /* background: #f1f1f1; */
+}
+
+.pagenate li a {
+    color: #222;
+}
+
+.pagenate li a:hover {
+    background: #222;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.pagenate li a.current {
+    color: #fff;
+    background-color: #222;
+    font-weight: 500;
+    border: 1px solid #fff;
+}
+
+/*sec14 유의사항*/
+.sec14 .inner {
+    padding: 50px 0px;
+}
+
+
+.sec14 .noticeList {
+
+    margin: auto;
+    padding: 50px 100px;
+    background: #fff;
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+
+}
+.sec14 .noticeList > li {
+
+}
+.sec14 .noticeList > li:first-child {
+    margin-top: 0;
+}
+.sec14 .noticeList li {
+    line-height: 1.6;
+    color: #262626;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.sec14 .noticeList li .s_tit {
+    font-size: 26px;
+    font-weight: 700;
+
+}
+
+.sec14 .noticeList .cont_d {
+    padding-left: 15px;
+}
+
+
+
+
+@media screen and (max-width: 1280px){}
+@media screen and (max-width: 960px){}
+
+@media screen and (max-width: 768px){
+    .event-view .mo-img {
+        display: block;
+    }
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    .sec4 .link1 {
+        position: absolute;
+        top: 54.4%;
+        left: 12.3%;
+        width: 37.1%;
+        height: 4.2%;
+    }
+
+    .sec4 .link2 {
+        position: absolute;
+        top: 54.4%;
+        left: 51.3%;
+        width: 37.1%;
+        height: 4.2%;
+    }
+
+    .sec4 .link3 {
+        position: absolute;
+        top: 85.4%;
+        left: 12.3%;
+        width: 37.1%;
+        height: 4.2%;
+    }
+
+    .sec4 .link4 {
+        position: absolute;
+        top: 85.4%;
+        left: 51.3%;
+        width: 37.1%;
+        height: 4.2%;
+    }
+
+    .sec6 .link1 {
+        position: absolute;
+        top: 64%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 92.1%;
+        height: 7.2%;
+    }
+
+    .sec7 .link1 {
+        position: absolute;
+        top: 23%;
+        left: 38%;
+        width: 53.1%;
+        height: 6.2%;
+    }
+
+    .sec7 .off_link1 {
+        position: absolute;
+        top: 43%;
+        left: 65%;
+        width: 16.1%;
+        height: 7.7%;
+    }
+
+    .sec7 .on_link1 {
+        position: absolute;
+        top: 43%;
+        left: 82%;
+        width: 16.1%;
+        height: 7.7%;
+    }
+
+    .sec7 .off_link2 {
+        position: absolute;
+        top: 52%;
+        left: 65%;
+        width: 16.1%;
+        height: 7.7%;    }
+    .sec7 .on_link2 {
+        position: absolute;
+        top: 52%;
+        left: 82%;
+        width: 16.1%;
+        height: 7.7%;
+    }
+
+    .sec7 .off_link3 {
+        position: absolute;
+        top: 61.5%;
+        left: 65%;
+        width: 16.1%;
+        height: 7.7%;
+    }
+    .sec7 .on_link3 {
+        position: absolute;
+        top: 61.5%;
+        left: 82%;
+        width: 16.1%;
+        height: 7.7%;
+    }
+
+    .sec7 .on_link4 {
+        position: absolute;
+        top: 71%;
+        left: 82%;
+        width: 16.1%;
+        height: 7.7%;
+    }
+
+    .sec7 .off_link5 {
+        position: absolute;
+        top: 80%;
+        left: 65%;
+        width: 16.1%;
+        height: 8.7%;
+    }
+    .sec7 .on_link5 {
+        position: absolute;
+        top: 80%;
+        left: 82%;
+        width: 16.1%;
+        height: 8.7%;
+    }
+
+    /*SNS 링크*/
+    .sec10 .event_link1 {
+        position: absolute;
+        top: 25.4%;
+    left: 4.3%;
+    width: 45.1%;
+    height: 11.2%;
+    }
+
+    .sec10 .event_link2 {
+        position: absolute;
+        top: 25.4%;
+        left: 50.5%;
+        width: 45.1%;
+        height: 11.2%;
+    }
+
+    .sec10 .sns_link1 {
+        position: absolute;
+        top: 53.8%;
+        left: 9.7%;
+        width: 14.1%;
+        height: 23.7%;
+    }
+
+    .sec10 .sns_link2 {
+        position: absolute;
+        top: 53.8%;
+        left: 26.7%;
+        width: 13.1%;
+        height: 23.7%;
+    }
+
+    .sec10 .sns_link3 {
+        position: absolute;
+        top: 53.8%;
+        left: 43.6%;
+        width: 13.1%;
+        height: 23.7%;
+    }
+
+    .sec10 .sns_link4 {
+        position: absolute;
+        top: 53.8%;
+        left: 60.2%;
+        width: 13.1%;
+        height: 23.7%;
+    }
+
+    .sec10 .sns_link5 {
+        position: absolute;
+        top: 53.8%;
+        left: 77.2%;
+        width: 13.1%;
+        height: 23.7%;
+    }
+
+    .sec10 .copy-btn {
+        position: absolute;
+        top: 84.3%;
+        left: 30.9%;
+        width: 14.6%;
+        height: 5.3%;
+        overflow: hidden;
+    }
+
+    .sec11 .linkform {
+        position: absolute;
+        top: 51%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 84%;
+        padding: 0 30px;
+    }
+    .sec11 .linkform input::placeholder {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: #454545;
+    }
+    .sec11 .linkform input[type="text"] {
+        width: 77%;
+        border: none;
+        height: 9.1146vw;
+        line-height: 10.1563vw;
+        padding: 0 6.5104vw;
+        font-size: 1.4rem;
+        color: #666666;
+        background: #fff;
+        /* border: 1px solid #222; */
+        box-sizing: border-box;
+
+    }
+    .sec11 .linkform input[type="button"] {
+        width: 23%;
+        padding-left: 1.9531vw;
+        border: none;
+        background: none;
+        height: 9.1146vw;
+        line-height: 9.7656vw;
+        font-family: 'GmarketSansMedium';
+        font-size: 1.5rem;
+        color: #fff;
+        font-weight: 500;
+        background-color: #222;
+
+    }
+    .sec13.bbs_wrap .inner {
+        padding-bottom: 0;
+    }
+
+    #sub .bbs_wrap .bbs .list_bg {
+        padding: 5.2083vw 5.2083vw 0;
+        /* background: #fff; */
+        height: auto;
+    }
+
+    .sec13 .pr_board_area {
+        position: static;
+        margin: auto;
+        width: 93%;
+        height: auto;
+        background: #fff;
+    }
+
+    .sec14 .inner {
+        padding: 6.5104vw 3.6083vw;
+    }
+
+    .sec14 .noticeList {
+        margin: auto;
+        padding: 2.6042vw;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+}

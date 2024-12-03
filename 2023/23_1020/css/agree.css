@@ -1,0 +1,322 @@
+.event-view {
+    background: #fff;
+}
+
+.event-view {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+.event-view .section1 {
+    background: url('../images/agree_bg_01.jpg') center no-repeat;
+}
+
+.event-view .section2 {
+    background: #5036d5;
+}
+
+.event-view .section3 {
+    background: url('../images/agree_bg_03.jpg') center no-repeat;
+}
+
+.event-view .section4 {
+    background: #6ecbf7;
+}
+
+.event-view .section5 {
+    background: #f9f9f9;
+}
+
+
+/*section3*/
+.section3 .roulette_area {
+    position: absolute;
+    top: 32.7%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.section3 .giftimg1 {
+    position: absolute;
+    top: 76.5%;
+    left: -1%;
+    width: 551px;
+    height: 275px;
+    z-index: 2;
+}
+
+.section3 .giftimg2 {
+    position: absolute;
+    top: 74%;
+    right: 4%;
+    width: 508px;
+    height: 329px;
+    z-index: 3;
+}
+
+.roulettercover_area {
+    display: none;
+    position: absolute;
+    top: 32.2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 68%;
+    z-index: 30;
+}
+
+.roulettercover_area.on{
+    display: block;
+}
+
+.rouletter-event-cover {
+    position: relative;
+}
+
+.rouletter-event-cover .event_product_message{
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 74%;
+    height: 6%;
+    font-size: 36px;
+    color: #000;
+    font-weight: 800;
+    text-align: center;
+}
+
+.rouletter-event-cover .cover_close {
+    position:absolute;
+    top:11%;
+    right:2%;
+    width: 6%;
+    height: 6%;
+    color:#444;
+    font-size:12px;
+    cursor: pointer;
+    background: red;
+    opacity: 0;
+}
+
+
+
+/*section4 유의사항*/
+.section4 .noticeList {
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 63%;
+}
+
+
+
+.section4 .noticeList > li {
+    margin-top: 30px;
+}
+.section4 .noticeList > li:first-child {
+    margin-top: 0;
+}
+.section4 .noticeList li {
+    line-height: 1.6;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.section4 .noticeList li .s_tit {
+    font-size: 30px;
+    font-weight: 900;
+
+}
+
+.section4 .noticeList li .noticeList_cont {
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+.section5 .link1 {
+    position:absolute;
+    top: 73%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 46%;
+    height: 10%;
+    background:red;
+    opacity: 0;
+}
+
+
+
+.float_wrap{position:fixed; right:0; top:29%; z-index:11; padding-top:20px; }
+.float_wrap .banner{position:relative;}
+.float_wrap .banner.f2{margin-top: 10px;}
+.float_wrap .f_link1{
+    position:absolute;
+    top: 0;
+    left: 2%;
+    width: 94%;
+    height: 100%;
+    background:red;
+    opacity: 0;
+}
+
+.float_wrap .f_link2{
+    position:absolute;
+    top: 0;
+    left: 2%;
+    width: 94%;
+    height: 100%;
+    background:red;
+    opacity: 0;
+}
+
+
+.agreepop {margin:0 auto; max-width:790px; display:none;}
+.agreepop.on {display: block;}
+.agreepop p {line-height:20px; font-size:14px;}
+.agreepop:before {display:block; content:""; position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,.5); z-index: 10;}
+.agreepop .layerBox {position:fixed; left:50%; top:50%; transform:translate(-50%, -50%); border-radius:6px; box-shadow: 1px 1px 7px 7px rgba(0,0,0,.1); z-index: 20;}
+.agreepop .layerBox .cont {position: relative;}
+.agreepop .layerBox .cont .link1 {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 79%;
+    height: 18%;
+    background: red;
+    opacity: 0;
+}
+.agreepop .layerBox p {line-height:20px; font-size:13px;}
+.agreepop .layerBox .btnClose {display:inline-block; position:absolute; right:15px; top:12px; width: 30px; height: 30px; cursor: pointer; background: red; opacity: 0;}
+
+@media screen and (max-width: 1280px) {
+
+
+    .section4 .noticeList > li {
+        margin-top: 2.3438vw;
+    }
+    .section4 .noticeList li {
+        font-size: 1.1719vw;
+        font-weight: 500;
+    }
+
+    .section4 .noticeList li .s_tit {
+        font-size: 2.3438vw;
+    }
+
+    .section4 .noticeList li .noticeList_cont {
+        margin-top: 1.1719vw;
+        padding-left: 1.1719vw;
+    }
+
+    .section3 .giftimg1 {
+        width: 43.0469vw;
+        height: 21.4844vw;
+    }
+
+    .section3 .giftimg2 {
+        width: 39.6875vw;
+        height: 25.7031vw;
+    }
+
+    .rouletter-event-cover .event_product_message{
+        font-size: 2.8125vw;
+    }
+
+    .agreepop .layerBox .btnClose {display:inline-block; position:absolute; right:1.1719vw; top:0.9375vw; width: 2.3438vw; height: 2.3438vw; cursor: pointer; background: red; opacity: 0;}
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .event-view .mo-img {
+        display: block;
+    }
+
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    .section3 .roulette_area {
+        position: absolute;
+        top: 32.7%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        /* border: 1px solid #000; */
+    }
+
+    .roulettercover_area {
+        width: 94%;
+    }
+
+    .rouletter-event-cover .event_product_message {
+        font-size: 3.9063vw;
+    }
+
+    /*section4 유의사항*/
+    .event-view .section4 .inner {
+        width: 100%;
+    }
+    .section4 .noticeList {
+        position: absolute;
+        top: 13%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 85%;
+
+    }
+    /* .section13 .noticeList li, .section13 .noticeList li .s_tit, .section13 .noticeList li ul li a {
+        font-size: 12px;
+    } */
+
+    .section4 .noticeList li {
+        line-height: 1.5;
+        color: #333;
+        font-size: 2.0833vw;
+        font-weight: 500;
+    }
+
+    .section4 .noticeList li .s_tit {
+        font-size: 3.6458vw;
+        font-weight: 900;
+    }
+
+    .agreepop .layerBox {
+        width: 90%;
+    }
+    .agreepop .layerBox .btnClose {display:inline-block; position:absolute; right:1.4323vw; top:1.0417vw; width: 3.9063vw; height: 3.9063vw; cursor: pointer; background: red; opacity: 0;}
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .section4 .noticeList {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 85%;
+    }
+}

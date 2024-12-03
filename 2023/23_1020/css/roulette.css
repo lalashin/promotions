@@ -1,0 +1,120 @@
+  .rouletter {
+    position: relative;
+    width: 850px;
+    height: 850px;
+  }
+  .rouletter-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 818px;
+    height: 818px;
+    border-radius: 350px;
+    overflow: hidden;
+  }
+  .rouletter-wacu {
+    width: 100%;
+    height: 100%;
+    background:
+    url('../images/rouletteimg.png') no-repeat;
+    background-size: 100%;
+    transform-origin: center;
+    transition-timing-function: ease-in-out;
+    transition: 2s;
+  }
+  .rouletter-arrow {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 132px;
+    background: url('../images/rouletterarrow.png') no-repeat;
+    background-size: 100%;
+
+  }
+  .rouletter-btn {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 155px;
+    height: 155px;
+    border-radius: 80px;
+    background: url('../images/rouletterbtn.png');
+    background-size: 100%;
+  }
+
+  .hidden-input {
+    display: none;
+  }
+
+  @media screen and (max-width: 1280px) {
+    .rouletter {
+      width: 66.4063vw;
+      height: 66.4063vw;
+    }
+
+    .rouletter-bg {
+      width: 63.9063vw;
+      height: 63.9063vw;
+      border-radius: 27.3438vw;
+    }
+
+    .rouletter-arrow {
+      width: 7.8125vw;
+      height: 10.3125vw;
+    }
+
+    .rouletter-btn {
+      width: 12.1094vw;
+      height: 12.1094vw;
+      border-radius: 6.2500vw;
+    }
+
+  }
+
+
+  @media screen and (max-width: 768px) {
+
+    .rouletter {
+      position: relative;
+      width: 91.1458vw;
+      height: 91.1458vw;
+    }
+
+    .rouletter-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 84.6354vw;
+      height: 84.6354vw;
+      border-radius: 45.5729vw;
+      overflow: hidden;
+    }
+
+    .rouletter-arrow {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 11.0677vw;
+      height: 17.1875vw;
+      background: url(../images/rouletterarrow.png) no-repeat;
+      background-size: 100%;
+    }
+    .rouletter-btn {
+      position: absolute;
+      top: 51%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20.1823vw;
+      height: 20.1823vw;
+      border-radius: 10.4167vw;
+      background: url(../images/rouletterbtn.png);
+      background-size: 100%;
+     }
+
+  }
