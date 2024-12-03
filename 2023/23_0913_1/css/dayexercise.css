@@ -1,0 +1,225 @@
+.event-view{
+    background: #fff;
+}
+#sub.prm_page {
+    margin-top: 159px;
+
+}
+.event-view{max-width:2000px; margin:0 auto;}
+.event-view .sec .inner{position: relative; max-width:1200px; margin:0 auto; }
+.event-view img {
+    width: 100%;
+}
+.event-view .mo-img {
+    display: none;
+}
+.event-view iframe {
+    bordeR:0;
+}
+.event-view .section1{background: url('../images/dayexercise_bg_01.jpg') center no-repeat;}
+
+.event-view .section2 {background: #1337b1;}
+
+.event-view .section3 {background: #012293; position: relative;}
+.event-view .section5{background: url('../images/dayexercise_bg_05.jpg') center no-repeat;}
+
+/*section4*/
+
+
+.de_video1 {
+    position: absolute;
+    top: 31.7%;
+    left: 0.9%;
+    width: 48.3%;
+    height: 29.5%;
+    background: red;
+    opacity: 0;
+}
+
+.de_video_cont1 {
+    position: absolute;
+    top: 31.7%;
+    left: 0.9%;
+    width: 48.3%;
+    height: 29.5%;
+    /* border: 1px solid #000; */
+    z-index: 20;
+}
+
+.de_video2 {
+    position: absolute;
+    top: 31.7%;
+    left: 51%;
+    width: 48.3%;
+    height: 29.5%;
+    background: red;
+    opacity: 0;
+}
+
+.de_video_cont2 {
+    position: absolute;
+    top: 31.7%;
+    left: 51%;
+    width: 48.3%;
+    height: 29.5%;
+    /* border: 1px solid #000; */
+    z-index: 20;
+}
+
+ .de_videoClose_btn {
+    position: absolute;
+    top: -32px;
+    right: 0;
+    width: 32px;
+    height: 34px;
+    background: #000;
+    opacity: 1;
+    text-align: center;
+
+}
+
+.de_videoClose_btn i {
+    color: #fff;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+
+/*section6*/
+
+.section6 .link1 {
+    position: absolute;
+    top: 27%;
+    left: 5%;
+    width: 90%;
+    height: 8.5%;
+    background: red;
+    opacity: 0;
+}
+
+
+.float_wrap{position:fixed; right:0; top:29%; z-index:50; padding-top:20px; }
+.float_wrap .banner{position:relative;}
+.float_wrap .f_link1{
+    position:absolute;
+    top: 4%;
+    left: 2%;
+    width: 94%;
+    height: 100%;
+    background:red;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+@media (max-width: 1280px) {
+
+
+}
+
+
+@media screen and (max-width: 960px){
+
+
+}
+
+
+@media screen and (max-width: 768px){
+    .event-view .mo-img {
+        display: block;
+    }
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    .de_video1 {
+        position: absolute;
+        top: 32.7%;
+        left: 0.9%;
+        width: 48.3%;
+        height: 26.5%;
+        background: red;
+        opacity: 0;
+    }
+
+    .de_video_cont1 {
+        position: absolute;
+       top: 32.7%;
+        left: 0.9%;
+        width: 48.3%;
+        height: 26.5%;
+        /* border: 1px solid #000; */
+        z-index: 20;
+    }
+
+    .de_video2 {
+        position: absolute;
+        top: 32.7%;
+        left: 51%;
+        width: 48.3%;
+        height: 26.5%;
+        background: red;
+        opacity: 0;
+    }
+    .de_video_cont2 {
+        position: absolute;
+        top: 32.7%;
+        left: 51%;
+        width: 48.3%;
+        height: 26.5%;
+        /* border: 1px solid #000; */
+        z-index: 20;
+    }
+
+    .de_videoClose_btn {
+        position: absolute;
+        top: -26px;
+        right: 0;
+        width: 26px;
+        height: 26px;
+        background: #000;
+        opacity: 1;
+        text-align: center;
+    }
+
+
+
+    .de_videoClose_btn i {
+        color: #fff;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .section6 .link1 {
+        position: absolute;
+        top: 36%;
+        left: 3%;
+        width: 95%;
+        height: 16.5%;
+        background: red;
+        opacity: 0;
+    }
+
+
+
+
+
+}
+@media screen and (max-width: 640px){
+
+
+}
+@media screen and (max-width: 540px){
+
+
+
+
+}
+@media screen and (max-width: 480px){
+
+}
+

@@ -1,0 +1,374 @@
+.event-view {
+    background: #fff;
+}
+
+.event-view {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+.event-view .section1 {
+    background: url('../images/passreview_bg_01.jpg') center no-repeat;
+}
+
+.event-view .section2 {
+    position: relative;
+    background: url('../images/passreview_bg_02.jpg') center no-repeat;
+}
+
+.event-view .section3 {
+    background: url('../images/passreview_bg_03.jpg') center no-repeat;
+}
+
+.event-view .section4 {
+    background: #f2f4ff;
+}
+
+.event-view .section5 {
+    background: #fafafa;
+}
+
+.event-view .section6 {
+    background: #fafafa;
+}
+
+.event-view .section7 {
+    background: #3c3c3c;
+}
+
+.event-view .section8 {
+    background: #fef14a;
+}
+
+/*section1*/
+
+.section1 .link1 {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+	transform: translateX(-50%);
+    width: 60%;
+    height: 8%;
+    background: red;
+    opacity: 0;
+}
+
+/*합격수기 등록*/
+.section5 .linkform {
+    position: absolute;
+    top: 59.8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 91%;
+    padding: 0 30px;
+    /*box-sizing: border-box;*/
+}
+
+.section5 .linkform .inner {
+    /* border: 4px solid #311f11; */
+    box-sizing: border-box;
+    position: relative;
+    font-size: 0;
+    border-radius: 50px;
+}
+
+.section5 .linkform input::placeholder {
+    font-size: 2.0rem;
+    font-weight: 300;
+    color: #454545;
+}
+
+.section5 .linkform input[type="text"] {
+    width: 82%;
+    border: none;
+    height: 86px;
+    line-height: 90px;
+    padding: 0 50px;
+    font-size: 2.9rem;
+    color: #666666;
+    background: #fff;
+    border: 2px solid #ff6666;
+    box-sizing: border-box;
+    /* border-bottom-left-radius: 45px;
+    border-top-left-radius: 45px; */
+}
+
+.section5 .linkform input[type="button"] {
+    width: 18%;
+    padding-left: 15px;
+    border: none;
+    background: none;
+    height: 86px;
+    line-height: 90px;
+    font-family: 'GmarketSansMedium';
+    font-size: 2.0rem;
+    color: #fff;
+    font-weight: 500;
+    background-color: #ff6666;
+    /* border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px; */
+}
+
+
+#sub .bbs_wrap .bbs table.list {
+    margin: auto;
+    width: 97%;
+    table-layout: fixed
+}
+
+#sub .bbs_wrap .bbs .list_bg {
+    padding: 0 30px;
+    /* background: #fff; */
+    height: auto;
+}
+
+#sub .bbs_wrap .bbs .list {
+    background: #fff;
+    padding: 20px;
+}
+
+#sub .bbs_wrap .bbs .list thead {
+    border-top: none;
+    border-bottom: 2px solid #000;
+}
+
+#sub .bbs_wrap .bbs .list thead th {
+    color: #000
+}
+
+#sub .bbs_wrap .bbs .list tbody td.title {
+    display: block;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#sub .bbs_wrap .bbs .list tbody td.date::after {
+    display: none;
+}
+
+#sub .bbs_wrap .bbs .pagenate {
+    margin: 0 auto 0;
+    padding: 40px 0;
+    /* background: #f1f1f1; */
+}
+
+.pagenate li a {
+    color: #222;
+}
+
+.pagenate li a:hover {
+    background: #222;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.pagenate li a.current {
+    color: #fff;
+    background-color: #222;
+    font-weight: 500;
+    border: 1px solid #fff;
+}
+
+.section8 .link1 {
+    position: absolute;
+    top: 32%;
+    left: 62%;
+    width: 27%;
+    height: 13%;
+    background: red;
+    opacity: 0;
+}
+
+.section8 .link2 {
+    position: absolute;
+    top: 48%;
+    left: 62%;
+    width: 27%;
+    height: 13%;
+    background: red;
+    opacity: 0;
+}
+
+
+.float_wrap {
+    position: fixed;
+    right: 20px;
+    top: 30%;
+    z-index: 50;
+    padding-top: 20px;
+    z-index: 400;
+}
+
+.float_wrap .banner {
+    position: relative;
+}
+
+.float_wrap .f_link1 {
+    position: absolute;
+    top: 1%;
+    left: 7%;
+    width: 86%;
+    height: 100%;
+    background: red;
+    opacity: 0;
+}
+
+
+
+@media screen and (max-width: 1280px) {
+    body {
+        overflow-x: hidden;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 960px) {}
+
+@media screen and (max-width: 850px) {
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .float_wrap {
+        display: none;
+    }
+
+    .event-view .mo-img {
+        display: block;
+    }
+
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+	.section1 .link1 {
+		position: absolute;
+		top: 88%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 69%;
+		height: 8%;
+		background: red;
+		opacity: 0;
+	}
+
+	.section5 .linkform {
+        position: absolute;
+        top: 67.8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96.5%;
+        padding: 0 3.9063vw;
+        /* box-sizing: border-box; */
+    }
+
+    .section5 .linkform input::placeholder {
+        font-size: 3.1250vw;
+        font-weight: 300;
+    }
+
+    .section5 .linkform input[type="text"] {
+        width: 70%;
+        border: none;
+        height: 7.8125vw;
+        line-height: 10.1563cw;
+        padding: 0 6.5104vw;
+        font-size: 3.1250vw;
+        color: #666666;
+        background: #fff;
+        border: 2px solid #ff6666;
+        box-sizing: border-box;
+    }
+
+    .section5 .linkform input[type="button"] {
+        width: 30%;
+        padding-left: 10px;
+        border: none;
+        background: none;
+        height: 7.8125vw;
+        line-height: 8.5938vw;
+        font-family: 'GmarketSansMedium';
+        font-size: 3.1250vw;
+        color: #fff;
+        font-weight: 500;
+        background-color: #ff6666;
+    }
+
+	.section6 .bbs {
+        width: 97.5%;
+    }
+
+    #sub .bbs_wrap {
+        padding-top: 0
+    }
+
+    #sub .bbs_wrap .linkform {
+        padding: 0 0;
+    }
+
+    #sub .bbs_wrap .bbs .list_bg {
+        padding: 0px 12px 20px 20px;
+    }
+
+	.section8 .link1 {
+		position: absolute;
+		top: 36%;
+		left: 62%;
+		width: 27%;
+		height: 13%;
+		background: red;
+		opacity: 0;
+	}
+
+	.section8 .link2 {
+		position: absolute;
+		top: 52%;
+		left: 62%;
+		width: 27%;
+		height: 13%;
+		background: red;
+		opacity: 0;
+	}
+
+}
+
+@media screen and (max-width: 540px) {
+
+    .section6.bbs_wrap .inner {
+        background: none;
+        padding: 0 1vw ;
+    }
+	.section6 .bbs {
+		width: 100%;
+	}
+	#sub .bbs_wrap .bbs .list_bg {
+        padding: 0px 12px;
+    }
+
+
+
+}

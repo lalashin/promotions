@@ -1,0 +1,358 @@
+.event-view{
+    background: #fff;
+}
+#sub.prm_page {
+    margin-top: 159px;
+
+}
+.event-view{max-width:1920px; margin:0 auto;}
+.event-view .sec .inner{position: relative; max-width:1200px; margin:0 auto; }
+.event-view img {
+    width: 100%;
+}
+.event-view .mo-img {
+    display: none;
+}
+.event-view iframe {
+    bordeR:0;
+}
+.event-view .section0{background: url('../images/hyperclass_bg_00.jpg') center no-repeat;}
+.event-view .section1{background: url('../images/hyperclass_bg_01.jpg') center no-repeat;}
+.event-view .section2{background: #eaeaea;}
+.event-view .section4{background: url('../images/hyperclass_bg_04.jpg') center no-repeat;}
+.event-view .section5{background: #f6f6f6;}
+.event-view .section7{background: #f6f6f6;}
+.event-view .section9{background: #060628;}
+
+/*section1*/
+
+.section1 .link1{
+    position: absolute;
+    top: 73%;
+    left: 15.5%;
+    width: 33%;
+    height: 13.5%;
+    background: red;
+    opacity: 0;
+}
+
+.section1 .link2{
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    width: 33%;
+    height: 13.5%;
+    background: red;
+    opacity: 0;
+}
+
+/*section3*/
+
+.section3 .link1{
+    position: absolute;
+    top: 57%;
+    left: 15.5%;
+    width: 33%;
+    height: 20.5%;
+    background: red;
+    opacity: 0;
+}
+
+.section3 .link2{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    width: 33%;
+    height: 20.5%;
+    background: red;
+    opacity: 0;
+}
+
+
+
+
+/*section8*/
+
+.section8 .link1{
+    position: absolute;
+    top: 80%;
+    left: 16%;
+    width: 33%;
+    height: 9.5%;
+    background: red;
+    opacity: 0;
+}
+
+.section8 .link2{
+    position: absolute;
+    top: 80%;
+    left: 51%;
+    width: 33%;
+    height: 9.5%;
+    background: red;
+    opacity: 0;
+}
+
+/*section9*/
+
+.section9 .link1{
+    position: absolute;
+    top: 61.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+    height: 10.5%;
+    background: red;
+    opacity: 0;
+}
+
+
+
+
+.popup .pop_wrap {
+    min-height: 540px;
+}
+
+.popup .desc_wrap {
+    height: 460px;
+}
+
+.popup .pop_wrap {
+    left: 50%;
+    margin-left: -500px;
+    width: 100%;
+    max-width: 1000px;
+    height: 540px;
+    margin-top: -270px;
+}
+
+.popup .desc_wrap .top {
+    background: #f4f6f9;
+    border-bottom: 2px solid #164194;
+    position: relative;
+    border-top-right-radius: 30px;
+    box-sizing: border-box;
+    padding: 20px 30px 20px 30px;
+    font-size: 1.5rem;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    color: #10264f;
+    font-weight: 500
+}
+
+.popup .desc_wrap .btm>div {
+    padding: 15px 20px 15px 20px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+    color: #333
+}
+
+.popup .desc_wrap .btm>div:last-child {
+    border-bottom: none;
+}
+
+.popup .desc_wrap .btm>div>b {
+    width: 170px;
+    float: left;
+    font-size: 1.5rem;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+}
+
+.popup .desc_wrap .btm>div>div {
+    width: calc(100% - 170px);
+    float: left;
+}
+
+.popup .desc_wrap .inid {
+    height: 40px;
+    padding: 8px 10px;
+    border: 1px solid #cccccc;
+    line-height: 1;
+    max-width: 300px;
+}
+
+.popup .desc_wrap .fileBox_wrap {
+    position: relative;
+}
+
+.popup .desc_wrap .fileBtn {
+    display: block;
+    width: 110px;
+    height: 40px;
+    float: left;
+}
+
+.popup .desc_wrap .fileBox_wrap p.ptxt {
+    clear: both;
+    display: block;
+    margin-top: 10px;
+    color: #164194;
+    font-weight: 400;
+}
+
+.popup .desc_wrap .fileBox .inputBox {
+    float: left;
+    box-sizing: border-box;
+}
+
+.popup .desc_wrap .fileBox input[type="text"] {
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 32px;
+    padding: 8px 10px;
+    border: 1px solid #cccccc;
+    line-height: 1;
+    background: #fafafa;
+    box-sizing: border-box;
+}
+
+.popup .desc_wrap .fileBox_wrap .inputBox {
+    float: left;
+    width: calc(100% - 170px);
+    box-sizing: border-box;
+}
+
+.popup .desc_wrap .fileBox p.ptxt {
+    clear: both;
+    display: block;
+    margin-top: 10px;
+    color: #164194;
+    font-weight: 400;
+}
+
+.popup .desc_wrap .fileBtn {
+    float: left;
+    margin-left: 5px;
+    box-sizing: border-box;
+}
+
+.popup .desc_wrap .fileBtn label {
+    display: inline-block;
+    width: 150px;
+    font-size: 14px;
+    line-height: 40px;
+    height: 40px;
+    letter-spacing: -1px;
+    color: #f6f6f6;
+    background: #757880;
+    text-align: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.popup .desc_wrap .fileBtn input[type="file"] {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.popup .btn_box {
+    text-align: center;
+    margin-top: 10px
+}
+
+.popup .tit_wrap>p.p2,
+.popup .desc_wrap .top.top2 {
+    display: none
+}
+
+.pop_transfer.type4 .tit_wrap>p,
+.pop_transfer.type4 .desc_wrap .top {
+    display: none
+}
+
+.pop_transfer.type4 .tit_wrap>p.p2,
+.pop_transfer.type4 .desc_wrap .top.top2 {
+    display: block
+}
+
+
+
+@media (max-width: 1280px) {
+
+
+}
+
+
+@media screen and (max-width: 960px){
+
+
+}
+
+
+@media screen and (max-width: 768px){
+    .event-view .mo-img {
+        display: block;
+    }
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    .section1 .link1 {
+        position: absolute;
+        top: 78%;
+        left: 3.5%;
+        width: 45%;
+        height: 10.5%;
+    }
+
+    .section1 .link2 {
+        position: absolute;
+        top: 78%;
+        left: 50%;
+        width: 45%;
+        height: 10.5%;
+    }
+
+    .section3 .link1 {
+        position: absolute;
+        top: 66%;
+        left: 3.5%;
+        width: 45%;
+        height: 19.5%;
+    }
+
+    .section3 .link2 {
+        position: absolute;
+        top: 66%;
+        left: 50%;
+        width: 45%;
+        height: 19.5%;
+    }
+
+    .section8 .link1 {
+        position: absolute;
+        top: 84%;
+        left: 3.5%;
+        width: 45%;
+        height: 8.5%;
+    }
+
+    .section8 .link2 {
+        position: absolute;
+        top: 84%;
+        left: 50%;
+        width: 45%;
+        height: 8.5%;
+    }
+
+    .section9 .link1 {
+        position: absolute;
+        top: 61.5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 94%;
+        height: 10.5%;
+    }
+
+}
+@media screen and (max-width: 640px){
+}
+@media screen and (max-width: 540px){
+}
+@media screen and (max-width: 480px){
+}
+

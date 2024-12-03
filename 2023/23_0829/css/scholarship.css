@@ -1,0 +1,169 @@
+.event-view {
+    background: #fff;
+}
+
+.event-view {
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+.event-view .section1 {
+    background: url('../img/scholarship_bg_01.jpg') center no-repeat;
+}
+
+.event-view .section2 {
+    background: url('../img/scholarship_bg_02.jpg') center no-repeat;
+}
+
+.event-view .section3 {
+    background: url('../img/scholarship_bg_03.jpg') center no-repeat;
+}
+
+.event-view .section4 {
+    background: #e5e7e6;
+}
+
+.event-view .section5 {
+    background: #0c0d1f;
+}
+
+.event-view .section6 {
+    background: #fff;
+}
+
+.section1 .link1 {
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 62%;
+    height: 11.5%;
+    background: red;
+    opacity: 0;
+}
+
+
+/*이미지 슬라이드*/
+.section5 .slide_area {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 91%;
+    height: 62%;
+    /* border: 1px solid red */
+}
+
+.sec5-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.section5 .swiper {
+    height: 100%;
+    overflow: hidden;
+}
+
+.section5 .swiper .swiper-wrapper {
+    transition-timing-function: linear;
+
+}
+
+.section5 .swiper-button-prev,
+.section5 .swiper-button-next {
+    width: 103px;
+    height: 141px;
+    top: 64%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.section5 .swiper-button-prev {
+    left: -50px;
+    background: url('../img/arrow-prev.png') no-repeat;
+}
+
+.section5 .swiper-button-next {
+    right: -50px;
+    background: url('../img/arrow-next.png') no-repeat;
+}
+
+.section5 .swiper-button-prev:after {
+    display: none;
+}
+
+.section5 .swiper-button-next:after {
+    display: none;
+}
+
+
+
+
+.float_wrap{position:fixed; right:10px; top:29%; z-index:11; padding-top:20px; }
+.float_wrap .banner{position:relative;}
+.float_wrap .f_link1{
+    position:absolute;
+    top: 4%;
+    left: 2%;
+    width: 94%;
+    height: 100%;
+    background:red;
+    opacity: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .event-view .mo-img {
+        display: block;
+    }
+
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    .section1 .link1 {
+        position: absolute;
+        top: 79%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65%;
+        height: 11.5%;
+        background: red;
+        opacity: 0;
+    }
+
+    .section5 .slide_area {
+        position: absolute;
+        top: 22%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 99%;
+        height: 62%;
+        /* border: 1px solid red; */
+    }
+
+
+}
