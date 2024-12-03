@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="canonical" href="https://www.miraeij.com/police/" />
+
+    <!-- Preload -->
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="https://cdn.plyr.io/static/fonts/gordita-medium.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="https://cdn.plyr.io/static/fonts/gordita-bold.woff2" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://www.miraeij.com/css/reset.css?1659522810">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/common.css?1676618243">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/content.css?1674696310">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/content2.css?1687847474">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/content3.css?1672279479">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/program.css?1672279590">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/custom.css?1672279572">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/responsive.css?1675686392">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/responsive2.css?1687847603">
+
+    <!--link rel="stylesheet" href="/police/css/reset.css?1680867484"-->
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/layout.css?1680767915">
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/compat.css?1680160990">
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/header.css?1681879703">
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/footer.css?1680597830">
+
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/main.css?1683076693">
+
+    <!--link rel="stylesheet" href="/police/css/swiper-bundle.min.css"-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+    <!-- Docs styles -->
+    <!--link rel="stylesheet" href="/css/dist/demo.css" /-->
+    <!--link rel="stylesheet" href="https://cab-starplayer.service.concdn.com/starplayer/1.0.0/starplyr.css" /-->
+
+    <!-- scripts -->
+    <script type="text/javascript" src="https://www.miraeij.com/js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/easing.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/common_0329.js?1682472182"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/function_jquery.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/function.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/smarteditor/js/HuskyEZCreator.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/calendar_beans_v2.0.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/jquery.form.js"></script>
+    <!--script type="text/javascript" src="/js/jquery-ui.min.js"></script-->
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript" src="https://www.miraeij.com/js/custom.js"></script>
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+
+    <script type="text/javascript" src="https://www.miraeij.com/js/jquery.ajaxQueue.min.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/CommonMJ.js"></script>
+</head>
+<body>
+
+    <!--230712-->
+
+    <link rel="stylesheet" href="css/mocktestpr.css">
+    <div id="sub" class="prm_page event-view fixed">
+
+
+        <div class="sec section1"><!--신청하기 버튼 페이지 내 이동-->
+            <div class="inner">
+                <img src="images/bigmatch_01.jpg" class="pc-img">
+                <img src="images/mo_bigmatch_01.jpg" class="mo-img">
+                <a href="#" class="link1" onclick="return goSection('section10');">빅매치모의고사 신청하기</a>
+            </div>
+        </div>
+
+        <div class="sec section2"><!--합격생 후기영상-->
+            <div class="inner">
+                <img src="images/bigmatch_02.jpg" class="pc-img">
+                <img src="images/mo_bigmatch_02.jpg" class="mo-img">
+                <div class="video">
+                    <!-- 로딩시 동영상 0:01의 화면이 보이도록 요청함 -->
+                    <video controls>
+                        <source src="https://kr.object.ncloudstorage.com/miraeij/police/exam/20230110_interview/230110_interview_1.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec section3"><!--수험생 후기 슬라이드-->
+            <div class="inner">
+                <img src="images/bigmatch_03.jpg" class="pc-img">
+                <img src="images/mo_bigmatch_03.jpg" class="mo-img">
+                <!--motion-->
+                <div class="motion_area change_img">
+
+                </div>
+                <!--//motion-->
+                <!--slides-->
+                <div class="ReveiwSlide_area">
+                    <div class="Reveiw_swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/s01.png" class="pc-img" alt="">
+                                <img src="images/mo_s01.png" class="mo-img" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/s02.png" class="pc-img" alt="">
+                                <img src="images/mo_s02.png" class="mo-img" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/s03.png" class="pc-img" alt="">
+                                <img src="images/mo_s03.png" class="mo-img" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/s04.png" class="pc-img" alt="">
+                                <img src="images/mo_s04.png" class="mo-img" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/s05.png" class="pc-img" alt="">
+                                <img src="images/mo_s05.png" class="mo-img" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/s06.png" class="pc-img" alt="">
+                                <img src="images/mo_s06.png" class="mo-img" alt="">
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                    <script>
+                        new Swiper('.Reveiw_swiper-container', {
+                            autoplay: {
+                                delay: 3000,
+                            },
+                            loop:true,
+                            navigation: {
+                                nextEl: '.swiper-button-next',
+                                prevEl: '.swiper-button-prev',
+                            },
+                        });
+                      </script>
+                </div>
+                <!--//slides-->
+            </div>
+        </div>
+
+        <div class="sec section4">
+            <div class="inner">
+                <img src="images/bigmatch_04.jpg" class="pc-img">
+                <img src="images/mo_bigmatch_04.jpg" class="mo-img">
+
+            </div>
+        </div>
+
+        <div class="sec section5">
+            <div class="inner">
+                <img src="images/bigmatch_05.jpg" class="pc-img">
+                <img src="images/mo_bigmatch_05.jpg" class="mo-img">
+
+            </div>
+        </div>
+
+        <div class="sec section6">
+            <div class="inner">
+                <img src="images/bigmatch_06.jpg" class="pc-img">
+                <img src="images/mo_bigmatch_06.jpg" class="mo-img">
+
+            </div>
+        </div>
+
+        <div class="sec section7"><!--적중내용더보기 링크-->
+            <div class="inner">
+                <img src="images/bigmatch_07.jpg" class="pc-img">
+                <img src="images/mo_bigmatch_07.jpg" class="mo-img">
+                <a href="book.pdf" class="link1" target="_blank">적중내용더보기</a>
+            </div>
+        </div>
+
+        <div class="sec section8">
+            <div class="inner">
+                <img src="images/bigmatch_08.jpg" class="pc-img">
+                <img src="images/mo_bigmatch_08.jpg" class="mo-img">
+
+            </div>
+        </div>
+
+        <div class="sec section9">
+            <div class="inner">
+                <img src="images/bigmatch_09.jpg" class="pc-img">
+                <img src="images/mo_bigmatch_09.jpg" class="mo-img">
+
+            </div>
+        </div>
+
+        <div class="sec section10"><!--모의고사 신청-->
+            <div class="inner">
+                <img src="images/bigmatch_10.jpg" class="pc-img">
+                <img src="images/mo_bigmatch_10.jpg" class="mo-img">
+                <a href="#" class="Mock_link1">학교대관 모의고사 신청하기</a>
+                <a href="#" class="Mock_link2">온라인 모의고사 신청하기</a>
+                <a href="#" class="Mock_link2 on">
+                    <img src="images/bnt_2.png" alt="" class="pc-img">
+                    <img src="images/mo_bnt_2.png" alt="" class="mo-img">
+                </a>
+                <a href="#" class="Mock_link3">오프라인 모의고사 신청하기</a>
+            </div>
+        </div>
+
+        <div class="sec section11">
+            <div class="inner">
+                <img src="images/bigmatch_11.jpg" class="pc-img">
+                <img src="images/mo_bigmatch_11.jpg" class="mo-img">
+
+            </div>
+        </div>
+
+        <div class="sec section12"><!--소문내기이미지-->
+            <div class="inner">
+                <img src="images/bigmatch_12.jpg" class="pc-img">
+                <img src="images/mo_bigmatch_12.jpg" class="mo-img">
+
+            </div>
+        </div>
+
+        <div class="sec section13"><!--sns링크-->
+            <div class="inner">
+                <img src="images/bigmatch_13.jpg" class="pc-img">
+                <img src="images/mo_bigmatch_13.jpg" class="mo-img">
+                <a href="0714.jpg" class="event_link1" download="빅매치모의고사소문내기이미지.jpg">소문내기이미지다운로드</a>
+                <a href="#" class="event_link2">페이지URL복사</a>
+                <a href="https://cafe.naver.com/polstudy" target="_blank" class="sns_link1">경꿈사</a>
+                <a href="https://cafe.naver.com/tocop" target="_blank" class="sns_link2">경수모</a>
+                <a href="https://cafe.naver.com/m2school" target="_blank" class="sns_link3">독공사</a>
+                <a href="https://cafe.naver.com/gugrade" target="_blank" class="sns_link4">공드림</a>
+                <a href="https://cafe.daum.net/policeacademy" target="_blank" class="sns_link5">경시모</a>
+                <button class="tag_copy" onclick="return CommonMJ.copyClipboard(this.innerText);"># 미래인재경찰 #잇츠리얼빅매치모의고사 #경찰모의고사 #전국모의고사 #미래인재 #모의고사무료</button>
+
+            </div>
+        </div>
+
+        <div class="sec section14">
+            <div class="inner">
+                <img src="images/bigmatch_14.jpg" class="pc-img">
+                <img src="images/mo_bigmatch_14.jpg" class="mo-img">
+                <div class="linkform">
+                    <div class="inner nanum">
+                        <input type="text" name="contents" value="" placeholder="소문내기 한 커뮤니티 게시글의 URL을 등록해주세요.">
+                        <input type="button" value="인증하기 &gt;&gt;" class="jqClick regFire"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec section15 bbs_wrap">
+            <div class="inner">
+                <img src="images/bigmatch_15.jpg" class="pc-img">
+                <img src="images/mo_bigmatch_15.jpg" class="mo-img">
+                <!--게시판-->
+                <div class="board">
+                    <div class="bbs bbs2 on">
+                        <!--게시판리스트-->
+                        <div class="list_bg">
+                            <table class="list">
+                                <caption>게시판 목록</caption>
+                                <colgroup>
+                                    <col width="80px">
+                                    <col width="*">
+                                    <col width="120px">
+                                    <col width="140px">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>내용</th>
+                                        <th>참여자</th>
+                                        <th>작성일</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="no">1113</td>
+                                        <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                        <td class="name">*********</td>
+                                        <td class="date">2023-01-02</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">1113</td>
+                                        <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                        <td class="name">*********</td>
+                                        <td class="date">2023-01-02</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">1113</td>
+                                        <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                        <td class="name">*********</td>
+                                        <td class="date">2023-01-02</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">1113</td>
+                                        <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                        <td class="name">*********</td>
+                                        <td class="date">2023-01-02</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">1113</td>
+                                        <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                        <td class="name">*********</td>
+                                        <td class="date">2023-01-02</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">1113</td>
+                                        <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                        <td class="name">*********</td>
+                                        <td class="date">2023-01-02</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">1113</td>
+                                        <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                        <td class="name">*********</td>
+                                        <td class="date">2023-01-02</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">1113</td>
+                                        <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                        <td class="name">*********</td>
+                                        <td class="date">2023-01-02</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="no">1113</td>
+                                        <td class="title txt_l">https://cafe.naver.com/tocop/1519421</td>
+                                        <td class="name">*********</td>
+                                        <td class="date">2023-01-02</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//게시판리스트-->
+                        <!--페이징-->
+                        <div class="pagenate clear">
+                            <ul class="paging">
+                                <li><a href="#" class="current">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                            </ul>
+                        </div>
+                        <!--//페이징-->
+
+                    </div>
+                    <input type="hidden" id="showCategory" value="2">
+                </div>
+                <!--//게시판-->
+            </div>
+        </div>
+
+        <div class="sec section16">
+            <div class="inner">
+                <img src="images/bigmatch_16.jpg" class="pc-img">
+                <img src="images/mo_bigmatch_16.jpg" class="mo-img">
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script type="text/javascript">
+        function goSection(str){
+            jQuery('html').animate({'scrollTop' : jQuery('.' + str).offset().top}, 600);
+            return false;
+        }
+
+        </script>
+    <!--//230712-->
+
+<!--학교대관모의고사-->
+<div class="request_pop" style="display: none;">
+    <div class="size">
+        <div class="pop_wrap">
+            <div class="tit_wrap">
+                <p class="fw500">
+                    <em class="s_title_txt">학교대관</em><br>
+                    It’s Real 빅매치 모의고사 신청
+                </p>
+                <a href="#" class="pop_closebtn popClick"><img src="/img/icon_close.png"></a>
+            </div>
+            <div class="desc_wrap clear">
+                <div class="top">
+                    <p>
+                        <b><span class="icon"><img src="/img/icon_textbook_no.png"></span></b>
+                        학교대관 모의고사 신청 내용을 등록해주세요
+                    </p>
+                </div>
+                <div class="btm">
+                    <div class="bbs">
+
+                        <table class="write">
+                            <caption>글쓰기</caption>
+                            <colgroup>
+                                <col width="180px">
+                                <col width="*">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>신청자 이름/ 연락처</th>
+                                    <td><?=$_SESSION['member_name']?> / <?=$_SESSION['member_cell']?></td>
+                                </tr>
+                                <tr>
+                                    <th>시험 장소</th>
+                                    <td>
+                                        &nbsp;&nbsp;성남 고등학교
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>직렬 선택</th>
+                                    <td>
+                                        <span class="select">
+                                            <select name="series" class="dSelect offline-data" title="직렬 선택">
+                                                <option value="">직렬 선택하기</option>
+
+                                                <?php foreach ($SERIES_LIST['경찰공채'] as $k => $v) : ?>
+                                                <option value="<?=$v?>"><?=$v?></option>
+                                                <?php endforeach; ?>
+
+                                            </select>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>지원 지역청</th>
+                                    <td>
+                                        <span class="select">
+                                            <select id="area2" name="area2" class="dSelect offline-data" title="지역청 선택">
+                                                <option value="">지역청 선택하기</option>
+                                                <option value="서울특별시">서울특별시</option>
+                                                <option value="경기남부">경기남부</option>
+                                                <option value="경기북부">경기북부</option>
+                                                <option value="인천광역시">인천광역시</option>
+                                                <option value="부산광역시">부산광역시</option>
+                                                <option value="대구광역시">대구광역시</option>
+                                                <option value="광주광역시">광주광역시</option>
+                                                <option value="대전광역시">대전광역시</option>
+                                                <option value="울산광역시">울산광역시</option>
+                                                <option value="세종특별자치시">세종특별자치시</option>
+                                                <option value="강원도">강원도</option>
+                                                <option value="경상북도">경상북도</option>
+                                                <option value="경상남도">경상남도</option>
+                                                <option value="전라남도">전라남도</option>
+                                                <option value="전라북도">전라북도</option>
+                                                <option value="충청남도">충청남도</option>
+                                                <option value="충청북도">충청북도</option>
+                                                <option value="제주특별자치도">제주특별자치도</option>
+                                            </select>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>응시 번호</th>
+                                    <td>
+                                        <input type="text" name="examNum" value="" placeholder="예)12345" class="offline-data">
+                                        <span class="t_red">※ 응시번호는 필수 사항으로, 8.19. 2차 시험의 실제 응시번호로 입력 가능합니다.</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="agree">
+                                            <div class="txt_wrap">
+                                                <div class="txt">
+                                                    <h3>개인정보 수집/이용 동의 안내</h3>
+                                                    <ul>
+                                                        <li>1.개인정보 수집 이용 목적
+                                                            <span>- 이벤트 신청 접수에 따른 본인 확인 절차 진행 및 문의사항 응대</span>
+                                                            <span>- 이벤트 참여에 따른 경품 지급</span>
+                                                        </li>
+                                                        <li>2.개인정보 수집 항목
+                                                            <span>- 신청인의 이름, 휴대폰 번호, 응시직렬, 응시번호</span>
+                                                        </li>
+                                                        <li>3.개인정보 이용기간 및 보유기간
+                                                            <span>- 본 수집, 활용목적 달성 후 바로 파기 </span>
+                                                        </li>
+                                                        <li>4.개인정보 제공 동의 거부 권리 및 동의 거부에 따른 불이익
+                                                              <span>- 귀하는 개인 정보 제공 동의를 거부할 권리가 있으며 동의 거부에 따른 불이익은 없으나, 위 제공사항은 이벤트 참여를 위해 반드시 필요한 사항으로 거부하실 경우 이벤트 신청이 불가능함을 알려드립니다.  </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p class="check">
+                                                <input type="checkbox" name="agree" id="agree" value="Y" class="required offline-data" title="이용약관3">
+                                                <label for="agree">개인정보 수집에 동의합니다.</label>
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- //write--->
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="btn_box">
+                <a href="#" class="btn popClick regOffline">신청하기</a>
+                <a href="#" class="btn btn1 cancel_btn popClick pop_closebtn">취소</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//-->
+
+<!-- 온라인 팝업 -->
+<div class="request_pop online"  >
+    <div class="size">
+        <div class="pop_wrap">
+            <div class="tit_wrap">
+                <p class="fw500">
+                    <em class="s_title_txt">온라인</em><br>
+                    It’s Real 빅매치 모의고사 신청
+                </p>
+                <a href="#" class="pop_closebtn popClick"><img src="/img/icon_close.png"></a>
+            </div>
+            <div class="desc_wrap clear">
+                <div class="top">
+                    <p>
+                        <b><span class="icon"><img src="/img/icon_textbook_no.png"></span></b>
+                        온라인 모의고사 신청 내용을 등록해주세요
+                    </p>
+                </div>
+                <div class="btm">
+                    <div class="bbs">
+
+                        <table class="write">
+                            <caption>글쓰기</caption>
+                            <colgroup>
+                                <col width="180px">
+                                <col width="*">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>신청자 이름/ 연락처</th>
+                                    <td>신인숙 / 010-8653-0836</td>
+                                </tr>
+                                <tr>
+                                    <th>직렬 선택</th>
+                                    <td>
+                                        <span class="select">
+                                            <select name="series" class="dSelect online-data" title="직렬 선택">
+                                                <option value="">직렬 선택하기</option>
+
+                                                                                            <option value="일반공채(남)">일반공채(남)</option>
+                                                                                            <option value="일반공채(여)">일반공채(여)</option>
+                                                                                            <option value="경찰행정 경채">경찰행정 경채</option>
+                                                                                            <option value="101단">101단</option>
+
+                                            </select>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>지원 지역청</th>
+                                    <td>
+                                        <span class="select">
+                                            <select name="area" class="dSelect online-data" title="지역청 선택">
+                                                <option value="">지역청 선택하기</option>
+
+                                                                                            <option value="서울">서울</option>
+                                                                                            <option value="부산">부산</option>
+                                                                                            <option value="대구">대구</option>
+                                                                                            <option value="인천">인천</option>
+                                                                                            <option value="광주">광주</option>
+                                                                                            <option value="대전">대전</option>
+                                                                                            <option value="울산">울산</option>
+                                                                                            <option value="경기남부">경기남부</option>
+                                                                                            <option value="경기북부">경기북부</option>
+                                                                                            <option value="강원">강원</option>
+                                                                                            <option value="충북">충북</option>
+                                                                                            <option value="충남">충남</option>
+                                                                                            <option value="전북">전북</option>
+                                                                                            <option value="전남">전남</option>
+                                                                                            <option value="경북">경북</option>
+                                                                                            <option value="경남">경남</option>
+                                                                                            <option value="제주">제주</option>
+
+                                            </select>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>응시 번호</th>
+                                    <td>
+                                        <input type="text" name="examNum" value="" placeholder="예)12345" class="online-data">
+                                        <span class="t_red">※ 응시번호는 필수 사항으로, 8.19. 2차 시험의 실제 응시번호로 입력 가능합니다.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="agree">
+                                            <div class="txt_wrap">
+                                                <div class="txt">
+                                                    <h3>개인정보 수집/이용 동의 안내</h3>
+                                                    <ul>
+                                                        <li>1.개인정보 수집 이용 목적
+                                                            <span>- 이벤트 신청 접수에 따른 본인 확인 절차 진행 및 문의사항 응대</span>
+                                                            <span>- 이벤트 참여에 따른 경품 지급</span>
+                                                        </li>
+                                                        <li>2.개인정보 수집 항목
+                                                            <span>- 신청인의 이름, 휴대폰 번호, 응시직렬, 응시번호</span>
+                                                        </li>
+                                                        <li>3.개인정보 이용기간 및 보유기간
+                                                            <span>- 본 수집, 활용목적 달성 후 바로 파기 </span>
+                                                        </li>
+                                                        <li>4.개인정보 제공 동의 거부 권리 및 동의 거부에 따른 불이익
+                                                              <span>- 귀하는 개인 정보 제공 동의를 거부할 권리가 있으며 동의 거부에 따른 불이익은 없으나, 위 제공사항은 이벤트 참여를 위해 반드시 필요한 사항으로 거부하실 경우 이벤트 신청이 불가능함을 알려드립니다.  </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p class="check">
+                                                <input type="checkbox" name="agree" id="agree1" value="Y" class="required online-data" title="이용약관3">
+                                                <label for="agree1">개인정보 수집에 동의합니다.</label>
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- //write--->
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="btn_box">
+                <a href="#" class="btn popClick regOnline">신청하기</a>
+                <a href="#" class="btn btn1 cancel_btn popClick pop_closebtn">취소</a>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+    <script type="text/javascript">
+    var _POP1 = jQuery('.request_pop.online')
+            .on('click', '.popClick', function(event) { event.preventDefault(); event.stopPropagation(); var _this = jQuery(this);
+
+                if (_this.hasClass('pop_closebtn')) {
+                    _POP1.stop().fadeOut(400);
+
+                } else if (_this.hasClass('regOnline')) {
+                    var data = {
+                                 op:'online',
+                                 series:jQuery('select[name="series"]', _POP1).val() || false,
+                                 area: jQuery('select[name="area"]', _POP1).val() || false,
+                                 examNum: jQuery(':text[name="examNum"]', _POP1).val() || false,
+                                 agree: jQuery(':checkbox[name="agree"]:checked', _POP1).val() || false,
+                               };
+
+                    if (!data.series) {
+                        alert('직렬을 선택해 주세요.');
+
+                    } else if (!data.area) {
+                        alert('지원 지역청을 선택해 주세요.');
+
+                    } else if (!data.examNum || data.examNum.length != 5) {
+                        alert('응시번호를 정확히 입력해 주세요.');
+
+                    } else if (!data.agree) {
+                        alert('개인정보 수집에 동의해 주세요.');
+
+                    } else if (confirm('온라인 모의고사를 신청하시겠습니까?')) {
+                         CommonMJ.post({ url:'proc.php', data:data })
+                             .done(function(result) { if (result.alertmsg || false) { alert(result.alertmsg); }
+
+                                if (result.errno == 0) {
+                                    self.location.reload();
+
+                                } else if (result.errno == 2) {
+                                    alert('로그인이 필요한 서비스입니다.');
+                                    location.href = '/member/login.php?url='+encodeURIComponent(location.href);
+                                }
+                             });
+                    }
+                }
+
+            });
+    </script>
+    <!-- //온라인 팝업 -->
+<!-- 오프라인 팝업 -->
+<div class="request_pop offline" >
+    <div class="size">
+        <div class="pop_wrap">
+            <div class="tit_wrap">
+                <p class="fw500">
+                    <em class="s_title_txt">오프라인</em><br>
+                    It’s Real 빅매치 모의고사 신청
+                </p>
+                <a href="#" class="pop_closebtn popClick"><img src="/img/icon_close.png"></a>
+            </div>
+            <div class="desc_wrap clear">
+                <div class="top">
+                    <p>
+                        <b><span class="icon"><img src="/img/icon_textbook_no.png"></span></b>
+                        오프라인 모의고사 신청 내용을 등록해주세요
+                    </p>
+                </div>
+                <div class="btm">
+                    <div class="bbs">
+
+                        <table class="write">
+                            <caption>글쓰기</caption>
+                            <colgroup>
+                                <col width="180px">
+                                <col width="*">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>신청자 이름/ 연락처</th>
+                                    <td>신인숙 / 010-8653-0836</td>
+                                </tr>
+                                <tr>
+                                    <th>희망 캠퍼스선택</th>
+                                    <td>
+                                        <span class="select">
+                                            <select name="area1" class="dSelect offline-data" title="캠퍼스 선택">
+                                                <option value="">캠퍼스 선택하기</option>
+
+                                                                                            <option value="노량진">노량진</option>
+                                                                                            <option value="부산">부산</option>
+                                                                                            <option value="광주">광주</option>
+                                                                                            <option value="전주">전주</option>
+                                                                                            <option value="제주">제주</option>
+
+                                            </select>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>직렬 선택</th>
+                                    <td>
+                                        <span class="select">
+                                            <select name="series" class="dSelect offline-data" title="직렬 선택">
+                                                <option value="">직렬 선택하기</option>
+
+                                                                                            <option value="일반공채(남)">일반공채(남)</option>
+                                                                                            <option value="일반공채(여)">일반공채(여)</option>
+                                                                                            <option value="경찰행정 경채">경찰행정 경채</option>
+                                                                                            <option value="101단">101단</option>
+
+                                            </select>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>지원 지역청</th>
+                                    <td>
+                                        <span class="select">
+                                            <select name="area2" class="dSelect offline-data" title="지역청 선택">
+                                                <option value="">지역청 선택하기</option>
+
+                                                                                            <option value="서울">서울</option>
+                                                                                            <option value="부산">부산</option>
+                                                                                            <option value="대구">대구</option>
+                                                                                            <option value="인천">인천</option>
+                                                                                            <option value="광주">광주</option>
+                                                                                            <option value="대전">대전</option>
+                                                                                            <option value="울산">울산</option>
+                                                                                            <option value="경기남부">경기남부</option>
+                                                                                            <option value="경기북부">경기북부</option>
+                                                                                            <option value="강원">강원</option>
+                                                                                            <option value="충북">충북</option>
+                                                                                            <option value="충남">충남</option>
+                                                                                            <option value="전북">전북</option>
+                                                                                            <option value="전남">전남</option>
+                                                                                            <option value="경북">경북</option>
+                                                                                            <option value="경남">경남</option>
+                                                                                            <option value="제주">제주</option>
+
+                                            </select>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>응시 번호</th>
+                                    <td>
+                                        <input type="text" name="examNum" value="" placeholder="예)12345" class="offline-data">
+                                        <span class="t_red">※ 응시번호는 필수 사항으로, 8.19. 2차 시험의 실제 응시번호로 입력 가능합니다.</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="agree">
+                                            <div class="txt_wrap">
+                                                <div class="txt">
+                                                    <h3>개인정보 수집/이용 동의 안내</h3>
+                                                    <ul>
+                                                        <li>1.개인정보 수집 이용 목적
+                                                            <span>- 이벤트 신청 접수에 따른 본인 확인 절차 진행 및 문의사항 응대</span>
+                                                            <span>- 이벤트 참여에 따른 경품 지급</span>
+                                                        </li>
+                                                        <li>2.개인정보 수집 항목
+                                                            <span>- 신청인의 이름, 휴대폰 번호, 응시직렬, 응시번호</span>
+                                                        </li>
+                                                        <li>3.개인정보 이용기간 및 보유기간
+                                                            <span>- 본 수집, 활용목적 달성 후 바로 파기 </span>
+                                                        </li>
+                                                        <li>4.개인정보 제공 동의 거부 권리 및 동의 거부에 따른 불이익
+                                                              <span>- 귀하는 개인 정보 제공 동의를 거부할 권리가 있으며 동의 거부에 따른 불이익은 없으나, 위 제공사항은 이벤트 참여를 위해 반드시 필요한 사항으로 거부하실 경우 이벤트 신청이 불가능함을 알려드립니다.  </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <p class="check">
+                                                <input type="checkbox" name="agree" value="Y" id="agree2" class="required offline-data" title="이용약관3">
+                                                <label for="agree2">개인정보 수집에 동의합니다.</label>
+                                            </p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- //write--->
+
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="btn_box">
+                <a href="#" class="btn popClick regOffline">신청하기</a>
+                <a href="#" class="btn btn1 cancel_btn popClick pop_closebtn">취소</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+    var _POP2 = jQuery('.request_pop.offline')
+            .on('click', '.popClick', function(event) { event.preventDefault(); event.stopPropagation(); var _this = jQuery(this);
+
+                if (_this.hasClass('pop_closebtn')) {
+                    _POP2.stop().fadeOut(400);
+
+                } else if (_this.hasClass('regOffline')) {
+                    var data = {
+                                 op:'offline',
+                                 area1: jQuery('select[name="area1"]', _POP2).val() || false,
+                                 area2: jQuery('select[name="area2"]', _POP2).val() || false,
+                                 series:jQuery('select[name="series"]', _POP2).val() || false,
+                                 examNum:jQuery(':text[name="examNum"]', _POP2).val() || false,
+                                 agree: jQuery(':checkbox[name="agree"]:checked', _POP2).val() || false,
+                               };
+
+                    if (!data.area1) {
+                        alert('희망 캠퍼스를 선택해 주세요.');
+
+                    } else if (!data.series) {
+                        alert('직렬을 선택해 주세요.');
+
+                    } else if (!data.area2) {
+                        alert('지원 지역청을 선택해 주세요.');
+
+                    } else if (!data.examNum || data.examNum.length != 5) {
+                        alert('응시번호를 정확히 입력해 주세요.');
+
+                    } else if (!data.agree) {
+                        alert('개인정보 수집에 동의해 주세요.');
+
+                    } else if (confirm('오프라인 모의고사를 신청하시겠습니까?')) {
+                         CommonMJ.post({ url:'proc.php', data:data })
+                             .done(function(result) { if (result.alertmsg || false) { alert(result.alertmsg); }
+
+                                if (result.errno == 0) {
+                                    self.location.reload();
+
+                                } else if (result.errno == 2) {
+                                    alert('로그인이 필요한 서비스입니다.');
+                                    location.href = '/member/login.php?url='+encodeURIComponent(location.href);
+                                }
+                             });
+                    }
+                }
+
+            });
+    </script>
+
+  <!-- //오프라인 팝업 -->
+</body>
+</html>
