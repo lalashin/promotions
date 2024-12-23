@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="canonical" href="https://www.miraeij.com/police/classes/online/pass/" />
+
+    <!-- Preload -->
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="https://cdn.plyr.io/static/fonts/gordita-medium.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="https://cdn.plyr.io/static/fonts/gordita-bold.woff2" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://www.miraeij.com/css/reset.css?1659522810">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/common.css?1676618243">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/content.css?1694075803">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/content2.css?1687847474">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/content3.css?1672279479">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/program.css?1672279590">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/custom.css?1672279572">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/responsive.css?1675686392">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/responsive2.css?1687847603">
+
+    <!--link rel="stylesheet" href="/police/css/reset.css?1680867484"-->
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/layout.css?1692776438">
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/compat.css?1680160990">
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/header.css?1695355617">
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/footer.css?1680597830">
+
+
+    <!--link rel="stylesheet" href="/police/css/swiper-bundle.min.css"-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+    <!-- Docs styles -->
+    <!--link rel="stylesheet" href="/css/dist/demo.css" /-->
+    <!--link rel="stylesheet" href="https://cab-starplayer.service.concdn.com/starplayer/1.0.0/starplyr.css" /-->
+
+    <!-- scripts -->
+    <script type="text/javascript" src="https://www.miraeij.com/js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/easing.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/common_0329.js?1682472182"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/function_jquery.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/function.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/smarteditor/js/HuskyEZCreator.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/calendar_beans_v2.0.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/jquery.form.js"></script>
+    <!--script type="text/javascript" src="/js/jquery-ui.min.js"></script-->
+    <script type="text/javascript" src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript" src="https://www.miraeij.com/js/custom.js"></script>
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+
+    <script type="text/javascript" src="https://www.miraeij.com/js/jquery.ajaxQueue.min.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/CommonMJ.js?1694492999"></script>
+</head>
+<body>
+  바닥
+
+
+  <!--타사환승팝업-->
+  <style>
+/*팝업*/
+.popup .pop_wrap {
+    left: 50%;
+    margin-left: -500px;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    min-height: 720px;
+    margin-top: -370px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.popup .desc_wrap {
+    padding: 0px 30px 0px 30px;
+    height: 530px;
+    overflow-y: scroll;
+}
+
+.popup .desc_wrap .top {
+    background: #f4f6f9;
+    border-bottom: 2px solid #164194;
+    position: relative;
+    border-top-right-radius: 0;
+    box-sizing: border-box;
+    padding: 20px 30px 20px 30px;
+    font-size: 1.5rem;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    color: #10264f;
+    font-weight: 500
+}
+
+.popup .desc_wrap .btm>div {
+    padding: 5px 20px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+    color: #333
+}
+
+.popup .desc_wrap .btm>div:last-child {
+    border-bottom: none;
+}
+
+.popup .desc_wrap .btm>div>b {
+    width: 200px;
+    float: left;
+    font-size: 1.5rem;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+}
+
+.popup .desc_wrap .btm>div>div {
+    width: calc(100% - 100px);
+    float: left;
+}
+
+.popup .desc_wrap .radio_box:first-of-type {
+    margin-left: 0;
+}
+.popup .desc_wrap .radio_box {
+    margin-left: 40px;
+}
+.popup .desc_wrap .radio_box label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+}
+.popup .desc_wrap .radio_box input[type="radio"]:checked+label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: #164194;
+}
+.popup .desc_wrap .inid {
+    height: 40px;
+    padding: 8px 10px;
+    border: 1px solid #cccccc;
+    line-height: 1;
+    max-width: 300px;
+}
+
+.popup .desc_wrap .inid2 {
+    height: 40px;
+    padding: 8px 10px;
+    border: 1px solid #cccccc;
+    line-height: 1;
+    max-width: 100%;
+}
+
+.popup .desc_wrap .fileBox_wrap {
+    position: relative;
+}
+
+.popup .desc_wrap .fileBtn {
+    display: block;
+    width: 110px;
+    height: 40px;
+    float: left;
+}
+
+.popup .desc_wrap .fileBox_wrap p.ptxt {
+    clear: both;
+    display: block;
+    margin-top: 10px;
+    color: #164194;
+    font-weight: 400;
+}
+
+.popup .desc_wrap .fileBox .inputBox {
+    float: left;
+    box-sizing: border-box;
+}
+
+.popup .desc_wrap .fileBox input[type="text"] {
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 32px;
+    padding: 8px 10px;
+    border: 1px solid #cccccc;
+    line-height: 1;
+    background: #fafafa;
+    box-sizing: border-box;
+}
+
+.popup .desc_wrap .fileBox_wrap .inputBox {
+    float: left;
+    width: calc(100% - 170px);
+    box-sizing: border-box;
+}
+
+.popup .desc_wrap .fileBox p.ptxt {
+    clear: both;
+    display: block;
+    margin-top: 10px;
+    color: #164194;
+    font-weight: 400;
+}
+
+.popup .desc_wrap .fileBtn {
+    float: left;
+    margin-left: 5px;
+    box-sizing: border-box;
+}
+
+.popup .desc_wrap .fileBtn label {
+    display: inline-block;
+    width: 150px;
+    font-size: 14px;
+    line-height: 40px;
+    height: 40px;
+    letter-spacing: -1px;
+    color: #f6f6f6;
+    background: #757880;
+    text-align: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.popup .desc_wrap .fileBtn input[type="file"] {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.popup .desc_wrap .notice {
+    white-space: pre;
+}
+
+.popup .btn_box {
+    text-align: center;
+    padding: 20px 0;
+    background: #fff;
+}
+
+.popup .eventNotice {
+    font-size: 13px;
+}
+
+.popup .desc_wrap .group {
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup .desc_wrap .group p {
+    font-size: 12px;
+    margin: 12px 0 0;
+}
+
+.popup .desc_wrap .group+.group {
+    border-top: none;
+    padding-top: 15px;
+}
+
+.popup .desc_wrap .group+.group>strong {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.group .agree1 {
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100px;
+    padding: 5px 20px;
+    font-size: 13px;
+    border: 1px solid #999;
+    margin: 3px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .pop_wrap {
+        left: 0;
+        margin-left: 3%;
+        width: 94%
+    }
+
+}
+@media screen and (max-width: 540px) {
+
+    .popup .desc_wrap .top {
+        padding: 20px 15px;
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+
+    .popup .desc_wrap .btm>div {
+        padding: 10px;
+    }
+
+    .popup .desc_wrap .btm>div>b {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+
+    .popup .desc_wrap .btm>div>div {
+        width: calc(100% - 30px);
+        float: none;
+        /* display: block; */
+    }
+
+    .popup .pop_wrap {
+        height: auto;
+        margin-top: -340px;
+    }
+
+    .popup .desc_wrap {
+        height: auto;
+    }
+
+    .popup .desc_wrap .fileBox_wrap .inputBox {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+
+    .popup .desc_wrap .fileBtn {
+        margin-left: 0;
+    }
+}
+  </style>
+ <div class="popup pop_transfer1" data-gubun="환승인증" style="display:block;">
+    <div class="size">
+        <div class="pop_wrap">
+            <div class="tit_wrap">
+                <p class="fw500">
+                    타환승 인증하기
+                    <!--재등록 인증하기-->
+                    <!--간부 시험 인증하기-->
+                    <!--현직 경찰 인증하기-->
+                    <!--오프라인 모의고사 신청-->
+                    <!--합격예측 서비스-->
+                </p>
+                <a href="#" class="popClick pop_closebtn"><img src="https://www.miraeij.com/police/img/icon_close.png"></a>
+            </div>
+            <div class="desc_wrap clear">
+                <!--타환승 인증 텍스트-->
+                <div class="top">
+                    타학원 갱신 가능한 PASS 회원 중 결제내역 및 환불 인증이 가능한 이미지를 첨부해주세요.<br>
+                    첨부파일은 jpg, gif, png 파일만 등록 가능하며 5MB 이하의 파일만 등록 가능합니다.
+                    <span style="color:#ff3838; display: block;">※ 반드시 타학원의 패스명과 수강생 본인의 이름, 결제내역 또는 환불내역이
+                    모두 보이게 캡쳐하여 업로드 해주셔야 인증이 완료됩니다.</span>
+                </div>
+                <!--재등록 인증 텍스트-->
+                <div class="top">
+                    타학원 갱신 가능한 PASS 회원 중 결제내역 및 환불 인증이 가능한 이미지를 첨부해주세요.<br>
+                    첨부파일은 jpg, gif, png 파일만 등록 가능하며 5MB 이하의 파일만 등록 가능합니다.
+                    <span style="color:#ff3838; display: block;">※ 반드시 타학원의 패스명과 수강생 본인의 이름, 결제내역 또는 환불내역이
+                    모두 보이게 캡쳐하여 업로드 해주셔야 인증이 완료됩니다.</span>
+                </div>
+                <!--간부시험인증 텍스트-->
+                <div class="top">
+                    경찰 간부 시험 응시 사진(접수증 or 응시표)을 첨부해주셔야 합니다.<br>
+                    첨부파일은 jpg, gif, png 파일만 등록 가능하며 5MB 이하의 파일만 등록 가능합니다.
+                    <span style="color:#ff3838; display: block;">※ 반드시 신청자 본인의 응시 시험 및 성함이 모두 보이게 캡쳐하여 업로드해주셔야 인증이 완료됩니다.</span>
+                </div>
+                <!--현직경찰인증 텍스트-->
+                <div class="top">
+                    경찰 공무원증 앞면 사진을 첨부해주셔야 합니다<br>
+                    첨부파일은 jpg, gif, png 파일만 등록 가능하며 5MB 이하의 파일만 등록 가능합니다.
+                    <span style="color:#ff3838; display: block;">※ 반드시 신청자 본인의 얼굴, 성함이 모두 보이게 캡쳐하여 업로드해주셔야 인증이 완료됩니다.</span>
+                </div>
+                <div class="top">
+                    <p>
+                        <b><span class="icon"><img src="https://www.miraeij.com/police/img/icon_textbook_no.png"></span></b>
+                        오프라인 모의고사 신청 내용을 등록해주세요
+                    </p>
+                </div>
+                <div class="btm">
+                    <div class="clear">
+                        <b class="fw500">아이디</b>
+                        <div class="fw400 fon1_8">
+                            <input type="text" name="id" value="" readonly="readonly" class="radio-box inid br4 cert-data">
+                        </div>
+                    </div>
+
+                    <!--온라인모의고사 수집-->
+                    <div class="clear">
+                        <b class="fw500">신청자 이름/ 연락처</b>
+                        <div class="fw400 fon1_8">
+                            <input type="text" name="" value="<?=$_SESSION['member_name']?> / <?=$_SESSION['member_cell']?>" readonly="readonly" class="radio-box inid br4 cert-data">
+                        </div>
+                    </div>
+                    <!--간부시험인증 / 현직경찰인증 수집-->
+                    <div class="clear">
+                        <b class="fw500">내용</b>
+                        <div class="fw400 fon1_8">
+                            <div class="fw400 fon1_8">
+                                <input type="text" name="contents" value="" class="inid2 br4 cert-data">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear">
+                        <b class="fw500">기존 수강학원</b>
+                        <div class="fw400 fon1_8">
+                            <select name="contents" class="dSelect cert-data" title="기존 수강학원 선택">
+                                <option value="">선택</option>
+
+                                    <option value="해커스">해커스</option>
+                                    <option value="경단기">경단기</option>
+                                    <option value="에듀윌">에듀윌</option>
+                                    <option value="프라임법학">프라임법학</option>
+                                    <option value="윌비스">윌비스</option>
+                                    <option value="모두경">모두경</option>
+                                    <option value="기타">기타</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="clear">
+                        <b class="fw500">첨부파일</b>
+                        <div class="fw400 fon1_8 clear fileBox_wrap">
+                            <div class="inputBox">
+                                <input type="text" name="filename" disabled="disabled" value="" class="br4 upName cert-data" placeholder="선택된 파일이 없음">
+                                <input type="hidden" name="filedata" class="upData cert-data">
+                            </div>
+                            <div class="fileBtn">
+                                <label class="upOpen">파일찾기</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//인증관련 공통 수집 정보-->
+
+                    <!--오프라인 모의고사 신청 수집 정보-->
+                    <div class="clear">
+                        <b class="fw500">희망 캠퍼스선택</b>
+                        <div class="fw400 fon1_8">
+                            <select name="contents" class="dSelect mock-data" title="캠퍼스 선택">
+                                <option value="">캠퍼스 선택하기</option>
+                                <option value="노량진">노량진</option>
+
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="clear">
+                        <b class="fw500">계급 선택</b>
+                        <div class="fw400 fon1_8">
+                            <select name="contents" class="dSelect mock-data" title="계급 선택">
+                                <option value="">응시 계급 선택</option>
+                                <option value="경장">경장</option>
+                                <option value="경사">경사</option>
+                                <option value="경위">경위</option>
+                                <option value="경감">경감</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="clear">
+                        <b class="fw500">직렬 선택</b>
+                        <div class="fw400 fon1_8">
+                            <select name="contents" class="dSelect mock-data" title="직렬 선택">
+                                <option value="">직렬 선택하기</option>
+                                <option value="일반공채(남)">일반공채(남)</option>
+                                <option value="일반공채(여)">일반공채(여)</option>
+                                <option value="101단">101단</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="clear">
+                        <b class="fw500">지원 지역청</b>
+                        <div class="fw400 fon1_8">
+                            <select name="contents" class="dSelect cert-data" title="지역청 선택">
+                                <option value="">지역청 선택하기</option>
+                                <option value="서울">서울</option>
+                                <option value="부산">부산</option>
+                                <option value="대구">대구</option>
+                                <option value="인천">인천</option>
+                                <option value="광주">광주</option>
+                                <option value="대전">대전</option>
+                                <option value="세종">세종</option>
+                                <option value="울산">울산</option>
+                                <option value="경기남부">경기남부</option>
+                                <option value="경기북부">경기북부</option>
+                                <option value="강원">강원</option>
+                                <option value="충북">충북</option>
+                                <option value="충남">충남</option>
+                                <option value="전북">전북</option>
+                                <option value="전남">전남</option>
+                                <option value="경북">경북</option>
+                                <option value="경남">경남</option>
+                                <option value="제주">제주</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--//오프라인 모의고사 신청 수집 정보-->
+
+                    <!--합격예측-->
+                    <div class="clear">
+                        <b class="fw500">응시번호</b>
+                        <div class="fw400 fon1_8">
+                            <input type="text" name="" value="" placeholder="입력 완료시 3법 최신 판례 특강이 제공됩니다. "  class="radio-box inid br4 cert-data">
+                        </div>
+                        <div class="fw400 fon1_8">
+                            ※ 응시번호는 필수 사항으로, 8.19. 2차 시험의 실제 응시번호로 입력 가능합니다.
+                        </div>
+                    </div>
+
+                    <!--//합격예측-->
+
+                    <!--타환승 인증 유의사항-->
+                    <div class="group">
+                        <b class="fw500">이벤트 유의사항</b>
+                        <div class="eventNotice">
+                            1. 타사 학원 수강 이력을 인증하시면 관리자 확인 후 할인 쿠폰을 발급 해 드립니다.<br>
+                            2. 환승 이벤트 적용 대상 : 타학원 학원 강의 수강 회원 <br>
+                            3. 쿠폰 발급 이후에 문자 안내를 드리며, 추가 궁금하신 사항은 학원(02-826-2000)으로 문의 바랍니다.
+                        </div>
+
+                    </div>
+                    <!--재등록 인증 유의사항-->
+                    <div class="group">
+                        <b class="fw500">이벤트 유의사항</b>
+
+                        <div class="eventNotice case2 on">
+                            1. 자사 학원 수강 이력을 인증하시면 관리자 확인 후 할인 쿠폰을 발급 해 드립니다.<br>
+                            2. 재등록 이벤트 적용 대상 : 자사 학원 강의 수강 회원 <br>
+                            3. 쿠폰 발급 이후에 문자 안내를 드리며, 추가 궁금하신 사항은 학원(02-826-2000)으로 문의 바랍니다.
+                        </div>
+                    </div>
+
+                    <!--간부시험인증 유의사항-->
+                    <div class="group">
+                        <b class="fw500">이벤트 유의사항</b>
+                        <div class="eventNotice">
+                            1. 간부 시험 인증하시면 간부 미래패스 구매시 사용 가능한 쿠폰이 발급됩니다. <br>
+                            2. 시험 인증 처리는 관리자 승인 과정으로 평일 18시까지 가능하며, 주말 신청자는 월요일 일괄 처리됩니다.
+
+                        </div>
+                    </div>
+                    <!--현직 경찰 인증 유의사항-->
+                    <div class="group">
+                        <b class="fw500">이벤트 유의사항</b>
+                        <div class="eventNotice">
+                            1. 현직 인증하시면 간부 미래패스 구매시 사용 가능한 쿠폰이 발급됩니다. <br>
+                            2. 현직 인증 처리는 관리자 승인 과정으로 평일 18시까지 가능하며, 주말 신청자는 월요일 일괄 처리됩니다.
+                        </div>
+                    </div>
+                    <!--합격예측 문자수신동의-->
+                    <div class="group">
+                        <b class="fw500">문자 수신 동의</b>
+                        <div class="scroll">
+                            합격예측 서비스 사전예약 이벤트를 위한 문자 수신을 동의합니다.<br>
+                            - 귀하는 문자 수신 동의를 거부 할 권리가 있으며, 동의를 거부할 경우 이벤트 신청이 불가능함을 알려드립니다.
+                        </div>
+                        <div style="display: flex;">
+                            <div class="radio_box">
+                                <input type="radio" name="agree1" value="N" id="agree1N" class="passcut-data">
+                                <label for="agree1N">동의하지 않음</label>
+                            </div>
+                            <div class="radio_box">
+                                <input type="radio" name="agree1" value="Y" id="agree1Y" class="passcut-data">
+                                <label for="agree1Y">동의함</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--공통-->
+                    <div class="group">
+                        <b class="fw500">개인정보 수집/이용 동의 안내</b>
+
+                        <div class="agree1">
+                            1.개인정보 수집 이용 목적
+                            <ul>
+                                <li> - 환승 신청 접수에 따른 본인 확인 절차 진행 및 문의사항 응대</li>
+                                <li> - 환승 인증 참여에 따른 혜택 지급</li>
+                            </ul>
+                           2.개인정보 수집 항목- 신청인의 아이디, 연락처, 수강학원, 인증내역<br>
+                           3.개인정보 이용기간 및 보유기간
+                           <ul>
+                                <li>- 본 수집, 활용목적 달성 후 바로 파기</li>
+                           </ul>
+                           4.개인정보 제공 동의 거부 권리 및 동의 거부에 따른 불이익
+                           <ul>
+                                <li>- 귀하는 개인 정보 제공 동의를 거부할 권리가 있으며 동의 거부에 따른 불이익은 없으나, 위 제공사항은 인증 혜택을 위해 반드시 필요한 사항으로 거부하실 경우 혜택 제공이 불가능함을 알려드립니다.</li>
+                           </ul>
+                        </div>
+                        <span class="fw400 textbook_chek">
+                            <input type="checkbox" name="agree" value="Y" id="agreeA" class="class_chk cert-data">
+                            <label for="agreeA">
+                                위 내용을 확인하였으며, 이벤트 내용에 동의합니다. (필수)
+                            </label>
+                        </span>
+                    </div>
+
+                    <!--합격예측 유의사항-->
+                    <div class="group">
+                        <b class="fw500">개인정보 수집 및 이용동의</b>
+
+                        <div class="agree1">
+                            1.개인정보 수집 이용 목적
+                            <ul>
+                                <li> - 이벤트 신청 접수에 따른 본인 확인 절차 진행 및 문의사항 응대</li>
+                                <li> - 이벤트 참여에 따른 경품 지급</li>
+                            </ul>
+                           2.개인정보 수집 항목- 신청인의 이름, 휴대폰 번호, 응시직렬, 응시번호<br>
+                           3.개인정보 이용기간 및 보유기간
+                           <ul>
+                                <li>- 본 수집, 활용목적 달성 후 바로 파기</li>
+                           </ul>
+                           4.개인정보 제공 동의 거부 권리 및 동의 거부에 따른 불이익
+                           <ul>
+                                <li>- 귀하는 개인 정보 제공 동의를 거부할 권리가 있으며 동의 거부에 따른 불이익은 없으나, 위 제공사항은 인증 혜택을 위해 반드시 필요한 사항으로 거부하실 경우 혜택 제공이 불가능함을 알려드립니다.</li>
+                           </ul>
+                        </div>
+                        <span class="fw400 textbook_chek">
+                            <input type="checkbox" name="agree" value="Y" id="agreeA" class="class_chk cert-data">
+                            <label for="agreeA">
+                                위 내용을 확인하였으며, 이벤트 내용에 동의합니다. (필수)
+                            </label>
+                        </span>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="btn_box">
+                <!--공통-->
+                <a href="#" class="btn popClick register">저장</a>
+                <a href="#" class="btn btn1 popClick cancel_btn">취소</a>
+                <!--//-->
+                <!--합격예측버튼-->
+                <a href="#" class="btn popClick">사전예약 신청하기</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--//타사환승팝업-->
+</body>
+</html>

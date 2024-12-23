@@ -1,0 +1,409 @@
+.event-view {
+    background: #fff;
+}
+
+.event-view {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    border: 0;
+}
+
+.event-view .sec2 {background: url('../images/explain_bg_02.jpg') center no-repeat;}
+.event-view .sec3 {background: url('../images/explain_bg_03.jpg') center bottom no-repeat;}
+.event-view .sec4 {background: url('../images/explain_bg_04.jpg') center no-repeat;}
+.event-view .sec5 {background: #f1f1f1}
+.event-view .sec7 {background: url('../images/explain_bg_07.jpg') center no-repeat;}
+.event-view .sec8 {background: #f1f1f1}
+
+
+
+.event-view .sec.sec3 {
+    position: relative;
+    width: 100%;
+    padding-top: 122px;
+}
+
+.bannerFix_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 122px;
+    top: 0;
+    left: 0;
+    /* background: #3d3d3d; */
+    background: url('../images/sec3_bg.jpg');
+    background-repeat: repeat-x;
+    z-index: 50;
+}
+
+.bannerFix_wrapper.fixed {
+    position: fixed;
+}
+
+.bannerImg {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 0;
+}
+
+.bannerImg .link1 {
+    position: absolute;
+    top: 29.5%;
+    left: 84.5%;
+    width: 13%;
+    height: 58%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .tabWrap {
+    margin: auto;
+    margin-bottom: 0;
+    width: 93%;
+}
+
+.sec8 .tabWrap ul {
+    position: relative;
+    padding-bottom: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sec8 .tabWrap li {
+    float: left;
+    width: calc(100% / 2);
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+
+.sec8 .tabWrap li a {
+    display: block;
+    height: 100%;
+    font-size: 40px;
+    color: #afa697;
+    font-weight: 500;
+    line-height: 2.5;
+    background: #f2e2d2;
+}
+
+.sec8 .tabWrap li.active a {
+    position: relative;
+    background: #000;
+    color: #fff;
+    /* border: 1px solid #c4c4c4; */
+}
+
+.sec8 .sec_detail {
+    position: relative;
+    margin: auto;
+    width: 94%;
+
+}
+
+.sec8 .sec_detail.online .golink1 {
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 67%;
+    height: 8%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sec_detail.online .link1 {
+    position: absolute;
+    top: 35%;
+    right: 7%;
+    width: 16%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sec_detail.online .link2 {
+    position: absolute;
+    top: 44.5%;
+    right: 7%;
+    width: 16%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sec_detail.online .link3 {
+    position: absolute;
+    top: 54.5%;
+    right: 7%;
+    width: 16%;
+    height: 8%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sec_detail.online .link4 {
+    position: absolute;
+    top: 63%;
+    right: 7%;
+    width: 16%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sec_detail.online .link5 {
+    position: absolute;
+    top: 73%;
+    right: 7%;
+    width: 16%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sec_detail.online .link6 {
+    position: absolute;
+    top: 83%;
+    right: 7%;
+    width: 16%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+
+.sec8 .sec_detail.offline .golink1 {
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 67%;
+    height: 15%;
+    background: red;
+    opacity: 0;
+}
+
+
+@media screen and (max-width: 1280px){
+
+    .event-view .sec.sec3 {
+        position: relative;
+        width: 100%;
+        padding-top: 9.5313vw;
+    }
+
+    .bannerFix_wrapper {
+        position: absolute;
+        width: 100%;
+        height: 9.5313vw;
+        top: 0;
+        left: 0;
+        /* background: #3d3d3d; */
+        background: url('../images/sec3_bg.jpg');
+        background-repeat: repeat-x;
+        z-index: 50;
+    }
+
+    .bannerFix_wrapper.fixed {
+        position: fixed;
+    }
+
+    .bannerImg {
+        position: relative;
+        max-width: none;
+        margin: 0 auto;
+        margin-bottom: 0;
+    }
+
+    /* .bannerImg .link1 {
+        position: absolute;
+        top: 29.5%;
+        left: 84.5%;
+        width: 13%;
+        height: 58%;
+        background: red;
+        opacity: 0.3;
+    } */
+}
+
+@media screen and (max-width: 768px){
+    .event-view .mo-img {
+        display: block;
+    }
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    .event-view .sec3 {background: #16141f;}
+
+    .event-view .sec.sec3 {
+        position: relative;
+        width: 100%;
+        padding-top: 21.0938vw;
+    }
+
+    .bannerFix_wrapper {
+        position: absolute;
+        width: 100%;
+        height: 21.0938vw;
+        top: 0;
+        left: 0;
+        /* background: #3d3d3d; */
+        background: none;
+        background-repeat: repeat-x;
+        z-index: 50;
+    }
+
+    .bannerFix_wrapper.fixed {
+        position: fixed;
+    }
+
+    .bannerImg {
+        position: relative;
+        max-width: none;
+        margin: 0 auto;
+        margin-bottom: 0;
+    }
+
+    .bannerImg .link1 {
+        position: absolute;
+        top: 66.5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 27%;
+        height: 29%;
+    }
+
+    .sec8 .tabWrap {
+        margin: auto;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    .sec8 .tabWrap ul {
+        position: relative;
+        padding-bottom: 1.3021vw;
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sec8 .tabWrap li {
+        float: left;
+        width: calc(100% / 2);
+        height: 8.4635vw;
+        text-align: center;
+        box-sizing: border-box;
+        margin-right: 0;
+    }
+
+    .sec8 .tabWrap li a {
+        display: block;
+        height: 100%;
+        font-size: 3.6458vw;
+        color: #afa697;
+        font-weight: 500;
+        line-height: 2.5;
+        background: #f2e2d2;
+    }
+
+    .sec8 .tabWrap li.active a {
+        position: relative;
+        background: #000;
+        color: #fff;
+        /* border: 1px solid #c4c4c4; */
+    }
+
+    .sec8 .sec_detail {
+        position: relative;
+        margin: auto;
+        width: 100%;
+
+    }
+
+    .sec8 .sec_detail.online .golink1 {
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 91%;
+        height: 8%;
+    }
+
+    .sec8 .sec_detail.online .link1 {
+        position: absolute;
+        top: 32%;
+        right: 3%;
+        width: 16%;
+        height: 9%;
+    }
+
+    .sec8 .sec_detail.online .link2 {
+        position: absolute;
+        top: 42.5%;
+        right: 3%;
+        width: 16%;
+        height: 9%;
+    }
+
+    .sec8 .sec_detail.online .link3 {
+        position: absolute;
+        top: 53%;
+        right: 3%;
+        width: 16%;
+        height: 8%;
+    }
+
+    .sec8 .sec_detail.online .link4 {
+        position: absolute;
+        top: 62%;
+        right: 3%;
+        width: 16%;
+        height: 9%;
+    }
+
+    .sec8 .sec_detail.online .link5 {
+        position: absolute;
+        top: 72%;
+        right: 3%;
+        width: 16%;
+        height: 9%;
+    }
+
+    .sec8 .sec_detail.online .link6 {
+        position: absolute;
+        top: 82%;
+        right: 3%;
+        width: 16%;
+        height: 9%;
+    }
+
+    .sec8 .sec_detail.offline .golink1 {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 16%;
+    }
+
+}

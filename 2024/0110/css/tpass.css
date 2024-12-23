@@ -1,0 +1,172 @@
+.event-view {
+    background: #fff;
+}
+
+.event-view {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+.event-view .section1 {
+    background: url('../images/tpass_bg_01.jpg') center no-repeat;
+}
+
+.event-view .section3 {
+    background: url('../images/tpass_bg_03.jpg') center no-repeat;
+}
+
+.section1 .link1 {
+    position: absolute;
+    top: 82.5%;
+    left: 10.5%;
+    width: 33%;
+    height: 6.5%;
+    background: yellow;
+    opacity: 0;
+}
+.section1 .link2 {
+    position: absolute;
+    top: 82.5%;
+    left: 56.5%;
+    width: 33%;
+    height: 6.5%;
+    background: yellow;
+    opacity: 0;
+}
+
+.section3 .link1 {
+    position: absolute;
+    top: 66.5%;
+    left: 10.5%;
+    width: 33%;
+    height: 11.5%;
+    background: yellow;
+    opacity: 0;
+}
+.section3 .link2 {
+    position: absolute;
+    top: 66.5%;
+    left: 56.5%;
+    width: 33%;
+    height: 11.5%;
+    background: yellow;
+    opacity: 0;
+}
+
+/*유의사항*/
+#sub .passNotice {padding-bottom: 120px;}
+#sub .passNotice .tab_list {padding-left: 0;}
+ .passNotice{padding-top:0; background: #f6f6f6;}
+ .passNotice .tab_list { height: 70px; line-height: 70px; margin-top: 0;  padding-top: 0px; padding-left: 0px; max-width: 100%; }
+ .passNotice .tab_list ul { height: 100%;  width: 100%; border-radius: 5px; overflow: hidden;  background: #f0f0f0;  }
+ .passNotice .tab_list ul li { float: left; height: 100%;  width: 100%;box-sizing: border-box; text-align: center; line-height: 50px; }
+ .passNotice .tab_list ul li a { height: 100%;  display: block;  box-sizing: border-box; position: relative; transition:all 0.3s ease; -webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-o-transition:all 0.3s ease;-ms-transition:all 0.3s ease; cursor:default;}
+ .passNotice .tab_list ul li a:before { content: '';  display: block;  clear: both;  height: 50%;  border-left: 1px solid rgba(51, 51, 51, 0.15);  position: absolute;   left: 0;   top: 25%;}
+ .passNotice .tab_list ul li a span { height: 100%;   box-sizing: border-box;   position: relative;  display: inline-block; font-size: 2.0rem; font-weight:700; letter-spacing: -0.5px; color: #969696; transition:all 0.3s ease; -webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-o-transition:all 0.3s ease;-ms-transition:all 0.3s ease;  }
+ .passNotice .tab_list ul li a:first-child:before { content: none }
+ .passNotice .tab_list ul li.on, .passNotice .tab_list ul li.hoverr { background: #919191; border-radius: 5px;  }
+ .passNotice .tab_list ul li.on a span, .passNotice .tab_list ul li.hover a span { color: #fff;  }
+ .passNotice .tab_list ul li.on a:before { content: none}
+ .passNotice .tab_list ul li.on +  li a:before { content: none}
+ .passNotice .tab_list ul li.hover a:before { content: none }
+ .passNotice .tab_list ul li.hover + li a:before { content: none}
+ .passNotice .tab_con { margin-top: 10px }
+ .passNotice .tab_con > ul > li.on { display: block }
+ .passNotice .tab_con .con_box { width: 100%; max-width: 1184px; margin: 0 auto; border-radius: 5px; background: #f0f0f0; color: #333; font-size: 1.4rem;  line-height: 24px;   letter-spacing: -1.2px;  font-weight:700; text-align: left}
+ .passNotice .tab_con .con_box > ul > li { display: block; position: relative;  }
+ .passNotice .tab_con .con_box > ul > li + li { border-top: 1px solid rgba(13, 13, 13, 0.1) }
+ .passNotice .tab_con .con_box > ul > li > b { width: 145px; text-align: center; font-size: 2.0rem; position: absolute; left: 0; top: 50%; margin-top: -12px;  }
+ .passNotice .tab_con .con_box > ul > li > div {  width: calc(100% - 145px); padding: 40px 60px 40px 120px; box-sizing: border-box; position: relative;  left: 145px; }
+ .passNotice .tab_con .con_box > ul > li > div > ul >  li > ul  {  font-weight:400; padding-left: 15px }
+ .passNotice .tab_con .con_box > ul > li > div > ul >  li > span {  font-weight:400; }
+ .passNotice .tab_con .con_box > ul > li > div > p { margin-top: 35px }
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 960px) {}
+
+@media screen and (max-width: 850px) {}
+
+@media screen and (max-width: 768px) {
+
+    .event-view .mo-img {
+        display: block;
+    }
+
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    .section1 .link1 {
+        position: absolute;
+        top: 82.5%;
+        left: 8.5%;
+        width: 35%;
+        height: 6.5%;
+    }
+
+    .section1 .link2 {
+        position: absolute;
+        top: 82.5%;
+        left: 56.5%;
+        width: 35%;
+        height: 6.5%;
+    }
+
+    .section3 .link1 {
+        position: absolute;
+        top: 66.5%;
+        left: 8.5%;
+        width: 35%;
+        height: 11.5%;
+    }
+
+    .section3 .link2 {
+        position: absolute;
+        top: 66.5%;
+        left: 56.5%;
+        width: 35%;
+        height: 11.5%;
+    }
+
+
+    /*유의사항*/
+    .passNotice { padding-top: 0px;  padding-bottom: 80px }
+    .passNotice .tab_list { max-width: 640px}
+    .passNotice .tab_con .con_box { max-width:640px}
+    .passNotice .tab_con .con_box > ul > li  { padding: 30px 40px }
+    .passNotice .tab_con .con_box > ul > li > b { width: 100%; text-align: left; position: relative; top: 0; margin-top: 0 }
+    .passNotice .tab_con .con_box > ul > li > div {  width: 100%; padding: 0px; margin-top: 30px; left: 0 }
+
+}
