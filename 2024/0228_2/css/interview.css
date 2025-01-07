@@ -1,0 +1,388 @@
+.event-view {
+    background: #fff;
+}
+
+.event-view {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+.event-view .section1 {
+    background: url('../images/interview_bg_01.jpg') center no-repeat;
+}
+
+.event-view .section2 {
+    background: #d7d7d7;
+}
+
+.event-view .section3 {
+    background: #fff;
+}
+
+.event-view .section4,
+.event-view .section5,
+.event-view .section6 {
+    background: #232b42;
+}
+
+.event-view .section7 {
+    background: #f4f4f4;
+}
+
+.event-view .section8 {
+    background: url('../images/interview_bg_08.jpg') center no-repeat;
+}
+
+.section1 .link1 {
+    position: absolute;
+    top: 82%;
+    left: 12%;
+    width: 37%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+
+.section1 .link2 {
+    position: absolute;
+    top: 82%;
+    left: 51%;    
+    width: 37%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+
+/*section4*/
+.section4 .tabs {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 1140px;
+    margin: 0 auto;
+    opacity: 1;
+}  
+
+.section4 .tab_item {
+    width: calc(100%/2);
+    height: 76px;
+    background-color: #181b20;
+    line-height: 76px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.section4 .tab_item:hover {
+    opacity: 0.75;
+}  
+
+.section4 input[name="tab_item"] {
+    display: none;
+}
+  
+.section4 .tab_content {
+    display: none;
+    padding:0;
+    clear: both;
+    overflow: hidden;
+    position: relative;
+}  
+
+#p1:checked ~ .p1_content,
+#p2:checked ~ .p2_content {
+    display: block;
+}
+  
+/* 선택된 탭 스타일 */
+ .tabs input:checked + .tab_item {
+    background-color: #fff;
+    color: #181b20;
+}
+
+.section4 .link1 {
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35%;
+    height: 10%;
+    background: red;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/*section6*/
+.section6 .tabs2 {
+    position: absolute;
+    top: 32.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #232b42;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 1140px;
+    margin: 0 auto;
+    opacity: 1;
+}  
+
+.section6 .tab_item2 {
+    margin-right: 1%;
+    margin-bottom: 12px;
+    width: calc(98%/3);
+    height: 74px;
+    background-color: #1c3965;
+    line-height: 74px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.section6 .tab_item2.lst {
+    margin-right: 0;
+}
+
+.section6 .tab_item2:hover {
+    opacity: 0.75;
+}  
+
+.section6 input[name="tab_item2"] {
+    display: none;
+}
+  
+.section6 .tab_content2 {
+    display: none;
+    padding:0;
+    clear: both;
+    overflow: hidden;
+    position: relative;
+}  
+
+#t1:checked ~ .t1_content,
+#t2:checked ~ .t2_content,
+#t3:checked ~ .t3_content {
+    display: block;
+}
+  
+/* 선택된 탭 스타일 */
+ .tabs2 input:checked + .tab_item2 {
+    background-color: #eeeeee;
+    color: #1c3965;
+}
+
+.section7 .link1 {
+    position: absolute;
+    top: 73.54%;
+    left: 11%;
+    width: 33%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+
+.section7 .link2 {
+    position: absolute;
+    top: 73.54%;
+    left: 56%;    
+    width: 33%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+
+.section8 .link1 {
+    position: absolute;
+    top: 72.54%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 8.5%;
+    background: red;
+    opacity: 0;
+}
+
+/*자세히보기 레이어팝업*/
+.completeLayer {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.completeLayer {
+    display: none;
+}  
+
+.completeLayer .layerBox {
+    position: fixed;
+    width: 1140px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 7px 7px rgba(0, 0, 0, .1);
+}
+
+.completeLayer .layerBox .btnClose {           
+    position: absolute;            
+    top: -35px;
+    right: 0;
+    width: 50px; 
+    padding: 6px 12px;
+    cursor: pointer;
+    background: #000;
+}
+
+.completeLayer .title_area {
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+    background: #10264f;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .section4 .tabs {
+        width: 90%;
+    }
+
+    .section4 .tab_item {
+        height: 5.9375vw;
+        line-height: 5.9375vw;
+        font-size: 1.8750vw;   
+    }
+
+    .section6 .tabs2 {
+        width: 90%;
+    }
+
+    .section6 .tab_item2 {
+        height: 5.9375vw;
+        line-height: 5.9375vw;
+        font-size: 1.8750vw;   
+        margin-bottom: 0.9375vw;
+    }    
+
+}
+
+@media screen and (max-width: 1140px) {
+
+    .section4 .tabs {
+        width: 89%;
+    }
+    
+    .section6 .tabs2 {
+        width: 89%;
+    }
+
+    .completeLayer .layerBox {
+        width: 98%;       
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .event-view .mo-img {
+        display: block;
+    }
+
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    .section1 .link1 {
+        position: absolute;
+        top: 82%;
+        left: 4%;
+        width: 45%;
+        height: 9%;
+    }
+
+    .section1 .link2 {
+        position: absolute;
+        top: 82%;
+        left: 51%;
+        width: 45%;
+        height: 9%;
+    }
+
+    .section4 .tabs {
+        width: 98%;
+        opacity: 1;
+    }
+
+    .section4 .tab_item {
+        height: 6.5104vw;        
+        line-height: 6.5104vw;
+        font-size: 2.0833vw;        
+    }
+
+    .section6 .tabs2 {
+        width: 98%;
+        top: 34.5%;
+        opacity: 1;
+    }
+
+    .section6 .tab_item2 {
+        height: 6.5104vw;        
+        line-height: 6.5104vw;
+        font-size: 2.0833vw;        
+        margin-bottom: 0.7813vw;
+    }
+
+    .section7 .link1 {
+        position: absolute;
+        top: 73.54%;
+        left: 7%;
+        width: 37%;
+        height: 9%;
+    }
+
+    .section7 .link2 {
+        position: absolute;
+        top: 73.54%;
+        left: 56%;
+        width: 37%;
+        height: 9%;
+    }
+
+    .section8 .link1 {
+        position: absolute;
+        top: 72.54%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 79%;
+        height: 11.5%;
+    }
+
+    .completeLayer .layerBox {
+        width: 98%;       
+    }
+}
