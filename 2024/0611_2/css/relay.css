@@ -1,0 +1,807 @@
+.event-view {
+    background: #fff;
+}
+
+.event-view {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+.event-view .section1 {
+    background: url('../images/relay_bg_01.jpg') center no-repeat;
+}
+
+.event-view .section2{
+    background: #1f1f1f ;
+}
+
+.event-view .section3 {
+    background: url('../images/relay_bg_03.jpg') center no-repeat;
+}
+
+.event-view .section4{
+    background: #3c2daa ;
+}
+
+.event-view .section5,
+.event-view .section6,
+.event-view .section7,
+.event-view .section8,
+.event-view .section9 {
+    background: #e2e2e2 ;
+}
+
+.event-view .section10{
+    background: #333 ;
+}
+
+.section1 .link1 {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 36.1%;
+    height: 11.2%;
+    background: red;
+    opacity: 0;
+}
+
+.section4 .link1 {
+    position: absolute;
+    top: 36%;
+    left: 62%;
+    width: 29.1%;
+    height: 4.2%;
+    background: red;
+    opacity: 0;
+}
+
+.section4 .off_link1 {
+    position: absolute;
+    top: 56%;
+    left: 61%;
+    width: 15.3%;
+    height: 3.7%;
+    background: red;
+    opacity: 0;
+}
+.section4 .on_link1 {
+    position: absolute;
+    top: 56%;
+    left: 79%;
+    width: 15.3%;
+    height: 3.7%;
+    background: red;
+    opacity: 0;
+}
+
+.section4 .off_link2 {
+    position: absolute;
+    top: 63.7%;
+    left: 61%;
+    width: 15.3%;
+    height: 3.7%;
+    background: red;
+    opacity: 0;
+}
+.section4 .on_link2 {
+    position: absolute;
+    top: 63.7%;
+    left: 79%;
+    width: 15.3%;
+    height: 3.7%;
+    background: red;
+    opacity: 0;
+}
+
+.section4 .off_link3 {
+    position: absolute;
+    top: 71.4%;
+    left: 61%;
+    width: 15.3%;
+    height: 3.7%;
+    background: red;
+    opacity: 0;
+}
+.section4 .on_link3 {
+    position: absolute;
+    top: 71.4%;
+    left: 79%;
+    width: 15.3%;
+    height: 3.7%;
+    background: red;
+    opacity: 0;
+}
+
+.section4 .off_link4 {
+    position: absolute;
+    top: 79%;
+    left: 61%;
+    width: 15.3%;
+    height: 3.7%;
+    background: red;
+    opacity: 0;
+}
+.section4 .on_link4 {
+    position: absolute;
+    top: 79%;
+    left: 79%;
+    width: 15.3%;
+    height: 3.7%;
+    background: red;
+    opacity: 0;
+}
+
+.section4 .off_link5 {
+    position: absolute;
+    top: 86.8%;
+    left: 61%;
+    width: 15.3%;
+    height: 3.7%;
+    background: red;
+    opacity: 0;
+}
+.section4 .on_link5 {
+    position: absolute;
+    top: 86.8%;
+    left: 79%;
+    width: 15.3%;
+    height: 3.7%;
+    background: red;
+    opacity: 0;
+}
+
+.section4 .open_blind {
+    position: absolute;
+    top: 60.4%;
+    left: 59%;
+    width: 37.1%;
+    height: 31.2%;
+    font-size: 34px;
+    color: #fff;
+    line-height: 13;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+
+}
+
+.section4 .open_blind2 {
+    position: absolute;
+    top: 52.7%;
+    left: 77.7%;
+    width: 18.4%;
+    height: 7.7%;
+    /* font-size: 34px;
+    color: #fff;
+    line-height: 13;
+    text-align: center; */
+    background: rgba(0, 0, 0, 0.7);
+
+}
+
+
+/*section6 소문내기 SNS링크*/
+.section6 .event_link1 {
+    position: absolute;
+    top: 22.4%;
+    left: 20.3%;
+    width: 29.1%;
+    height: 11.2%;
+    background: red;
+    opacity: 0;
+}
+
+.section6 .event_link2 {
+    position: absolute;
+    top: 22.4%;
+    left: 50.5%;
+    width: 29.1%;
+    height: 11.2%;
+    background: red;
+    opacity: 0;
+}
+
+
+
+.section6 .sns_link1 {
+    position: absolute;
+    top: 53.8%;
+    left: 21%;
+    width: 10.1%;
+    height: 23.7%;
+    background: red;
+    opacity: 0;
+}
+
+.section6 .sns_link2 {
+    position: absolute;
+    top: 53.8%;
+    left: 33%;
+    width: 10.1%;
+    height: 23.7%;
+    background: red;
+    opacity: 0;
+}
+
+.section6 .sns_link3 {
+    position: absolute;
+    top: 53.8%;
+    left: 45%;
+    width: 10.1%;
+    height: 23.7%;
+    background: red;
+    opacity: 0;
+}
+
+.section6 .sns_link4 {
+    position: absolute;
+    top: 53.8%;
+    left: 57%;
+    width: 10.1%;
+    height: 23.7%;
+    background: red;
+    opacity: 0;
+}
+
+.section6 .sns_link5 {
+    position: absolute;
+    top: 53.8%;
+    left: 68.7%;
+    width: 10.1%;
+    height: 23.7%;
+    background: red;
+    opacity: 0;
+}
+
+.section6 .copy-btn {
+	position: absolute;
+    top: 83.3%;
+    left: 34.9%;
+    width: 11.6%;
+    height: 6.3%;
+    opacity: 0;
+    background: red;
+	overflow: hidden;
+}
+
+/*소문내기 등록*/
+
+.section7 .linkform {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 72%;
+}
+
+.section7 .linkform .inner {
+    box-sizing: border-box;
+    position: relative;
+    font-size: 0;
+    padding-bottom: 0;
+    border: 2px solid #da4e42;
+}
+
+.section7 .linkform input::placeholder {
+    font-size: 2.0rem;
+    font-weight: 300;
+    color: #454545;
+}
+
+.section7 .linkform input[type="text"] {
+    width: 77%;
+    border: none;
+    height: 70px;
+    line-height: 78px;
+    padding: 0 50px;
+    font-size: 2.9rem;
+    color: #666666;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.section7 .linkform input[type="button"] {
+    width: 23%;
+    padding-left: 15px;
+    border: none;
+    background: none;
+    height: 70px;
+    line-height: 75px;
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: 500;
+    background-color: #da4e42;
+}
+
+.event-view .section9 {
+    padding-bottom: 85px;
+}
+
+.section9.bbs_wrap .inner {
+    background: url(../images/relay_09.jpg) repeat-y ;
+    padding-bottom: 0;
+}
+
+.section9 .pr_board_area{
+    position: static;
+    margin: auto;
+    width:85.8%;
+    height: auto;
+    background: #fff;
+}
+
+.section9 .bbs {
+    margin-top: 0;
+}
+
+#sub .bbs_wrap .bbs table.list {
+    margin: auto;
+    width: 97%;
+    table-layout: fixed
+}
+
+#sub .bbs_wrap .bbs .list_bg {
+    padding: 0 40px 0;
+    height: auto;
+}
+
+#sub .bbs_wrap .bbs .list {
+    background: #fff;
+    padding: 20px;
+}
+
+#sub .bbs_wrap .bbs .list thead {
+    border-top: none;
+    border-bottom: 2px solid #000;
+}
+
+#sub .bbs_wrap .bbs .list thead th {
+    color: #000
+}
+
+#sub .bbs_wrap .bbs .list tbody td.title {
+    display: block;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#sub .bbs_wrap .bbs .list tbody td.date::after {
+    display: none;
+}
+
+#sub .bbs_wrap .bbs .pagenate {
+    margin: 0 auto 0;
+    padding: 40px 0;
+}
+
+.pagenate li a {
+    color: #222;
+}
+
+.pagenate li a:hover {
+    background: #222;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.pagenate li a.current {
+    color: #fff;
+    background-color: #222;
+    font-weight: 500;
+    border: 1px solid #fff;
+}
+
+/* section10 유의사항 */
+
+.section10 .inner {
+    padding: 50px 0px;
+}
+
+
+.section10 .noticeList {
+    width: 1170px;
+    margin: auto;
+    padding: 50px 0;
+    background: #333;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+.section10 .noticeList.mTop {
+    margin-top: 50px;
+}
+.section10 .noticeList > li {
+    padding: 0 60px;
+}
+.section10 .noticeList > li:first-child {
+    margin-top: 0;
+}
+.section10 .noticeList li {
+    line-height: 1.6;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.section10 .nList li {
+    position: relative;
+}
+
+.section10 .nList li button {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.section10 .nList li button::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 50%;    
+    width: 5px;
+    height: 10px;
+    transform: translate(-2px, -2px) rotate(45deg);
+    border-right: 2px solid #e2e2e2;
+    border-bottom: 2px solid #e2e2e2;
+}
+
+.section10 .noticeList li .s_tit {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.section10 .noticeList .cont_d {
+    padding-left: 28px;
+}
+
+.section10 .noticeList .cont_d2 {
+    padding-left: 15px;
+}
+
+@media screen and (max-width: 1300px){
+
+    .section9.bbs_wrap .inner{
+        background: none;
+    }
+
+    .section9 .pr_board_area {
+        position: static;
+        margin: auto;
+        width: 91.4%;
+        height: auto;
+        background: #fff;
+    }
+
+    #sub .bbs_wrap .bbs .list_bg {
+        padding: 0 9.0833vw 0;
+        height: auto;
+    }
+
+    .section10 .noticeList {
+        width: 91%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .event-view .mo-img {
+        display: block;
+    }
+
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    .section1 .link1 {
+        position: absolute;
+        top: 66%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 39.1%;
+        height: 11.2%;
+    }
+
+    .section4 .link1 {
+        position: absolute;
+        top: 36%;
+        left: 62%;
+        width: 32.1%;
+        height: 4.2%;
+    }
+    
+    .section4 .off_link1 {
+        position: absolute;
+        top: 54.8%;
+        left: 60%;
+        width: 16.3%;
+        height: 3.7%;      
+    }
+    .section4 .on_link1 {
+        position: absolute;
+        top: 54.8%;
+        left: 79%;
+        width: 17.3%;
+        height: 3.7%;
+    }
+
+    .section4 .off_link2 {
+        position: absolute;
+        top: 62.5%;
+        left: 60%;
+        width: 16.3%;
+        height: 3.7%;      
+    }
+    .section4 .on_link2 {
+        position: absolute;
+        top: 62.5%;
+        left: 79%;
+        width: 17.3%;
+        height: 3.7%;
+    }
+
+    .section4 .off_link3 {
+        position: absolute;
+        top: 70%;
+        left: 60%;
+        width: 16.3%;
+        height: 3.7%;      
+    }
+    .section4 .on_link3 {
+        position: absolute;
+        top: 70%;
+        left: 79%;
+        width: 17.3%;
+        height: 3.7%;
+    }
+
+    .section4 .off_link4 {
+        position: absolute;
+        top: 77.8%;
+        left: 60%;
+        width: 16.3%;
+        height: 3.7%;      
+    }
+    .section4 .on_link4 {
+        position: absolute;
+        top: 77.8%;
+        left: 79%;
+        width: 17.3%;
+        height: 3.7%;
+    }
+
+    .section4 .off_link5 {
+        position: absolute;
+        top: 85.4%;
+        left: 60%;
+        width: 16.3%;
+        height: 3.7%;      
+    }
+    .section4 .on_link5 {
+        position: absolute;
+        top: 85.4%;
+        left: 79%;
+        width: 17.3%;
+        height: 3.7%;
+    }
+
+    .section6 .event_link1 {
+        position: absolute;
+        top: 21.4%;
+        left: 5.3%;
+        width: 44.1%;
+        height: 10.2%;
+    }
+
+    .section6 .event_link2 {
+        position: absolute;
+        top: 21.4%;
+        left: 50.5%;
+        width: 44.1%;
+        height: 10.2%;
+    }
+
+    .section6 .sns_link1 {
+        position: absolute;
+        top: 51.8%;
+        left: 4.7%;
+        width: 16.1%;
+        height: 23.7%;
+    }
+    .section6 .sns_link2 {
+        position: absolute;
+        top: 51.8%;
+        left: 23.7%;
+        width: 16.1%;
+        height: 23.7%;
+    }
+
+    .section6 .sns_link3 {
+        position: absolute;
+        top: 51.8%;
+        left: 42%;
+        width: 16.1%;
+        height: 23.7%;
+    }
+
+    .section6 .sns_link4 {
+        position: absolute;
+        top: 51.8%;
+        left: 60.2%;
+        width: 16.1%;
+        height: 23.7%;
+    }
+
+    .section6 .sns_link5 {
+        position: absolute;
+        top: 51.8%;
+        left: 79.2%;
+        width: 16.1%;
+        height: 23.7%;
+    }
+
+    .section6 .copy-btn {
+        position: absolute;
+        top: 81.3%;
+        left: 29.9%;
+        width: 18.6%;
+        height: 6.3%;
+        overflow: hidden;
+    }
+
+    .section7 .linkform {
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 91%;
+    }
+    .section7 .linkform input::placeholder {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: #454545;
+    }
+    .section7 .linkform input[type="text"] {
+        width: 77%;
+        border: none;
+        height: 9.1146vw;
+        line-height: 10.1563vw;
+        padding: 0 6.5104vw;
+        font-size: 1.4rem;
+        color: #666666;
+        background: #fff;
+        box-sizing: border-box;
+    }
+    .section7 .linkform input[type="button"] {
+        width: 23%;
+        padding-left: 1.9531vw;
+        border: none;
+        background: none;
+        height: 9.1146vw;
+        line-height: 9.7656vw;
+        font-family: 'GmarketSansMedium';
+        font-size: 1.5rem;
+        color: #fff;
+        font-weight: 500;
+        background-color: #da4e42;
+    }
+
+    .event-view .section9 {
+        padding-bottom: 7.1615vw;
+    }
+
+    .section9.bbs_wrap .inner {
+        padding-bottom: 0;
+    }
+
+    #sub .bbs_wrap .bbs .list_bg {
+        padding: 5.2083vw 2.2083vw 0;
+        /* background: #fff; */
+        height: auto;
+    }
+
+    .section9 .pr_board_area {
+        position: static;
+        margin: auto;
+        width: 95.04%;
+        height: auto;
+        background: #fff;
+        
+    }
+
+    .section10 .inner {
+        width: 100%;
+        padding: 6.5104vw 3.6083vw;
+    }
+
+    .section10 .noticeList {
+        width:91%;
+        margin: auto;
+        padding: 2.6042vw;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .section10 .noticeList.mTop {
+        margin-top: 20px;
+    }
+    .section10 .noticeList > li {
+        padding: 0 0;
+    }
+    .section10 .noticeList li {
+        line-height: 1.6;        
+        font-size: 1.9531vw;        
+    }
+    .section10 .nList li {    
+        padding-left: 0;
+    }
+    .section10 .nList li button {
+        position: relative;
+        width: 1.9531vw;
+        height: 1.9531vw;
+        margin-right: 1.0417vw;
+        border: none;
+        border-radius: 0.5208vw;
+        cursor: pointer;
+    }    
+    .section10 .nList li button::after {
+        position: absolute;
+        content: "";
+        display: block;
+        top: 0;
+        left: 50%;        
+        width: 0.6510vw;
+        height: 1.3021vw;
+        transform: translate(-0.2604vw, -0.2604vw) rotate(45deg);
+        border-right: 2px solid #e2e2e2;
+        border-bottom: 2px solid #e2e2e2;
+    }  
+    .section10 .noticeList li .s_tit {
+        font-size: 3.3854vw;        
+    }
+    .section10 .noticeList .cont_d {
+        padding-left: 0.6458vw;
+    }
+    .section10 .noticeList .cont_d2 {
+        padding-left: 1.9531vw;
+    }
+
+}
+
+
+@media screen and (max-width: 360px) {
+
+    .section7 .linkform input[type="text"] {
+        padding: 0 0.5104vw;
+    }
+
+    .section7 .linkform input::placeholder {
+        font-size: 11px;
+        font-weight: 300;
+        color: #454545;
+    }
+}
+

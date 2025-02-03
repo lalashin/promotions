@@ -1,0 +1,828 @@
+.event-view {
+    background: #fff;
+}
+
+.event-view {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+.event-view .sec1 {
+    background: url('../images/specialgroup_bg_01.jpg') center no-repeat;
+}
+
+.event-view .sec2 {
+    background: url('../images/specialgroup_bg_02.jpg') center no-repeat;
+}
+
+.event-view .sec3 {
+    background: #1d2a54;
+}
+
+.event-view .sec5 {
+    background: url('../images/specialgroup_bg_05.jpg') center no-repeat;
+}
+
+.event-view .sec7 {
+    background: url('../images/specialgroup_bg_07.jpg') center no-repeat;
+}
+
+.event-view .sec8 {
+    background: url('../images/specialgroup_bg_08.jpg') center no-repeat;
+}
+
+.event-view .sec9 {
+    background: url('../images/specialgroup_bg_09.jpg') center no-repeat;
+}
+.event-view .sec10 {
+    background: #f7941d;
+}
+
+.event-view .sec11 {
+    background: url('../images/specialgroup_bg_11.jpg') center no-repeat;
+}
+
+.event-view .sec12 {
+    background: #baf6ee;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face { 
+    font-family: 'GmarketSansBold'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+
+/*sec1*/
+.sec1 .dDay_txt{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    padding: 50px 0;
+    width: 215px;
+    height: 211px;
+    background: url(../images/gold_label.png) no-repeat ;
+    color: #081136;
+    font-size: 30px;
+    font-family: 'GmarketSansBold';
+    text-align: center;
+    line-height: 1.1;
+    white-space:pre-line;
+    
+}
+.sec1 .dDay_txt b{
+    font-size: 48px;
+}
+
+.sec1 .dDay_txt2{
+    position: absolute;
+    top: 60%;
+    right: 21%;
+    padding: 37px 0;
+    width: 178px;
+    height: 178px;
+    background: url(../images/red_label.png) no-repeat ;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'GmarketSansMedium';
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.3;
+    letter-spacing: -1px;
+    white-space:pre-line;    
+}
+.sec1 .dDay_txt2 b {
+    color:#fff200 ;
+}
+.sec1 .dDay_txt2 b.big_fsize{    
+    font-size: 26px;
+    font-family: 'GmarketSansBold';
+    letter-spacing: 0;
+}
+
+.sec1 .dDay_txt2 em{
+    font-size: 20px;
+    font-family: 'Noto Sans KR' ;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1;
+}
+
+/*sec7*/
+.sec7 ul{
+    position: absolute;
+    top: 3.9%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 71.3%;
+    height: 16.1%;
+    display: flex;
+}
+.sec7 ul li{
+    width:calc(100% / 3);
+    background: red;
+    opacity: 0;
+}
+.sec7 ul li + li{
+    margin-left:1.5%;
+}
+.sec7 ul li a{
+    display: block;
+    height:100%;
+}
+
+
+/*sec8*/
+.sec8 ul{
+    position: absolute;
+    top: 7.9%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 71.3%;
+    height: 28.1%;
+    display: flex;
+}
+.sec8 ul li{
+    width:calc(100% / 3);
+    background: red;
+    opacity: 0;
+}
+.sec8 ul li + li{
+    margin-left:1.5%;
+}
+.sec8 ul li a{
+    display: block;
+    height:100%;
+}
+
+/*sec9*/
+.sec9 ul{
+    position: absolute;
+    top: 5.9%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 71.3%;
+    height: 20.1%;
+    display: flex;
+}
+.sec9 ul li{
+    width:calc(100% / 3);
+    background: red;
+    opacity: 0;
+}
+.sec9 ul li + li{
+    margin-left:1.5%;
+}
+.sec9 ul li a{
+    display: block;
+    height:100%;
+}
+
+/*sec10*/
+.sec10 .dDay_txt{
+    position: absolute;
+    top: 9%;
+    right: 2%;
+    padding: 50px 0;
+    width: 267px;
+    height: 267px;
+    background: url(../images/light_blue_label.png) no-repeat ;
+    color: #081136;
+    font-size: 38px;
+    font-family: 'GmarketSansBold';
+    text-align: center;
+    line-height: 1.1;
+    white-space:pre-line;
+    
+}
+.sec10 .dDay_txt b {
+    font-size: 48px;
+}
+.sec10 .dDay_txt b.big_fsize{
+    font-size: 72px;
+}
+
+/*sec11*/
+.sec11 .dDay_txt{
+    position: absolute;
+    top: 17%;
+    right: 15%;
+    padding: 50px 0;
+    width: 212px;
+    height: 212px;
+    background: url(../images/red_label2.png) no-repeat ;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'GmarketSansBold';
+    text-align: center;
+    line-height: 1.1;
+    white-space:pre-line;
+    
+}
+.sec11 .dDay_txt b {
+    font-size: 38px;
+    color: #fbed07;
+}
+.sec11 .dDay_txt b.big_fsize{
+    font-size: 52px;
+}
+
+.firePrice_area {
+    position: absolute;
+    padding: 20px 50px;
+    top: 44.8%;
+    left: 15.5%;
+    width: 26%;
+    text-align: center;
+    background: #f0f0f0;
+    /* border: 1px solid #000;*/
+   
+}
+.firePrice_area.restart {
+    left: 51%;
+}
+
+.firePrice_area li{
+    color: #010101;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.5px;
+}
+
+.firePrice_area li b{
+    color: #c43e1b;
+}
+.firePrice_area li em {
+    color: #c43e1b;
+    font-weight: 500;
+}
+
+.firePrice_area li.goods_price{
+    font-size: 56px;
+    letter-spacing: -1px;
+}
+
+/* sec12 */
+.sec12 .dDay_txt{
+    position: absolute;
+    top: 31%;
+    right: 53%;
+    padding: 32px 0;
+    width: 118px;
+    height: 116px;
+    background: url(../images/red_label3.png) no-repeat;
+    color: #fbed07;
+    font-size: 22px;
+    font-family: 'GmarketSansBold';
+    text-align: center;
+    line-height: 1.1;
+    white-space:pre-line;
+    
+}
+.sec12 .dDay_txt b {
+    font-size: 36px;
+    color: #fbed07;
+}
+
+.sec12 .dDay_txt2{
+    position: absolute;
+    top: 31%;
+    right: 8%;
+    padding: 32px 0;
+    width: 118px;
+    height: 116px;
+    background: url(../images/red_label3.png) no-repeat;
+    color: #fbed07;
+    font-size: 22px;
+    font-family: 'GmarketSansBold';
+    text-align: center;
+    line-height: 1.1;
+    white-space:pre-line;
+    
+}
+.sec12 .dDay_txt2 b {
+    font-size: 36px;
+    color: #fbed07;
+}
+
+.sec12 .link1 {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90.1%;
+    height: 28.2%;
+    background: red;
+    opacity: 0;
+}
+.sec12 .link2 {
+    position: absolute;
+    top: 34%;
+    left: 5%;
+    width: 44.1%;
+    height: 34.2%;
+    background: red;
+    opacity: 0;
+}
+.sec12 .link3 {
+    position: absolute;
+    top: 34%;
+    left: 51%;
+    width: 44.1%;
+    height: 34.2%;
+    background: red;
+    opacity: 0;
+}
+.sec12 .link4 {
+    position: absolute;
+    top: 71%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 91.1%;
+    height: 16.2%;
+    background: red;
+    opacity: 0;
+}
+
+@media screen and (max-width: 1280px) {
+
+    /*sec1*/
+    .sec1 .dDay_txt{
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        padding: 3.9063vw 0;
+        width: 16.7969vw;
+        height: 16.4844vw;
+        background: url(../images/gold_label.png) no-repeat ;
+        background-size: 100%;
+        color: #081136;
+        font-size: 2.3438vw;
+        font-family: 'GmarketSansBold';
+        text-align: center;
+        line-height: 1.1;
+        white-space:pre-line;
+        
+    }
+    .sec1 .dDay_txt b{
+        font-size: 3.7500vw;
+    }
+
+    .sec1 .dDay_txt2{
+        position: absolute;
+        top: 60%;
+        right: 21%;
+        padding: 2.8906vw 0;
+        width: 13.9063vw;
+        height: 13.9063vw;
+        background: url(../images/red_label.png) no-repeat ;
+        background-size: 100%;
+        color: #fff;
+        font-size: 1.7188vw;
+        font-family: 'GmarketSansMedium';
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.3;
+        letter-spacing: -0.0781vw;
+        white-space:pre-line;
+        
+    }
+    .sec1 .dDay_txt2 b {
+        color:#fff200 ;
+    }
+    .sec1 .dDay_txt2 b.big_fsize{    
+        font-size: 2.0313vw;
+        font-family: 'GmarketSansBold';
+        letter-spacing: 0;
+    }
+
+    .sec1 .dDay_txt2 em{
+        font-size: 1.5625vw;
+        font-family: 'Noto Sans KR' ;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 1;
+    }
+
+    /*sec10*/
+    .sec10 .dDay_txt{
+        position: absolute;
+        top: 9%;
+        right: 2%;
+        padding: 3.9063vw 0;
+        width: 20.8594vw;
+        height: 20.8594vw;
+        background: url(../images/light_blue_label.png) no-repeat ;
+        background-size: 100%;
+        color: #081136;
+        font-size: 2.9688vw;
+        font-family: 'GmarketSansBold';
+        text-align: center;
+        line-height: 1.1;
+        white-space:pre-line;
+        
+    }
+    .sec10 .dDay_txt b {
+        font-size: 3.7500vw;
+    }
+    .sec10 .dDay_txt b.big_fsize{
+        font-size: 5.6250vw;
+    }
+
+    /*sec11*/
+    .sec11 .dDay_txt{
+        position: absolute;
+        top: 17%;
+        right: 15%;
+        padding: 3.9063vw 0;
+        width: 16.5625vw;
+        height: 16.5625vw;
+        background: url(../images/red_label2.png) no-repeat ;
+        background-size: 100%;
+        color: #fff;
+        font-size: 2.3438vw;
+        font-family: 'GmarketSansBold';
+        text-align: center;
+        line-height: 1.1;
+        white-space:pre-line;
+        
+    }
+    .sec11 .dDay_txt b {
+        font-size: 2.9688vw;
+        color: #fbed07;
+    }
+    .sec11 .dDay_txt b.big_fsize{
+        font-size: 4.0625vw;
+    }
+    .firePrice_area {
+        position: absolute;
+        padding: 1.5625vw 3.9063vw;
+        top: 44.8%;
+        left: 15.5%;
+        width: 26%;
+        text-align: center;
+        background: #f0f0f0;
+        /* border: 0.0781vw solid #000;*/
+    
+    }
+    .firePrice_area.restart {
+        left: 51%;
+    }
+
+    .firePrice_area li{
+        color: #010101;
+        font-size: 2.5000vw;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.0391vw;
+    }
+
+    .firePrice_area li b{
+        color: #c43e1b;
+    }
+    .firePrice_area li em {
+        color: #c43e1b;
+        font-weight: 500;
+    }
+
+    .firePrice_area li.goods_price{
+        font-size: 4.3750vw;
+        letter-spacing: -0.0781vw;
+    }
+    /* sec12 */
+    .sec12 .dDay_txt{
+        position: absolute;
+        top: 31%;
+        right: 53%;
+        padding: 2.5000vw 0;
+        width: 9.2188vw;
+        height: 9.0625vw;
+        background: url(../images/red_label3.png) no-repeat;
+        background-size: 100%;
+        color: #fbed07;
+        font-size: 1.7188vw;
+        font-family: 'GmarketSansBold';
+        text-align: center;
+        line-height: 1.1;
+        white-space:pre-line;
+        
+    }
+    .sec12 .dDay_txt b {
+        font-size: 2.8125vw;
+        color: #fbed07;
+    }
+
+    .sec12 .dDay_txt2{
+        position: absolute;
+        top: 31%;
+        right: 8%;
+        padding: 2.5000vw 0;
+        width: 9.2188vw;
+        height: 9.0625vw;
+        background: url(../images/red_label3.png) no-repeat;
+        background-size: 100%;
+        color: #fbed07;
+        font-size: 1.7188vw;
+        font-family: 'GmarketSansBold';
+        text-align: center;
+        line-height: 1.1;
+        white-space:pre-line;
+        
+    }
+    .sec12 .dDay_txt2 b {
+        font-size: 2.8125vw;
+        color: #fbed07;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .event-view .mo-img {
+        display: block;
+    }
+
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    /*sec1*/
+    .sec1 .dDay_txt{
+        position: absolute;
+        top: 9%;
+        right: 6%;
+        padding: 4.6875vw 0;
+        width: 18.2292vw;
+        height: auto;
+        background: url(../images/gold_label.png) no-repeat;
+        background-size: 100%;
+        color: #081136;
+        font-size: 2.7344vw;
+        font-family: 'GmarketSansBold';
+        text-align: center;
+        line-height: 1;
+        white-space:pre-line;
+        
+    }
+    .sec1 .dDay_txt b{
+        font-size: 3.9063vw;
+    
+    }
+
+    .sec1 .dDay_txt2{
+        position: absolute;
+        top: 62%;
+        right: 10%;
+        padding: 4.0365vw 0;
+        width: 18.0990vw;
+        height: auto;
+        background: url(../images/red_label.png) no-repeat ;
+        background-size: 100%;
+        color: #fff;
+        font-size: 2.0833vw;
+        font-family: 'GmarketSansMedium';
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.2;
+        letter-spacing: -0.1302vw;
+        white-space:pre-line;
+        
+    }
+    .sec1 .dDay_txt2 b {
+        color:#fff200 ;
+    }
+    .sec1 .dDay_txt2 b.big_fsize{    
+        font-size: 2.6042vw;
+        font-family: 'GmarketSansBold';
+        letter-spacing: 0;
+    }
+
+    .sec1 .dDay_txt2 em{
+        font-size: 2.0833vw;
+        font-family: 'Noto Sans KR' ;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 1;
+    }
+
+    .sec7 ul {
+        position: absolute;
+        top: 2.4%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 78.3%;
+        height: 16.1%;
+        display: flex;
+    }
+
+    .sec8 ul {
+        position: absolute;
+        top: 2.4%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 78.3%;
+        height: 27.1%;
+        display: flex;
+    }
+
+    .sec9 ul {
+        position: absolute;
+        top: 1.4%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 78.3%;
+        height: 21.1%;
+        display: flex;
+    }
+
+    /*sec10*/
+    .sec10 .dDay_txt{
+        position: absolute;
+        top: 2%;
+        right: 4%;
+        padding: 5.0781vw 0;
+        width: 23.9583vw;
+        height: auto;
+        background: url(../images/light_blue_label.png) no-repeat ;
+        background-size: 100%;
+        color: #081136;
+        font-size: 3.3854vw;
+        font-family: 'GmarketSansBold';
+        text-align: center;
+        line-height: 1;
+        white-space:pre-line;
+        
+    }
+    .sec10 .dDay_txt b {
+        font-size: 4.1667vw;
+    }
+    .sec10 .dDay_txt b.big_fsize{
+        font-size: 6.5104vw;
+    }
+
+    /*sec11*/
+    .sec11 .dDay_txt{
+        position: absolute;
+        top: 17%;
+        right: 8%;
+        padding: 4.5573vw 0;
+        width: 19.9219vw;
+        height: auto;
+        background: url(../images/red_label2.png) no-repeat ;
+        background-size: 100%;
+        color: #fff;
+        font-size: 2.8646vw;
+        font-family: 'GmarketSansBold';
+        text-align: center;
+        line-height: 1.1;
+        white-space:pre-line;
+        
+    }
+    .sec11 .dDay_txt b {
+        font-size: 3.1250vw;
+        color: #fbed07;
+    }
+    .sec11 .dDay_txt b.big_fsize{
+        font-size: 4.9479vw;
+    }
+    .firePrice_area {
+        position: absolute;
+        padding: 1.5625vw 5.4688vw;
+        top: 44.8%;
+        left: 12.5%;
+        width: 25%;
+        text-align: center;
+        background: #f0f0f0;
+        /* border: 0.1302vw solid #000;
+        opacity: .5; */
+    
+    }
+    .firePrice_area.restart {
+        left: 51%;
+    }
+
+    .firePrice_area li{
+        color: #010101;
+        font-size: 2.6042vw;
+        font-weight: 700;
+        line-height: 1.;
+        letter-spacing: -0.0651vw;
+    }
+
+    .firePrice_area li b{
+        color: #c43e1b;
+    }
+    .firePrice_area li em {
+        color: #c43e1b;
+        font-weight: 500;
+    }
+
+    .firePrice_area li.goods_price{
+        font-size: 4.4271vw;
+        letter-spacing: -0.1302vw;
+    }
+
+    /* sec12 */
+    .sec12 .dDay_txt{
+        position: absolute;
+        top: 33%;
+        right: 54%;
+        padding: 3.3854vw 0;
+        width: 12.5000vw;
+        height: auto;
+        background: url(../images/red_label3.png) no-repeat;
+        background-size: 100%;
+        color: #fbed07;
+        font-size: 2.3438vw;
+        font-family: 'GmarketSansBold';
+        text-align: center;
+        line-height: 1.1;
+        white-space:pre-line;
+        
+    }
+    .sec12 .dDay_txt b {
+        font-size: 3.6458vw;
+        color: #fbed07;
+    }
+
+    .sec12 .dDay_txt2{
+        position: absolute;
+        top: 33%;
+        right: 4%;
+        padding: 3.3854vw 0;
+        width: 12.5000vw;
+        height: auto;
+        background: url(../images/red_label3.png) no-repeat;
+        background-size: 100%;
+        color: #fbed07;
+        font-size: 2.3438vw;
+        font-family: 'GmarketSansBold';
+        text-align: center;
+        line-height: 1.1;
+        white-space:pre-line;
+        
+    }
+    .sec12 .dDay_txt2 b {
+        font-size: 3.6458vw;
+        color: #fbed07;
+    }
+
+    .sec12 .link1 {
+        position: absolute;
+        top: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 98.1%;
+        height: 28.2%;       
+    }
+
+    .sec12 .link2 {
+        position: absolute;
+        top: 36%;
+        left: 1%;
+        width: 48.1%;
+        height: 31.2%;
+    }
+
+    .sec12 .link3 {
+        position: absolute;
+        top: 36%;
+        left: 51%;
+        width: 48.1%;
+        height: 31.2%;
+    }
+
+    .sec12 .link4 {
+        position: absolute;
+        top: 71%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 98.1%;
+        height: 16.2%;       
+    }
+
+}

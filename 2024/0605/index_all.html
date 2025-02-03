@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/partner.css">
+</head>
+<body>
+    <header>
+        <h1 class="miraeijLogo"><a href="#" target="_self"><img src="images/miraeij_logo_police.svg"></a></h1>
+        <div class="user_wrap">
+            <ul>
+                <li> 공제회 님</li>
+                <li> <a href="#">로그아웃</a></li>
+            </ul>
+            
+        </div>
+    </header>
+    
+    <div class="partner_content list">   
+        
+        <div class="list_wrapper">
+
+            <div class="partnerGnb_wrap">
+                <ul class="partnerGnb_tab_button">
+                    <li class="on"><a href="">강의 관리</a></li>
+                    <li><a href="order.html">주문 관리</a></li>
+                    <li><a href="#">환불 관리</a></li>
+                    <li><a href="#">정산 관리</a></li>
+                </ul>
+            </div>
+
+            <div class="listTable_wrap">
+
+                <div class="top_area">
+
+                    <div class="top_T">
+                        <table class="searchTable">
+                            <caption> 게시글검색 </caption>
+                            <colgroup>
+                                <col width="10%">
+                                <col width="40%">
+                                <col width="10%">
+                                <col width="40%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        조회 년월
+                                    </th>
+                                    <td>
+                                        <p class="calendar">
+                                            <input type="text" name="sstartdate" id="sstartdate" value="" class="date" onkeyup="cvtDate(this);isNumberOrHyphen(this);" maxlength="10">
+                                            <span id="CalsstartdateIcon" style="top: 170.188px; left: 567.125px;">	
+                                                <span class="material-icons" id="CalsstartdateIconImg">calendar_month</span>
+                                            </span>
+                                        </p>
+                                        <span>~</span>
+                                        <p class="calendar">
+                                            <input type="text" name="senddate" id="senddate" value="" class="date" onkeyup="cvtDate(this);isNumberOrHyphen(this);" maxlength="10">
+                                            <span id="CalsenddateIcon" style="top: 170.188px; left: 702.469px;">
+                                                <span class="material-icons" id="CalsenddateIconImg">calendar_month</span>
+                                            </span>
+                                        </p>
+                                        <input type="button" value="검색" onclick="goSearch();" class="hoverbg">
+                                        <input type="button" value="1M" onclick="searchDate('2024-05-07','2024-06-07');" class="hoverbg">
+                                        <input type="button" value="2M" onclick="searchDate('2024-04-07','2024-06-07');" class="hoverbg">
+                                        <input type="button" value="3M" onclick="searchDate('2024-03-07','2024-06-07');" class="hoverbg">
+                                    </td>
+                                    <th>검색어</th>
+                                    <td>
+                                        <div class="search_area">
+                                            <select class="form-select" name="stype" id="stype">
+                                                <option value="all">전체</option>
+                                                <option value="title">제목</option>
+                                                <option value="contents">내용</option>
+                                            </select>
+                                       
+                                            <input type="text" name="sval" id="sval" value="">
+                                            <input type="submit" value="검색" class="btn_search hoverbg">
+                                        </div>
+                                            
+                                    </td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="top_B">
+                        <!--강의관리-->
+                        <div class="select_area">
+                            <select class="form-select" >
+                                <option value="">직렬 전체</option>
+                                <option value="">경찰승진</option>
+                            </select>
+        
+                            <select class="form-select" >
+                                <option value="">과목 전체</option>
+                                <option value="">실무종합(공제회)</option>
+                            </select>
+        
+                            <select class="form-select" >
+                                <option value="">교수진</option>
+                                <option value="">장정훈</option>
+                            </select>
+        
+                            <select class="form-select" >
+                                <option value="">상품구분</option>
+                                <option value="">단과</option>                            
+                            </select>
+                        </div>
+                        <!--//강의관리-->
+
+                        <!--주문관리-->                 
+                        <!-- <div class="select_area">
+                            <select class="form-select" >
+                                <option value="">직렬 전체</option>
+                                <option value="">경찰승진</option>
+                            </select>  
+        
+                            <select class="form-select" >
+                                <option value="">교수진</option>
+                                <option value="">장정훈</option>
+                            </select>
+        
+                            <select class="form-select" >
+                                <option value="">상품구분</option>
+                                <option value="">온라인</option>        
+                                <option value="">단과</option>        
+                                <option value="">패스</option>                            
+                            </select>
+
+                            <select class="form-select" >
+                                <option value="">결제수단</option>
+                                <option value=""></option>
+                            </select>
+
+                            <select class="form-select" >
+                                <option value="">포인트</option>
+                                <option value=""></option>
+                            </select>
+
+                            <select class="form-select" >
+                                <option value="">PG사</option>
+                                <option value=""></option>
+                            </select>
+                        </div> -->
+                        <!--//주문관리-->
+
+                        <!--환불관리-->
+                        <!-- <div class="select_area">
+                            <select class="form-select" >
+                                <option value="">직렬 전체</option>
+                                <option value="">경찰승진</option>
+                            </select>  
+        
+                            <select class="form-select" >
+                                <option value="">교수진</option>
+                                <option value="">장정훈</option>
+                            </select>
+        
+                            <select class="form-select" >
+                                <option value="">상품구분</option>
+                                <option value="">온라인</option>        
+                                <option value="">단과</option>        
+                                <option value="">패스</option>                            
+                            </select>
+
+                            <select class="form-select" >
+                                <option value="">선택</option>
+                                <option value="">환불요청</option>
+                                <option value="">환불진행중</option>
+                                <option value="">환불완료</option>
+                                <option value="">환불취소</option>
+                            </select>
+
+                            <select class="form-select" >
+                                <option value="">결제수단</option>
+                                <option value=""></option>
+                            </select>
+
+                            <select class="form-select" >
+                                <option value="">포인트</option>
+                                <option value=""></option>
+                            </select>                           
+                        </div> -->
+                        <!--//환불관리-->
+                        
+    
+                        <div class="btn_right_wrap">
+                            <button class="btn down">
+                                주문내역 다운로드
+                            </button>
+                            <button class="btn search">
+                                조회
+                            </button>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+
+                <div class="table_area">
+                    <!--강의관리 리스트-->
+                    <!--<p class="order_total_txt">총 <span>33</span>건</p> 
+                        <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width:7%">직렬</th>
+                                <th style="width:10%">과목</th>
+                                <th style="width:7%">교수</th>
+                                <th style="width:7%">상품구분</th>                               
+                                <th>강좌명</th>                               
+                                <th style="width:10%">판매금액</th>
+                                <th style="width:8%">학습하기</th>		
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>경찰승진</td>
+                                <td>실무종합</td>
+                                <td>장정훈</td>
+                                <td>단과</td>                               
+                                <td class="left">
+                                    <a href="#" target="_blank">[경찰승진 기본] 2025 장정훈의 실무종합 기본이론(24년 6월)</a></td>                                
+                                <td class="right">
+                                    <em class="strike_through">200,000</em>(10%)<br>
+                                    <b>180,000</b>
+                                </td>
+                                <td><button type="button" class="btn btnSm">영상보기</button></td>
+                            </tr>      
+                            <tr>
+                                <td>경찰승진</td>
+                                <td>실무종합</td>
+                                <td>장정훈</td>
+                                <td>단과</td>                               
+                                <td class="left">
+                                    <a href="#" target="_blank">[경찰승진 기본] 2025 장정훈의 실무종합 기본이론(24년 6월)</a></td>                                
+                                <td class="right">
+                                    <em class="strike_through">200,000</em>(10%)<br>
+                                    <b>180,000</b>
+                                </td>
+                                <td><button type="button" class="btn btnSm">영상보기</button></td>
+                            </tr>      
+                                                                             
+                        </tbody>
+                    </table> -->
+                    <!--//강의관리 리스트-->
+
+                    <!--주문관리 리스트-->
+                    <!-- <p class="order_total_txt">전체 OOOOO건 [1/OOOO페이지] <b>[총 주문 합계 : 10,000원 / 총 결제 금액 : 10,000원 - 총 환불 금액 : 0원 = 10,000원 / 총 사용 포인트 : 0원 / 총 사용 쿠폰액 : 0원]</b></p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width:5%">번호</th>
+                                <th style="width:5%">직렬</th>
+                                <th style="width: 10%">주문번호</th>
+                                <th style="width:3%">구분</th>
+                                <th>상품명</th>
+                                <th style="width:4%">주문자</th>
+                                <th style="width:8%">주문일</th>                              
+                                <th style="width:6%">주문금액</th>
+                                <th style="width:6%">결제금액</th>
+                                <th style="width:5%">결제수단</th>
+                                <th style="width:5%">결제상태</th>
+                                <th style="width:5%">환불금액</th>
+                                <th style="width:5%">사용포인트</th>
+                                <th style="width:5%">적립포인트</th>
+                                <th style="width:5%">사용쿠폰</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>246587</td>
+                                <td>경찰승진</td>
+                                <td>20240528300197100</td>
+                                <td>단과</td>
+                                <td class="left">
+                                    <a href="#" target="_blank">[경찰승진 기본] 2025 장정훈의 실무종합 기본이론(24년 6월)</a></td>    
+                                <td>정남헌</td>   
+                                <td>2024-05-28 16:56</td> 
+                                <td class="right">180,000</td>
+                                <td class="right"><b>180,000</b></td>
+                                <td>카드</td>
+                                <td>상태</td>
+                                <td class="right">100,000</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>                           
+                            </tr>                                          
+                        </tbody>
+                    </table> -->
+                    <!--//주문관리 리스트-->
+
+                    <!--환불관리 리스트-->
+                    <p class="order_total_txt">전체 OOOOO건 [1/OOOO페이지] <b>[총 환불 합계 : 10,000원]</b></p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width:5%">번호</th>
+                                <th style="width:5%">직렬</th>
+                                <th style="width: 10%">주문번호</th>
+                                <th style="width:3%">구분</th>
+                                <th>상품명</th>
+                                <th style="width:4%">주문자</th>
+                                <th style="width:8%">주문일</th>                              
+                                <th style="width:6%">주문금액</th>
+                                <th style="width:6%">결제금액</th>
+                                <th style="width:5%">결제수단</th>
+                                <th style="width:5%">환불상품액</th>
+                                <th style="width:5%">환불금액</th>
+                                <th style="width:8%">환불완료일</th> 
+                                <th style="width:5%">사용포인트</th>
+                                <th style="width:5%">적립포인트</th>
+                                <th style="width:5%">사용쿠폰</th>  
+                                <th style="width:5%">환불상태</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>246587</td>
+                                <td>경찰승진</td>
+                                <td>20240528300197100</td>
+                                <td>단과</td>
+                                <td class="left">
+                                    <a href="#" target="_blank">[경찰승진 기본] 2025 장정훈의 실무종합 기본이론(24년 6월)</a></td>    
+                                <td>정남헌</td>   
+                                <td>2024-05-28 16:56</td> 
+                                <td class="right">180,000</td>
+                                <td class="right"><b>180,000</b></td>
+                                <td>카드</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>2024-05-28 16:56</td> 
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>-</td>                               
+                            </tr>                                          
+                        </tbody>
+                    </table>
+                    <!--//환불관리 리스트-->
+
+
+
+                   <!--페이징-->
+                   <nav>
+
+                    <ul class="pagination">
+                        <li class="pageItem">
+                            <div class="pageLink"><span aria-hidden="true">«</span></div>
+                        </li>
+                        <li class="pageItem active">
+                            <div class="pageLink">1</div>
+                        </li>
+                        <li class="pageItem">
+                            <div class="pageLink">2</div>
+                        </li>
+                        <li class="pageItem">
+                            <div class="pageLink">3</div>
+                        </li>
+                        <li class="pageItem">
+                            <div class="pageLink">4</div>
+                        </li>
+                        <li class="pageItem">
+                            <div class="pageLink">5</div>
+                        </li>
+                        <li class="pageItem">
+                            <div class="pageLink">6</div>
+                        </li>
+                        <li class="pageItem">
+                            <div class="pageLink">7</div>
+                        </li>
+                        <li class="pageItem">
+                            <div class="pageLink">8</div>
+                        </li>
+                        <li class="pageItem">
+                            <div class="pageLink">9</div>
+                        </li>
+                        <li class="pageItem">
+                            <div class="pageLink">10</div>
+                        </li>
+                        <li class="pageItem">
+                            <div class="pageLink"><span aria-hidden="true">»</span></div>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+
+            </div>
+            
+        </div>            
+       
+    </div>
+
+    <footer>Copyright (주)미래인재컴퍼니. All rights reserved.</footer>
+</body>
+</html>

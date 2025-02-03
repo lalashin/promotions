@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+* {
+	box-sizing: border-box;
+}
+body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,
+fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{
+    margin:0; padding:0;}
+
+a {color: #222; text-decoration: none;}
+a:hover {font-weight: 500;}
+
+body, input, textarea, select, button, table {
+    font-family:'Noto Sans KR', sans-serif, 'Nanum Gothic'; color: #222; font-size: 13px; line-height: 1.5;}
+
+em,address {font-style: normal;}
+
+ul,li,ol {list-style:none;}
+
+h1,h2,h3,h4,h5,h6 {font-size: 13px; font-weight: normal;}
+
+img,fieldset {border:0 none;}
+
+button, input[type="button"],input {border: 0 none;}
+input[type="text"], input[type="password"] {
+    font-size: 15px;
+    color: #6c757d;
+    padding: 0 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+legend, caption {
+    display: none;
+}
+
+video, img {width: 100%;}
+
+
+
+select {
+	border:none;
+	border-radius:0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background:url(../) no-repeat 80% 50%;
+}
+
+select:focus {
+    outline: 0;
+}
+
+.fas-icon {font-family: FontAwesome !important;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
