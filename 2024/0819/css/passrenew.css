@@ -1,0 +1,1937 @@
+.event-view {
+    background: #fff;
+}
+
+.event-view {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+.event-view .sec1 {background: url('../images/passrenew_bg_01.jpg') center no-repeat;}
+.event-view .sec2 {background: url('../images/passrenew_bg_02.jpg') center no-repeat;}
+.event-view .sec3 {
+    background: #4450bf;
+}
+.event-view .sec4 {
+    background: linear-gradient(#e9eff3, #f5f7f9);;
+}
+.event-view .sec5 {
+    background: linear-gradient(#f9fafb, #fcfdfd);;
+}
+.event-view .sec6 {
+    background: #31398b;
+}
+.event-view .sec7 {
+    background: #12151a;
+}
+.event-view .sec8 {background: url('../images/passrenew_bg_08.jpg') center no-repeat;}
+.event-view .sec8_2 {
+    background: url(../images/sec10_slide_bg.png) repeat-x;
+    padding-bottom: 70px ;
+}
+.event-view .sec9 {background: url('../images/passrenew_bg_09.jpg') center no-repeat;}
+.event-view .sec10 {
+    background: #fff;
+    padding: 60px 0 120px 0;
+}
+.event-view .sec11 {
+    background: #252c70;
+}
+.event-view .sec12 {
+    background: #252c70;
+}
+.event-view .sec13 {
+    background: #252c70;
+}
+
+
+/* sec1 */
+
+.sec1 .link1 {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%;
+    height: 9.5%;
+    background: red;
+    opacity: 0;
+}
+
+/* sec3 쿠폰 버튼 */
+.sec3 .link1 {
+    position: absolute;
+    top: 38%;
+    left: 7.5%;
+    width: 27%;
+    height: 18.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec3 .link2 {
+    position: absolute;
+    top: 38%;
+    left: 36.5%;
+    width: 27%;
+    height: 18.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec3 .link3 {
+    position: absolute;
+    top: 38%;
+    left: 65.7%;
+    width: 27%;
+    height: 18.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec3 .link4 {
+    position: absolute;
+    top: 63%;
+    left: 23%;
+    width: 27%;
+    height: 18.5%;
+    background: red;
+    opacity: 0;
+}
+
+.sec3 .link5 {
+    position: absolute;
+    top: 63%;
+    left: 52%;
+    width: 27%;
+    height: 18.5%;
+    background: red;
+    opacity: 0;
+}
+
+/*체크박스 커스텀 S*/
+#sub .sec input[type="checkbox"] {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 2px solid #2e2e2e;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 20px;
+    outline: 0;
+    width: 20px;
+}
+
+#sub .sec input[type="checkbox"]::after {
+    border: solid #244c9a;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: none;
+    height: 70%;
+    left: 30%;
+    position: relative;
+    top: 5%;
+    transform: rotate(45deg);
+    width: 50%;
+}
+
+#sub .sec input[type="checkbox"]:checked {
+    background: #fff;
+    border: 2px solid #244c9a;
+    box-sizing: border-box;
+}
+
+#sub .sec input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+/****체크박스 커스텀 E ************/
+
+/*라디오버튼 커스텀 S*/
+#sub .sec .radio_area input[type="radio"] {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 2px solid #616161;
+    cursor: pointer;
+    height: 20px;
+    outline: 0;
+    width: 20px;
+}
+
+#sub .sec .radio_area input[type="radio"]::after {
+    border: solid #000;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: none;
+    height: 70%;
+    left: 30%;
+    position: relative;
+    top: 5%;
+    transform: rotate(45deg);
+    width: 50%;
+}
+
+#sub .sec .radio_area input[type="radio"]:checked {
+    background: #fff;
+    border: 2px solid #000;
+}
+
+#sub .sec .radio_area input[type="radio"]:checked::after {
+    display: block;
+}
+
+#sub .sec .radio_area input[type="radio"] {
+    height: 30px;
+    width: 30px;
+}
+
+/****라디오버튼 커스텀 E ************/
+
+
+/*동의 신청하기 공통 */
+.sec .inner.passAgree {
+    padding: 30px 0 80px 0;
+}
+#sub .agree_area {
+    display: flex;
+    justify-content: space-evenly   ;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    color: #000;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+
+#sub .agree_area p {
+    margin-left: 40px;
+    color: #818181;
+    font-size: 18px;
+    font-weight: 400;   
+}
+
+#sub .agree_area input[type="checkbox"] {
+    height: 40px;
+    width: 40px;
+    border: 2px solid #000;
+    background: #f0f0f0;
+}
+#sub .agree_area  .noticeGo {
+    padding: 7px 47px;
+    color: #fff;
+    font-size: 31px;
+    font-weight: 400;
+    background: #a0a0a0;
+    border-radius: 50px;
+}
+
+.btn_area {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly   ;
+    align-items: center;
+}
+.btn.pass {
+    width: 53%;
+    height: 100px;
+    font-size: 48px;
+    line-height: 80px;
+    font-weight: 600;
+    background: #363636;
+    border-radius: 10px;
+    letter-spacing: -1px;
+}
+
+/* sec4 상품단 */
+.sec4 .dDay {
+    position: absolute;
+    top: 75.5%;    
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    line-height:1.2;
+    letter-spacing: -.5px;
+}
+
+.sec4 .dDay b {
+    color: #ffff02;
+}
+.sec4 .dDay.p1 {
+    left: 23%;
+}
+.sec4 .dDay.p2 {
+    left: 52.5%;
+}
+.sec4 .dDay.p3 {
+    left: 74.5%;
+}
+
+.radio_area {
+    position: absolute;
+    width: 27%;
+    height: auto;
+    /* border: 1px solid #000; */
+}
+
+/* 구매단 가격 텍스트 S */
+/* sec4 공통 */
+ .radio_area div {
+    position: relative;
+}
+
+.radio_area .cBalloon_wrap {
+    position: absolute;
+    top: -25px;
+    left: 103px;
+
+}
+.radio_area  .cBalloon_txt {
+    position: relative;
+    width: 130px;
+    height: 27px;
+    background: #000000;
+    border: 1px solid #b7b7b7;
+    box-sizing: border-box;
+    border-radius: 30px;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.7;
+    letter-spacing: -1px;
+}
+.radio_area  .cBalloon_txt b{
+    color: #ffff0f ;
+}
+
+ .radio_area div label {
+    position: relative;
+    margin-left: 20px;
+    color: #1c1c1c;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 24px;
+    vertical-align: middle;
+    letter-spacing: -2px;
+}
+
+ .radio_area div label em {
+    color: #ff0100;
+    /* font-size: 34px;*/
+    font-weight: 900; 
+}
+
+ .radio_area div label.text_long {
+    letter-spacing: -2px;
+}
+
+/******************/
+
+.sec4 .radio_area.posi {
+    top: 84.3%;
+    left: 31.3%;
+}
+.sec4 .radio_area.posi div {
+    margin-bottom: 35px;
+}
+#sub .sec .radio_area.posi input[type="radio"] {
+    height: 35px;
+    width: 35px;
+}
+
+.sec4 .radio_area.posi2 {
+    top: 85.3%;
+    left: 53.3%;
+}
+.sec4 .radio_area.posi2 div {
+    margin-bottom: 34px;
+}
+
+.sec4 .radio_area.posi3 {
+    top: 85.3%;
+    left: 75.3%;
+}
+.sec4 .radio_area.posi3 div {
+    margin-bottom: 34px;
+}
+
+
+/* sec5 */
+.sec5 .radio_area .cBalloon_wrap {
+    position: absolute;
+    top: -32px;
+    left: 83px;
+
+}
+.sec5 .radio_area  .cBalloon_txt {
+    position: relative;
+    width: 120px;
+    height: 23px;
+    background: #37384c;
+    border-radius: 30px;
+    color:#fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.7;
+    letter-spacing: -1px;
+}
+.sec5 .radio_area  .cBalloon_txt b{
+    color: #ffff0f ;
+}
+.sec5 .radio_area  .cBalloon_txt::after {
+    content: "";
+    border-bottom: 0px solid transparent;
+    border-left: 0px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 12px solid #37384c;
+    position: absolute;
+    bottom: -2px;
+    left: -1%;
+    transform: rotate(25deg);
+    z-index: 9;
+}
+
+.sec5 .radio_area.posi {
+    top: 64.1%;
+    left: 64.2%;
+}
+.sec5 .radio_area.posi div {
+    margin-bottom: 44px;
+}
+
+.sec5 .radio_area.posi2 {
+    top: 82.5%;
+    left: 61.5%;
+}
+
+
+/* sec7 합격생 인터뷰 영상 슬라이드 */
+/* sec7 */
+.passReview_intvw_slide {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 22%;
+    padding: 0 38px;
+    /* border: 3px solid #fff; */
+}
+.passReview_intvw_swiper-container{ position: relative; width: 100%; height: 100%; overflow: hidden; padding: 27px 0;}
+.passReview_intvw_swiper-container .swiper-slide{  position: relative; box-sizing:border-box; border: 2px solid #70ad46;
+
+}
+.passReview_intvw_swiper-container .swiper-slide .hashTags{
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+    padding: 5px ;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    background: #70ad46;
+    z-index: 100;
+
+}
+.swiperVideo_area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 94%;
+    height: 200px ;
+   
+}
+.passReview_intvw_swiper-container .swiper-slide .swiperVideo_area a{
+    width: 100%;
+    height: 100%;
+}
+
+.sec7 .passReview_intvw_slide .swiper-button-prev,
+.sec7 .passReview_intvw_slide .swiper-button-next {
+    width: 20px;
+    height: 40px;
+    top: 60%;   
+    z-index: 2;
+}
+
+.sec7 .passReview_intvw_slide .swiper-button-prev {
+    left: 0;
+    background: url('../images/arrow-prev_wh.png') no-repeat;
+}
+
+.sec7 .passReview_intvw_slide .swiper-button-next {
+    right: 0;
+    background: url('../images/arrow-next_wh.png') no-repeat;
+}
+
+.sec7 .passReview_intvw_slide .swiper-button-prev:after {
+    display: none;
+}
+
+.sec7 .passReview_intvw_slide .swiper-button-next:after {
+    display: none;
+}
+
+
+/*슬라이드2*/
+.sec7 .box_border {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 22%;
+    box-sizing:border-box; border: 2px solid #0265ff;
+}
+
+.hiPassReview_intvw_slide {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88%;
+    height: 22%;
+    padding: 0 50px;
+    /* border: 3px solid #fff; */
+}
+.hiPassReview_intvw_swiper-container{ position: relative; width: 100%; height: 100%; overflow: hidden; padding: 27px 0;}
+.hiPassReview_intvw_swiper-container::before {
+    position: absolute;
+    content: attr(data_txt);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    padding: 5px ;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    background: #0265ff;
+    z-index: 100;
+}
+.hiPassReview_intvw_swiper-container .swiper-slide{  position: relative; }
+
+.hiPassReview_intvw_swiper-container .swiperVideo_area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 96%;
+    height: 200px ;
+   
+}
+.hiPassReview_intvw_swiper-container .swiper-slide .swiperVideo_area a{
+    width: 100%;
+    height: 100%;
+}
+
+.sec7 .hiPassReview_intvw_slide .swiper-button-prev,
+.sec7 .hiPassReview_intvw_slide .swiper-button-next {
+    width: 20px;
+    height: 40px;
+    top: 60%;   
+    z-index: 2;
+}
+
+.sec7 .hiPassReview_intvw_slide .swiper-button-prev {
+    left: 0;
+    background: url('../images/arrow-prev_wh.png') no-repeat;
+}
+
+.sec7 .hiPassReview_intvw_slide .swiper-button-next {
+    right: 0;
+    background: url('../images/arrow-next_wh.png') no-repeat;
+}
+
+.sec7 .hiPassReview_intvw_slide .swiper-button-prev:after {
+    display: none;
+}
+
+.sec7 .hiPassReview_intvw_slide .swiper-button-next:after {
+    display: none;
+}
+
+/* sec8 교재슬라이드 */
+/*sec8*/
+.sec8 {
+    position: relative;
+}
+
+.sec8 .booksSlide_area {
+    /* position: absolute;
+    top: 45%;
+    left: 0; */
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.books-swiper {
+    overflow: hidden;
+}
+
+.sec8 .books-swiper .swiper-wrapper {
+    transition-timing-function: linear;
+}
+
+/* sec10 교수진 탭 */
+.subject_tabWrap {
+    width: 1170px;    
+    margin: auto;
+}
+.subject_tabWrap ul { display: flex; }
+.subject_tabWrap li { width: calc(100% / 4); height: 100px; text-align: center;  box-sizing: border-box;}
+.subject_tabWrap li a {  display: block; width: 100%; height: 100%;  font-size: 32px; color: #7d7d7d; font-weight: 700; line-height: 100px; background: #f2f2f2;  }
+.subject_tabWrap li a.frt {  border-top-left-radius: 20px;}
+.subject_tabWrap li a.lst {  border-top-right-radius: 20px;}
+.subject_tabWrap li.active a { background: #252c70; color: #ffb400;}
+.subject_tabWrap li.active a.frt {  border-top-left-radius: 20px;}
+.subject_tabWrap li.active a.lst {  border-top-right-radius: 20px;}
+
+.subjectT_detail {
+    width: 1170px;
+    margin: auto;
+    position: relative;
+}
+
+.subjectT_detail.law {
+    
+    width: 1130px;
+    background: #252c70; 
+    padding: 40px 20px 0 20px;
+}
+
+    /* 헌법 교수진 tab */
+
+    .lawT_tabWrap {
+        width: 100%;        
+    }
+    .lawT_tabWrap ul { display: flex; }
+    .lawT_tabWrap li { margin: auto; width: calc(100% / 2); height: 75px; text-align: center;  box-sizing: border-box;}
+    .lawT_tabWrap li a {  display: block; width: 100%; height: 100%;  font-size: 32px; color: #b7b7b7; font-weight: 700; line-height: 75px; background: #252c70; box-sizing: border-box; border-bottom: 8px solid #5f648c; }
+    .lawT_tabWrap li.active a { background: #252c70; color: #ffb400; box-sizing: border-box; border-bottom: 8px solid #ffb400;}
+
+    .lawT_detail {
+        width: 100%;
+        height: 100%;
+        background: #252c70;
+        position: relative;
+       
+    }
+
+.sec10 .video_area {
+    position: absolute;
+    top: 28.3%;
+    left: 2.5%;
+    width: 54%;
+    height: 49%;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+.sec10 .video_area.law {
+    top: 30.3%;
+    left: 0.5%;
+    width: 56%;
+    height: 56%;
+}
+
+/* sec14 유의사항 */
+
+.sec14 .passNotice_area h2 {
+    margin-top: 90px;
+    padding-left: 80px;
+    color: #192436;
+    font-size: 28px;
+
+}
+
+/* 탭 전체 스타일 */
+.sec14 .passNotice_tabs {
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 40px;
+    width: 92%;
+    opacity: 1;
+}
+
+/* 탭 스타일 */
+.sec14 .tab_item {
+    position: relative;
+    width: calc(100%/9);
+    background-color: #fff;
+    line-height: 2.5;
+    font-size: 16px;
+    text-align: center;
+    color: #77787c;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+
+}
+
+.sec14 .tab_item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 1px;
+    height: 30%;
+    background: #77787c;
+}
+
+.sec14 .tab_item.lat::after{
+    display: none;
+}
+
+
+.sec14 .tab_item:hover {
+    opacity: 0.75;
+}
+
+/* 라디오 버튼 UI삭제*/
+input[name="tab_item"] {
+    display: none;
+}
+
+/* 탭 컨텐츠 스타일 */
+.sec14 .tab_content {
+    display: none;
+    padding:0;
+    clear: both;
+    overflow: hidden;
+    padding: 40px 40px 40px 30px;
+    min-height: 400px;
+
+}
+
+.sec14 .tab_content ul{
+    color: #333;
+    font-size: 1.4rem;
+    line-height: 24px;
+    letter-spacing: -1.2px;
+    font-weight: 700;
+}
+
+.sec14 .tab_content ul li{
+    padding: 2px 0;
+}
+
+.sec14 .tab_content ul ul {
+    font-weight: 400;
+    padding-left: 15px;
+}
+
+.sec14 .tab_content ul ul li {
+    padding: 0;
+}
+
+/* 선택 된 탭 콘텐츠를 표시 */
+#p1:checked ~ .p1_content,
+#p2:checked ~ .p2_content,
+#p3:checked ~ .p3_content,
+#p4:checked ~ .p4_content,
+#p5:checked ~ .p5_content,
+#p6:checked ~ .p6_content,
+#p7:checked ~ .p7_content,
+#p8:checked ~ .p8_content,
+/* #p9:checked ~ .p9_content, */
+#p10:checked ~ .p10_content {
+display: block;
+}
+
+/* 선택된 탭 스타일 */
+.sec14 .passNotice_tabs input:checked + .tab_item {
+    color: #101920;
+}
+
+.sec14 .tab_content .ps {
+    margin-top: 35px;
+}
+
+
+@media screen and (max-width: 1280px){
+
+    .event-view .sec10 {
+        background: #fff;
+        padding: 4.6875vw 0 9.3750vw 0;
+    }
+
+/*체크박스 커스텀 S*/
+#sub .sec input[type="checkbox"] {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 0.1563vw solid #2e2e2e;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 1.5625vw;
+    outline: 0;
+    width: 1.5625vw;
+}
+
+#sub .sec input[type="checkbox"]::after {
+    border: solid #244c9a;
+    border-width: 0 0.1563vw 0.1563vw 0;
+    content: '';
+    display: none;
+    height: 70%;
+    left: 30%;
+    position: relative;
+    top: 5%;
+    transform: rotate(45deg);
+    width: 50%;
+}
+
+#sub .sec input[type="checkbox"]:checked {
+    background: #fff;
+    border: 0.1563vw solid #244c9a;
+    box-sizing: border-box;
+}
+
+#sub .sec input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+/****체크박스 커스텀 E ************/
+
+/*라디오버튼 커스텀 S*/
+#sub .sec .radio_area input[type="radio"] {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 0.1563vw solid #616161;
+    cursor: pointer;
+    height: 1.5625vw;
+    outline: 0;
+    width: 1.5625vw;
+}
+
+#sub .sec .radio_area input[type="radio"]::after {
+    border: solid #000;
+    border-width: 0 0.1563vw 0.1563vw 0;
+    content: '';
+    display: none;
+    height: 70%;
+    left: 30%;
+    position: relative;
+    top: 5%;
+    transform: rotate(45deg);
+    width: 50%;
+}
+
+#sub .sec .radio_area input[type="radio"]:checked {
+    background: #fff;
+    border: 0.1563vw solid #000;
+}
+
+#sub .sec .radio_area input[type="radio"]:checked::after {
+    display: block;
+}
+
+#sub .sec .radio_area input[type="radio"] {
+    height: 2.3438vw;
+    width: 2.3438vw;
+}
+
+/****라디오버튼 커스텀 E ************/
+
+
+/*동의 신청하기 공통 */
+.sec .inner.passAgree {
+    padding: 2.3438vw 0 6.2500vw 0;
+}
+#sub .agree_area {
+    display: flex;
+    justify-content: space-evenly   ;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    color: #000;
+    font-size: 2.3438vw;
+    font-weight: 500;
+    letter-spacing: -0.1172vw;
+}
+
+#sub .agree_area p {
+    margin-left: 3.1250vw;
+    color: #818181;
+    font-size: 1.4063vw;
+    font-weight: 400;   
+}
+
+#sub .agree_area input[type="checkbox"] {
+    height: 3.1250vw;
+    width: 3.1250vw;
+    border: 0.1563vw solid #000;
+    background: #f0f0f0;
+}
+#sub .agree_area  .noticeGo {
+    padding: 0.5469vw 3.6719vw;
+    color: #fff;
+    font-size: 2.4219vw;
+    font-weight: 400;
+    background: #a0a0a0;
+    border-radius: 3.9063vw;
+}
+
+.btn_area {
+    margin-top: 3.1250vw;
+    display: flex;
+    justify-content: space-evenly   ;
+    align-items: center;
+}
+.btn.pass {
+    width: 53%;
+    height: 7.8125vw;
+    font-size: 3.7500vw;
+    line-height: 6.2500vw;
+    font-weight: 600;
+    background: #363636;
+    border-radius: 0.7813vw;
+    letter-spacing: -0.0781vw;
+}
+
+/* sec4 상품단 */
+.sec4 .dDay {
+    position: absolute;
+    top: 75.5%;    
+    color: #fff;
+    font-size: 1.7188vw;
+    font-weight: 700;
+    text-align: center;
+    line-height:1.2;
+    letter-spacing: -0.0391vw;
+}
+
+.sec4 .dDay b {
+    color: #ffff02;
+}
+.sec4 .dDay.p1 {
+    left: 23%;
+}
+.sec4 .dDay.p2 {
+    left: 52.5%;
+}
+.sec4 .dDay.p3 {
+    left: 74.5%;
+}
+
+.radio_area {
+    position: absolute;
+    width: 27%;
+    height: auto;
+    /* border: 0.0781vw solid #000; */
+}
+
+/* 구매단 가격 텍스트 S */
+/* sec4 공통 */
+ .radio_area div {
+    position: relative;
+}
+
+.radio_area .cBalloon_wrap {
+    position: absolute;
+    top: -1.9531vw;
+    left: 8.0469vw;
+
+}
+.radio_area  .cBalloon_txt {
+    position: relative;
+    width: 10.1563vw;
+    height: 2.1094vw;
+    background: #000000;
+    border: 0.0781vw solid #b7b7b7;
+    box-sizing: border-box;
+    border-radius: 2.3438vw;
+    color:#fff;
+    font-size: 1.2500vw;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.7;
+    letter-spacing: -0.0781vw;
+}
+.radio_area  .cBalloon_txt b{
+    color: #ffff0f ;
+}
+
+ .radio_area div label {
+    position: relative;
+    margin-left: 1.5625vw;
+    color: #1c1c1c;
+    font-size: 1.8750vw;
+    font-weight: 800;
+    line-height: 1.8750vw;
+    vertical-align: middle;
+    letter-spacing: -0.1563vw;
+}
+
+ .radio_area div label em {
+    color: #ff0100;
+    /* font-size: 2.6563vw;*/
+    font-weight: 900; 
+}
+
+ .radio_area div label.text_long {
+    letter-spacing: -0.1563vw;
+}
+
+/******************/
+
+.sec4 .radio_area.posi {
+    top: 84.3%;
+    left: 31.3%;
+}
+.sec4 .radio_area.posi div {
+    margin-bottom: 2.7344vw;
+}
+#sub .sec .radio_area.posi input[type="radio"] {
+    height: 2.7344vw;
+    width: 2.7344vw;
+}
+
+.sec4 .radio_area.posi2 {
+    top: 85.3%;
+    left: 53.3%;
+}
+.sec4 .radio_area.posi2 div {
+    margin-bottom: 2.6563vw;
+}
+
+.sec4 .radio_area.posi3 {
+    top: 85.3%;
+    left: 75.3%;
+}
+.sec4 .radio_area.posi3 div {
+    margin-bottom: 2.6563vw;
+}
+
+
+/* sec5 */
+.sec5 .radio_area .cBalloon_wrap {
+    position: absolute;
+    top: -2.5000vw;
+    left: 6.4844vw;
+
+}
+.sec5 .radio_area  .cBalloon_txt {
+    position: relative;
+    width: 9.3750vw;
+    height: 1.7969vw;
+    background: #37384c;
+    border-radius: 2.3438vw;
+    color:#fff;
+    font-size: 1.1719vw;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.7;
+    letter-spacing: -0.0781vw;
+}
+.sec5 .radio_area  .cBalloon_txt b{
+    color: #ffff0f ;
+}
+.sec5 .radio_area  .cBalloon_txt::after {
+    content: "";
+    border-bottom: 0.0000vw solid transparent;
+    border-left: 0.0000vw solid transparent;
+    border-right: 0.7031vw solid transparent;
+    border-top: 0.9375vw solid #37384c;
+    position: absolute;
+    bottom: -0.1563vw;
+    left: -1%;
+    transform: rotate(25deg);
+    z-index: 9;
+}
+
+.sec5 .radio_area.posi {
+    top: 64.1%;
+    left: 64.2%;
+}
+.sec5 .radio_area.posi div {
+    margin-bottom: 3.4375vw;
+}
+
+.sec5 .radio_area.posi2 {
+    top: 82.5%;
+    left: 61.5%;
+}
+
+
+    /* sec7 */
+    .passReview_intvw_slide {    
+        top: 28%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 22%;
+        padding: 0 2.9688vw;
+        /* border: 0.2344vw solid #fff; */
+    }
+    .passReview_intvw_swiper-container{  width: 100%; height: 100%;  padding: 2.1094vw 0;}
+    .passReview_intvw_swiper-container .swiper-slide{    border: 0.1563vw solid #70ad46;
+
+    }
+    .passReview_intvw_swiper-container .swiper-slide .hashTags{    
+        top: -2.1094vw;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65%;
+        padding: 0.3906vw ;    
+        font-size: 1.5625vw;
+        background: #70ad46;
+    }
+    .swiperVideo_area {
+        
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 94%;
+        height: 15.6250vw ;
+    
+    }
+    .passReview_intvw_swiper-container .swiper-slide .swiperVideo_area a{
+        width: 100%;
+        height: 100%;
+    }
+
+    .sec7 .passReview_intvw_slide .swiper-button-prev,
+    .sec7 .passReview_intvw_slide .swiper-button-next {
+        width: 1.5625vw;
+        height: 3.1250vw;
+        top: 60%;       
+    }
+
+
+    /*슬라이드2*/
+    .sec7 .box_border {    
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 22%;
+        border: 0.1563vw solid #0265ff;
+    }
+
+    .hiPassReview_intvw_slide {
+        
+        top: 58%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 88%;
+        height: 22%;
+        padding: 0 3.9063vw;
+        /* border: 0.2344vw solid #fff; */
+    }
+    .hiPassReview_intvw_swiper-container{  width: 100%; height: 100%;  padding: 2.1094vw 0;}
+    .hiPassReview_intvw_swiper-container::before {    
+        content: attr(data_txt);
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20%;
+        padding: 0.3906vw ;    
+        font-size: 1.5625vw;  
+        background: #0265ff;    
+    }
+
+
+    .hiPassReview_intvw_swiper-container .swiperVideo_area {    
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 96%;
+        height: 15.6250vw ;   
+    }
+    .hiPassReview_intvw_swiper-container .swiper-slide .swiperVideo_area a{
+        width: 100%;
+        height: 100%;
+    }
+
+    .sec7 .hiPassReview_intvw_slide .swiper-button-prev,
+    .sec7 .hiPassReview_intvw_slide .swiper-button-next {
+        width: 1.5625vw;
+        height: 3.1250vw;
+        top: 60%;   
+        
+    }
+
+    /* sec10 교수진 탭 */
+    .subject_tabWrap {
+        width: 91.4063vw;    
+        margin: auto;
+    }
+    .subject_tabWrap ul { display: flex; }
+    .subject_tabWrap li { width: calc(100% / 4); height: 7.8125vw; text-align: center;  box-sizing: border-box;}
+    .subject_tabWrap li a {  display: block; width: 100%; height: 100%;  font-size: 2.5000vw; color: #7d7d7d; font-weight: 700; line-height: 7.8125vw; background: #f2f2f2;  }
+    .subject_tabWrap li a.frt {  border-top-left-radius: 1.5625vw;}
+    .subject_tabWrap li a.lst {  border-top-right-radius: 1.5625vw;}
+    .subject_tabWrap li.active a { background: #252c70; color: #ffb400;}
+    .subject_tabWrap li.active a.frt {  border-top-left-radius: 1.5625vw;}
+    .subject_tabWrap li.active a.lst {  border-top-right-radius: 1.5625vw;}
+
+    .subjectT_detail {
+        width: 91.4063vw;
+        margin: auto;
+    }
+
+    .subjectT_detail.law {
+        width: 88.2813vw;
+        background: #252c70; 
+        padding: 3.1250vw 1.5625vw 0 1.5625vw;
+    }
+
+        /* 헌법 교수진 tab */
+
+        .lawT_tabWrap {
+            width: 100%;        
+        }
+        .lawT_tabWrap ul { display: flex; }
+        .lawT_tabWrap li { margin: auto; width: calc(100% / 2); height: 5.8594vw; text-align: center;  box-sizing: border-box;}
+        .lawT_tabWrap li a {  display: block; width: 100%; height: 100%;  font-size: 2.5000vw; color: #b7b7b7; font-weight: 700; line-height: 5.8594vw; background: #252c70; box-sizing: border-box; border-bottom: 0.6250vw solid #5f648c; }
+        .lawT_tabWrap li.active a { background: #252c70; color: #ffb400; box-sizing: border-box; border-bottom: 0.6250vw solid #ffb400;}
+
+        .lawT_detail {
+            width: 100%;
+            height: 100%;
+            background: #252c70;
+        }
+
+
+
+    
+
+}
+
+@media screen and (max-width: 1040px){ 
+    /* sec7 */
+    .passReview_intvw_slide {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 32%;
+        padding: 0 38px;
+        /* border: 3px solid #fff; */
+    }
+    .passReview_intvw_swiper-container{ position: relative; width: 100%; height: 94%; overflow: hidden; padding: 50px 0;}
+    .passReview_intvw_swiper-container .swiper-slide{  position: relative;  box-sizing:border-box; border: 2px solid #70ad46;
+
+    }
+    .passReview_intvw_swiper-container .swiper-slide .hashTags{
+        position: absolute;
+        top: -27px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65%;
+        padding: 5px ;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        background: #70ad46;
+        z-index: 100;
+
+    }
+    .swiperVideo_area {
+        position: absolute;
+        top: 54%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 94%;
+        height: auto ;
+    
+    }
+    .passReview_intvw_swiper-container .swiper-slide .swiperVideo_area a{
+        width: 100%;
+        height: 100%;
+    }
+
+    .sec7 .passReview_intvw_slide .swiper-button-prev,
+    .sec7 .passReview_intvw_slide .swiper-button-next {
+        width: 20px;
+        height: 40px;
+        top: 60%;   
+        z-index: 2;
+    }
+
+    .sec7 .passReview_intvw_slide .swiper-button-prev {
+        left: 0;
+        background: url('../images/arrow-prev_wh.png') no-repeat;
+    }
+
+    .sec7 .passReview_intvw_slide .swiper-button-next {
+        right: 0;
+        background: url('../images/arrow-next_wh.png') no-repeat;
+    }
+
+
+
+    /*슬라이드2*/
+    .sec7 .box_border {
+        position: absolute;
+        top: 62.5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 32%;
+    
+        box-sizing:border-box; border: 2px solid #0265ff;
+    }
+
+    .hiPassReview_intvw_slide {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 88%;
+        height: 32%;
+        padding: 0 50px;
+        /* border: 3px solid #fff; */
+    }
+    .hiPassReview_intvw_swiper-container{ position: relative; width: 100%; height: 100%; overflow: hidden; padding: 27px 0;}
+    .hiPassReview_intvw_swiper-container::before {
+        position: absolute;
+        content: attr(data_txt);
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 34%;
+        padding: 5px ;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        background: #0265ff;
+        z-index: 100;
+    }
+    .hiPassReview_intvw_swiper-container .swiper-slide{  position: relative; }
+
+    .hiPassReview_intvw_swiper-container .swiperVideo_area {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 96%;
+        height: auto ;
+    
+    }
+    .hiPassReview_intvw_swiper-container .swiper-slide .swiperVideo_area a{
+        width: 100%;
+        height: 100%;
+    }
+
+    .sec7 .hiPassReview_intvw_slide .swiper-button-prev,
+    .sec7 .hiPassReview_intvw_slide .swiper-button-next {
+        width: 20px;
+        height: 40px;
+        top: 60%;   
+        z-index: 2;
+    }
+
+    .sec7 .hiPassReview_intvw_slide .swiper-button-prev {
+        left: 0;
+        background: url('../images/arrow-prev_wh.png') no-repeat;
+    }
+
+    .sec7 .hiPassReview_intvw_slide .swiper-button-next {
+        right: 0;
+        background: url('../images/arrow-next_wh.png') no-repeat;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .event-view .mo-img {
+        display: block;
+    }
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    .event-view .sec8_2 {
+        background: url(../images/mo_sec10_slide_bg.png) bottom repeat-x;
+        padding-bottom:70px;
+    }
+
+    /* sec1 */
+    .sec1 .link1 {
+        position: absolute;
+        top: 87%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 92%;
+        height: 9.5%;
+    }
+
+    .sec3 .link1 {
+        position: absolute;
+        top: 36%;
+        left: 4.5%;
+        width: 30%;
+        height: 21.5%;       
+    }
+
+    .sec3 .link2 {
+        position: absolute;
+        top: 36%;
+        left: 35.5%;
+        width: 29%;
+        height: 21.5%;     
+    }
+
+    .sec3 .link3 {
+        position: absolute;
+        top: 36%;
+        left: 65.7%;
+        width: 29%;
+        height: 21.5%;    
+    }
+
+    .sec3 .link4 {
+        position: absolute;
+        top: 63%;
+        left: 21%;
+        width: 29%;
+        height: 21.5%;   
+    }
+    
+    .sec3 .link5 {
+        position: absolute;
+        top: 63%;
+        left: 52%;
+        width: 29%;
+        height: 21.5%;
+    }
+
+    /*체크박스 커스텀 S*/
+#sub .sec input[type="checkbox"] {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 0.2604vw solid #2e2e2e;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 2.6042vw;
+    outline: 0;
+    width: 2.6042vw;
+}
+
+#sub .sec input[type="checkbox"]::after {
+    border: solid #244c9a;
+    border-width: 0 0.2604vw 0.2604vw 0;
+    content: '';
+    display: none;
+    height: 70%;
+    left: 30%;
+    position: relative;
+    top: 5%;
+    transform: rotate(45deg);
+    width: 50%;
+}
+
+#sub .sec input[type="checkbox"]:checked {
+    background: #fff;
+    border: 0.2604vw solid #244c9a;
+    box-sizing: border-box;
+}
+
+#sub .sec input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+/****체크박스 커스텀 E ************/
+
+/*라디오버튼 커스텀 S*/
+#sub .sec .radio_area input[type="radio"] {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 0.2604vw solid #616161;
+    cursor: pointer;
+    height: 2.6042vw;
+    outline: 0;
+    width: 2.6042vw;
+}
+
+#sub .sec .radio_area input[type="radio"]::after {
+    border: solid #000;
+    border-width: 0 0.2604vw 0.2604vw 0;
+    content: '';
+    display: none;
+    height: 70%;
+    left: 30%;
+    position: relative;
+    top: 5%;
+    transform: rotate(45deg);
+    width: 50%;
+}
+
+#sub .sec .radio_area input[type="radio"]:checked {
+    background: #fff;
+    border: 0.2604vw solid #000;
+}
+
+#sub .sec .radio_area input[type="radio"]:checked::after {
+    display: block;
+}
+
+#sub .sec .radio_area input[type="radio"] {
+    height: 3.9063vw;
+    width: 3.9063vw;
+}
+
+/****라디오버튼 커스텀 E ************/
+
+
+
+
+/* sec4 상품단 */
+#sub .agree_area p {
+  
+    font-size: 1.5625vw;
+   
+}
+.btn.pass {
+    width: 89%;
+    height: 7.9427vw;
+    font-size: 3.6458vw;
+    line-height: 5.5990vw;
+    font-weight: 600;
+    background: #363636;
+    border-radius: 1.3021vw;
+    letter-spacing: -0.1302vw;
+}
+
+.radio_area {
+    position: absolute;
+    width: 38%;
+    height: auto;
+    /* border: 0.1302vw solid #000; */
+}
+
+/* 구매단 가격 텍스트 S */
+/* sec4 공통 */
+ .radio_area div {
+    position: relative;
+}
+
+.radio_area .cBalloon_wrap {
+    position: absolute;
+    top: -3.2552vw;
+    left: 13.4115vw;
+
+}
+.radio_area  .cBalloon_txt {
+    position: relative;
+    width: 16.9271vw;
+    height: 3.5156vw;
+    background: #000000;
+    border: 0.1302vw solid #b7b7b7;
+    box-sizing: border-box;
+    border-radius: 3.9063vw;
+    color:#fff;
+    font-size: 2.0833vw;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.7;
+    letter-spacing: -0.1302vw;
+}
+.radio_area  .cBalloon_txt b{
+    color: #ffff0f ;
+}
+
+ .radio_area div label {
+    position: relative;
+    margin-left: 2.6042vw;
+    color: #1c1c1c;
+    font-size: 3.1250vw;
+    font-weight: 800;
+    line-height: 3.1250vw;
+    vertical-align: middle;
+    letter-spacing: -0.2604vw;
+}
+
+ .radio_area div label em {
+    color: #ff0100;
+    /* font-size: 4.4271vw;*/
+    font-weight: 900; 
+}
+
+ .radio_area div label.text_long {
+    letter-spacing: -0.2604vw;
+}
+
+/******************/
+
+.sec4 .radio_area.posi {
+    top: 31.3%;
+    left: 56.3%;
+}
+.sec4 .radio_area.posi div {
+    margin-bottom: 4.5573vw;
+}
+#sub .sec .radio_area.posi input[type="radio"] {
+    height: 4.5573vw;
+    width: 4.5573vw;
+}
+
+.sec4 .radio_area.posi2 {
+    top: 59.3%;
+    left: 56.3%;
+}
+.sec4 .radio_area.posi2 div {
+    margin-bottom: 4.4271vw;
+}
+
+.sec4 .radio_area.posi3 {
+    top: 88.3%;
+    left: 56.3%;
+}
+.sec4 .radio_area.posi3 div {
+    margin-bottom: 4.4271vw;
+}
+
+
+/* sec5 */
+.sec5 .radio_area .cBalloon_wrap {
+    position: absolute;
+    top: -2.7344vw;
+    left: 10.8073vw;
+
+}
+.sec5 .radio_area  .cBalloon_txt {
+    position: relative;
+    width: 15.6250vw;
+    height: 2.9948vw;
+    background: #37384c;
+    border-radius: 3.9063vw;
+    color:#fff;
+    font-size: 1.9531vw;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.7;
+    letter-spacing: -0.1302vw;
+}
+.sec5 .radio_area  .cBalloon_txt b{
+    color: #ffff0f ;
+}
+.sec5 .radio_area  .cBalloon_txt::after {
+    content: "";
+    border-bottom: 0.0000vw solid transparent;
+    border-left: 0.0000vw solid transparent;
+    border-right: 1.1719vw solid transparent;
+    border-top: 1.5625vw solid #37384c;
+    position: absolute;
+    bottom: -0.2604vw;
+    left: -1%;
+    transform: rotate(25deg);
+    z-index: 9;
+}
+
+.sec5 .radio_area.posi {
+    top: 75.1%;
+    left: 52.2%;
+}
+.sec5 .radio_area.posi div {
+    margin-bottom: 4.1667vw;
+}
+
+
+
+    /* sec7 */
+    .passReview_intvw_slide {
+        position: absolute;
+        top: 23%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 32%;
+        padding: 0 4.9479vw;
+        /* border: 0.3906vw solid #fff; */
+    }
+    .passReview_intvw_swiper-container{ position: relative; width: 100%; height: 94%; overflow: hidden; padding: 6.5104vw 0;}
+    .passReview_intvw_swiper-container .swiper-slide{  position: relative;  box-sizing:border-box; border: 0.2604vw solid #70ad46;
+    
+    }
+    .passReview_intvw_swiper-container .swiper-slide .hashTags{
+        position: absolute;
+        top: -3.5156vw;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 65%;
+        padding: 0.6510vw ;
+        color: #fff;
+        font-size: 2.6042vw;
+        font-weight: 600;
+        text-align: center;
+        background: #70ad46;
+        z-index: 100;
+    
+    }
+    .swiperVideo_area {
+        position: absolute;
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 94%;
+        height: auto;
+       
+    }
+    .passReview_intvw_swiper-container .swiper-slide .swiperVideo_area a{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .sec7 .passReview_intvw_slide .swiper-button-prev,
+    .sec7 .passReview_intvw_slide .swiper-button-next {
+        width: 2.6042vw;
+        height: 5.2083vw;
+        top: 65%;   
+        z-index: 2;
+    }
+    
+    .sec7 .passReview_intvw_slide .swiper-button-prev {
+        left: 0.7813vw;
+        background: url('../images/arrow-prev_wh.png') no-repeat;
+        background-size: 100%;
+    }
+    
+    .sec7 .passReview_intvw_slide .swiper-button-next {
+        right: 0.7813vw;
+        background: url('../images/arrow-next_wh.png') no-repeat;
+        background-size: 100%;
+    }
+
+    
+    /*슬라이드2*/
+    .sec7 .box_border {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 32%;
+        box-sizing:border-box; border: 0.2604vw solid #0265ff;
+    }
+    
+    .hiPassReview_intvw_slide {
+        position: absolute;
+        top: 62%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 88%;
+        height: 32%;
+        padding: 0 6.5104vw;
+        /* border: 0.3906vw solid #fff; */
+    }
+    .hiPassReview_intvw_swiper-container{ position: relative; width: 100%; height: 100%; overflow: hidden; padding: 3.5156vw 0;}
+    .hiPassReview_intvw_swiper-container::before {
+        position: absolute;
+        content: attr(data_txt);
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 33%;
+        padding: 0.6510vw ;
+        color: #fff;
+        font-size: 2.6042vw;
+        font-weight: 600;
+        text-align: center;
+        background: #0265ff;
+        z-index: 100;
+    }
+    .hiPassReview_intvw_swiper-container .swiper-slide{  position: relative; }
+    
+    .hiPassReview_intvw_swiper-container .swiperVideo_area {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 96%;
+        height: 26.0417vw ;
+    
+       
+    }
+    .hiPassReview_intvw_swiper-container .swiper-slide .swiperVideo_area a{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .sec7 .hiPassReview_intvw_slide .swiper-button-prev,
+    .sec7 .hiPassReview_intvw_slide .swiper-button-next {
+        width: 2.6042vw;
+        height: 5.2083vw;
+        top: 60%;   
+        z-index: 2;
+    }
+    
+    .sec7 .hiPassReview_intvw_slide .swiper-button-prev {
+        left: 1.0417vw;
+        background: url('../images/arrow-prev_wh.png') no-repeat;
+        background-size: 100%;
+    }
+    
+    .sec7 .hiPassReview_intvw_slide .swiper-button-next {
+        right: 1.0417vw;
+        background: url('../images/arrow-next_wh.png') no-repeat;
+        background-size: 100%;
+    }
+
+    /* sec14  유의사항 */
+
+    .tab_content {
+        display: none;
+        padding: 0;
+        clear: both;
+        overflow: hidden;
+        padding: 40px 0px 40px 0px;
+        min-height: 400px;
+    }
+
+    .sec14 .passNotice_area h2 {
+        margin-top: 11.7188vw;
+        padding-left: 4.4271vw;
+        color: #192436;
+        font-size: 3.6458vw;
+    }
+
+    .sec14 .passNotice_tabs {
+        width: 100%;
+    }
+
+    .sec14 .tab_item {
+        position: relative;
+        width: calc(100%/9);
+        background-color: #fff;
+        line-height: 2.5;
+        font-size: 2.1229vw;
+        text-align: center;
+        color: #77787c;
+        display: block;
+        float: left;
+        text-align: center;
+        font-weight: bold;
+        transition: all 0.2s ease;
+    }
+
+    .sec14 .tab_content {
+        display: none;
+        padding: 0;
+        clear: both;
+        overflow: hidden;
+        padding: 5.2083vw 5.2083vw 5.2083vw 3.9063vw;
+        min-height: 52.0833vw;
+    }
+
+    .sec14 .tab_content ul {
+        color: #333;
+        font-size: 2.6229vw;
+        line-height: 4.0250vw;
+        letter-spacing: -0.1563vw;
+        font-weight: 700;
+    }
+
+}
+
+
+@media screen and (max-width: 360px){
+    /* sec5 */
+    .sec5 .radio_area .cBalloon_wrap {
+        position: absolute;
+        top: -3.7344vw;
+        left: 10.8073vw;
+
+    }
+    .sec5 .radio_area  .cBalloon_txt {
+        position: relative;
+        width: 16.6250vw;
+        height: 3.9948vw;
+        background: #37384c;
+        border-radius: 3.9063vw;
+        color:#fff;
+        font-size: 1.9531vw;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.7;
+        letter-spacing: -0.1302vw;
+    }
+    .sec5 .radio_area  .cBalloon_txt b{
+        color: #ffff0f ;
+    }
+    .sec5 .radio_area  .cBalloon_txt::after {
+        content: "";
+        border-bottom: 0.0000vw solid transparent;
+        border-left: 0.0000vw solid transparent;
+        border-right: 1.1719vw solid transparent;
+        border-top: 1.5625vw solid #37384c;
+        position: absolute;
+        bottom: -0.2604vw;
+        left: -1%;
+        transform: rotate(25deg);
+        z-index: 9;
+    }
+
+    .sec5 .radio_area.posi {
+        top: 74.1%;
+        left: 52.2%;
+    }
+    .sec5 .radio_area.posi div {
+        margin-bottom: 3.6667vw;
+    }
+
+ }

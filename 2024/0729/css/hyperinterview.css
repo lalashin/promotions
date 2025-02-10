@@ -1,0 +1,530 @@
+.event-view {
+    background: #fff;
+}
+
+.event-view {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+.event-view .section1 {
+    background: url('../images/hyperinterview_bg_01.jpg') center no-repeat;
+}
+.event-view .section2 {
+    background: #d7d7d7;
+}
+
+.event-view .section4,
+.event-view .section5 {
+    background: #232b42;
+}
+.event-view .section6 {
+    background: #eee;
+}
+.event-view .section8 {
+    background: #ebebeb;
+}
+.event-view .section9 {
+    background: url('../images/hyperinterview_bg_09.jpg') center no-repeat;
+}
+
+/* section1 */
+.section1 .link1 {
+    position: absolute;
+    top: 82%;
+    left: 11%;
+    width: 38%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+
+.section1 .link2 {
+    position: absolute;
+    top: 82%;
+    left: 51%;    
+    width: 38%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+
+/* section5 */
+.section5 .tabs2 {
+    position: absolute;
+    top: 32.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #232b42;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 1140px;
+    margin: 0 auto;
+    opacity: 1;
+}  
+
+.section5 .tab_item2 {
+    margin-right: 1%;
+    margin-bottom: 12px;
+    width: calc(98%/3);
+    height: 74px;
+    background-color: #1c3965;
+    line-height: 74px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.section5 .tab_item2.lst {
+    margin-right: 0;
+}
+
+.section5 .tab_item2:hover {
+    opacity: 0.75;
+}  
+
+.section5 input[name="tab_item2"] {
+    display: none;
+}
+  
+.section5 .tab_content2 {
+    display: none;
+    padding:0;
+    clear: both;
+    overflow: hidden;
+    position: relative;
+}  
+
+#t1:checked ~ .t1_content,
+#t2:checked ~ .t2_content,
+#t3:checked ~ .t3_content {
+    display: block;
+}
+  
+/* 선택된 탭 스타일 */
+ .tabs2 input:checked + .tab_item2 {
+    background-color: #eeeeee;
+    color: #1c3965;
+}
+
+/* section6 */
+
+.section6 .reviewVideo_area {
+    position: absolute;
+    top: 27%;
+    left: 5.5%;
+    width: 42%;
+    height: 27.6%;
+    /* border: 1px solid red; */
+}
+
+.section6 .reviewVideo_area.rvw2 {
+    top: 27%;
+    left:52.4%
+}
+
+.section6 .reviewVideo_area.rvw3 {
+    top: 60%;
+    left: 5.5%;
+}
+
+.section6 .reviewVideo_area.rvw4 {
+    top: 60%;
+    left:52.4%
+}
+.videoPlayIcon::after {
+    height: 17%;
+    width: 14%;
+}
+
+/* section7 */
+.section7 .tabs {
+    /* position: absolute;
+    top: 32.5%;
+    left: 50%;
+    transform: translateX(-50%); */
+    background-color: #fff;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    width: 1140px;
+    margin: 0 auto;
+    opacity: 1;
+    margin-bottom: 120px;
+}  
+
+.section7 .tab_item {
+    margin-right: 0.5%;
+    /* margin-bottom: 12px; */
+    width: calc(98.5%/4);
+    height: 85px;
+    background-color: #ebebeb;
+    line-height: 85px;
+    font-size: 30px;
+    text-align: center;
+    color: #262626;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.section7 .tab_item.lst {
+    margin-right: 0;
+}
+
+.section7 .tab_item:hover {
+    opacity: 0.75;
+}  
+
+.section7 input[name="tab_item"] {
+    display: none;
+}
+  
+.section7 .tab_content {
+    display: none;
+    padding:0;
+    clear: both;
+    overflow: hidden;
+    position: relative;
+}  
+
+#r1:checked ~ .r1_content,
+#r2:checked ~ .r2_content,
+#r3:checked ~ .r3_content,
+#r4:checked ~ .r4_content  {
+    display: block;
+}
+  
+/* 선택된 탭 스타일 */
+ .tabs input:checked + .tab_item {
+    background-color: #181b20;
+    color: #ffc26b;
+}
+
+/* section8 */
+
+.section8 .link1 {
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+
+/* section9 */
+
+.section9 .link1 {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 62%;
+    height: 9%;
+    background: red;
+    opacity: 0;
+}
+
+
+/*유튜브합격생인터뷰 팝업*/
+.videoRV_pop {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-bottom: 40px;
+    z-index: 1000;
+}
+
+.videoRV_pop:before {
+    display: block;
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+}
+
+.videoRV_pop .layerBox_wrap {
+    width: 100%;   
+}
+
+.videoRV_pop .layerBox_wrap .cont .videoRV_tit {
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: left;
+    background: #10264f;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.videoRV_pop .layerBox_wrap .btnClose {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 39px;
+    box-sizing: border-box;
+    margin-top: -20px
+}
+
+.videoRV_pop .layerBox_wrap .cont .videoRV_view {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.videoRV_pop .layerBox_wrap .cont .video_area {
+    padding-top: 56.25%;
+    position: relative
+}
+
+.videoRV_pop .video_area iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+    .section5 .tabs2 {
+        width: 90%;
+    }
+
+    .section5 .tab_item2 {
+        height: 5.9375vw;
+        line-height: 5.9375vw;
+        font-size: 1.8750vw;   
+        margin-bottom: 0.9375vw;
+    }    
+
+    .section7 .tabs {
+        width: 90%;
+    }
+
+    .section7 .tab_item {
+        height: 6.6406vw;        
+        line-height: 6.6406vw;
+        font-size: 2.3438vw;
+    }
+
+
+}
+
+@media screen and (max-width: 960px) {
+    /*유튜브합격생인터뷰 팝업*/
+    .videoRV_pop {
+        width: 80%;
+        max-width: none;
+    }
+
+    .videoRV_pop .layerBox_wrap {
+        width: 100%;
+
+    }
+    .videoRV_pop .layerBox_wrap .cont .videoRV_view {
+        width: 100%;       
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .event-view .mo-img {
+        display: block;
+    }
+
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    .section1 .link1 {
+        position: absolute;
+        top: 82%;
+        left: 4%;
+        width: 45%;
+        height: 9%;
+    }
+    .section1 .link2 {
+        position: absolute;
+        top: 82%;
+        left: 51%;
+        width: 45%;
+        height: 9%;
+
+    }
+
+    .section5 .tabs2 {
+        width: 98%;
+        top: 34.5%;
+        opacity: 1;
+    }
+
+    .section5 .tab_item2 {
+        height: 6.5104vw;        
+        line-height: 6.5104vw;
+        font-size: 2.0833vw;        
+        margin-bottom: 0.7813vw;
+    }
+
+    .section6 .reviewVideo_area {
+        position: absolute;
+        top: 25%;
+        left: 1.5%;
+        width: 48%;
+        height: auto;
+    }
+    .section6 .reviewVideo_area.rvw2 {
+        top: 25%;
+        left: 51%;
+    }
+    .section6 .reviewVideo_area.rvw3 {
+        top: 60%;
+        left: 1.5%;
+    }
+    .section6 .reviewVideo_area.rvw4 {
+        top: 60%;
+        left: 51%;
+    }
+
+    .section7 .tabs {
+
+        background-color: #fff;
+        width: 96%;
+        margin: 0 auto;
+        opacity: 1;
+        margin-bottom: 9.1146vw;
+    }  
+    
+    .section7 .tab_item {
+        margin-right: 0.5%;
+        width: calc(98.5%/4);
+        height: 7.1615vw;
+        background-color: #ebebeb;
+        line-height: 7.1615vw;
+        font-size: 2.6042vw;
+        text-align: center;
+        color: #262626;
+        display: block;
+        float: left;
+        text-align: center;
+        font-weight: 500;
+        transition: all 0.2s ease;
+        cursor: pointer;
+    }
+
+
+    .section8 .link1 {
+        position: absolute;
+        top: 74%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 45%;
+        height: 11%;
+    }
+
+    .section9 .link1 {
+        position: absolute;
+        top: 81%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 11%;       
+    }
+    
+
+    /*유튜브합격생영상 팝업*/
+    .videoRV_pop {
+        width: 80%;
+        max-width: auto;
+    }
+
+    .videoRV_pop .layerBox_wrap {
+        width: 100%;
+
+    }
+
+    .videoRV_pop .layerBox_wrap .cont .videoRV_tit  {
+        position: relative;
+        color: #fff;
+        font-size: 2.8646vw;
+        font-weight: 500;
+        line-height: 7.4167vw;
+        text-align: left;
+        background: #10264f;
+        margin: 0;
+        padding-left: 2.6042vw;
+    }
+
+    .videoRV_pop .layerBox_wrap .btnClose {
+        position: absolute;
+        top: 50%;
+        right: 3.9063vw;
+        display: block;
+        width: 5.2083vw;
+        height: 5.2083vw;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        text-align: center;
+        line-height: 5.0781vw;
+        box-sizing: border-box;
+        margin-top: -2.6042vw;
+    }
+
+    .videoRV_pop .layerBox_wrap .btnClose img {
+        width: 50%;
+    }
+
+    .videoRV_pop .layerBox_wrap .cont .videoRV_view {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .videoRV_pop .layerBox_wrap .cont .video_area {
+        padding-top: 56.25%;
+        position: relative
+    }
+
+    .videoRV_pop .video_area iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

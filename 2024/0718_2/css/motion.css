@@ -1,0 +1,128 @@
+.event-view {
+    background: #fff;
+}
+
+.event-view {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+
+.event-view .section2 {
+    position: relative;
+    background: #222222;
+}
+
+/*section2*/
+
+.section2 .table-wrap {
+    padding: 0;
+    position: relative;
+}
+
+.section2 .table-scroll {
+    overflow: hidden;
+    height: 34.6875vw;
+}
+
+.section2 .table-scroll table {
+    animation: loop_scroll 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loop_scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(calc(-100% + 34.6875vw));
+    }
+}
+
+.section2 .table-wrap td img {
+    opacity: .2;
+}
+
+.section2 .img_layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+}
+
+
+@media screen and (max-width: 768px){
+    .event-view .mo-img {
+        display: block;
+    }
+
+    .event-view .pc-img {
+        display: none !important;
+    }
+    
+    /*section2*/
+    .section2 {
+        height: 65.1042vw;
+    }
+
+    .section2 .table-wrap {
+        /* background: #222222; */
+        padding: 0;
+        position: relative;
+    }
+
+    .section2 .table-scroll {
+        overflow: hidden;
+        height: 65.1042vw;
+    }
+
+    .section2 .table-scroll table {
+        animation: loop_scroll 12s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes loop_scroll {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(calc(-100% + 65.1042vw));
+        }
+    }
+
+    .section2 .table-wrap td img {
+        opacity: .2;
+    }
+
+    .section2 .img_layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 84.6354vw;
+    }
+}

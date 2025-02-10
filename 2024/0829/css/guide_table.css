@@ -1,0 +1,82 @@
+.popup .desc_wrap .guide_table {
+    height: auto;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+}   
+
+.popup .desc_wrap .guide_table .basic_table{width:100%;margin:10px 0;border-top:2px solid #164194;border-collapse:collapse;vertical-align:middle;font-size:100%;table-layout: fixed;}
+.popup .desc_wrap .guide_table .basic_table caption{position:absolute;top:-500%;left:-500%}                           
+.popup .desc_wrap .guide_table .basic_table th, .popup .desc_wrap .guide_table .basic_table td{text-align:center;padding:20px 10px;border:1px solid #d0d9ea;border-top:none;vertical-align:middle;line-height:1.5em}
+.popup .desc_wrap .guide_table .basic_table td.detail {text-align: left;}
+.basic_table td{text-align:center;padding:20px 10px;border:1px solid #d0d9ea;border-top:none;vertical-align:middle;line-height:1.5em}
+.popup .desc_wrap .guide_table .basic_table thead th{background:#f4f6f9;color:#333;}
+.popup .desc_wrap .guide_table .basic_table tbody th{background:#f4f6f9;color:#444;}   
+
+.popup .desc_wrap .guide_table .guide_txt { font-size: 1.5rem; text-align: right;}
+
+/* tab2_3 */
+.popup .desc_wrap .guide_table.tab2_3 td.detail br {
+    display: none;
+}
+
+/* tab2_5 */
+.popup .desc_wrap .guide_table.tab2_5 th {
+    width: 25%;
+}
+
+@media screen and (max-width: 768px){
+    .popup .desc_wrap .campus_table {
+        display: flex;
+        justify-content: center;
+    }
+    .popup .desc_wrap .guide_table .mTable{width:100%;}
+    .popup .desc_wrap .guide_table .mTable caption {font-size: 1.3em;}
+    .popup .desc_wrap .guide_table .mTable {border: none;}
+    .popup .desc_wrap .guide_table .mTable thead {border: none;clip: rect(0 0 0 0);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}
+    .popup .desc_wrap .guide_table .mTable th{display:block; padding: 10px;}
+    .popup .desc_wrap .guide_table .mTable th br{display:none;}
+    .popup .desc_wrap .guide_table .mTable tr {border-top: 2px solid #164194;border-bottom: 2px solid #ddd;display: block;margin-bottom: .625em;}
+    .popup .desc_wrap .guide_table .mTable td {padding: 10px; border-bottom: 1px solid #ddd;display: block;font-size: .8em;text-align: left;}
+    .popup .desc_wrap .guide_table .mTable td::before {content: attr(data-label);float: left;font-weight: bold;text-transform: uppercase; margin-right: 10px;}
+    .popup .desc_wrap .guide_table .mTable td:last-child {border-bottom: 0;}
+    .popup .desc_wrap .guide_table .mTable .guide_txt { font-size: 1.3rem; text-align: right;}
+    .popup .desc_wrap .guide_table .mTable td.viewOff {
+        display: none;
+    }
+    .popup .desc_wrap .guide_table .mTable tr.noLine {
+        border-top: none;
+        margin-top: -.625em;
+    }
+    /* tab1_1 */
+    .popup .desc_wrap .guide_table.tab1_1 .mTable td::before { 
+        display: none !important;
+    }
+
+    /* tab1_2 */
+
+    /* tab1_3 */
+    .popup .desc_wrap .guide_table.tab1_3 .mTable td {
+        text-align: right;
+    }
+
+    /* tab2_3 */
+    .popup .desc_wrap .guide_table.tab2_3 .mTable td br{
+        display: block;
+    }
+
+    /* tab2_4 */
+    .popup .desc_wrap .guide_table.tab2_4 .mTable td {
+        text-align: right;
+    }
+
+    /* tab2_5 */
+    .popup .desc_wrap .guide_table.tab2_5 .mTable th {
+        width: auto;
+    }
+
+    
+   
+}

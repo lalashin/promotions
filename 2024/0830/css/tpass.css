@@ -1,0 +1,213 @@
+.tpass {
+    background: #fff;
+}
+
+.tpass {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.tpass .mo-img {
+    display: none;
+}
+
+.tpass .section .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.tpass img {
+    width: 100%;
+}
+
+.tpass iframe {
+    bordeR: 0;
+}
+
+.tpass .section1 {background: #c3d4e4;}
+.tpass .section2 {background: #d4b189;}
+.tpass .section3 {background: #d4b189;}
+.tpass .section4 {background: #f9d3c0;}
+.tpass .section5 {background: #f9d3c0;}
+.tpass .section6 {background: #f9d3c0;}
+.tpass .section7 {background: #fff;padding: 90px 20px }
+
+/* section2 */
+.section2 .video_area1 {
+    position: absolute;
+    top: 18.4%;
+    left: 19.3%;
+    width: 61.2%;
+    height: 47%;
+    /* border: 1px solid #d1d1d1; */
+}
+
+#sub.tpass .check {
+    margin: auto;
+    width: 65%;
+    height: 50px;
+    padding: 20px 0;
+}
+#sub.tpass .check label { padding-left: 35px;  font-size:2.2rem; font-weight:500;  line-height: 22px; letter-spacing: -0.5px; color: #333; width: auto; }
+#sub.tpass input[type="checkbox"] + label:before { background: #fff; position: absolute;  left: 0;  top: 50%;  width: 30px;  height: 30px;  box-sizing: border-box;  margin-top: -9px;   border-radius: 2px !important;  border: 1px solid #ccc;  line-height: 20px;  text-align: center;  clear: both;  content: '';   display: block;  background-repeat: no-repeat;  background-size: auto;   background-position: center center; }
+#sub.tpass input[type="checkbox"]:checked + label:before { background-image: url("https://www.miraeij.com/police/img/icon_checked.png");  border-color: #164194;}
+#sub.tpass input[type="checkbox"] + label span { padding-top: 14px;   display: inline-block; }
+
+.section6 .btn_area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 100px;
+}
+.section6 .btn_area a {
+    width: 35%;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    background: #001937 ;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+.section6 .link1 b {
+    color: #ff6160;
+}
+
+.section6 .link2 b {
+    color: #10d190;   
+}
+
+#sub .section7 .tit { font-size: 4.5rem; font-weight:900; color: #0d0d0d;  line-height: 1;   letter-spacing: -0.5px;  margin-bottom: 35px; text-align: center;}
+#sub .con_box { width: 100%; max-width: 1100px; margin: 0 auto; border-radius: 5px; background: #f0f0f0; color: #333; font-size: 1.4rem;  line-height: 24px;   letter-spacing: -1.2px;  font-weight:700; text-align: left}
+#sub .con_box > ul > li { display: block; position: relative;  }
+#sub .con_box > ul > li + li { border-top: 1px solid rgba(13, 13, 13, 0.1) }
+#sub .con_box > ul > li > b { width: 145px; text-align: center; font-size: 2.0rem; position: absolute; left: 0; top: 50%; margin-top: -12px;  }
+#sub .con_box > ul > li > div {  width: calc(100% - 145px); padding: 40px 60px 40px 120px; box-sizing: border-box; position: relative;  left: 145px; }
+#sub .con_box > ul > li > div > ul >  li > ul  {  font-weight:400; padding-left: 15px }
+#sub .con_box > ul > li > div > ul >  li > span {  font-weight:400; }
+#sub .con_box > ul > li > div > p { margin-top: 35px }
+
+
+@media screen and (max-width: 1280px){
+   /* section2 */
+.section2 .video_area1 {
+    position: absolute;
+    top: 18.4%;
+    left: 19.3%;
+    width: 61.2%;
+    height: 47%;
+    /* border: 0.0781vw solid #d1d1d1; */
+}
+
+#sub.tpass .check {
+    margin: auto;
+    width: 65%;
+    height: 3.9063vw;
+    padding: 1.5625vw 0;
+}
+#sub.tpass .check label { padding-left: 2.7344vw;  font-size:1.7188vw; font-weight:500;  line-height: 1.7188vw; letter-spacing: -0.0391vw; color: #333; width: auto; }
+#sub.tpass input[type="checkbox"] + label:before { background: #fff; position: absolute;  left: 0;  top: 50%;  width: 2.3438vw;  height: 2.3438vw;  box-sizing: border-box;  margin-top: -0.7031vw;   border-radius: 0.1563vw !important;  border: 0.0781vw solid #ccc;  line-height: 1.5625vw;  text-align: center;  clear: both;  content: '';   display: block;  background-repeat: no-repeat;  background-size: auto;   background-position: center center; }
+#sub.tpass input[type="checkbox"]:checked + label:before { background-image: url("https://www.miraeij.com/police/img/icon_checked.png");  border-color: #164194;}
+#sub.tpass input[type="checkbox"] + label span { padding-top: 1.0938vw;   display: inline-block; }
+
+.section6 .btn_area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 7.8125vw;
+}
+.section6 .btn_area a {
+    width: 35%;
+    padding: 1.5625vw 0;
+    color: #fff;
+    font-size: 1.8750vw;
+    font-weight: 700;
+    text-align: center;
+    background: #001937 ;
+    margin-right: 1.5625vw;
+    border-radius: 1.1719vw;
+}
+.section6 .link1 b {
+    color: #ff6160;
+}
+
+.section6 .link2 b {
+    color: #10d190;   
+}
+
+}
+
+@media screen and (max-width: 768px){
+
+    .tpass .mo-img {
+        display: block;
+    }
+
+    .tpass .pc-img {
+        display: none !important;
+    }
+
+    .section2 .video_area1 {
+        position: absolute;
+        top: 19.4%;
+        left: 7.3%;
+        width: 86%;
+        height: 50%;
+    }
+
+
+
+    #sub.tpass .check {
+        margin: auto;
+        width: 65%;
+        height: 6.5104vw;
+        padding: 2.6042vw 0;
+    }
+    #sub.tpass .check label { padding-left: 4.5573vw;  font-size:2.8646vw; font-weight:500;  line-height: 2.8646vw; letter-spacing: -0.0651vw; color: #333; width: auto; }
+    #sub.tpass input[type="checkbox"] + label:before { background: #fff; position: absolute;  left: 0;  top: 50%;  width: 3.9063vw;  height: 3.9063vw;  box-sizing: border-box;  margin-top: -1.1719vw;   border-radius: 0.2604vw !important;  border: 0.1302vw solid #ccc;  line-height: 2.6042vw;  text-align: center;  clear: both;  content: '';   display: block;  background-repeat: no-repeat;  background-size: auto;   background-position: center center; }
+    #sub.tpass input[type="checkbox"]:checked + label:before { background-image: url("https://www.miraeij.com/police/img/icon_checked.png");  border-color: #164194;}
+    #sub.tpass input[type="checkbox"] + label span { padding-top: 1.8229vw;   display: inline-block; }
+    
+    .section6 .btn_area {
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 13.0208vw;
+    }
+    .section6 .btn_area a {
+        width: 64%;
+        padding: 2.6042vw 0;
+        color: #fff;
+        font-size: 3.1250vw;
+        font-weight: 700;
+        text-align: center;
+        background: #001937 ;
+        margin-top: 2.6042vw;
+        margin-right: 0;
+        border-radius: 1.9531vw;
+    }
+    .section6 .link1 b {
+        color: #ff6160;
+    }
+    
+    .section6 .link2 b {
+        color: #10d190;   
+    }
+
+    #sub .section7 .tit { font-size: 5.8594vw; font-weight:900; color: #0d0d0d;  line-height: 1;   letter-spacing: -0.0651vw;  margin-bottom: 4.5573vw; text-align: center;}
+    #sub .con_box { width: 100%; max-width: 143.2292vw; margin: 0 auto; border-radius: 0.6510vw; background: #f0f0f0; color: #333; font-size: 1.8229vw;  line-height: 3.1250vw;   letter-spacing: -0.1563vw;  font-weight:700; text-align: left}
+    #sub .con_box > ul > li { display: block; position: relative;  }
+    #sub .con_box > ul > li + li { border-top: 0.1302vw solid rgba(13, 13, 13, 0.1) }
+    #sub .con_box > ul > li > b { width: 18.8802vw; text-align: center; font-size: 2.6042vw; position: absolute; left: 0; top: 50%; margin-top: -1.5625vw;  }
+    #sub .con_box > ul > li > div {  width: calc(100% - 18.8802vw); padding: 3.9063vw 5.2083vw 3.9063vw 7.8125vw; box-sizing: border-box; position: relative;  left: 18.8802vw; }
+    #sub .con_box > ul > li > div > ul >  li > ul  {  font-weight:400; padding-left: 1.9531vw }
+    #sub .con_box > ul > li > div > ul >  li > span {  font-weight:400; }
+    #sub .con_box > ul > li > div > p { margin-top: 4.5573vw }
+
+
+
+}

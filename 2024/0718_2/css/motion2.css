@@ -1,0 +1,139 @@
+.event-view {
+    background: #fff;
+}
+
+.event-view {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+
+.event-view .section2 {
+    position: relative;
+    background: #222222;
+}
+
+/*section2*/
+#sub .table-scroll{
+	overflow: hidden;
+	height:300px;
+
+}
+@keyframes loop_scroll {
+	0%{
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(calc(-100% + 300px));
+	}
+}
+
+#sub .table-scroll table{
+	animation: loop_scroll 30s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+#sub .table-wrap{
+	background: #eafaff;
+	padding:20px 0 0;
+	position: relative;
+}
+#sub .table-wrap::after{
+	content:'';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height:85px;
+	background: url('../images/tbl-bg.png') top center no-repeat;
+}
+#sub .table-wrap th{
+	background: #f5f6f7;
+	color:#333;
+	font-size:2vw;
+	padding:20px 4px;
+	border:1px solid #d4d4d4;
+}
+
+#sub .table-wrap td{
+	background: #fff;
+	color:#666;
+	font-size:1.5vw;
+	padding:10px 4px;
+	border:1px solid #d4d4d4;
+}
+#sub .table-wrap tbody tr td:last-child{
+	color:#ed1d3b;
+	font-size:2vw;
+	font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px){
+    .event-view .mo-img {
+        display: block;
+    }
+
+    .event-view .pc-img {
+        display: none !important;
+    }
+    
+    /*section2*/
+    #sub .table-scroll{
+		overflow: hidden;
+		height:200px;
+
+	}
+	#sub .table-wrap{
+		background: #eafaff;
+		padding:20px 0 0;
+		position: relative;
+	}
+	#sub .table-wrap::after{
+		content:'';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height:85px;
+		background: url('../images/tbl-bg.png') top center no-repeat;
+	}
+	#sub .table-wrap th{
+		background: #f5f6f7;
+		color:#333;
+		font-size:2.6vw;
+		padding:20px 4px;
+		border:1px solid #d4d4d4;
+	}
+
+	#sub .table-wrap td{
+		background: #fff;
+		color:#666;
+		font-size:2.5vw;
+		padding:10px 4px;
+		border:1px solid #d4d4d4;
+	}
+	#sub .table-wrap tbody tr td:last-child{
+		color:#ed1d3b;
+		font-size:3vw;
+		font-weight: bold;
+	}
+}
