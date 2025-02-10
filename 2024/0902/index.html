@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+<style>
+
+
+    .joinEventLayerPop {
+        margin: 0 auto;
+        max-width: 800px;
+    }
+    .joinEventLayerPop {
+        display: block;
+    }
+    .joinEventLayerPop:before {
+        display: block;
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+    }
+    .joinEventLayerPop .layerBox {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 650px;
+        background: #fff;
+        box-shadow: 1px 1px 7px 7px rgba(0, 0, 0, .1);
+    }
+    .joinEventLayerPop .layerBox .title_area {
+        position: relative;
+        margin: auto;
+        width: 100%;
+        padding: 14px 0;
+        color: #fff;
+        background: #424cf9;
+        text-align: center;           
+    }
+    .joinEventLayerPop .layerBox .title_area span {
+        padding-left: 15px;
+        font-size: 24px;
+        font-weight: 600;            
+    } 
+
+    .iconClose { 
+        position: absolute;
+        top: 56%;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 39px;
+        box-sizing: border-box;
+        margin-top: -20px; 
+        background: url(https://www.miraeij.com/police/img/icon_close_2.png) no-repeat;                 
+    }       
+
+    .joinEventLayerPop .cont .textBox {
+        padding: 30px;
+        font-size: 24px;
+        text-align: center;
+        white-space: pre;
+    }
+
+
+    .joinEventLayerPop .btn_box {
+        text-align: center;
+        padding: 15px 0 55px 0;
+        background: #fff;
+    }
+
+    .btn {
+        text-decoration: none !important;
+        white-space: nowrap;
+        display: inline-block;
+        vertical-align: baseline;
+        position: relative;
+        cursor: pointer;
+        padding: 12px 100px;
+        min-width: 140px;
+        min-height: 50px;
+        line-height: 25px;
+        background: rgba(22, 65, 148, 1.0);
+        color: #fff !important;
+        margin: 0 2px;
+        text-align: center;
+        font-weight: 400;
+        box-sizing: border-box;
+        vertical-align: middle;
+        border-radius: 4px;
+    }
+    .joinEventLayerPop .btn_box .gray {background: #373737;}
+    
+
+@media screen and (max-width: 768px) {
+
+
+
+    .joinEventLayerPop {
+        margin: 0 auto;
+        max-width: 104.1667vw;
+    }
+    
+    
+    .joinEventLayerPop .layerBox {          
+        width: 96%;         
+    }
+    .joinEventLayerPop .layerBox .title_area {
+        
+        padding: 1.8229vw 0;
+        
+    }       
+    
+    .joinEventLayerPop .layerBox .title_area span {
+        padding-left: 1.9531vw;
+        font-size: 3.1250vw;
+                
+    }      
+    .iconClose {
+        position: absolute;
+        top: 58%;
+        right: 3.9063vw;
+        width: 5.2083vw;
+        height: 5.2083vw;
+        text-align: center;
+        line-height: 5.0781vw;
+        box-sizing: border-box;
+        margin-top: -2.6042vw;
+        background-size: 80%;
+    }
+
+    .joinEventLayerPop .cont .textBox {
+        padding: 3.9063vw;
+        font-size: 3.1250vw;
+        text-align: center;
+        white-space: pre;
+    }
+
+    .joinEventLayerPop .btn_box {
+        text-align: center;
+        padding: 1.9531vw 0 7.1615vw 0;
+        background: #fff;
+    }
+
+    .btn {
+        text-decoration: none !important;
+        white-space: nowrap;
+        display: inline-block;
+        vertical-align: baseline;
+        position: relative;
+        cursor: pointer;
+        padding: 1.5625vw 13.0208vw;
+        min-width: 18.2292vw;
+        min-height: 6.5104vw;
+        line-height: 3.2552vw;
+        background: rgba(22, 65, 148, 1.0);
+        color: #fff !important;
+        font-size: 1.9531vw;
+        margin: 0 0.2604vw;
+        text-align: center;
+        font-weight: 400;
+        box-sizing: border-box;
+        vertical-align: middle;
+        border-radius: 0.5208vw;
+    }
+
+    .joinEventLayerPop .btn_box .gray {background: #373737;}            
+        
+
+}
+
+</style>
+</head>
+<body>
+
+    <div class="joinEventLayerPop">
+        <div class="layerBox">
+            <div class="cont">
+                <div class="title_area">
+                    <span>★○○○만을 위한 특별 이벤트★</span>
+                    <a href="#" class="iconClose btnClose"> </a>
+                </div>
+                <div class="textBox">경찰학 기본강의 0원 무료배포 총, 1000명 배포! 
+강의 무료로 받고 합격하세요~</div>
+
+            </div>
+            <div class="btn_box">
+                <a href="/police/promotion/jjh/free-class/" class="btn gray">바로가기 ▶</a>
+               
+            </div>
+        </div>
+    </div> 
+    
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script>
+
+        let joinEventClose = function () {
+            jQuery(".joinEventLayerPop").hide();
+        }
+
+        jQuery(".btnClose").click(function () {
+                joinEventClose();
+            });
+    </script>
+    
+</body>
+</html>

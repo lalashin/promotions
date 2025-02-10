@@ -1,0 +1,225 @@
+.event-view {
+    background: #fff;
+}
+
+.event-view {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+} 
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+.event-view .section1 {background: url('../images/mocktest_bg_01.jpg') center no-repeat;}
+
+
+.section1 .link1 {
+    position: absolute;
+    top: 74.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 9.5%;
+    background: red;
+    opacity: 0.3;
+}
+
+.section2 .video {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 78.2%;
+    height: 51.5%;
+}
+
+.section2 .video video {
+    width: 100%;
+    height: 100%;
+}
+
+
+.section7 .mocktest_tabWrap {
+    width: 100%;
+    
+}
+.section7 .mocktest_tabWrap ul { display: flex; }
+.section7 .mocktest_tabWrap li { width: calc(100% / 2); height: auto; text-align: center;  box-sizing: border-box;}
+.section7 .mocktest_tabWrap li a {  display: block; width: 100%; height: 100%;  font-size: 18px; color: #777877; font-weight: 700; line-height: 75px; background: #e7e9e6;  }
+.section7 .mocktest_tabWrap li.active a { background: #fff; color: #323232; border: 1px solid #c4c4c4;}
+
+
+.section7 .sub_tabWrap_1 ul { display: flex; }
+.section7 .sub_tabWrap_1 li { width: calc(100% / 3); height: auto; text-align: center;  box-sizing: border-box;}
+.section7 .sub_tabWrap_1 li a {  display: block; width: 100%; height: 100%;  font-size: 18px; color: #777877; font-weight: 700; line-height: 75px; background: #e7e9e6;  }
+.section7 .sub_tabWrap_1 li.active a { background: #fff; color: #323232; border: 1px solid #c4c4c4;}
+
+.section7 .sub_tabWrap_2 ul { display: flex; }
+.section7 .sub_tabWrap_2 li { width: calc(100% / 3); height: auto; text-align: center;  box-sizing: border-box;}
+.section7 .sub_tabWrap_2 li a {  display: block; width: 100%; height: 100%;  font-size: 18px; color: #777877; font-weight: 700; line-height: 75px; background: #e7e9e6;  }
+.section7 .sub_tabWrap_2 li.active a { background: #fff; color: #323232; border: 1px solid #c4c4c4;}
+
+.section7 .tab_link1 {
+    position: absolute;
+    top: 85.5%;
+    left: 50%;    
+    width: 50%;
+    height: 9.5%;
+    background: red;
+    opacity: 0.3;
+}
+
+.section7 .tab_link2 {
+    position: absolute;
+    top: 85.5%;
+    left: 50%;    
+    width: 50%;
+    height: 9.5%;
+    background: red;
+    opacity: 0.3;
+}
+
+.section7 .tab_link3 {
+    position: absolute;
+    top: 85.5%;
+    left: 50%;    
+    width: 50%;
+    height: 9.5%;
+    background: red;
+    opacity: 0.3;
+}
+
+.section7 .tab_link4 {
+    position: absolute;
+    top: 85.5%;
+    left: 50%;    
+    width: 50%;
+    height: 9.5%;
+    background: red;
+    opacity: 0.3;
+}
+
+.section7 .tab_link5 {
+    position: absolute;
+    top: 85.5%;
+    left: 50%;    
+    width: 50%;
+    height: 9.5%;
+    background: red;
+    opacity: 0.3;
+}
+
+.section7 .tab_notice1 {
+    position: absolute;
+    top: 95.5%;
+    left: 50%;    
+    width: 50%;
+    height: 9.5%;
+    background: red;
+    opacity: 0.3;
+}
+
+
+.section7 .tab2_link1 {
+    position: absolute;
+    top: 85.5%;
+    left: 50%;    
+    width: 50%;
+    height: 9.5%;
+    background: red;
+    opacity: 0.3;
+}
+
+.section7 .tab2_link3 {
+    position: absolute;
+    top: 85.5%;
+    left: 50%;    
+    width: 50%;
+    height: 9.5%;
+    background: red;
+    opacity: 0.3;
+}
+
+.section7 .tab2_link4 {
+    position: absolute;
+    top: 85.5%;
+    left: 50%;    
+    width: 50%;
+    height: 9.5%;
+    background: red;
+    opacity: 0.3;
+}
+
+.section7 .tab2_link5 {
+    position: absolute;
+    top: 85.5%;
+    left: 50%;    
+    width: 50%;
+    height: 9.5%;
+    background: red;
+    opacity: 0.3;
+}
+
+.section7 .tab2_notice1 {
+    position: absolute;
+    top: 95.5%;
+    left: 50%;    
+    width: 50%;
+    height: 9.5%;
+    background: red;
+    opacity: 0.3;
+}
+
+.float_wrap {
+    position: fixed;
+    right: 20px;
+    top: 23%;
+    z-index: 50;
+    padding-top: 20px;
+    z-index: 99999;
+}
+
+.float_wrap .banner {
+    position: relative;
+}
+
+.float_wrap .f_link1 {
+    position: absolute;
+    top: 1%;
+    left: 7%;
+    width: 86%;
+    height: 100%;
+    background: red;
+    opacity: 0;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .event-view .mo-img {
+        display: block;
+    }
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+
+    .float_wrap {
+        display: none;
+    }
+}

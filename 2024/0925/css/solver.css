@@ -1,0 +1,468 @@
+.event-view {
+    background: #fff;
+}
+
+.event-view {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+} 
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+.event-view .section1 {background: url('../images/solver_bg_01.jpg') center no-repeat;}
+.event-view .section2 {background: url('../images/solver_bg_02.jpg') center no-repeat;}
+.event-view .section3 {background: url('../images/solver_bg_03.jpg') center no-repeat;}
+.event-view .section4 {background: url('../images/solver_bg_04.jpg') center no-repeat;}
+.event-view .section5 {background: #293973;}
+.event-view .section6 {background: url('../images/solver_bg_06.jpg') center no-repeat;}
+
+.imgA, .imgB, .imgC {
+    position: absolute;
+    width: 100%;
+}
+.imgA {
+    top:11%;
+    left:0;    
+    z-index: 2;
+}
+.imgB {
+    top:11%;
+    left:0;    
+    z-index: 2;
+}
+.imgC {
+    top:11%;
+    left:1%;
+    opacity: 0;    
+    z-index: 3;
+}
+.section1.show .imgA {
+    animation: moveA 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite;
+}
+.section1.show .imgB {
+    animation: moveB 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite;
+}
+.section1.show .imgC {
+    animation: moveC 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite;
+}
+
+@keyframes moveA {
+    0% {    
+        transform: scale(0.6);
+        opacity: 0;
+        left: 0;
+    }
+    10% {      
+        transform: scale(1);
+        opacity: 1;
+        left: 0;        
+    }
+    20% {
+        left: -1%;
+    }
+    90% {
+        left: -1%;
+    }
+    100% {    
+       
+        opacity: 0;
+        left: 0;
+    }
+  }
+
+  @keyframes moveB {
+    0% {    
+        transform: scale(0.6);
+        opacity: 0;
+        left:0;
+    }
+    10% {      
+        transform: scale(1);
+        opacity: 1;
+        left:0;
+        
+    }
+    20% {
+        left: 1%;
+    }
+
+    90% {
+        left: 1%;
+    }
+    100% {    
+       
+        opacity: 0;
+        left:0;
+    }
+  }
+
+  @keyframes moveC {
+    0% {    
+       opacity: 0;
+    }    
+    25% {
+        opacity: 1;
+    }
+    65% {
+        opacity: 1;
+    }    
+    90% {    
+        opacity: 0;
+     }  
+  }
+
+/* section2 */
+ .reviewA, 
+ .reviewB, 
+ .reviewC, 
+ .reviewD, 
+ .reviewE {
+    position: absolute;
+}
+ .reviewA {
+    top: 24%;
+    left: 9%;
+    width: 25.78125%;
+    
+}
+ .reviewB {
+    top: 24%;
+    left: 37%;
+    width: 25.78125%;
+    
+}
+ .reviewC {
+    top: 24%;
+    left: 65%;
+    width: 25.78125%;
+    
+}
+
+ .reviewD {
+    top: 44%;
+    left: 23%;
+    width: 54.140625%;
+}
+
+ .reviewE {
+    top: 51%;
+    left: 68%;
+    width: 19.84375%;
+    
+}
+
+.section2.show .reviewA {
+    animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.section2.show .reviewB {
+    animation: scale-up-hor-left 0.4s 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.section2.show .reviewC {
+    animation: scale-up-hor-left 0.4s 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.section2.show .reviewD {
+    animation: scale-down-center 0.4s 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.section2.show .reviewE {
+    animation: fade-in 1.2s 1.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+  @keyframes scale-up-hor-left {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+              filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0));
+              
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+              filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.1));
+             
+    }
+  }
+  
+  @keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+              opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+              opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+
+/* section5 */
+.section5 a {
+    position: absolute;
+    background: red;
+    opacity: 0;
+}
+.section5 .link1 {    
+    top: 51%;
+    left: 12%;
+    width: 30%;
+    height: 6.5%;
+}
+.section5 .link2 {    
+    top: 51%;
+    left: 59%;
+    width: 30%;
+    height: 6.5%;
+}
+.section5 .link3 {    
+    top: 85%;
+    left: 12%;
+    width: 30%;
+    height: 6.5%;
+}
+.section5 .link4 {    
+    top: 85%;
+    left: 59%;
+    width: 30%;
+    height: 6.5%;
+}
+
+/*하단 고정 띠배너*/
+.band_banner {
+    height: 116px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #ffb30e;
+    border-bottom: 6px solid #192964 ;
+    box-sizing: border-box;
+    z-index: 10;
+}
+.band_banner .inner {
+    position: relative;
+    width: 1280px;
+    height: 116px;
+}
+.band_banner .inner img {
+    position: absolute;
+    top: -54px;
+    left: 0;
+}
+.band_banner .link1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;  
+    background: red;  
+    box-sizing: border-box; 
+    opacity: 0;
+}
+
+
+
+
+@media screen and (max-width: 1280px){
+
+    .event-view .sec.section1 .inner {
+        overflow: hidden;
+    }
+    /* .imgA, .imgB, .imgC {
+      overflow: hidden;
+    } */
+
+  /*하단 고정 띠배너*/
+    .band_banner {
+        height: 9.0625vw;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #ffb30e;
+        border-bottom: 0.4688vw solid #192964 ;
+        box-sizing: border-box;
+        z-index: 10;
+    }
+    .band_banner .inner {
+        position: relative;
+        width: 100.0000vw;
+        height: 9.0625vw;
+    }
+    .band_banner .inner img {
+        position: absolute;
+        top: -4.2188vw;
+        left: 0;
+    }
+    .band_banner .link1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:100%;  
+        background: red;  
+        box-sizing: border-box; 
+        opacity: 0;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 768px){
+   
+    .event-view .mo-img {
+        display: block;
+    }
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    .imgA, .imgB, .imgC {
+      
+    }
+
+    .imgA {
+        top: 18.5%;
+        left: 0;
+        z-index: 2;
+    }
+    .imgB {
+        top: 18.5%;
+        left: 0;
+        
+        z-index: 2;
+    }
+    .imgC {
+        top: 18.5%;
+        left: 1%;
+        opacity: 0;
+        
+        z-index: 3;
+    }
+
+    .reviewA {
+        top: 36.5%;
+        left: 3%;
+        width: 30%;        
+    }
+     .reviewB {
+        top: 36.5%;
+        left: 35%;
+        width: 30%;        
+    }
+     .reviewC {
+        top: 36.5%;
+        left: 67%;
+        width: 30%;        
+    }
+    
+     .reviewD {
+        top: 50%;
+        left: 12%;
+        width: 71.5%;
+    }
+    
+     .reviewE {
+        top: 55%;
+        left: 73%;
+        width: 26%;
+        
+    }
+
+    .section5 .link1 {
+        top: 25.5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 73%;
+        height: 5.5%;
+    }
+    .section5 .link2 {
+        top: 47%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 73%;
+        height: 5.5%;
+    }
+    .section5 .link3 {
+        top: 68.5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 73%;
+        height: 5.5%;
+    }
+    .section5 .link4 {
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 73%;
+        height: 5.5%;
+    }
+
+
+        /*하단 고정 띠배너*/
+        .band_banner {
+            height: 15.1042vw;
+            width: 100%;
+            position: fixed;
+            bottom: 8.8542vw;
+            left: 0;
+            background: #ffb30e;
+            border-bottom: 0.7813vw solid #192964 ;
+            box-sizing: border-box;
+            z-index: 10;
+        }
+        .band_banner .inner {
+            position: relative;
+            width: 100%;
+            height: 15.1042vw;
+        }
+        .band_banner .inner img {
+            position: absolute;
+            top: -7.0313vw;
+            left: 0;
+        }
+        .band_banner .link1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:100%;        
+            box-sizing: border-box;      
+        }
+
+    
+}
+
+
