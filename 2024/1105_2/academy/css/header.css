@@ -1,0 +1,857 @@
+/*Header*/
+/*공통*/
+header .wide_wrapper {
+    width: 100%;    
+}
+
+header .top_wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e1e1e1;    
+}
+
+header .top_area {
+    width: 100%;
+    max-width: 1170px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;  
+}
+
+header .topGnb_tab_button {
+    display: block;
+    display: flex;
+    height: 37px;
+}
+
+header .topGnb_tab_button>li>a {
+    font-size: 14px;
+    display: block;
+    color: #a0a0a0;
+    padding: 0 20px;
+    line-height: 37px;    
+    position: relative;
+    margin-left: -1px;
+    border-top: 1px solid #f4f4f4;
+    border-left: 1px solid #e1e1e1;
+}
+
+header .topGnb_tab_button>li>a:last-child {
+    border-right: 1px solid #e1e1e1;
+}
+
+header .topGnb_tab_button>li.on>a {
+    color: #303030;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 37px;
+    background: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+header .login_wrap {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+header .login_area>ul {
+    display: flex;
+}
+
+header .login_area>ul>li {
+    position: relative;
+    display: inline;
+    margin-left: 30px;
+}
+
+header .login_area>ul>li::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    right: -15px;
+    width: 1px;
+    height: 30%;
+    background: #c5c5c5;
+}
+header .login_area>ul>li.uname::after,
+header .login_area>ul>li.i_consumer::after{
+    display: none;
+}
+
+header .login_area>ul>li>a {
+    position: relative;
+    line-height: 2.7;
+    display: block;
+    /* padding: 0 0 0 30px; */
+    color: #383838;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+header .login_area>ul>li>a:hover {
+    color: #383838;
+    font-weight: 700;
+}
+header .login_area li.i_login a {
+    color: #383838;
+    font-weight: 700;
+}
+header .login_area li.uname a {
+    color: #383838;
+    font-weight: 700;
+}
+
+header .login_area>ul>li.i_consumer {
+    margin-right: 20px;
+}
+
+/*logo_wrapper*/
+header .logo_wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e1e1e1; 
+}
+
+header .logo_area {
+    position: relative;
+    width: 100%;
+    max-width: 1170px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+header .miraeij_logo {
+    text-align: center;
+}
+
+header .miraeij_logo>a>img {
+    width: 280px;
+    height: 40px;
+    padding: 40px 0 40px;
+}
+
+header .top_left_bnr {
+    /* width: 17.09401709401709%; */
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+
+/*gnb_wrapper*/
+header .gnb_wrapper {
+    width: 100%;
+    font-weight: 500;
+    box-sizing: border-box;
+    border-bottom: 2px solid #104ba0;
+}
+
+header .gnb_area {
+    position: relative;
+    width: 100%;
+    max-width: 1170px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+}
+
+header .gnb_area .all_menu {
+    color: #fff;
+    background: #104ba0;
+    width: 50px;
+    height: 55px;
+    font-size: 30px;
+    margin-right: 40px;
+}
+
+header .all_menu:hover {
+    color: #fff;
+}
+
+header      .all_menu.xi-icon::before {content: "\e95f";}
+header.open .all_menu.xi-icon::before {content: "\e921";}
+
+header .gnb_area .main_gnb {
+    display: flex;    
+    align-items: center;
+    padding: 0;   
+    width: 750px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+}
+
+.gnb_swiper-container{ position: relative; width: 100%; height:100%; overflow: hidden;}
+.gnb_swiper-container .swiper-slide{ }
+.gnb_swiper-container .swiper-slide a {font-size: 18px; font-weight: 600;color: #1e1e1e;}
+.gnb_swiper-container .swiper-slide a:hover{color: #104ba0;} 
+
+header .rArea_gnb{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   right: 0;
+}
+header .rArea_gnb > ul {
+    display: flex;
+}
+header .rArea_gnb li > a {
+    padding: 11px 34px 13px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: -1px;
+    background: #def0fc;
+    border-radius: 50px;
+    position: relative;
+    margin-right: 5px;
+    position: relative;
+}
+
+header .rArea_gnb li.online_site a {     
+    color: #152e60;    
+}
+header .rArea_gnb li.campus_site a {    
+    color: #fff;
+    background: #104ba0;
+}
+
+header .rArea_gnb li a::after {
+    position: absolute;
+    top: 53%;
+    transform: translateY(-50%);
+    right: 16px;
+    
+}
+header .rArea_gnb .online_site a::after {
+    content: '\ea3e';
+    color: #104ba0;
+}
+header .rArea_gnb .campus_site a::after {
+    content: '\e936';
+    color: #fff;
+}
+header .rArea_gnb .campus_site.on a::after {
+    content: '\e930';
+    color: #fff;
+}
+
+/*numberOne_area*/
+header .wide_wrapper.numberOne {
+    background: linear-gradient(to right, #010714, #010e24) ;
+    margin-bottom: 70px;
+}
+header .numberOne_area {
+    margin: auto;
+    background: url(../images/main/numberOne_bnr_bg.png) center  no-repeat;
+    height: 310px;
+    position: relative;
+    
+}
+header .numberOne_area .transparent_wrap {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -490px;
+    z-index: 99;
+}
+
+/*pc all menu*/
+header .miraeij_total_view {
+    display: none !important;
+    position: absolute;    
+    top: 214px;
+    left: 0;    
+    width: 100%;      
+    z-index: 9999;
+    transition: all 0.5s;
+}
+header.open .miraeij_total_view {
+    display: block !important;
+}
+header .miraeij_total_view .inner {
+    background: #fff;
+    margin: auto;
+    width: 1170px;
+    padding: 24px 90px 40px;
+    border-top: 4px solid #104ba0;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;  
+}
+header .categoryArea {
+    display: flex;
+    justify-content: space-between;
+    width: 634.69px;
+}
+
+header .categoryArea .subCategory_wrap.w1{
+    width: 113.69px ;
+}
+header .categoryArea .subCategory_wrap.w2{
+    width: 130.25px ;
+}
+header .categoryArea .subCategory_wrap ul > li > a  {
+    font-size: 13px;
+    font-weight: 400;
+    display: block;
+    color: #737373;
+    padding-left: 34px ;
+    line-height: 1.7;
+}
+header .categoryArea .subCategory_wrap.w1 ul > li > a {
+    padding-left: 32px ;
+}
+
+header .categoryArea .subCategory_wrap ul > li > a:hover {
+    color: #171717;
+    font-weight: bold;
+}
+
+/*드롭다운메뉴*/
+header .dropDown_wraper {
+    position: absolute;    
+    top: 214px;
+    left: 50%;    
+    margin-left: 415px ;   
+    width: 100%;      
+    z-index: 99999;
+    transition: all 0.5s; 
+}
+
+header .dropDown_wraper .campusMenu {
+    width: 170px;   
+    display: none;
+}
+header .dropDown_wraper .campusMenu ul {
+    padding: 21px 20px;
+    border-top: 4px solid #104ba0;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+header .dropDown_wraper .campusMenu ul > li > a  {
+    font-size: 13px;
+    font-weight: 400;
+    display: block;
+    color: #737373;
+    line-height: 2;
+    letter-spacing: -1px;
+}
+header .dropDown_wraper .campusMenu ul > li > a:hover {
+    color: #171717;
+    font-weight: 500;
+}
+
+
+@media (max-width: 1480px) {
+
+    /*numberOne_area*/
+    header .numberOne_area {
+        margin: auto;
+        background: url(../images/main/numberOne_bnr_bg.png) center  no-repeat;
+        background-size: cover;
+        height: 20.9459vw;
+    }
+    header .numberOne_area .transparent_wrap {        
+        top: 0;
+        left: 50%;
+        margin-left: -33.1081vw;    
+    }
+
+}
+
+@media (max-width: 768px) {
+
+
+
+    /*mobile top*/
+    header .top_wrapper {
+        position: relative;
+    }
+
+    header .mo_miraeij_logo {
+        height:140px;
+        text-align: center;
+        line-height:3.3;
+    }
+
+    header .mo_miraeij_logo>a>img {
+        width: 310px;
+        padding: 0;
+    }
+    header .mo_miraeij_logo .offline_title {
+        color: #030303;
+        font-size: 24px;
+        line-height: 1;
+        margin-top: -20px;
+    }
+
+    header .top_wrapper {
+        height:140px;
+        padding: 0 10px;
+        border-bottom: none;
+    }
+
+    header .top_wrapper .all_menu {
+        color: #a7a7a7;
+        background: none;
+        width: 50px;
+        height: 50px;
+        font-size: 44px;
+        line-height: 1;
+        /* transition: max-height all 0.3s; */
+        margin-right: 20px;
+    }
+    header      .all_menu.xi-icon::before {content: "\e91c";}
+    /* 240404 파이어폭스 XEICON 위치 조정 */
+    @-moz-document url-prefix(){ 
+        header .top_wrapper .all_menu {
+            line-height: 1.4;
+        }
+    }
+
+    header .top_wrapper .all_menu:hover {
+        color: #104ba0;
+    }
+
+    header .top_wrapper .all_menu {
+        position: absolute;
+        top: 42px;
+        left: 12px;
+    }
+
+    header .login_wrap {
+        position: absolute;
+        top: 50px;
+        right: 12px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    header .login_area>ul {
+        display: flex;
+
+    }
+
+    header .login_area>ul>li>a {
+        position: relative;
+        display: block;
+        padding: 0;
+        width: 105px;
+        height: 40px;
+        color: #363636;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 2.3;
+        background: #f5f5f5;
+        border: 1px solid #eaeaea;
+        border-radius: 5px;
+    }
+
+    header .login_area>ul>li>a::before {
+        display: none;
+    }
+
+    header .login_area>ul>li:first-child a::after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        right: -3px;
+    }
+
+    header .submenu {display: none;}
+
+    header .gnb_wrapper {
+        width: 100%;
+        font-weight: 500;
+        box-sizing: border-box;
+        border-top: 1px solid #c6c6c6 ;
+        border-bottom: 2px solid #104ba0;
+    }
+
+    header .gnb_area {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    header .gnb_area .main_gnb {
+        display: flex;    
+        align-items: center;
+        padding: 0;   
+        width: 100%;
+        height: 90px;
+        text-align: center;
+        line-height: 90px;
+    }
+    
+    .gnb_swiper-container{ position: relative; width: 100%; height:100%; overflow: hidden;}
+    .gnb_swiper-container .swiper-slide a {font-size: 24px; font-weight: 600;color: #1e1e1e;}
+    .gnb_swiper-container .swiper-slide a:hover{color: #104ba0;} 
+
+    /*numberOne_area*/
+    header .wide_wrapper.numberOne {
+        background: linear-gradient(to right, #010714, #010e24) ;
+        margin-bottom: 70px;
+        /* overflow: hidden; */
+    }
+    header .numberOne_area {
+        margin: auto;
+        background: url(../images/main/mo_numberOne_bnr_bg.png) center  no-repeat;
+        height: 310px;
+        position: relative;
+        
+    }
+    header .numberOne_area .transparent_wrap {
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: -230px;
+        z-index: 99;
+    }
+
+    /*mo 전체메뉴보기*/
+
+    header .miraeij_total_view {
+        position: fixed;
+        max-height: 3000px;
+        left: -100vw;
+        top: 0px;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.3);
+        /* transition: left 0.3s ease-in-out; */
+    }
+
+    /*
+    .miraeij_total_view.open {
+        left: 0;
+        height: 100vh;
+        max-height: 3000px;
+    }
+    */
+    header.open .miraeij_total_view {
+        left: 0;
+        height: 100vh;
+        max-height: 3000px;
+    }
+
+    header .miraeij_total_view>.inner {
+        background: #fff;
+        padding: 0 0 50px;
+        height: 100%;
+        position: relative;
+    }
+
+    /*menu*/
+    header .moTop {
+        background-color: #fff;
+        position: relative;
+        font-size: 0;
+    }
+
+    header .moTop .mo_logo h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header .moTop .mo_logo a {
+        display: inline-block;
+        padding: 0;
+        box-sizing: border-box;
+        height: 60px;
+        line-height: 55px;
+    }
+
+    header .moTop .mo_logo a img {
+        width: 180px;
+    }
+
+    header .moTop .mo_close {
+        position: absolute;
+        right: 15px;
+        top: 6px;
+    }
+
+    header .moTop .mo_close button {
+        display: block;
+        font-size: 0.6rem;
+        color: #000;
+        line-height: 70px;
+        text-align: center;
+    }
+
+    header .moBtm {
+        width: 100%;
+    }
+
+    header .moBtm .member_area {
+        padding: 10px 0;
+        box-sizing: border-box;
+        border-top: 1px solid #666;
+        border-bottom: 1px solid #666;
+    }
+
+    header .moBtm .log_area {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+    }
+
+    header .moBtm .log_area > div {
+        width: 30%;
+        background: #d9ecff;
+        border-radius: 7px;
+        border: 1px solid #f4f4f4;
+    }
+
+    header .moBtm .log_area > div a {
+        display: block;
+        line-height: 30px;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #000;
+        letter-spacing: -0.3px;
+
+        text-align: center;
+        position: relative;
+    }
+    header .moBtm .log_area .lec_bg{background: #b9dcff;}
+
+    /* header .moBtm .mypage_area {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header .moBtm .mypage_area>div {
+        width: 30%;
+        background: #b9dcff;
+        border-radius: 7px;
+        border: 1px solid #f4f4f4;
+    }
+
+    header .moBtm .mypage_area>div a {
+        display: block;
+        line-height: 30px;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #000;
+        letter-spacing: -0.3px;
+        text-align: center;
+        position: relative;
+    } */
+
+    header .mo_gnbTab_area {
+        display: flex;
+        justify-content: space-evenly;
+        border-top: 1px solid #dcdcdc;
+
+    }
+
+    header .mo_gnbTab_area .mo_gnbTab_cate {
+        width: 35%;
+        height: 800px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        background: #f5f7f9;
+    }
+
+    header .mo_gnbTab_area .mo_gnbTab_cate ul {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    header .mo_gnbTab_area .mo_gnbTab_cate li {
+        width: 100%;
+        text-align: center;
+        /*box-sizing: border-box;border: 1px solid #e5e5e5;*/
+    }
+
+    header .mo_gnbTab_area .mo_gnbTab_cate li a {
+        display: block;
+        padding: 10px 0;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #000;
+        background: #f5f7f9;
+    }
+
+    header .mo_gnbTab_area .mo_gnbTab_cate li.active a {
+        background: #fff;
+        font-weight: 700;
+        color: #000;
+    }
+
+    header .mo_gnbTab_area .mo_gnbTab_det {
+        width: 65%;
+        margin-bottom: 35px;
+    }
+
+    /* lnb */
+    header .lnb {
+        position: relative;
+        width: 100%;
+    }
+
+    header .lnb>ul>li {
+        border-bottom: 1px solid #dcdcdc;
+    }
+
+    header .lnb>ul>li>a {
+        display: block;
+        padding: 10px 35px 11px 15px;
+        color: inherit;
+        font-size: 1.6rem;
+        background: #fff url(../img/icon_faq_off.png) no-repeat 95% 15px;
+    }
+
+    header .lnb>ul>li a:hover {
+        color: #000;
+        background-color: #fff;
+    }
+
+    header .lnb>ul>li.on>a {
+        color: #000;
+        background: #fff url(../img/icon_faq_on.png) no-repeat 95% 14px;
+    }
+
+    header .lnb>ul>li a strong {
+        width: 250px;
+        padding: 0 7px;
+
+        /* background: #666; */
+    }
+
+    header .lnb>ul>li ul {
+        display: none;
+    }
+
+    header .lnb>ul>li>ul>li>a {
+        display: block;
+        padding: 0 25px 14px 14px;
+        /* color: #inherit; */
+        font-size: 1.4rem;
+        background: #f5f2ec url(../img/icon_faq_off.png) no-repeat 95% 1px;
+    }
+
+    header .lnb>ul>li>ul>li>a {
+        color: #000;
+        background-color: #fff;
+    }
+
+    header .lnb>ul>li>ul>li.on a {
+        color: #000;
+        background: #fff url("../img/icon_faq_on.png") no-repeat 95% 3px;
+    }
+
+    header .lnb>ul>li>ul li ul {
+        display: none;
+        padding-bottom: 8px;
+        background-color: #fff;
+    }
+
+    header .lnb>ul>li>ul li li a {
+        display: block;
+        padding: 0 25px 10px 22px;
+        color: #666;
+        font-size: 1.4rem;
+        background-color: #f5f2ec;
+    }
+
+    header .lnb>ul>li>ul>li li a:hover {
+        color: #000;
+    }
+
+    header .lnb>ul li.noDepth a {
+        background-image: none !important;
+    }
+    header .mo_consumer_call {
+
+        width: 100%;
+        text-align: center;
+        padding: 5px 0 10px 0 ;
+    }
+    header .mo_consumer_call a {
+        position: relative;
+        padding-left: 10px;
+        color: #000;
+        font-weight: 700;
+    }
+    header .mo_consumer_call a::before {
+        content: '';
+        position: absolute;
+        left:-10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 18px;
+        height: 18px;
+        background: url(../images/icon/phone.png) no-repeat;
+        background-size: cover;
+    }
+
+    header .mo_sns_area {
+        display: inline-flex;
+        margin-top: 5px;
+        padding-left: 25px;
+    }
+
+    header .mo_sns_area>div {
+        width: 35px;
+        height: 35px;
+        margin: 2px;
+        text-align: center;
+    }
+
+    header .mo_family_link {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0 0 0;
+    }
+
+    header .mo_family_logo   {padding: 10px;}
+    header .mo_family_logo > div { margin-bottom: 5px;}
+
+
+
+}
+
+@media (max-width: 600px) {
+    
+    header .mo_miraeij_logo {
+        line-height: 2.8;
+    }
+}
+
+@media (max-width: 480px) {
+    header .mo_miraeij_logo {
+        line-height: 2.3;
+    }
+    header .top_wrapper .all_menu {       
+        padding-top: 0;
+        margin-right: 0;
+    }
+
+    /* 240404 파이어폭스 XEICON 위치 조정 */
+    @-moz-document url-prefix(){ 
+        header .top_wrapper .all_menu {
+            line-height: 1.3;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    header .mo_miraeij_logo {
+        line-height: 1.7;
+    } 
+}

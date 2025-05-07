@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {	text-size-adjust:none;	-webkit-text-size-adjust:none;	-moz-text-size-adjust:none;	-o-text-size-adjust:none;}
+		html, body{	height:100%;	font-size-adjust:none; -webkit-font-size-adjust:none;	-o-font-size-adjust:none;	-moz-font-size-adjust:none;}
+		html{font-size: 62.5%;} /*기본폰트 10px*/
+		body,th,td,input,select,textarea,button {font-size:1.5rem;  line-height:1.6;  font-family:'Roboto', 'Noto Sans KR', sans-serif;  color:#707070;word-break:keep-all; word-wrap:break-word;}
+		body, div, 
+		dl, dt, dd, ul, ol, li, 
+		h1, h2, h3, h4, h5, h6, 
+		pre, code, form, fieldset, legend, textarea, p, blockquote,
+		th, td, input, select, textarea, button,
+		header, nav, menu, section, article { margin:0; padding:0}
+		fieldset, img { border:0 none}
+		a, a:link, a:visited, a:hover, a:active { color:inherit;  text-decoration: none;}
+		img { vertical-align:middle;max-width:100%;	}
+
+	/****************************************************/
+		
+		#noImg {width:194px;height:50px;text-align: center;border:1px solid red;font-size: 30px;	padding-top:30px;	}
+
+		.wrapper_m { background: #f4f6f9; width: 100%; max-width: 1000px;/*  margin: 0 auto; */ padding: 90px 0 220px 0 }
+		#mail_f { margin: 0 auto;  background: #fff; width: 100%; max-width: 800px; min-height: 1065px; border-radius: 40px;  text-align: center;
+		padding: 45px 50px; box-sizing: border-box; box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 8%);}
+
+		.content_sec { margin-top: 35px; border-top: 2px solid #1c43a5; border-bottom: 1px solid #cccccc; padding: 45px 0 30px 0 }
+		p.p1 { font-size: 2.4rem;  font-weight: 500;  letter-spacing: -0.5px;  line-height: 34px; color: #333}
+		p.p1 span { color: #1c43a5 }
+		p.p1 span b { font-weight: 700; }
+		p.p2 { font-size: 1.6rem;  font-weight: 300;  letter-spacing: -0.5px;  line-height: 24px; color: #666; margin-top: 30px;  }
+		p.p2 i {     font-style: normal; color: #1c43a5;   font-weight: 700;  }
+		div.result { display:table; width:100%; height: 120px; background: #f7f7f7; margin-top: 50px }
+		div.p3 { display:table-cell;width:100%; height:100%; vertical-align:middle;  font-size: 1.8rem;  font-weight: 700;  letter-spacing: -0.5px; color: #1c43a5; padding: 0 200px;     box-sizing: border-box; }
+		div.p3.join { display: block; margin: 35px 0; text-align: left }
+		div.p3 > p {  width: auto; }
+		div.p3 b { display: inline-block; width: 100px; text-align: left}
+		div.p3 span {  font-weight: 500;  color: #333;  }
+		div.p3.join > b, p.p3.join > span { float : inline-block; }
+
+		/* 게시판 답변 */
+		.content_sec.ans p.p2:first-child { text-align : left; margin-top: 0px}
+		.wrap { text-align: left; margin-top: 40px }
+		.wrap > strong { font-size: 2.4rem;  font-weight: 500;  letter-spacing: -0.5px;  line-height: 34px; color: #1c43a5 }
+		.wrap > .box { margin-top: 15px; background: #f7f7f7; padding: 20px 25px; box-sizing: border-box; text-align: left }
+		.wrap .tit { color: #333; font-size: 1.6rem;  font-weight: 500;  letter-spacing: -0.5px;  line-height: 24px; }
+		.wrap .th { border-bottom: 1px solid rgba(204, 204, 204, 0.5); font-size: 1.5rem;  font-weight: 400;  letter-spacing: -0.5px;  line-height: 50px; color: #666 }
+		.wrap .th b {display: inline-block; width: 80px;   font-weight: 500;color: #164194  }
+		.wrap .info { margin-top: 15px} 
+		.wrap .info p {  font-size: 1.5rem;  font-weight: 400;  letter-spacing: -0.5px;  line-height: 30px; color: #333; }
+		.wrap .btm { font-size: 1.5rem;  font-weight: 300;  letter-spacing: -0.5px;  line-height: 24px; color: #666; }  
+		.wrap .link { box-sizing: border-box; margin-top: 15px;}
+		.wrap .link dl:last-child{border-top: 1px solid rgba(204, 204, 204, 0.5);}
+		.wrap .link dl dt{display: inline-block; color:#333; padding-right:15px; text-indent: -99999px;} /* 텍스트 표기시 text-indent, 아래 아이콘 이미지 스타일 주석처리 */
+		.wrap .link dl dt.file{  line-height: 50px;   background:url(/img/icon_file.png) no-repeat left center; width:16px; height:50px;}
+		.wrap .link dl dd{ display: inline-block; font-size:1.5rem;  font-weight: 400;  letter-spacing: -0.5px;  line-height: 50px;  color: #164194; }
+		.wrap .link dl dd a { color:#164194; font-weight: 400; }
+
+
+		.btn {display: block; width: 430px; height: 50px; line-height: 50px;  color: #fff;  background: #1c43a5; border-radius: 10px; margin: 40px auto 0;  font-size: 1.8rem;  font-weight: 500;  letter-spacing: -0.5px; box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 8%) }
+		.btn span { color: #fff;   }
+		.btn_bar { display: block}
+		.pic { margin-top: 50px}
+		.content_footer { margin-top: 30px; color: #1d1e1b;  font-size: 1.4rem;  font-weight: 400;  letter-spacing: -0.5px;  line-height: 20px; }
+		.content_footer .b {  font-weight: 700;  }
+		.content_footer .copy { color: rgba(29, 30, 27, 0.5); margin-top: 10px; text-transform: uppercase; }
+
+		em.ent { display: block; }

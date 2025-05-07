@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="canonical" href="https://dev.miraeij.com/police/classes/online/pass/" />
+
+    <!-- Preload -->
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="https://cdn.plyr.io/static/fonts/gordita-medium.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="https://cdn.plyr.io/static/fonts/gordita-bold.woff2" />
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css"> -->
+    <link rel="stylesheet" href="https://www.miraeij.com/css/xeicon.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://www.miraeij.com/css/reset.css?1726021859">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/common.css?1729642524">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/content.css?1720662496">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/content2.css?1718245044">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/content3.css?1672279478">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/program.css?1719466562">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/custom.css?1672279571">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/responsive.css?1675686393">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/responsive2.css?1687847603">
+
+    <!--link rel="stylesheet" href="/police/css/reset.css?1680867484"-->
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/layout.css?1714615120">
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/compat.css?1680160990">
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/header.css?1729650612">
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/footer.css?1729650507">
+
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/main.css?1728347514">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="/police/css/swiper-bundle.min.css"> -->
+
+    <!-- scripts -->
+    <script type="text/javascript" src="https://www.miraeij.com/js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/easing.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/common_0329.js?1724302261"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/function_jquery.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/function.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/smarteditor/js/HuskyEZCreator.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/calendar_beans_v2.0.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/jquery.form.js"></script>
+    <!--script type="text/javascript" src="/js/jquery-ui.min.js"></script-->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@11.1.1/swiper-bundle.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript" src="https://www.miraeij.com/js/custom.js"></script>
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+
+    <script type="text/javascript" src="https://www.miraeij.com/js/jquery.ajaxQueue.min.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/CommonMJ.js?1726709489"></script>
+    <style type="text/css">
+        .live_pop {display:block;width:100vw;height:100vh;position:fixed;top:0;left:0;background:rgba(10,10,10,0.8);z-index:4000;}
+        .live_pop .pop_wrap {width:768px;max-width:768px;height:auto;position:absolute;top:50%;left:50%;
+                              transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);
+                              -o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);
+                              overflow:hidden;box-sizing:border-box;}
+        .live_pop .pop_wrap .pop_wrap_img {position:relative;width:768px;height:100%;}
+        .live_pop .pop_wrap .pop_wrap_img .popImgB_area a, .live_pop .pop_wrap .pop_wrap_img .popImgD_area a {width:50%;}
+        .live_pop .pop_wrap .pop_wrap_img img {width:auto;max-width:100%;height:100%;}
+    
+        .live_pop .pop_btn {width:100%;height:30px;display:flex;justify-content:flex-end;margin-bottom:10px;}
+        .live_pop .pop_btn a {display:inline-block;color:#fff;font-size:13px;font-weight:300;text-align:center;line-height:2.2; border:1px solid #fff;box-sizing:border-box;}
+        .live_pop .pop_btn .todaybtn {width:165px;height:30px;}
+        .live_pop .pop_btn .closebtn {width:76px;height:30px;margin-left:5px;}
+    
+        .popImgB_area a, .popImgD_area a {display:inline-block;float:left}
+
+        /* 241028 로그인 시 뷰*/
+        .live_pop .pop_login_wrap { background: #fff url(images/modal_character.png) top 14% right 5% no-repeat;background-size: 212px 189px;  padding: 50px 65px 40px 65px;border-radius: 20px;}
+        .live_pop .welcome_area{color: #000;font-size: 34px;font-weight: 600;text-align: center;line-height: 1;}       
+        .live_pop .welcome_area .user_txt {color: #4c4c4c;font-size: 21px;font-weight: 500;line-height: 2;}        
+        .welcome_area .ob {font-style: oblique;}
+        .live_pop .welcome_area .user_txt em {color: #1c43a5;font-weight: 800;}
+        .live_pop .class_area {position: relative; margin-top: 48px;}
+        .live_pop .class_area .title_txt {position: absolute;top: -24px;left: 50%;transform: translateX(-50%);width: 36%; padding: 6px 0;color: #0c1127;font-size: 16px;font-weight: 600;text-align: center;letter-spacing: -1px;background: #bbe5f7;border-radius: 50px;}
+        .live_pop .class_area .class_table_area {padding: 28px 35px 15px 38px;background: #f4f6f9;border-top: 1px solid #bbe5f7;border-bottom: 1px solid #bbe5f7;box-sizing: border-box;}
+        .live_pop .class_area .class_table_area .class_table { color: #333; font-size: 15px; text-align: left;   }
+        .live_pop .class_area .class_table_area .class_table th {width: 150px;color: #333;font-size: 15px;font-weight: 500;}
+        .live_pop .class_area .class_table_area .class_table td {color: #333;font-size: 15px;}
+        .live_pop .class_area .class_table_area .class_table span {margin-right: 20px; font-size: 14px;}
+        .live_pop .class_area .class_table_area .class_table .class_bin {text-align: center;}
+        .live_pop .class_area .btn_area{margin-top: 18px;margin-bottom: 46px;display: flex;justify-content: center;}
+        .live_pop .class_area .classGo_btn  {cursor: pointer; width: 50%; padding: 10px 0; background: #002a64; color: #fff !important; margin: auto 0; text-align: center; font-size: 18px; font-weight: 500; box-sizing: border-box;vertical-align: middle; border-radius: 5px; transition: all .3s; }
+        .live_pop .class_area .classGo_btn:hover{box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+
+        /* **************** */
+    
+        @media screen and (max-width: 768px) {
+            .live_pop .pop_wrap {width:96.0000vw;max-width:96.0000vw;}
+            .live_pop .pop_wrap .pop_wrap_img {width:96.0000vw;height:auto;}
+            .live_pop .pop_wrap .pop_wrap_img .popImgA_area img {width:96.0000vw;height:auto;}
+            .live_pop .pop_wrap .pop_wrap_img .popImgB_area img {width:48.0000vw;height:auto;}
+            .live_pop .pop_wrap .pop_wrap_img .popImgC_area img {width:96.0000vw;height:auto;}
+            .live_pop .pop_wrap .pop_wrap_img .popImgD_area img {width:48.0000vw;height:auto;}
+            .live_pop .pop_wrap .pop_wrap_img .popImgE_area img {width:96.0000vw;height:auto;}
+
+            
+       
+        /* 241028 로그인 시 뷰*/
+        .live_pop .pop_login_wrap { background: #fff url(images/modal_character.png) top 14% right 5% no-repeat;background-size: 27.6042vw 24.6094vw;padding: 6.5104vw 8.4635vw 5.2083vw 8.4635vw;border-radius: 2.6042vw;}
+        .live_pop .welcome_area{font-size: 4.4271vw;line-height: 1;}        
+        .live_pop .welcome_area .user_txt {font-size: 2.7344vw;line-height: 2;}        
+        .welcome_area .ob {font-style: oblique;}
+        .live_pop .class_area { margin-top: 6.2500vw;}
+        .live_pop .class_area .title_txt {top: -3.1250vw;left: 50%;transform: translateX(-50%);width: 36%; padding: 0.7813vw 0;font-size: 2.0833vw;letter-spacing: -0.1302vw;background: #bbe5f7;border-radius: 6.5104vw;}
+        .live_pop .class_area .class_table_area {padding: 3.6458vw 4.5573vw 1.9531vw 4.9479vw;background: #f4f6f9;border-top: 0.1302vw solid #bbe5f7;border-bottom: 0.1302vw solid #bbe5f7;}
+        .live_pop .class_area .class_table_area .class_table {  font-size: 1.9531vw;    }
+        .live_pop .class_area .class_table_area .class_table th {width: 19.5313vw;font-size: 1.9531vw;}
+        .live_pop .class_area .class_table_area .class_table td {font-size: 1.9531vw;}
+        .live_pop .class_area .class_table_area .class_table span {margin-right: 2.6042vw; font-size: 1.8229vw;}
+        .live_pop .class_area .btn_area{margin-top: 2.3438vw;margin-bottom: 5.9896vw;}
+
+        .live_pop .class_area .classGo_btn  {cursor: pointer; width: 50%; padding: 1.3021vw 0; background: #002a64;  margin: auto 0;  font-size: 2.3438vw;   border-radius: 0.6510vw; transition: all .3s; }
+        .live_pop .class_area .classGo_btn:hover{box-shadow: rgba(0, 0, 0, 0.24) 0.0000vw 0.3906vw 1.0417vw;}
+
+        /* **************** */
+
+        }
+    </style>
+</head>
+<body>
+
+    <!--login-->
+    <div class="live_pop">
+        <div class="size">
+            <div class="pop_wrap">
+    
+                <div class="pop_wrap_img">
+                    <div class="pop_btn">
+                        <a href="#" class="todaybtn" onclick="setCookieWeb('Modal-240719_promotion_passcut', 'os');jQuery('.live_pop').hide();return false;">오늘하루보지않기</a>
+                        <a href="#" class="closebtn" onclick="jQuery('.live_pop').hide();return false;">닫기</a>
+                    </div>
+                    <!--로그아웃 뷰-->
+                        <!--
+                        <div class="popImgA_area"><a href="/police/promotion/ske/book/" target="_self"><img src="images/20241023_A40_67185dd20357a.png" alt=""></a></div>
+        
+                        <div class="popImgB_area">
+                            <a href="/police/classes/online/pass/" target="_self"><img src="images/20241022_A40_6716e6278854c.png" alt=""></a>
+                            <a href="/police/classes/offline/universe/" target="_self"><img src="images/20241015_A40_670db07d455c2.png" alt=""></a>                
+                        </div>
+                        -->
+                    <!--//로그아웃 뷰-->
+
+                    <!--241028 로그인 시 뷰-->
+                    <div class="pop_login_wrap">
+                        <div class="welcome_area">
+                            안녕하세요<span class="ob">!</span>
+                            <p class="user_txt"><em>홍길동</em>님 오늘은 <em>00</em>월 <em>00</em>일 입니다.</p>
+
+                        </div>
+                        <div class="class_area">
+                            <div class="title_txt">최근 듣고 계신 온라인 강의</div>
+                            <div class="class_table_area">
+                                <table class="class_table">
+                                    <!--강의 없을때-->
+                                    <!-- <tr>
+                                        <td colspan="2" class="class_bin">"듣고 계신 강의가 현재는 없습니다." </td>
+                                    </tr> -->
+                                    <tr>
+                                        <th>심화</th>
+                                        <td><span class="clr_nv"><b>난이도 UP! 성사법 이론 100% 완전정복</b></span></td>
+                                    </tr>
+                                    <tr>
+                                        <th>25년 1차 대비</th>
+                                        <td>[심화]25년 1차 대비 신광은 형사소송법 심화이론(23년 9월)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>신광은 교수</th>
+                                        <td>
+                                            <span>강의수 : <b>68강</b></span>
+                                            <span>수강기간 : <b>130일</b></span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="btn_area">
+                                <a href="/police/mypage/class/" class="classGo_btn" target="_self">다른 강의 듣기</a>
+                            </div>
+                            
+
+                        </div>
+                        <div class="popImgA_area"><a href="/police/promotion/ske/book/" target="_self"><img src="https://www.miraeij.com/upload/modalPopup/police_main/240719_promotion_passcut/20241023_A40_67185dd20357a.png" alt=""></a></div>
+
+                    </div>
+
+                    <!--//241028 로그인 시 뷰-->
+                    
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//login-->
+    
+</body>
+</html>

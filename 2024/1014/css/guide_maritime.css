@@ -1,0 +1,643 @@
+.guide_maritime {
+    background: #fff;
+}
+
+.guide_maritime {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.guide_maritime .sec .inner {
+    max-width: 1176px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.guide_maritime img {
+    width: 100%;
+}
+
+.guide_maritime iframe {
+    bordeR: 0;
+}
+
+.guide_maritime .mo-img {
+    display: none;
+}
+
+.guide_maritime .sec1 {
+    background: url('../img/guide_maritime_bg_01.jpg') top center no-repeat;
+}
+.guide_maritime .sec2 {
+    background: url('../img/guide_maritime_bg_02.jpg') top center no-repeat;
+}
+
+.guide_maritime .sec1 .inner,
+.guide_maritime .sec2 .inner {
+    max-width: 1320px;
+}
+
+.sec2 .goBtn_area {
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translateX(-50%);    
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 80px;
+}
+
+.sec2 .goBtn_area .link_wrap {
+    width: 890px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec2 .goBtn_area .goLink {
+    width: 200px;
+    height: 200px;    
+    border: 4px solid #0d8af5;
+    box-sizing: border-box;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0d8af5;
+    font-size: 24px;
+    font-weight: 700;
+    background: #fff;
+}
+.sec2 .goBtn_area .goLink b{
+    font-size: 36px;
+}
+
+.sec2 .goBtn_area .goLink:hover{
+    color: #fff;
+    font-weight: 900;
+    background: #0377da;
+}
+
+/* sec3 */
+
+.guide_maritime .sec.sec3 {
+    position: relative;
+    width: 100%;
+    padding-top: 80px;
+}
+
+.wideTab_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    background: #0084f4;
+    z-index: 18;
+}
+
+.wideTab_wrapper.fixed {
+    position: fixed;
+}
+
+.sec3 .tab-nav div {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1176px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sec3 .tab-nav div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 3);
+    height: 100%;
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    background: #0084f4;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.sec3 .tab-nav div a:nth-child(1) {
+    border-left: 1px solid #fff;
+}
+
+.sec3 .tab-nav div a.active {
+    color: #014b8b;
+    font-weight: 700;
+    background: #fff;
+}
+
+.sec3 .cont {
+    padding: 90px 0;
+}
+
+/* sec3 depth-nav */
+
+.sec3 .cont .depth-nav div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.sec3 .cont .depth-nav div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 3);
+    height: 100%;
+    color: #8b8f9f;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    border-bottom: 3px solid #ddd;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 16px 0;
+}
+
+.sec3 .cont .depth-nav div a.active {
+    color: #014b8b;
+   
+
+}
+.sec3 .cont .depth-nav div a.active::before {
+    position: absolute;
+    content: '';
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: #014b8b;
+}
+
+.sec3 .cont .depth-nav div a.active::after {
+    position: absolute;
+    content: '';
+    border-bottom: 0 solid transparent;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 15px solid #014b8b;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    z-index: 9;
+
+}
+
+.sec3 .cont .depth-cont {
+    position: relative;
+    margin-top: -2px;
+    border: 2px solid #f3f3f3;
+    box-sizing: border-box;
+}
+
+.sec3 .cont.depth1 .depth-nav div a{
+    width: calc(100% / 3);
+}
+.sec3 .cont.depth2 .depth-nav div a{
+    width: calc(100% / 4);
+}
+.sec3 .cont.depth3 .depth-nav div a{
+    width: calc(100% / 4);
+    flex-direction: column;
+    line-height: 1.3;
+}
+.sec3 .cont.depth3 .depth-nav div a em {
+    font-size: 20px ;
+    font-weight: 600;
+}
+.sec3 .cont.depth3 .depth-cont {
+    padding: 50px 0;
+}
+
+
+/* 레이어팝업 버튼  */
+.sec3 .cont .depth-cont .layerOpen {
+    position: absolute;
+    background: red;
+    opacity: 0;
+}
+
+.sec3 .cont .depth-cont .layerOpen.link1 {
+    top: 42%;
+    left: 8%;
+    width: 18.5%;
+    height: 3%;
+}
+
+.sec3 .cont .depth-cont .layerOpen.link2 {
+    top: 42%;
+    left: 27.5%;
+    width: 18.5%;
+    height: 3%;
+}
+
+.sec3 .cont .depth-cont .layerOpen.link3 {
+    top: 93%;
+    left: 8%;
+    width: 18.5%;
+    height: 3%;
+}
+
+.sec3 .cont .depth-cont .layerOpen.link4 {
+    top: 93%;
+    left: 27.5%;
+    width: 18.5%;
+    height: 3%;
+}
+
+.sec3 .cont .depth-cont .layerOpen.link5 {
+    top: 92%;
+    left: 8%;
+    width: 18.5%;
+    height: 4%;
+}
+
+.sec3 .cont .depth-cont .layerOpen.link6 {
+    top: 92%;
+    left: 27.5%;
+    width: 18.5%;
+    height: 4%;
+}
+
+.sec3 .cont .depth-cont .layerOpen.link7 {
+    top: 91.5%;
+    left: 8%;
+    width: 18.5%;
+    height: 4%;
+}
+
+.sec3 .cont .depth-cont .layerOpen.link8 {
+    top: 91.5%;
+    left: 27.5%;
+    width: 18.5%;
+    height: 4%;
+}
+
+.sec3 .cont .depth-cont .layerOpen.link9 {
+    top: 94.5%;
+    left: 8%;
+    width: 18.5%;
+    height: 3%;
+}
+
+.sec3 .cont .depth-cont .layerOpen.link10 {
+    top: 94.5%;
+    left: 27.5%;
+    width: 18.5%;
+    height: 3%;
+}
+
+/* 과목별 학습전략 링크 및 영상 */
+
+.sec3 .cont .depth-cont .tHome {
+    position: absolute;   
+    background: red;
+    opacity: 0;
+}
+
+.sec3 .cont .depth-cont .tHome.t1{
+    top: 52.5%;
+    left: 8%;
+    width: 12%;
+    height: 5%;
+}
+
+.sec3 .cont .depth-cont .tHome.t2{
+    top: 52.5%;
+    left: 30%;
+    width: 12%;
+    height: 5%;
+}
+
+.sec3 .cont .depth-cont .tHome.t3{
+    top: 52.5%;
+    left: 30%;
+    width: 12%;
+    height: 5%;
+}
+
+.sec3 .cont .depth-cont .tHome.t4{
+    top: 52.5%;
+    left: 8%;
+    width: 12%;
+    height: 5%;
+}
+
+
+.sec3 .cont .depth-cont .gVideo_area {
+    position: absolute;
+    top: 36%;
+    left: 49.5%;
+    width: 45%;
+    height: 32%;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+.sec3 .cont .depth-cont .gVideo_area.t3,
+.sec3 .cont .depth-cont .gVideo_area.t4 {
+    top: 28%; 
+}
+
+
+
+@media screen and (max-width: 1320px){ 
+    .sec2 .goBtn_area { 
+        padding-bottom: 6.0606vw;
+    }
+    
+    .sec2 .goBtn_area .link_wrap {
+        width: 67.4242vw;
+        height: 15.1515vw;     
+    }
+    
+    .sec2 .goBtn_area .goLink {
+        width: 15.1515vw;
+        height: 15.1515vw;    
+        border: 0.3030vw solid #003466;
+        font-size: 1.8182vw;
+    }
+    .sec2 .goBtn_area .goLink b{
+        font-size: 2.7273vw;
+    }
+    
+    
+}
+
+@media screen and (max-width: 1200px){
+    .guide_maritime .sec .inner {
+        max-width: 100%;
+    }
+    .sec3 .tab-nav div {       
+        width: 100%;       
+    }
+
+    .sec3 .cont .depth-nav div a {      
+        font-size: 2.1667vw;        
+        padding: 1.3333vw 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .guide_maritime .mo-img {
+        display: block;
+    }
+
+    .guide_maritime .pc-img {
+        display: none !important;
+    }
+
+    .sec2 .goBtn_area {
+        position: absolute;
+        top: 37%;
+        left: 50%;
+        transform: translateX(-50%);    
+        width: 96%;
+        display: flex;
+        justify-content: space-evenly;
+        /* padding-bottom: 10.4167vw; */
+    }
+    
+    .sec2 .goBtn_area .link_wrap {
+        width: 100%;
+        height: 22.1354vw;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .sec2 .goBtn_area .goLink {
+        width: 22.1354vw;
+        height: 22.1354vw;    
+        border: 0.5208vw solid #0d8af5;
+        box-sizing: border-box;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #0d8af5;
+        font-size: 3.1250vw;
+        font-weight: 700;
+        background: #fff;
+        letter-spacing: -0.1302vw;
+        line-height: 1.3;
+    }
+    .sec2 .goBtn_area .goLink b{
+        font-size: 4.6875vw;
+    }
+    
+    .sec2 .goBtn_area .goLink:hover{
+        color: #fff;
+        background: #0377da;
+    }
+
+    .guide_maritime .sec.sec3 {
+        position: relative;
+        width: 100%;
+        padding-top: 10.4167vw;
+    }
+
+    .wideTab_wrapper {
+        position: absolute;
+        width: 100%;
+        height: 10.4167vw;
+        top: 0;
+        left: 0;
+        background: #0084f4;
+        z-index: 18;
+    }
+
+    .sec3 .tab-nav div {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .sec3 .tab-nav div a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% / 3);
+        height: 100%;
+        color: rgba(255, 255, 255, 1);
+        font-size: 3.6458vw;
+        font-weight: 400;
+        letter-spacing: -1px;
+        background: #0084f4;
+        transition: all 0.3s ease;
+    }
+
+    .sec3 .cont.depth3 .depth-nav div a em {
+        font-size: 2.3438vw ;
+       
+    }
+
+    .sec3 .cont {
+        padding: 5.2083vw 2.6042vw;
+    }
+
+    .sec3 .cont .depth-nav div a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% / 3);
+        height: 100%;
+        color: #8b8f9f;
+        font-size: 3.9063vw;
+        font-weight: 700;
+        letter-spacing: -1px;
+        border-bottom: 3px solid #ddd;
+        transition: all 0.3s ease;
+        position: relative;
+        padding: 2.0833vw 0;
+    }
+
+    .sec3 .cont .depth-cont {
+        border: none;
+    }
+
+    .sec3 .cont.depth3 .depth-cont {
+        padding: 6.5104vw 0;
+    }
+
+    /* 레이어팝업 버튼  */
+    .sec3 .cont .depth-cont .layerOpen.link1 {
+        top: 35.5%;
+        left: 7%;
+        width: 41.5%;
+        height: 3%;
+    }
+
+    .sec3 .cont .depth-cont .layerOpen.link2 {
+        top: 35.5%;
+        left: 51.5%;
+        width: 41.5%;
+        height: 3%;
+    }
+
+    .sec3 .cont .depth-cont .layerOpen.link3 {
+        top: 94%;
+        left: 7%;
+        width: 41.5%;
+        height: 3%;
+    }
+    
+    .sec3 .cont .depth-cont .layerOpen.link4 {
+        top: 94%;
+        left: 51.5%;
+        width: 41.5%;
+        height: 3%;
+    }
+    
+    .sec3 .cont .depth-cont .layerOpen.link5 {
+        top: 92%;
+        left: 7%;
+        width: 41.5%;
+        height: 4.5%;
+    }
+    
+    .sec3 .cont .depth-cont .layerOpen.link6 {
+        top: 92%;
+        left: 51.5%;
+        width: 41.5%;
+        height: 4.5%;
+    }
+    
+    .sec3 .cont .depth-cont .layerOpen.link7 {
+        top: 94.5%;
+        left: 7%;
+        width: 41.5%;
+        height: 3.5%;
+    }
+    
+    .sec3 .cont .depth-cont .layerOpen.link8 {
+        top: 94.5%;
+        left: 51.5%;
+        width: 41.5%;
+        height: 3.5%;
+    }
+    
+    .sec3 .cont .depth-cont .layerOpen.link9 {
+        top: 96.5%;
+        left: 7%;
+        width: 41.5%;
+        height: 2%;
+    }
+    
+    .sec3 .cont .depth-cont .layerOpen.link10 {
+        top: 96.5%;
+        left: 51.5%;
+        width: 41.5%;
+        height: 2%;
+    }
+
+    /* 과목별 학습전략 링크 및 영상 */
+
+    .sec3 .cont .depth-cont .tHome {
+        position: absolute; 
+    }
+
+    .sec3 .cont .depth-cont .tHome.t1{
+        top: 35.5%;
+        left: 10%;
+        width: 14%;
+        height: 4%;
+    }
+
+    .sec3 .cont .depth-cont .tHome.t2{
+        top: 35.5%;
+        left: 10%;
+        width: 13%;
+        height: 4.5%;
+    }
+
+    .sec3 .cont .depth-cont .tHome.t3{
+        top: 35.5%;
+        left: 10%;
+        width: 13%;
+        height: 4.5%;
+    }
+
+    .sec3 .cont .depth-cont .tHome.t4{
+        top: 35.5%;
+        left: 10%;
+        width: 13%;
+        height: 4.5%;
+    }
+
+    .sec3 .cont .depth-cont .gVideo_area {
+        position: absolute;
+        top: 34%;
+        left: 24.5%;
+        width: 65%;
+        height: 29%;
+    }
+
+    .sec3 .cont .depth-cont .gVideo_area.t3,
+    .sec3 .cont .depth-cont .gVideo_area.t4 {
+        top: 34%; 
+    }
+
+}

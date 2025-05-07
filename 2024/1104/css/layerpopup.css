@@ -1,0 +1,232 @@
+
+.prLayerPop {
+    margin: 0 auto;
+    max-width: 800px;
+}
+.prLayerPop {
+    display: none;
+}
+.prLayerPop:before {
+    display: block;
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 100;
+}
+.prLayerPop .layerBox {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    background: #fff;
+    box-shadow: 1px 1px 7px 7px rgba(0, 0, 0, .1);
+    z-index: 200;
+}
+.prLayerPop .layerBox .title_area {
+    margin: auto;
+    width: 100%;
+    padding: 14px 0;
+    color: #fff;
+    background: #424cf9;
+    text-align: center;           
+}       
+
+.prLayerPop .layerBox .title_area span {
+    padding-left: 15px;
+    font-size: 24px;
+    font-weight: 600;            
+}       
+
+.iconClose {
+    float: right;
+    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    font-size: 36px;
+    line-height: 1;
+    cursor: pointer;
+   
+}
+.iconClose.xi-icon::before {
+    content: "\e9af";
+}
+
+.prLayerPop .layerBox .inputBox {
+    margin: auto;
+    width: 80%;
+    padding: 20px 15px;
+    line-height: 20px;
+    font-size: 14px;
+    background: #fff;
+}
+
+.prLayerPop .layerBox .inputBox ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.prLayerPop .layerBox .inputBox li {
+    display:table;
+    padding-bottom: 7px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;    
+}
+.prLayerPop .layerBox .inputBox li.inputT{
+    width: 100px;
+}
+.prLayerPop .layerBox .inputBox li.inputO{
+    width: calc(100%-100px);
+    font-size: 12px;
+}
+.prLayerPop .layerBox .inputBox li input[type="text"] {
+    width: 350px;
+    height: 50px;
+    border: 1px solid #0553f5 ;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+.prLayerPop .layerBox .inputBox li input[type="text"]::placeholder {
+    font-size: 18px;         
+}
+.prLayerPop .layerBox .inputBox p {
+    margin-top: 5px;
+    letter-spacing: -1px;
+}
+.prLayerPop .btn_box {
+    text-align: center;
+    padding: 15px 0 55px 0;
+    background: #fff;
+}
+
+.btn {
+    text-decoration: none !important;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: baseline;
+    position: relative;
+    cursor: pointer;
+    padding: 12px 10px;
+    min-width: 140px;
+    min-height: 50px;
+    line-height: 25px;
+    background: rgba(22, 65, 148, 1.0);
+    color: #fff !important;
+    margin: 0 2px;
+    text-align: center;
+    font-weight: 400;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+.prLayerPop .btn_box .gray {background: #373737;}
+.prLayerPop .btn_box .btnLine { color:#373737 !important ; background: #fff; border: 1px solid #373737; box-sizing: border-box;}
+
+.prLayerPop.question .inputBox textarea{
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .prLayerPop {
+        margin: 0 auto;
+        max-width: 104.1667vw;
+    }
+    .prLayerPop .layerBox {          
+        width: 96%;         
+    }
+    .prLayerPop .layerBox .title_area {   
+        padding: 1.8229vw 0;   
+    }
+    .prLayerPop .layerBox .title_area span {
+        padding-left: 1.9531vw;
+        font-size: 3.1250vw;          
+    }
+    .iconClose {  
+        margin-right: 2.6042vw;
+        width: 4.5573vw;
+        height: 4.5573vw;   
+        font-size: 4.6875vw;
+        line-height: 1;   
+    }
+    .prLayerPop .layerBox .inputBox {
+        margin: auto;
+        width: 80%;
+        padding: 2.6042vw 1.9531vw;
+        line-height: 2.6042vw;
+        font-size: 1.8229vw;
+        background: #fff;
+    }
+    .prLayerPop .layerBox .inputBox ul {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2.6042vw;
+    }
+    .prLayerPop .layerBox .inputBox li {
+        display:table;
+        padding-bottom: 0.9115vw;
+        color: #333;
+        font-size: 3.1250vw;
+        font-weight: 500;
+        line-height: 6.2500vw;    
+    }
+    .prLayerPop .layerBox .inputBox li.inputT{
+        width: 10.4167vw;
+    }
+    .prLayerPop .layerBox .inputBox li.inputO{
+        width: calc(100%-10.4167vw);
+        font-size: 1.5625vw;
+    }
+    .prLayerPop .layerBox .inputBox li input[type="text"] {
+        width: 45.5729vw;
+        height: 6.5104vw;
+        border: 0.1302vw solid #0553f5 ;
+        box-sizing: border-box;
+        border-radius: 0.6510vw;
+        padding: 0 2.6042vw;
+    }
+    .prLayerPop .layerBox .inputBox li input[type="text"]::placeholder {
+        font-size: 2.3438vw;         
+    }
+    .prLayerPop .btn_box {
+        text-align: center;
+        padding: 1.9531vw 0 7.1615vw 0;
+        background: #fff;
+    }
+    .btn {
+        text-decoration: none !important;
+        white-space: nowrap;
+        display: inline-block;
+        vertical-align: baseline;
+        position: relative;
+        cursor: pointer;
+        padding: 1.5625vw 1.3021vw;
+        min-width: 18.2292vw;
+        min-height: 6.5104vw;
+        line-height: 3.2552vw;
+        background: rgba(22, 65, 148, 1.0);
+        color: #fff !important;
+        margin: 0 0.2604vw;
+        text-align: center;
+        font-weight: 400;
+        box-sizing: border-box;
+        vertical-align: middle;
+    }
+
+    .prLayerPop .btn_box .gray {background: #373737;}
+    .prLayerPop .btn_box .btnLine { color:#373737 !important ; background: #fff; border: 0.1302vw solid #373737; box-sizing: border-box;}
+        
+    .prLayerPop.question .inputBox textarea{
+        padding: 10px;   
+    }   
+
+}

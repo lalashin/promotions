@@ -1,0 +1,567 @@
+
+/* 당첨내역 팝업 */
+.completeLayer {
+    margin: 0 auto;
+    max-width: 800px;
+}
+.completeLayer {
+    display: none;
+}  
+.completeLayer .layerBox {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 7px 7px rgba(0, 0, 0, .1);
+    z-index: 30;
+}
+.completeLayer .layerBox .btnClose {           
+    position: absolute;            
+    top: 17px;
+    right: 26px;
+    padding: 13px 14px;
+    cursor: pointer;
+    background: red;
+    opacity: 0;
+}
+.completeLayer .layerBox .btnClose.btm {
+    top: auto;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 38px;
+    padding: 21px 98px;
+    background: red;
+    opacity: 0;
+}
+.completeLayer .layerBox .cont {
+    width: 100%;
+    position: relative;
+}
+.completeLayer .layerBox .cont .u_name {
+    position: absolute;
+    top: 11.3%;
+    left: 6%;
+    width: 120px;
+    color: #000;
+    font-size: 24px ;
+    font-weight: 800;
+    text-align: right;
+    letter-spacing: 2px;
+    /* border: 1px solid red; */
+}
+.completeLayer .layerBox .cont .prize_date {
+    position: absolute;
+    top: 58.5%;
+    left: 0;
+    width: 100%;
+    color: #41434b;
+    font-size: 20px ;
+    font-weight: 600;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+/* 추천 현황 확인 */
+
+.recommendLayerPop {
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px;
+    z-index: 10;
+}
+.recommendLayerPop {
+    display: none;
+}
+.recommendLayerPop:before {
+    display: block;
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+   
+}
+.recommendLayerPop .layerBox {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    background: #fff;
+    box-shadow: 1px 1px 7px 7px rgba(0, 0, 0, .1);
+}
+.recommendLayerPop .layerBox .title_area {
+    margin: auto;
+    width: 100%;
+    padding: 14px 0;
+    color: #fff;
+    background: #0d476e;
+    text-align: center;           
+}       
+
+.recommendLayerPop .layerBox .title_area span {
+    padding-left: 15px;
+    font-size: 24px;
+    font-weight: 600;            
+}       
+
+.recommendLayerPop .iconClose {
+    float: right;
+    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    font-size: 36px;
+    line-height: 1;
+    cursor: pointer;
+}
+.iconClose.xi-icon::before {
+    content: "\e9af";
+}
+
+.recommendLayerPop .table_wrap {
+    margin: auto;
+    width: 90%;
+    height: 400px;
+    padding: 0 10px ;
+    overflow-y: auto; 
+    margin-top: 20px;
+}
+.recommendLayerPop .table_wrap.scrollbar::-webkit-scrollbar {
+    width: 7px;  
+}
+
+.recommendLayerPop .table_wrap.scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .5);
+    border-radius: 8px;
+}
+
+.recommendLayerPop .table_wrap.scrollbar::-webkit-scrollbar-track {
+    background: rgba(137, 137, 145, .5);  
+    border-radius: 10px;
+}
+.recommendLayerPop .recommend_table {    
+    height: auto;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+}   
+
+.recommendLayerPop .recommend_table .basic_table{width:98%;margin:10px 0;border-top:2px solid #0f4c79;border-collapse:collapse;vertical-align:middle;font-size:100%;table-layout: fixed;}
+.recommendLayerPop .recommend_table .basic_table caption{position:absolute;top:-500%;left:-500%}                           
+.recommendLayerPop .recommend_table .basic_table th, .basic_table td{text-align:center;padding:5px 2px;border:1px solid #d0d9ea;border-top:none;vertical-align:middle;line-height:1.5em}
+.recommendLayerPop .recommend_table .basic_table thead th{background:#f4f6f9;color:#333;}
+.recommendLayerPop .recommend_table .basic_table tbody th{background:#f4f6f9;color:#444;}   
+
+.recommendLayerPop .btn_box {
+    text-align: center;
+    padding: 30px 0 50px 0;
+    background: #fff;
+}
+
+.recommend_btn {
+    text-decoration: none !important;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: baseline;
+    position: relative;
+    cursor: pointer;
+    padding: 4px 30px;
+    line-height: 25px;
+    background: rgba(22, 65, 148, 1.0);
+    color: #fff !important;
+    margin: 0 2px;
+    text-align: center;
+    font-weight: 400;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+.recommendLayerPop .btn_box .btnLine { color:#373737 !important ; background: #fff; border: 1px solid #373737; box-sizing: border-box;}
+
+/* 내 당첨 내역 확인 */
+
+/* .recommendLayerPop.myresult {
+    display: none;
+}
+.recommendLayerPop.myresult .layerBox {
+    background: none;
+    box-shadow: none;
+}
+.recommendLayerPop.myresult .layerBox .title_area {    
+    background: transparent;
+}
+
+.recommendLayerPop.myresult .iconClose {
+ margin-right: 0;
+}
+.recommendLayerPop.myresult .layerBox .cont {
+    padding: 40px 0;
+    background: #fff;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.recommendLayerPop.myresult h3 {
+    padding: 10px 0;
+    color: #202020;
+    font-size: 24px;
+    text-align: center;    
+}
+.recommendLayerPop.myresult .table_wrap {
+    height: 320px;
+    margin-top: 0;
+}
+
+.recommendLayerPop.myresult .btn_box { 
+    padding: 20px 0 40px 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.recommendLayerPop.myresult .btn_box .btnLine { color:#fff !important ; background: #373737; border: 1px solid #373737; box-sizing: border-box;}
+ */
+
+
+ .myRecommendLayerPop {
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px;
+    z-index: 10;
+}
+.myRecommendLayerPop {
+    display: none;
+}
+.myRecommendLayerPop:before {
+    display: block;
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+   
+}
+.myRecommendLayerPop .layerBox {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    background: none;
+    box-shadow: none;
+}
+.myRecommendLayerPop .layerBox .title_area {
+    margin: auto;
+    width: 100%;
+    padding: 14px 0;
+    color: #fff;
+    background: transparent;
+    text-align: center;           
+}       
+
+.myRecommendLayerPop .layerBox .title_area span {
+    padding-left: 15px;
+    font-size: 24px;
+    font-weight: 600;            
+}     
+
+.myRecommendLayerPop .layerBox .cont {
+    padding: 40px 0;
+    background: #fff;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.myRecommendLayerPop h3 {
+    padding: 10px 0;
+    color: #202020;
+    font-size: 24px;
+    text-align: center;    
+}
+
+.myRecommendLayerPop .iconClose {
+    float: right;
+    margin-top: 0;
+    margin-right: 0;
+    width: 35px;
+    height: 320px;
+    color: #fff;
+    font-size: 36px;
+    line-height: 1;
+    cursor: pointer;
+}
+.myRecommendLayerPop .iconClose.xi-icon::before {
+    content: "\e9af";
+}
+
+.myRecommendLayerPop .table_wrap {
+    margin: auto;
+    width: 90%;
+    height: 400px;
+    padding: 0 10px ;
+    overflow-y: auto; 
+    margin-top: 20px;
+}
+.myRecommendLayerPop .table_wrap.scrollbar::-webkit-scrollbar {
+    width: 7px;  
+}
+
+.myRecommendLayerPop .table_wrap.scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .5);
+    border-radius: 8px;
+}
+
+.myRecommendLayerPop .table_wrap.scrollbar::-webkit-scrollbar-track {
+    background: rgba(137, 137, 145, .5);  
+    border-radius: 10px;
+}
+.myRecommendLayerPop .recommend_table {    
+    height: auto;
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+}   
+
+.myRecommendLayerPop .recommend_table .basic_table{width:98%;margin:10px 0;border-top:2px solid #0f4c79;border-collapse:collapse;vertical-align:middle;font-size:100%;table-layout: fixed;}
+.myRecommendLayerPop .recommend_table .basic_table caption{position:absolute;top:-500%;left:-500%}                           
+.myRecommendLayerPop .recommend_table .basic_table th, .basic_table td{text-align:center;padding:5px 2px;border:1px solid #d0d9ea;border-top:none;vertical-align:middle;line-height:1.5em}
+.myRecommendLayerPop .recommend_table .basic_table thead th{background:#f4f6f9;color:#333;}
+.myRecommendLayerPop .recommend_table .basic_table tbody th{background:#f4f6f9;color:#444;}   
+
+.myRecommendLayerPop .btn_box2 {
+    text-align: center;
+    padding: 30px 0 50px 0;
+    background: #fff;
+
+    padding: 20px 0 40px 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.recommend_btn {
+    text-decoration: none !important;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: baseline;
+    position: relative;
+    cursor: pointer;
+    padding: 4px 30px;
+    line-height: 25px;
+    background: rgba(22, 65, 148, 1.0);
+    color: #fff !important;
+    margin: 0 2px;
+    text-align: center;
+    font-weight: 400;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border-radius: 4px;
+}
+
+.myRecommendLayerPop .btn_box2 .btnLine { color:#373737 !important ; background: #fff; border: 1px solid #373737; box-sizing: border-box;}
+
+
+@media screen and (max-width: 1280px){
+   /* 당첨내역 팝업 */
+
+   /* 추천 현황 확인 */
+
+
+}
+
+@media screen and (max-width: 768px){
+
+    /* 당첨내역 팝업 */
+    .completeLayer {
+        margin: 0 auto;
+        max-width: 800px;
+    }
+ 
+    .completeLayer .layerBox {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0.1302vw 0.1302vw 0.9115vw 0.9115vw rgba(0, 0, 0, .1);
+        z-index: 30;
+    }
+    .completeLayer .layerBox .btnClose {           
+        position: absolute;            
+        top: 2.2135vw;
+        right: 3.3854vw;
+        padding: 1.6927vw 1.8229vw;
+        cursor: pointer;      
+    }
+    .completeLayer .layerBox .btnClose.btm {
+        top: auto;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 4.9479vw;
+        padding: 2.7344vw 12.7604vw;       
+    }    
+    .completeLayer .layerBox .cont {
+        width: 100%;
+        position: relative;
+    }    
+    .completeLayer .layerBox .cont .u_name {
+        position: absolute;
+        top: 11%;
+        left: 4%;
+        width: 15.6250vw;
+        color: #000;
+        font-size: 3.1250vw ;
+        font-weight: 800;
+        text-align: right;
+        letter-spacing: 0.2604vw;
+        /* border: 0.1302vw solid red; */
+    }
+    .completeLayer .layerBox .cont .prize_date {
+        position: absolute;
+        top: 58.5%;
+        left: 0;
+        width: 100%;
+        color: #41434b;
+        font-size: 2.6042vw ;
+        font-weight: 600;
+        text-align: center;
+        /* border: 0.1302vw solid red; */
+    }
+
+    /* 추천 현황 확인 */
+
+    .recommendLayerPop {
+        margin: 0 auto;
+        max-width: 104.1667vw;
+    }
+    .recommendLayerPop {
+        display: none;
+    }
+    .recommendLayerPop:before {
+        display: block;
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .5);
+    }
+    .recommendLayerPop .layerBox {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 84.6354vw;
+        background: #fff;
+        box-shadow: 0.1302vw 0.1302vw 0.9115vw 0.9115vw rgba(0, 0, 0, .1);
+    }
+    .recommendLayerPop .layerBox .title_area {
+        margin: auto;
+        width: 100%;
+        padding: 1.8229vw 0;
+        color: #fff;
+        background: #0d476e;
+        text-align: center;           
+    }       
+
+    .recommendLayerPop .layerBox .title_area span {
+        padding-left: 1.9531vw;
+        font-size: 4.1250vw;
+        font-weight: 600;            
+    }       
+
+    .recommendLayerPop .iconClose {
+        float: right;
+        margin-right: 2.6042vw;
+        width: 4.5573vw;
+        height: 4.5573vw;
+        color: #fff;
+        font-size: 4.6875vw;
+        line-height: 1;
+        cursor: pointer;
+    }
+    .iconClose.xi-icon::before {
+        content: "\e9af";
+    }
+
+    .recommendLayerPop .table_wrap {
+        margin: auto;
+        width: 90%;
+        height: 52.0833vw;
+        padding: 0 1.3021vw ;
+        overflow-y: auto; 
+        margin-top: 2.6042vw;
+    }
+    .recommendLayerPop .table_wrap.scrollbar::-webkit-scrollbar {
+        width: 0.9115vw;  
+    }
+
+    .recommendLayerPop .table_wrap.scrollbar::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, .5);
+        border-radius: 1.0417vw;
+    }
+
+    .recommendLayerPop .table_wrap.scrollbar::-webkit-scrollbar-track {
+        background: rgba(137, 137, 145, .5);  
+        border-radius: 1.3021vw;
+    }
+    .recommendLayerPop .recommend_table {    
+        height: auto;
+        color: #333;
+        font-size: 1.8229vw;
+        font-weight: 500;
+        line-height: 2.8646vw;
+        letter-spacing: -0.0651vw;
+        margin-bottom: 2.6042vw;
+    }   
+
+    .recommendLayerPop .recommend_table h3 {
+        font-size:1.5em;
+    }
+
+    .recommendLayerPop .recommend_table .basic_table{width:98%;margin:1.3021vw 0;border-top:0.2604vw solid #0f4c79;border-collapse:collapse;vertical-align:middle;font-size:100%;table-layout: fixed;}
+    .recommendLayerPop .recommend_table .basic_table caption{position:absolute;top:-500%;left:-500%}                           
+    .recommendLayerPop .recommend_table .basic_table th, .basic_table td{font-size: 1.2em;text-align:center;padding:0.6510vw 0.2604vw;border:0.1302vw solid #d0d9ea;border-top:none;vertical-align:middle;line-height:1.2em}
+    .recommendLayerPop .recommend_table .basic_table thead th{background:#f4f6f9;color:#333;}
+    .recommendLayerPop .recommend_table .basic_table tbody th{background:#f4f6f9;color:#444;}   
+
+    .recommendLayerPop .btn_box {
+        text-align: center;
+        padding: 3.9063vw 0 6.5104vw 0;
+        background: #fff;
+    }
+
+    .recommendLayerPop .recommend_btn {
+        text-decoration: none !important;
+        white-space: nowrap;
+        display: inline-block;
+        vertical-align: baseline;
+        position: relative;
+        cursor: pointer;
+        padding: 0.8208vw 3.9063vw;
+        line-height: 3.2552vw;
+        background: rgba(22, 65, 148, 1.0);
+        color: #fff !important;
+        margin: 0 0.2604vw;
+        text-align: center;
+        font-weight: 400;
+        box-sizing: border-box;
+        vertical-align: middle;
+        border-radius: 0.5208vw;
+    }
+
+    .recommendLayerPop .btn_box .btnLine { color:#373737 !important ; background: #fff; border: 0.1302vw solid #373737; box-sizing: border-box;}
+
+
+
+
+}
