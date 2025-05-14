@@ -1,0 +1,2452 @@
+/*공통 S*/
+.new-event-view {
+    position: relative;
+    background: #fff;
+    overflow-x: hidden;
+}
+.new-event-view {
+    width: 100%;
+    margin: 0 auto;
+}
+.new-event-view .mo-img {
+    display: none;
+}
+
+.new-event-view .sec .inner {
+    max-width: 1280px; /*시안에 따라 1170px~1400px 유동적 조정*/
+    margin: 0 auto;
+    position: relative;
+}
+
+.new-event-view img {
+    width: 100%;
+}
+
+.new-event-view iframe {
+    bordeR: 0;
+}
+/*공통 E*/
+
+.new-event-view .section1 {background: #a3dbff url('../images/basic_pass_bg_01.jpg') center no-repeat;}
+
+.new-event-view .section2 {background: #5153c3  url('../images/basic_pass_bg_02.jpg') center top no-repeat; padding-bottom: 50px;}
+.new-event-view .section3 {background:  url('../images/basic_pass_bg_03.jpg') center no-repeat;}
+.new-event-view .section4 {background:  #717dff url('../images/basic_pass_bg_04.jpg') center no-repeat;}
+.new-event-view .section5 {background:  #717dff url('../images/basic_pass_bg_05.jpg') center no-repeat;}
+.new-event-view .section6 {background:  #f7f7f7 url('../images/basic_pass_bg_06.jpg') center no-repeat;}
+.new-event-view .section7 {background:  #4745ad url('../images/basic_pass_bg_07.jpg') center no-repeat;}
+.new-event-view .section8 {background:  #f5f3f6 url('../images/basic_pass_bg_08.jpg') center no-repeat;}
+.new-event-view .section9 {background:  #add9ff url('../images/basic_pass_bg_09.jpg') center no-repeat;}
+
+.new-event-view .section11 {background:  #5153c3 url('../images/basic_pass_bg_11.jpg?v=0318') center no-repeat;}
+.new-event-view .section12 {background:  #0749a0 url('../images/basic_pass_bg_12.jpg') center no-repeat;}
+.new-event-view .section13 {background: #f6f6f6;}
+
+/* intro */
+
+/* section1 */
+.section1 .ani {
+    position: absolute;
+    opacity: 0;
+}
+.section1 .ani.img1 {
+    top: 11.8%;
+    left: 26.8%;
+    width: 619px;
+    height: 232px;
+}
+.section1 .ani.txt2 {
+    top: 31.7%;
+    left: 6.2%;
+    width: 1117px;
+    height: 253px;
+}
+
+.section1.active .ani.img1 { animation: scale-down-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; z-index: 2;}
+/* .section1.active .ani.txt1 {  animation: scale-up-center 0.4s 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; z-index: 3;} */
+.section1.active .ani.txt2 {  animation: scale-up-center 0.4s 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both; z-index: 2;}
+
+
+
+.section1 .box_txt {position: absolute; top: 60.4%; left: 50%; transform: translateX(-50%); width: 1000px; opacity: 0; }
+.section1.active .box_txt {animation: fade-in-blur 1s 1.2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;}
+.section1 .box_txt .v_img01 {top: -71px; left: 1;}
+.section1 .box_txt ul {display: flex; justify-content: space-between; width: 100%;}
+.section1 .box_txt ul li {position: relative; filter: drop-shadow(40px 0px 35px rgba(37,37,37,.33));}
+.section1 .box_txt ul li:nth-child(1) {width: 237px;height: 236px;}
+.section1 .box_txt ul li:nth-child(2) {width: 237px;height: 236px;}
+.section1 .box_txt ul li:nth-child(3) {width: 237px;height: 236px;}
+.section1 .box_txt ul li:nth-child(4) {width: 237px;height: 236px;}
+.section1 .box_txt ul li img {display: block;}
+.section1 .box_txt ul li img:nth-child(2) {display: none; position: absolute; top: 0; left: 0;}
+.section1 .box_txt ul li.on img:nth-child(2) {display: block;}
+
+@keyframes scale-down-top {
+    0% {transform: translateY(200px) scale(1.7);opacity: 0.5;}
+    100% {transform: translateY(0) scale(1);opacity: 1;}
+}
+
+@keyframes scale-up-center {
+    0% {transform: scale(0.5);opacity: 0;}
+    100% {transform: scale(1);opacity: 1;}
+}
+
+@keyframes fade-in-blur {
+    0% {filter: blur(30px); opacity: 0;}
+    100% {filter: blur(0); opacity: 1;}
+}
+
+/*체크박스 커스텀 S*/
+#sub .sec input[type="checkbox"] {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    cursor: pointer;
+    height: 50px;
+    outline: 0;
+    width: 50px;
+    border-radius:0;
+    border-color: #b0b0b0;
+}
+#sub input[type="checkbox"] + label {padding-left: 10px;}
+#sub input[type="checkbox"] + label:before {
+    display: none;
+}
+#sub .sec input[type="checkbox"]::after {
+    content: '';
+    display: none;
+    height: 100%;
+    left: 0;
+    position: relative;
+    top: 0;
+    width:100%;
+    background: url(../images/ico_check.png) center no-repeat;
+    background-size: 100%;
+}
+#sub .sec input[type="checkbox"]:checked {
+    background: #fff;
+}
+#sub .sec input[type="checkbox"]:checked::after {
+    display: block;
+}
+/****체크박스 커스텀 E ************/
+
+/****라디오 커스텀 E ************/
+
+/* agree_area 삭제하기 */
+.sec .passAgree {
+    position: absolute;
+    bottom: 112px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+/***************************/
+
+/****** 새로 정의 *****/
+
+.sec .agree_wrap {
+    margin: auto;
+    width: calc(100% - 280px);
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+/*****************************/
+
+#sub .agree_area {
+    width: 870px;
+    height: auto;
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sub .agree_area span {
+    margin-left: 14px;
+}
+
+#sub .agree_area p {
+    margin-top: -10px;
+    margin-left: 58px;
+    color: rgba(255, 255, 255, .5);
+    font-size: 16px;
+    font-weight: 300;
+}
+#sub .agree_area .noticeBtn {
+    width: 170px;
+    height: 48px;
+    color: #434343 ;
+    font-size: 18px;
+    text-align: center;
+    background: #cfcfcf;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+#sub .agree_area .noticeBtn:hover {
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.5));
+}
+
+/* 공통 */
+
+
+/** 250414 상분단 퍼블리싱 처리**/
+
+.sec .title_wrap { margin: auto; padding: 85px 0 25px; width: calc(100% - 280px);text-align: center;letter-spacing: -3px; }
+.sec .title_wrap h2 {color: #fff; font-size: 32px; font-weight: 400;  line-height: 1.2;}
+.sec .title_wrap h1 {color: #f0f848; font-size: 72px; font-weight: 800; line-height: 1.4;letter-spacing: -7px;}
+.sec .product_wrap {margin: auto; width: calc(100% - 280px);}
+
+/* all_in_one */
+.all_in_one {background: #5153c3  url('../images/all_in_one_bg.jpg') center top no-repeat;  padding-bottom: 50px;}
+.all_in_one .title_wrap h1 b{color: #7bfffd;}
+.all_in_one .product_wrap {  background: #fff; border: 5px solid #f8e353; border-radius: 30px;}
+.all_in_one .product_wrap .top {padding: 50px 50px 0;}
+.all_in_one .product_wrap .top .sub_txt { display: inline-block; color: #000; font-size: 32px; font-weight: 700; letter-spacing: -1px; padding: 7px 30px; border-radius: 50px; background: #f8e353; }
+.all_in_one .product_wrap .top .prod_title { color: #001af4; font-size: 90px; font-weight: 900; letter-spacing: -5px;}
+.all_in_one .product_wrap .top .prod_title .lecture_list_btn  { position: relative;display: inline-block; color: #000;  font-size: 22px; font-weight: 600;
+    line-height: 1; letter-spacing: -1px; background: #fff;border: 1px solid #aeaeae; padding: 7px 20px 7px 10px;cursor: pointer; margin-left: 15px;}
+.all_in_one .product_wrap .top .prod_title .lecture_list_btn::after {position: absolute; content: ''; top: 50%; right: 8px; transform: translateY(-50%);
+    width: 0px; height: 0; border-style: solid;border-width: 5px 0 5px 6px; border-color: transparent transparent transparent #000;}
+.all_in_one .product_wrap .top  ul { color: #000; font-size: 28px;letter-spacing: -3px; line-height: 1.3;}
+
+.all_in_one .product_wrap .mid {padding:0 50px; height: auto; display: flex;justify-content: flex-end;align-items: center;}
+.all_in_one .product_wrap .mid .price_fixed  {  width: 45%;}
+.all_in_one .product_wrap .mid .price_fixed ul {display: flex; flex-direction: column; align-items: flex-end;}
+.all_in_one .product_wrap .mid .price_fixed ul .disc_percent { margin-top: 15px; display: inline-block; color: #fff;  font-size: 30px; font-weight: 600; line-height: 1; letter-spacing: -2px;
+    background: #000; border-radius: 5px; padding: 2px 10px;}
+.all_in_one .product_wrap .mid .price_fixed ul li:nth-child(2){  color: #b3b3b3; font-size: 35px;  text-decoration: line-through;}
+.all_in_one .product_wrap .mid .price_sale { text-align: right;color: #ff1111; font-size: 90px;font-weight: 900;
+    line-height: 1;}
+.all_in_one .product_wrap .btm {padding: 0 20px 30px;}
+.all_in_one .product_wrap .btm .buy_link { position: relative; display: inline-block;width: calc(100% - 40px); padding: 20px;
+    color:#000;font-size: 32px;  font-weight: 700; text-align: center; letter-spacing: -3px;
+    background: linear-gradient(to right, #f6f657 20%, #fff06c 60%, #f7e250 80%, #f6df4a);border-radius: 30px;}
+.all_in_one .product_wrap .btm .buy_link ::after { position: absolute; content: '';top: 50%; right: 322px;
+        transform: translateY(-50%);width: 0px; height: 0; border-style: solid; border-width: 8px 0 8px 10px;
+        border-color: transparent transparent transparent #000;}
+.all_in_one .product_wrap .btm .buy_link span {color: #001af4 ; margin-left: -20px;}
+
+.all_in_one .agree_wrap .agree_area span {color: #fff;}
+
+/* short_pass */
+.short_pass .title_wrap h2 {color: #515151;}
+.short_pass .title_wrap h1 {color: #001af4; font-size: 66px; }
+
+.short_pass .product_wrap {display: flex;justify-content: space-between;}
+.short_pass .product_wrap .short_prod { position: relative; width: 244px; height: 650px; background: url(../images/short_prod1_bg.png) center top no-repeat;}
+.short_pass .product_wrap .short_prod .prodTitle_wrap { position: absolute; top: 2.3%; width: 100%; text-align: center; letter-spacing: -2.5px;}
+.short_pass .product_wrap .short_prod .prodTitle_wrap h4 { color: rgba(0, 0, 0, 0.7); font-size: 22px; font-weight: 500; text-align: center ;  }
+.short_pass .product_wrap .short_prod .prodTitle_wrap h3 {color: #000; font-size: 28px; font-weight: 800; margin-top: 15px;}
+.short_pass .prodPrice_wrap {position: absolute;top: 24.6%;left: 0; width: 100%; height: auto; text-align: center;}
+.short_pass .prodPrice_wrap .crash_course_fixed ul .disc_percent { display: inline-block; color: #fff; font-size: 22px;font-weight: 600;line-height: 1; letter-spacing: -2px;background: #fe4c6e;  border-radius: 5px; padding: 2px 10px;}
+.short_pass .prodPrice_wrap .crash_course_fixed ul li:nth-child(2) {font-size: 20px; }
+.short_pass .prodPrice_wrap .crash_course_fixed ul li:nth-child(2) span{ color: #7f7f7f;  text-decoration: line-through;}
+.short_pass .prodPrice_wrap .crash_course_price {   color: #000;font-size: 42px;font-weight: 900;
+   line-height: 1.4; display: flex; align-items: center; justify-content: center;}
+.short_pass .prodPrice_wrap .crash_course_price span {  font-size: 20px ;}
+
+.short_pass .prodPrice_wrap .courseList_btn { margin-top: 32px; }
+.short_pass .prodPrice_wrap .courseList_btn span { position: relative;  display: inline-block; color: #000; font-size: 18px; font-weight: 600;  line-height: 1;
+    letter-spacing: -1px; background: #f5f5f5; border: 1px solid #aeaeae; padding: 5px 20px 5px 10px; cursor: pointer; }
+.short_pass .prodPrice_wrap .courseList_btn span::after { position: absolute; content: ''; top: 50%; right: 8px; transform: translateY(-50%);
+    width: 0px; height: 0; border-style: solid; border-width: 5px 0 5px 6px;   border-color: transparent transparent transparent #000; }
+
+.short_pass .prodBenefit_wrap {position: absolute; top: 58%;}
+.short_pass .prodBenefit_wrap ul {padding: 0 15px; color: #000; font-size: 18px; letter-spacing: -1.5px; line-height: 1.5;}
+.short_pass .prodBenefit_wrap ul .gry {color: #747474 ;}
+.short_pass .prodBenefit_wrap ul .red {color: #cf0000 ;}
+
+.short_pass .btn_wrap { position: absolute;  bottom: 3%; left: 0;  width: 100%;  text-align: center;}
+.short_pass .btn_wrap .courseOrder_btn span {  position: relative;  display: inline-block;  width: 90%; padding: 18px 0; color: #2e3551; font-size: 22px; font-weight: 600; line-height: 1;  background: #43e4f8 ;  border-radius: 10px; }
+.short_pass .btn_wrap .courseOrder_btn span::after {  position: absolute; content: ''; top: 50%; right: 56px; transform: translateY(-50%);  width: 0px; height: 0;  border-style: solid;  border-width: 6px 0 6px 8px;  border-color: transparent transparent transparent #21334b; }
+
+.short_pass .product_wrap .short_prod.pass2 { background: url(../images/short_prod2_bg.png) center top no-repeat;}
+.short_pass .product_wrap .short_prod.pass3 { background: url(../images/short_prod3_bg.png) center top no-repeat;}
+.short_pass .product_wrap .short_prod.pass4 { background: url(../images/short_prod4_bg.png) center top no-repeat;}
+
+.short_pass .product_wrap .short_prod.pass3 .prodTitle_wrap h3,
+.short_pass .product_wrap .short_prod.pass4 .prodTitle_wrap h3 {line-height: 1;white-space: pre-line; margin-top: 0px;}
+.short_pass .product_wrap .short_prod.pass3 .prodTitle_wrap h3 span,
+.short_pass .product_wrap .short_prod.pass4 .prodTitle_wrap h3 span {color: #ff0000; font-size: 20px; font-weight: 400; }
+
+.short_pass .product_wrap .short_prod.pass3 .prodBenefit_wrap li:nth-child(1),
+.short_pass .product_wrap .short_prod.pass4 .prodBenefit_wrap li:nth-child(1){letter-spacing: -2px;}
+
+.short_pass .product_wrap .short_prod.pass2 .courseOrder_btn span {  color: #702f00; background: #ffb156;}
+.short_pass .product_wrap .short_prod.pass2 .courseOrder_btn span::after {border-color: transparent transparent transparent #702f00;}
+
+.short_pass .product_wrap .short_prod.pass3 .courseOrder_btn span {  color: #2b0978; background: #b596fb;}
+.short_pass .product_wrap .short_prod.pass3 .courseOrder_btn span::after {border-color: transparent transparent transparent #2b0978;}
+
+.short_pass .product_wrap .short_prod.pass4 .courseOrder_btn span {  color: #760e0e; background: #ff8585;}
+.short_pass .product_wrap .short_prod.pass4 .courseOrder_btn span::after {border-color: transparent transparent transparent #760e0e;}
+
+.short_pass .product_wrap.special .special_prod { position: relative; margin-top: 5px; width: 1000px; height: 172px; background: url('../images/special_prod_bg.png') center top no-repeat; background-size: 100%; }
+.short_pass .product_wrap.special .special_title_wrap { position: absolute; top: 25%; left: 0; width: 244px; height: 172px; text-align: center; letter-spacing: -1px; }
+.short_pass .product_wrap.special .special_title_wrap h4 { color: #064401; font-size: 22px; font-weight: 500;}
+.short_pass .product_wrap.special .special_title_wrap h2 {color: #000 ; font-size: 32px;font-weight: 700; line-height: 2;}
+.short_pass .product_wrap.special .special_prodBenefit_wrap {position: absolute; top: 11%; left: 27%; color: #000 ;font-size: 23px; line-height: 1.4;letter-spacing: -2px;}
+.short_pass .product_wrap.special .special_prodBenefit_wrap .mleft {margin-left: 80px; letter-spacing: -3px;}
+
+.short_pass .product_wrap.special .special_course_wrap {position: absolute; bottom: 13%; left: 51%;}
+.short_pass .product_wrap.special .special_course_wrap .courseList_btn span  { position: relative;  display: inline-block; color: #000; font-size: 18px; font-weight: 600;  line-height: 1;
+    letter-spacing: -1px; background: #f5f5f5; border: 1px solid #aeaeae; padding: 5px 20px 5px 10px; cursor: pointer; }
+
+.short_pass .product_wrap.special .special_course_wrap .courseList_btn span::after  { position: absolute; content: ''; top: 50%; right: 8px; transform: translateY(-50%);
+    width: 0px; height: 0; border-style: solid; border-width: 5px 0 5px 6px;   border-color: transparent transparent transparent #000; }
+.short_pass .product_wrap.special .special_prodPrice_wrap {position: absolute;display: flex; top: 12%; right: 5%;}
+.short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_fixed ul {display: flex;flex-direction: column;align-items: flex-end;}
+.short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_fixed ul .disc_percent { display: inline-block; color: #fff; font-size: 22px;font-weight: 600;line-height: 1; letter-spacing: -2px;background: #fe4c6e;  border-radius: 5px; padding: 5px 12px;}
+.short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_fixed ul li:nth-child(2) {font-size: 20px; }
+.short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_fixed ul li:nth-child(2) span{ color: #7f7f7f;  text-decoration: line-through;}
+.short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_price {   color: #000;font-size: 55px;font-weight: 700;
+   line-height: 1; letter-spacing: -3px; display: flex; align-items: center; justify-content: center;}
+.short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_price span {  font-size: 20px ;}
+
+.short_pass .product_wrap.special .special_btn_wrap { position: absolute;  bottom: 13%; right: 5%;  text-align: center;}
+.short_pass .product_wrap.special .special_btn_wrap .courseOrder_btn span {  position: relative;  display: inline-block;  width: 276px; height: 60px; padding:0; color: #0e7613; font-size: 22px; font-weight: 600; line-height: 60px;  background: #9cff94 ;  border-radius: 10px; }
+.short_pass .product_wrap.special .special_btn_wrap .courseOrder_btn span::after {  position: absolute; content: ''; top: 50%; right: 83px; transform: translateY(-50%);  width: 0px; height: 0;  border-style: solid;  border-width: 6px 0 6px 8px;  border-color: transparent transparent transparent #0e7613; }
+
+.sec.short_pass .agree_wrap {margin-bottom: 50px;}
+
+
+
+
+/* super pass*/
+.super_pass {background: #717dff  url('../images/super_pass_bg.jpg') center top no-repeat;  padding-bottom: 50px;}
+.super_pass .title_wrap {padding-top: 90px;}
+
+.super_pass .title_wrap h1 {font-size: 66px; margin-top: 15px; }
+
+.super_pass .product_wrap {display: flex;justify-content: space-between;}
+.super_pass .product_wrap .super_prod { position: relative; width: 326px; height: 686px; background: url(../images/super_prod1_bg.png) center top no-repeat;}
+
+.super_pass .product_wrap .super_prod .prodTitle_wrap { position: absolute; top: 2.3%; width: 100%; text-align: center; letter-spacing: -2.5px;}
+.super_pass .product_wrap .super_prod .prodTitle_wrap h1 { color: rgba(0, 0, 0, 1); font-size: 36px; font-weight: 700; text-align: center ; line-height: 1.5;  }
+.super_pass .product_wrap .super_prod .prodTitle_wrap h2 {color: #000; font-size: 28px; font-weight: 500; line-height: 1; }
+.super_pass .product_wrap .super_prod .prodPrice_wrap {position: absolute;top: 19%;left: 0; width: 100%; height: auto;text-align: center;}
+.super_pass .product_wrap .super_prod .prodPrice_wrap .crash_course_fixed ul .disc_percent { display: inline-block; color: #fe4c6e; font-size: 20px;font-weight: 600;line-height: 1; letter-spacing: -2px;padding: 2px 10px;}
+.super_pass .product_wrap .super_prod .prodPrice_wrap .crash_course_fixed ul li:nth-child(2) {font-size: 20px; }
+.super_pass .product_wrap .super_prod .prodPrice_wrap .crash_course_fixed ul li:nth-child(2) span{ color: #7f7f7f;  text-decoration: line-through;}
+.super_pass .product_wrap .super_prod .prodPrice_wrap .crash_course_price {   color: #000;font-size: 46px;font-weight: 900;
+   line-height: 1; display: flex; align-items: center; justify-content: center;}
+.super_pass .product_wrap .super_prod .prodPrice_wrap .crash_course_price span {  font-size: 20px ;}
+
+.super_pass .product_wrap .super_prod .prodPrice_wrap .courseList_btn { margin-top: 10px; }
+.super_pass .product_wrap .super_prod .prodPrice_wrap .courseList_btn span { position: relative;  display: inline-block; color: #000; font-size: 18px; font-weight: 600;  line-height: 1;
+    letter-spacing: -1px; background: #f5f5f5; border: 1px solid #aeaeae; padding: 5px 20px 5px 10px; cursor: pointer; }
+.super_pass .product_wrap .super_prod .prodPrice_wrap .courseList_btn span::after { position: absolute; content: ''; top: 50%; right: 8px; transform: translateY(-50%);
+    width: 0px; height: 0; border-style: solid; border-width: 5px 0 5px 6px;   border-color: transparent transparent transparent #000; }
+
+.super_pass .product_wrap .super_prod .prodBenefit_wrap {position: absolute; top: 45%;}
+.super_pass .product_wrap .super_prod .prodBenefit_wrap ul {padding: 0 0 0 48px; color: #000; font-size: 18px; font-weight: 500; letter-spacing: -1.5px; line-height: 1.5;}
+.super_pass .product_wrap .super_prod .prodBenefit_wrap ul .gry {color: #747474 ;}
+.super_pass .product_wrap .super_prod .prodBenefit_wrap ul .red {color: #cf0000 ;}
+.super_pass .product_wrap .super_prod .prodBenefit_wrap ul .red {color: #cf0000 ;}
+.super_pass .product_wrap .super_prod .discount_txt { position: absolute; display: inline-block; bottom: 11.5%;  width: 100%;  color: #20324d; font-size: 22px; font-weight: 600; text-align: center; letter-spacing: -2px;}
+.super_pass .product_wrap .super_prod .btn_wrap { position: absolute;  bottom: 3.7%; left: 0;  width: 100%;  text-align: center;}
+.super_pass .product_wrap .super_prod .btn_wrap .courseOrder_btn span {  position: relative;  display: inline-block;  width: 75%; padding: 13px 0; color: #2e3551; font-size: 22px; font-weight: 600; line-height: 1;  background: #10e6ff ;  border-radius: 10px; }
+.super_pass .product_wrap .super_prod .btn_wrap .courseOrder_btn span::after {  position: absolute; content: ''; top: 50%; right: 67px; transform: translateY(-50%);  width: 0px; height: 0;  border-style: solid;  border-width: 6px 0 6px 8px;  border-color: transparent transparent transparent #21334b; }
+
+.super_pass .product_wrap .super_prod.pass2 { background: url(../images/super_prod2_bg.png) center top no-repeat;}
+.super_pass .product_wrap .super_prod.pass3 { background: url(../images/super_prod3_bg.png) center top no-repeat;}
+
+.super_pass .product_wrap .super_prod.pass3 .prodTitle_wrap { top: .5%;}
+.super_pass .product_wrap .super_prod.pass3 .prodTitle_wrap h1 { color: #fff; line-height: 1.2; white-space: pre-line;}
+.super_pass .product_wrap .super_prod.pass3 .prodTitle_wrap h2 {color: #f4ff47;}
+
+.super_pass .product_wrap .super_prod.pass3 .prodBenefit_wrap .purple_bg {display: inline-block; background: #d3c1fd;}
+
+.super_pass .product_wrap .super_prod.pass2 .discount_txt { color: #702f00;}
+.super_pass .product_wrap .super_prod.pass2 .btn_wrap .courseOrder_btn span {color: #702f00; background: #ffb156;}
+.super_pass .product_wrap .super_prod.pass2 .btn_wrap .courseOrder_btn span::after {border-color: transparent transparent transparent #702f00;}
+
+.super_pass .product_wrap .super_prod.pass3 .discount_txt { color: #2b0978;}
+.super_pass .product_wrap .super_prod.pass3 .btn_wrap .courseOrder_btn span {color: #2b0978; background: #b596fb;}
+.super_pass .product_wrap .super_prod.pass3 .btn_wrap .courseOrder_btn span::after {border-color: transparent transparent transparent #2b0978;}
+
+.super_pass .prod_note { margin: auto; margin-top: 7px; width: calc(100% - 280px); color: rgba(81, 0, 166, .5); font-size: 14px;  text-align: right; letter-spacing: -1px;}
+.super_pass .agree_wrap .agree_area span {color: #fff;}
+
+/*********************************/
+
+/* section2 */
+/*
+.section2 .courseList_btn {
+    top: 47%;
+    left: 58%;
+    width: 12%;
+    height: 5%;
+    background: red;
+    opacity: 0;
+    cursor: pointer;
+}
+.section2 .price_wrap {
+    position: absolute;
+    top: 64%;
+    left: 45%;
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section2 .price_wrap .price_fixed  {
+    width: 45%;
+}
+.section2 .price_wrap .price_fixed ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.section2 .price_wrap .price_fixed ul .disc_percent {
+    margin-top: 15px;
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -2px;
+    background: #000;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+.section2 .price_wrap .price_fixed ul li:nth-child(2){
+    color: #b3b3b3;
+    font-size: 35px;
+    text-decoration: line-through;
+}
+.section2 .price_wrap .price_sale {
+   text-align: right;
+   color: #ff1111;
+   font-size: 90px;
+   font-weight: 900;
+   line-height: 1;
+
+}
+.section2 .buy_link {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 76%;
+    height: 11%;
+    background: red;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.sec.section2 .passAgree.allinone {
+    bottom: 40px;
+}
+.sec.section2 .passAgree.allinone .agree_area span {
+    color: #fff;
+} */
+
+/* section3 */
+
+/* .section3 .crash_course {
+    position: absolute;
+    top: 34.6%;
+    left: 11.2%;
+    width: 18.3%;
+    height: auto;
+    text-align: center;
+}
+.section3 .crash_course .crash_course_fixed ul .disc_percent {
+    display: inline-block;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -2px;
+    background: #fe4c6e;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+.section3 .crash_course .crash_course_fixed ul li:nth-child(2) {font-size: 20px; }
+.section3 .crash_course .crash_course_fixed ul li:nth-child(2) span{
+    color: #7f7f7f;
+
+    text-decoration: line-through;
+}
+.section3 .crash_course .crash_course_price {
+   color: #000;
+   font-size: 42px;
+   font-weight: 900;
+   line-height: 1.4;
+   display: flex;
+   align-items: center;
+   justify-content: center
+}
+.section3 .crash_course .crash_course_price span {
+    font-size: 20px ;
+}
+.section3 .crash_course .courseList_btn {
+    margin-top: 32px;
+}
+.section3 .crash_course .courseList_btn span {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -1px;
+    background: #f5f5f5;
+    border: 1px solid #aeaeae;
+    padding: 5px 20px 5px 10px;
+    cursor: pointer;
+}
+.section3 .crash_course .courseList_btn span::after {
+    position: absolute; content: ''; top: 50%; right: 8px; transform: translateY(-50%);
+    width: 0px;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 6px;
+    border-color: transparent transparent transparent #000;
+}
+.section3 .courseList_btn.special {
+    position: absolute;
+    top: 81.2%;
+    left: 53%;
+}
+.section3 .courseList_btn.special span {
+    display: inline-block;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -1px;
+    background: #f5f5f5;
+    border: 1px solid #aeaeae;
+    padding: 5px 20px 5px 10px;
+    cursor: pointer;
+}
+.section3 .courseList_btn.special span::after {
+    position: absolute; content: ''; top: 50%; right: 8px; transform: translateY(-50%);
+    width: 0px;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 6px;
+    border-color: transparent transparent transparent #000;
+}
+
+.section3 .crash_course.short2 {
+    top: 34.6%;
+    left: 31.2%;
+}
+.section3 .crash_course.short3 {
+    top: 34.6%;
+    left: 50.7%;
+}
+.section3 .crash_course.short4 {
+    top: 34.6%;
+    left: 70.2%;
+} */
+
+/* 수강신청 버튼 */
+/* .section3 .courseOrder_wrap {
+    position: absolute;
+    top: 65.5%;
+    left: 12%;
+    width: 17%;
+    text-align: center;
+}
+
+.section3 .courseOrder_wrap .courseOrder_btn span {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 18px 0;
+    color: #2e3551 ;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    background: #43e4f8 ;
+    border-radius: 10px;
+
+}
+.section3 .courseOrder_wrap .courseOrder_btn span::after {
+    position: absolute; content: ''; top: 50%; right: 56px; transform: translateY(-50%);
+    width: 0px;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 8px;
+    border-color: transparent transparent transparent #21334b;
+}
+
+.section3 .courseOrder_wrap.order2 { left: 31.5%;}
+.section3 .courseOrder_wrap.order2 .courseOrder_btn span { color: #692b00 ; background: #ffb057 ;}
+.section3 .courseOrder_wrap.order2 .courseOrder_btn span::after { border-color: transparent transparent transparent #692b00;}
+
+.section3 .courseOrder_wrap.order3 { left: 51.3%;}
+.section3 .courseOrder_wrap.order3 .courseOrder_btn span { color: #300e7f ; background: #b597fb ;}
+.section3 .courseOrder_wrap.order3 .courseOrder_btn span::after { border-color: transparent transparent transparent #300e7f;}
+
+.section3 .courseOrder_wrap.order4 { left: 71%;}
+.section3 .courseOrder_wrap.order4 .courseOrder_btn span {color: #731410 ; background: #ff8685 ;}
+.section3 .courseOrder_wrap.order4 .courseOrder_btn span::after { border-color: transparent transparent transparent #731410;} */
+
+/* special course */
+/* .section3 .crash_course.special {
+    top: 74.6%;
+    left: 61.2%;
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+.section3 .crash_course.special li:nth-child(1) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section3 .crash_course.special .crash_course_price {
+    color: #000;
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section3 .courseOrder_wrap.special { top: 79.2%; left: 65.5%; width: 21%;}
+.section3 .courseOrder_wrap.special .courseOrder_btn span {color: #0e7613 ; background: #9cff94 ;}
+.section3 .courseOrder_wrap.special .courseOrder_btn span::after {    right: 80px; border-color: transparent transparent transparent #0e7613;} */
+
+
+/* section4 */
+.section4 .super_course {
+    position: absolute;
+    top: 37.6%;
+    left: 11.2%;
+    width: 24.8%;
+    height: auto;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+.section4 .super_course .super_course_fixed ul .disc_txt {
+    display: inline-block;
+    color: #ff1a45;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+.section4 .super_course .super_course_fixed ul li:nth-child(2) {font-size: 20px; }
+.section4 .super_course .super_course_fixed ul li:nth-child(2) span{
+    color: #7f7f7f;
+
+    text-decoration: line-through;
+}
+.section4 .super_course .super_course_price {
+   color: #000;
+   font-size: 42px;
+   font-weight: 900;
+   line-height: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center
+}
+.section4 .super_course .super_course_price span {
+    font-size: 20px ;
+}
+.section4 .super_course .courseList_btn {
+    margin-top: 10px;
+}
+.section4 .super_course .courseList_btn span {
+    position: relative;
+    display: inline-block;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -1px;
+    background: #f5f5f5;
+    border: 1px solid #aeaeae;
+    padding: 7px 20px 7px 10px;
+    cursor: pointer;
+}
+.section4 .super_course .courseList_btn span::after {
+    position: absolute; content: ''; top: 50%; right: 8px; transform: translateY(-50%);
+    width: 0px;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 6px;
+    border-color: transparent transparent transparent #000;
+}
+
+.section4 .super_course.super2 {left: 37.5%;}
+.section4 .super_course.super3 {left: 63.8%;}
+
+/* 수강신청 버튼 */
+.section4 .courseOrder_wrap {
+    position: absolute;
+    top: 79%;
+    left: 14.2%;
+    width: 19%;
+    text-align: center;
+}
+
+.section4 .courseOrder_wrap .courseOrder_btn span {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 16px 0;
+    color: #20324d ;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    background: #10e6ff ;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+}
+.section4 .courseOrder_wrap .courseOrder_btn span::after {
+    position: absolute; content: ''; top: 50%; right: 56px; transform: translateY(-50%);
+    width: 0px;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 8px;
+    border-color: transparent transparent transparent #20324d;
+}
+
+.section4 .courseOrder_wrap.super2 {left: 40.7%;}
+.section4 .courseOrder_wrap.super2 .courseOrder_btn span { color: #702f00 ; background: #ffb156 ;}
+.section4 .courseOrder_wrap.super2 .courseOrder_btn span::after { border-color: transparent transparent transparent #702f00;}
+
+.section4 .courseOrder_wrap.super3 {left: 66.7%;}
+.section4 .courseOrder_wrap.super3 .courseOrder_btn span { color: #2b0978 ; background: #b596fb ;}
+.section4 .courseOrder_wrap.super3 .courseOrder_btn span::after { border-color: transparent transparent transparent #2b0978;}
+
+.sec.section4 .passAgree.super {
+    bottom: 40px;
+}
+.sec.section4 .passAgree.super .agree_area span {
+    color: #fff;
+}
+
+/* section5 */
+.section5 .dDay_wrap {position: absolute; top: 7%; left: 58%; width: 275px; height: 36px; }
+.section5 .dDay_wrap span {display: inline-block; width: 100%; padding: 5px 0; color:#fff ; font-size: 19px;font-weight: 600; line-height: 1.3; letter-spacing: -1px; text-align: center; background: #000; border-radius: 10px; }
+.section5 .dDay_wrap span b {color:#f4dd40}
+.section5 .count_wrap {position: absolute; top: 34.5%;
+    left: 58.7%;width: 24%; height: auto;
+    /* border: 1px solid red; */
+}
+.section5 .count_wrap span {display: inline-block;width: 30%;color: #000; font-size: 70px; font-weight: 700; text-align: center; margin-left: 3%;}
+.section5 .count_wrap span:nth-child(1) {margin-left: 0;}
+.section5 .link1 {position: absolute; top: 49.5%; left: 52%; width: 33%; height: 7.5%;
+    background: red;
+    opacity: 0;
+}
+
+
+/* section6 */
+.section6 .link1 {position: absolute; top: 22.5%; left: 11%; width: 35%; height: 20.5%;
+    background: red;
+    opacity: 0;
+}
+.section6 .link2 {position: absolute; top: 22.5%; left: 52%; width: 35%; height: 20.5%;
+    background: red;
+    opacity: 0;
+}
+
+
+/* section7 */
+
+/* section8 */
+
+/* section9 */
+.tabWrap {
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1002px;
+    height: 95px;
+}
+.title_tabWrap {
+    width: 100%;
+    background: #001af4;
+    border-radius: 20px; overflow: hidden;
+}
+.title_tabWrap ul { display: flex; }
+.title_tabWrap li { width: calc(100% / 2); height: auto; text-align: center;  box-sizing: border-box; }
+.title_tabWrap li a {  display: block; width: 100%; height: 100%;  font-size: 32px; color: #fff; font-weight: 700;line-height: 95px; letter-spacing: -1px; background: #001af4;  }
+.title_tabWrap li.active a { background: #f0f848; color: #000;font-size:32px; border-radius: 20px; }
+
+.tabWrap .sec_detail {
+    margin-top: 10px;
+}
+
+/* section10 */
+.section10 .top {
+    background: #c6c9e0 url('../images/basic_pass_bg_10_01.jpg') center no-repeat;
+}
+.section10 .btm {
+    background: #c6c9e0 url('../images/basic_pass_bg_10_02.jpg') center no-repeat;
+}
+.section10 .slider_wrap {
+    margin: auto;
+    /* padding-top: 45px; */
+    max-width: 1920px;
+    height: 331px;
+}
+
+.section10 .book_swiper-container{ position: relative; width: 100%; height: auto; overflow: hidden;}
+.section10 .book_swiper-container .swiper-wrapper {  transition-timing-function: linear;}
+
+/* section11 */
+.section11 .reviewSlider_area {
+    position: absolute;
+    top: 47%;
+    left: 24.8%;
+    /* transform: translateX(-50%); */
+    width: 50.625%;
+    height: auto;
+}
+.reviewSlider_area .reviewSlider_swiper-container{ position: relative; width: 100%; height: auto;padding: 12px 0; border-radius: 50px; overflow: hidden;}
+/* .reviewSlider_area .swiper-wrapper {  transition-timing-function: linear;} */
+
+.reviewSlider_area .swiper-slide img{
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
+}
+.reviewSlider_area .reviewSlider_swiper-container .swiper-pagination { bottom: 16px !important;  }
+.reviewSlider_area .reviewSlider_swiper-container .swiper-pagination-bullet { background: #fff; width: 12px; height: 12px; opacity: 1;}
+.reviewSlider_area .reviewSlider_swiper-container .swiper-pagination-bullet-active {background: #5153c3; opacity: 1;}
+
+.reviewSlider_area .reviewSlider_swiper-container .swiper-button-next {
+    background: url(../images/arrow-next.png) no-repeat;
+    background-size: 60% auto;
+    background-position: center;
+  }
+
+  .reviewSlider_area .reviewSlider_swiper-container .swiper-button-prev {
+    background: url(../images/arrow-prev.png) no-repeat;
+    background-size: 60% auto;
+    background-position: center;
+  }
+
+  .reviewSlider_area .reviewSlider_swiper-container .swiper-button-next::after,
+  .reviewSlider_area .reviewSlider_swiper-container .swiper-button-prev::after {
+    display: none;
+  }
+
+/* section12 */
+.section12 .review_box {
+    position: absolute;
+    top: 39.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 82% ; /* 1170px*/
+    height: 60%;
+}
+
+.section12 .review_box .scroll_wrap {
+    overflow: hidden;
+    height: 350px;
+}
+
+.section12 .review_box .reviewList_scroll {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    animation: loop_scroll 70s;
+    animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.section12 .review_box .scroll_wrap .reviewList_scroll  > div {
+    width: calc(100% / 3);
+    color: #fff;
+    font-size: 28px;
+    text-shadow: 0 0 3px #000;
+    text-align: center;
+    letter-spacing: -1px;
+}
+
+@keyframes loop_scroll {
+	0%{
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(calc(-100% + 350px));
+	}
+}
+
+/* section13 유의사항 */
+.passNotice .passNotice_area h2 { padding: 80px 70px 20px 70px; color: #192436; font-size: 28px;}
+
+/* 탭 전체 스타일 */
+.passNotice .passNotice_tabs { margin: auto; margin-top: 10px; padding-bottom: 40px; width: 92%; opacity: 1;}
+
+/* 탭 스타일 */
+.passNotice .tab_item {
+    position: relative;
+    width: calc(100%/8);
+    background-color: #dbdbdb;
+    line-height: 2.5;
+    font-size: 16px;
+    text-align: center;
+    color: #77787c;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+.passNotice .tab_item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 1px;
+    height: 30%;
+    background: #77787c;
+}
+.passNotice .tab_item.lat::after{
+    display: none;
+}
+.passNotice .tab_item:hover {
+    opacity: 0.75;
+}
+
+/* 라디오 버튼 UI삭제*/
+input[name="tab_item"] {
+    display: none;
+}
+
+/* 탭 컨텐츠 스타일 */
+.passNotice .tab_content {
+    display: none;
+    padding:0;
+    clear: both;
+    overflow: hidden;
+    padding: 40px 50px;
+    min-height: 400px;
+}
+.passNotice .tab_content ul{
+    color: #333;
+    font-size: 1.4rem;
+    line-height: 24px;
+    letter-spacing: -1.2px;
+    font-weight: 700;
+}
+.passNotice .tab_content ul li{
+    padding: 2px 0;
+}
+.passNotice .tab_content ul ul {
+    font-weight: 400;
+    padding-left: 15px;
+}
+.passNotice .tab_content ul ul li {
+    padding: 0;
+}
+.passNotice .tab_content .ps {
+    margin-top: 35px;
+}
+
+/* 선택 된 탭 콘텐츠를 표시 */
+#p1:checked ~ .p1_content,
+#p2:checked ~ .p2_content,
+#p3:checked ~ .p3_content,
+#p4:checked ~ .p4_content,
+#p5:checked ~ .p5_content,
+#p6:checked ~ .p6_content,
+#p7:checked ~ .p7_content,
+#p8:checked ~ .p8_content              {
+display: block;
+}
+
+/* 선택된 탭 스타일 */
+.passNotice .passNotice_tabs input:checked + .tab_item {
+    color: #101920;
+}
+
+@media screen and (max-width: 1920px){
+
+
+}
+
+@media screen and (max-width: 1280px){
+    .new-event-view .section2 {background: #5153c3  ; padding-bottom: 3.9063vw;}
+
+
+
+    /* section1 */
+    .section1 .ani.img1 {
+        top: 11.8%;
+        left: 26.8%;
+        width: 48.3594vw;
+        height: 18.1250vw;
+    }
+    .section1 .ani.txt2 {
+        top: 31.7%;
+        left: 6.2%;
+        width: 87.2656vw;
+        height: 19.7656vw;
+    }
+    .section1 .box_txt { top: 60.4%; left: 50%; transform: translateX(-50%); width: 78.1250vw; opacity: 0; }
+    .section1 .box_txt ul li:nth-child(1) {width: 18.5156vw;height: 18.4375vw;}
+    .section1 .box_txt ul li:nth-child(2) {width: 18.5156vw;height: 18.4375vw;}
+    .section1 .box_txt ul li:nth-child(3) {width: 18.5156vw;height: 18.4375vw;}
+    .section1 .box_txt ul li:nth-child(4) {width: 18.5156vw;height: 18.4375vw;}
+
+    /*체크박스 커스텀 S*/
+    #sub .sec input[type="checkbox"] {
+        height: 3.9063vw;
+        width: 3.9063vw;
+    }
+    #sub input[type="checkbox"] + label {padding-left: 0.7813vw;}
+
+    /****체크박스 커스텀 E ************/
+    /* agree_area 삭제하기*/
+    .sec .passAgree {
+        bottom: 8.7500vw;
+    }
+
+    /****** 새로 정의 *****/
+    .sec .agree_wrap {
+        margin: auto;
+        width: calc(100% - 21.8750vw);
+        margin-top: 2.3438vw;
+    }
+    /*****************************/
+
+    #sub .agree_area {
+        width: 67.9688vw;
+        font-size: 1.8750vw;
+        letter-spacing: -0.1172vw;
+    }
+    #sub .agree_area span {
+        margin-left: 1.0938vw;
+    }
+    #sub .agree_area p {
+        margin-top: -0.7813vw;
+        margin-left: 4.5313vw;
+        color: rgba(255, 255, 255, .5);
+        font-size: 1.2500vw;
+    }
+    #sub .agree_area .noticeBtn {
+        width: 13.2813vw;
+        height: 3.7500vw;
+        font-size: 1.4063vw;
+        border-radius: 3.9063vw;
+    }
+    #sub .agree_area .noticeBtn:hover {
+        filter: drop-shadow(0.0000vw 0.0000vw 0.4688vw rgba(0, 0, 0, 0.5));
+    }
+
+    
+
+
+/** 250414 상분단 퍼블리싱 처리**/
+
+
+.sec .title_wrap { margin: auto; padding: 6.6406vw 0 1.9531vw; width: calc(100% - 21.8750vw);letter-spacing: -0.2344vw; }
+.sec .title_wrap h2 { font-size: 2.5000vw;   line-height: 1.2;}
+.sec .title_wrap h1 { font-size: 5.6250vw;  line-height: 1.4;letter-spacing: -0.5469vw;}
+.sec .product_wrap {margin: auto; width: calc(100% - 21.8750vw);}
+
+/* all_in_one */
+.all_in_one {background: #5153c3  url('../images/all_in_one_bg_1280.jpg') center top no-repeat; background-size: 100%;  padding-bottom: 3.9063vw;}
+
+.all_in_one .product_wrap { background: #fff; border: 0.3906vw solid #f8e353; border-radius: 2.3438vw;}
+.all_in_one .product_wrap .top {padding: 3.9063vw 3.9063vw 0;}
+.all_in_one .product_wrap .top .sub_txt {   font-size: 2.5000vw;  letter-spacing: -0.0781vw; padding: 0.5469vw 2.3438vw; border-radius: 3.9063vw; background: #f8e353; }
+.all_in_one .product_wrap .top .prod_title {  font-size: 7.0313vw;  letter-spacing: -0.3906vw;}
+.all_in_one .product_wrap .top .prod_title .lecture_list_btn  {    font-size: 1.7188vw;
+    line-height: 1; letter-spacing: -0.0781vw; background: #fff;border: 0.0781vw solid #aeaeae; padding: 0.5469vw 1.5625vw 0.5469vw 0.7813vw;cursor: pointer; margin-left: 1.1719vw;}
+.all_in_one .product_wrap .top .prod_title .lecture_list_btn::after {  top: 50%; right: 0.6250vw; transform: translateY(-50%);
+    width: 0.0000vw; height: 0; border-style: solid;border-width: 0.3906vw 0 0.3906vw 0.4688vw; }
+.all_in_one .product_wrap .top  ul {  font-size: 2.1875vw;letter-spacing: -0.2344vw; line-height: 1.3;}
+
+.all_in_one .product_wrap .mid {padding:0 3.9063vw; height: auto; align-items: center;}
+.all_in_one .product_wrap .mid .price_fixed  {  width: 45%;}
+.all_in_one .product_wrap .mid .price_fixed ul { flex-direction: column; align-items: flex-end;}
+.all_in_one .product_wrap .mid .price_fixed ul .disc_percent { margin-top: 1.1719vw;    font-size: 2.3438vw;  line-height: 1; letter-spacing: -0.1563vw;
+    background: #000; border-radius: 0.3906vw; padding: 0.1563vw 0.7813vw;}
+.all_in_one .product_wrap .mid .price_fixed ul li:nth-child(2){   font-size: 2.7344vw;  text-decoration: line-through;}
+.all_in_one .product_wrap .mid .price_sale {  font-size: 7.0313vw;
+    line-height: 1;}
+.all_in_one .product_wrap .btm {padding: 0 1.5625vw 2.3438vw;}
+.all_in_one .product_wrap .btm .buy_link {  width: calc(100% - 3.1250vw); padding: 1.5625vw;
+    font-size: 2.5000vw;    letter-spacing: -0.2344vw;
+    background: linear-gradient(to right, #f6f657 20%, #fff06c 60%, #f7e250 80%, #f6df4a);border-radius: 2.3438vw;}
+.all_in_one .product_wrap .btm .buy_link ::after {  top: 50%; right: 25.1563vw;
+        transform: translateY(-50%);width: 0.0000vw; height: 0; border-style: solid; border-width: 0.6250vw 0 0.6250vw 0.7813vw;
+        }
+.all_in_one .product_wrap .btm .buy_link span { margin-left: -1.5625vw;}
+
+
+
+/* short_pass */
+.short_pass .title_wrap h1 { font-size: 5.1563vw; }
+
+.short_pass .product_wrap .short_prod {  width: 19.0625vw; height: 50.7813vw; background-size:100%; }
+.short_pass .product_wrap .short_prod .prodTitle_wrap {  top: 2.3%; width: 100%;  letter-spacing: -0.1953vw;}
+.short_pass .product_wrap .short_prod .prodTitle_wrap h4 { color: rgba(0, 0, 0, 0.7); font-size: 1.7188vw;    }
+.short_pass .product_wrap .short_prod .prodTitle_wrap h3 { font-size: 2.1875vw;  margin-top: 1.1719vw;}
+.short_pass .prodPrice_wrap {top: 24.6%;left: 0; width: 100%; height: auto; }
+.short_pass .prodPrice_wrap .crash_course_fixed ul .disc_percent {   font-size: 1.7188vw;line-height: 1; letter-spacing: -0.1563vw;  border-radius: 0.3906vw; padding: 0.1563vw 0.7813vw;}
+.short_pass .prodPrice_wrap .crash_course_fixed ul li:nth-child(2) {font-size: 1.5625vw; }
+.short_pass .prodPrice_wrap .crash_course_fixed ul li:nth-child(2) span{   text-decoration: line-through;}
+.short_pass .prodPrice_wrap .crash_course_price {   font-size: 3.2813vw;
+   line-height: 1.4;  align-items: center; }
+.short_pass .prodPrice_wrap .crash_course_price span {  font-size: 1.5625vw ;}
+
+.short_pass .prodPrice_wrap .courseList_btn { margin-top: 2.5000vw; }
+.short_pass .prodPrice_wrap .courseList_btn span {     font-size: 1.4063vw;   line-height: 1;
+    letter-spacing: -0.0781vw; background: #f5f5f5; border: 0.0781vw solid #aeaeae; padding: 0.3906vw 1.5625vw 0.3906vw 0.7813vw; cursor: pointer; }
+.short_pass .prodPrice_wrap .courseList_btn span::after {   top: 50%; right: 0.6250vw; transform: translateY(-50%);
+    width: 0.0000vw; height: 0; border-style: solid; border-width: 0.3906vw 0 0.3906vw 0.4688vw;  }
+
+.short_pass .prodBenefit_wrap { top: 58%;}
+.short_pass .prodBenefit_wrap ul {padding: 0 1.1719vw;  font-size: 1.4063vw; letter-spacing: -0.1172vw; line-height: 1.5;}
+
+.short_pass .btn_wrap {   bottom: 3%; left: 0;  width: 100%;  }
+.short_pass .btn_wrap .courseOrder_btn span {      width: 90%; padding: 1.4063vw 0;  font-size: 1.7188vw;  line-height: 1;  background: #43e4f8 ;  border-radius: 0.7813vw; }
+.short_pass .btn_wrap .courseOrder_btn span::after {    top: 50%; right: 4.3750vw; transform: translateY(-50%);  width: 0.0000vw; height: 0;  border-style: solid;  border-width: 0.4688vw 0 0.4688vw 0.6250vw;  }
+
+.short_pass .product_wrap .short_prod.pass2 { background-size:100%;}
+.short_pass .product_wrap .short_prod.pass3 { background-size:100%;}
+.short_pass .product_wrap .short_prod.pass4 { background-size:100%;}
+
+.short_pass .product_wrap .short_prod.pass3 .prodTitle_wrap h3,
+.short_pass .product_wrap .short_prod.pass4 .prodTitle_wrap h3 {line-height: 1;white-space: pre-line; margin-top: 0.0000vw;}
+.short_pass .product_wrap .short_prod.pass3 .prodTitle_wrap h3 span,
+.short_pass .product_wrap .short_prod.pass4 .prodTitle_wrap h3 span { font-size: 1.5625vw;  }
+
+.short_pass .product_wrap .short_prod.pass3 .prodBenefit_wrap li:nth-child(1),
+.short_pass .product_wrap .short_prod.pass4 .prodBenefit_wrap li:nth-child(1){letter-spacing: -0.1563vw;}
+
+.short_pass .product_wrap.special .special_prod {  margin-top: 0.3906vw; width: 78.1250vw; height: 13.4375vw;  background-size: 100%; }
+.short_pass .product_wrap.special .special_title_wrap {  top: 25%; left: 0; width: 19.0625vw; height: 13.4375vw;  letter-spacing: -0.0781vw; }
+.short_pass .product_wrap.special .special_title_wrap h4 {  font-size: 1.7188vw; }
+.short_pass .product_wrap.special .special_title_wrap h2 { font-size: 2.5000vw; line-height: 2;}
+.short_pass .product_wrap.special .special_prodBenefit_wrap { top: 11%; left: 27%; font-size: 1.7969vw; line-height: 1.4;letter-spacing: -0.1563vw;}
+.short_pass .product_wrap.special .special_prodBenefit_wrap .mleft {margin-left: 6.2500vw; letter-spacing: -0.2344vw;}
+
+.short_pass .product_wrap.special .special_course_wrap { bottom: 13%; left: 51%;}
+.short_pass .product_wrap.special .special_course_wrap .courseList_btn span  {     font-size: 1.4063vw;   line-height: 1;
+    letter-spacing: -0.0781vw; background: #f5f5f5; border: 0.0781vw solid #aeaeae; padding: 0.3906vw 1.5625vw 0.3906vw 0.7813vw; cursor: pointer; }
+
+.short_pass .product_wrap.special .special_course_wrap .courseList_btn span::after  {   top: 50%; right: 0.6250vw; transform: translateY(-50%);
+    width: 0.0000vw; height: 0; border-style: solid; border-width: 0.3906vw 0 0.3906vw 0.4688vw;    }
+.short_pass .product_wrap.special .special_prodPrice_wrap { top: 12%; right: 5%;}
+.short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_fixed ul {flex-direction: column;align-items: flex-end;}
+.short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_fixed ul .disc_percent {   font-size: 1.7188vw;line-height: 1; letter-spacing: -0.1563vw; border-radius: 0.3906vw; padding: 0.3906vw 0.9375vw;}
+.short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_fixed ul li:nth-child(2) {font-size: 1.5625vw; }
+.short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_fixed ul li:nth-child(2) span{   text-decoration: line-through;}
+.short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_price {   font-size: 4.2969vw;
+   line-height: 1; letter-spacing: -0.2344vw;  align-items: center; }
+.short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_price span {  font-size: 1.5625vw ;}
+
+.short_pass .product_wrap.special .special_btn_wrap {   bottom: 13%; right: 5%;  }
+.short_pass .product_wrap.special .special_btn_wrap .courseOrder_btn span {      width: 21.5625vw; height: 4.6875vw; padding:0;  font-size: 1.7188vw;  line-height: 4.6875vw;   border-radius: 0.7813vw; }
+.short_pass .product_wrap.special .special_btn_wrap .courseOrder_btn span::after {    top: 50%; right: 6.4844vw; transform: translateY(-50%);  width: 0.0000vw; height: 0;  border-style: solid;  border-width: 0.4688vw 0 0.4688vw 0.6250vw;   }
+
+.sec.short_pass .agree_wrap {margin-bottom: 3.9063vw;}
+
+
+/* super pass*/
+
+.super_pass {background: #717dff  url('../images/super_pass_bg.jpg') center top no-repeat;  padding-bottom: 3.9063vw;}
+.super_pass .title_wrap {padding-top: 7.0313vw;}
+
+.super_pass .title_wrap h1 {font-size: 5.1563vw; margin-top: 1.1719vw; }
+
+.super_pass .product_wrap .super_prod {  width: 25.4688vw; height: 53.5938vw;  background-size: 100%;}
+
+.super_pass .product_wrap .super_prod .prodTitle_wrap {  top: 2.3%; width: 100%;  letter-spacing: -0.1953vw;}
+.super_pass .product_wrap .super_prod .prodTitle_wrap h1 { color: rgba(0, 0, 0, 1); font-size: 2.8125vw;   line-height: 1.5;  }
+.super_pass .product_wrap .super_prod .prodTitle_wrap h2 { font-size: 2.1875vw;  line-height: 1; }
+.super_pass .product_wrap .super_prod .prodPrice_wrap {top: 19%;left: 0; width: 100%; height: auto;}
+.super_pass .product_wrap .super_prod .prodPrice_wrap .crash_course_fixed ul .disc_percent {   font-size: 1.5625vw;line-height: 1; letter-spacing: -0.1563vw;padding: 0.1563vw 0.7813vw;}
+.super_pass .product_wrap .super_prod .prodPrice_wrap .crash_course_fixed ul li:nth-child(2) {font-size: 1.5625vw; }
+.super_pass .product_wrap .super_prod .super_prod .prodPrice_wrap .crash_course_fixed ul li:nth-child(2) span{   text-decoration: line-through;}
+.super_pass .product_wrap .super_prod .prodPrice_wrap .crash_course_price {   font-size: 3.5938vw;
+   line-height: 1;  align-items: center; }
+.super_pass .product_wrap .super_prod .prodPrice_wrap .crash_course_price span {  font-size: 1.5625vw ;}
+
+.super_pass .product_wrap .super_prod .prodPrice_wrap .courseList_btn { margin-top: 0.7813vw; }
+.super_pass .product_wrap .super_prod .prodPrice_wrap .courseList_btn span {     font-size: 1.4063vw;   line-height: 1;
+    letter-spacing: -0.0781vw; background: #f5f5f5; border: 0.0781vw solid #aeaeae; padding: 0.3906vw 1.5625vw 0.3906vw 0.7813vw; cursor: pointer; }
+.super_pass .product_wrap .super_prod .prodPrice_wrap .courseList_btn span::after {   top: 50%; right: 0.6250vw; transform: translateY(-50%);
+    width: 0.0000vw; height: 0; border-style: solid; border-width: 0.3906vw 0 0.3906vw 0.4688vw;    }
+
+.super_pass .product_wrap .super_prod .prodBenefit_wrap { top: 45%;}
+.super_pass .product_wrap .super_prod .prodBenefit_wrap ul {padding: 0 0 0 3.7500vw;  font-size: 1.4063vw; letter-spacing: -0.1172vw; line-height: 1.5;}
+
+.super_pass .product_wrap .super_prod .discount_txt {   bottom: 11.5%;  width: 100%;   font-size: 1.7188vw;   letter-spacing: -0.1563vw;}
+.super_pass .product_wrap .super_prod .btn_wrap {   bottom: 3.7%; left: 0;  width: 100%;  }
+.super_pass .product_wrap .super_prod .btn_wrap .courseOrder_btn span {      width: 75%; padding: 1.0156vw 0;  font-size: 1.7188vw;  line-height: 1;  background: #10e6ff ;  border-radius: 0.7813vw; }
+.super_pass .product_wrap .super_prod .btn_wrap .courseOrder_btn span::after {    top: 50%; right: 5.2344vw; transform: translateY(-50%);  width: 0.0000vw; height: 0;  border-style: solid;  border-width: 0.4688vw 0 0.4688vw 0.6250vw;  }
+
+.super_pass .product_wrap .super_prod.pass2 {  background-size: 100%}
+.super_pass .product_wrap .super_prod.pass3 { background-size: 100%}
+
+.super_pass .product_wrap .super_prod.pass3 .prodTitle_wrap { top: .5%;}
+.super_pass .product_wrap .super_prod.pass3 .prodTitle_wrap h1 {  line-height: 1.2; white-space: pre-line;}
+
+.super_pass .prod_note { margin: auto; margin-top: 1.1719vw; width: calc(100% - 21.8750vw); color: rgba(81, 0, 166, .5); font-size: 1.0938vw;   letter-spacing: -0.0781vw;}
+
+
+
+/*********************************/
+
+
+
+    /* section2 */
+    .section2 .price_wrap .price_fixed ul .disc_percent {
+        margin-top: 1.1719vw;
+        font-size: 2.3438vw;
+        line-height: 1;
+        letter-spacing: -0.1563vw;
+        border-radius: 0.3906vw;
+        padding: 0.1563vw 0.7813vw;
+    }
+    .section2 .price_wrap .price_fixed ul li:nth-child(2){
+        font-size: 2.7344vw;
+    }
+    .section2 .price_wrap .price_sale {
+       font-size: 7.0313vw;
+    }
+    .sec.section2 .passAgree.allinone {
+        bottom: 3.1250vw;
+    }
+
+    /* section3 */
+
+    .section3 .crash_course .crash_course_fixed ul .disc_percent {
+        font-size: 1.7188vw;
+        letter-spacing: -0.1563vw;
+        border-radius: 0.3906vw;
+        padding: 0.1563vw 0.7813vw;
+    }
+    .section3 .crash_course .crash_course_fixed ul li:nth-child(2) {font-size: 1.5625vw; }
+    .section3 .crash_course .crash_course_price {font-size: 3.2813vw; }
+    .section3 .crash_course .crash_course_price span {font-size: 1.5625vw ;}
+    .section3 .crash_course .courseList_btn {margin-top: 2.5000vw;}
+    .section3 .crash_course .courseList_btn span {
+        font-size: 1.4063vw;
+        letter-spacing: -0.0781vw;
+        border: 0.0781vw solid #aeaeae;
+        padding: 0.3906vw 1.5625vw 0.3906vw 0.7813vw;
+    }
+    .section3 .crash_course .courseList_btn span::after {
+        top: 50%; right: 0.6250vw; transform: translateY(-50%);
+        width: 0.0000vw;
+        height: 0;
+        border-style: solid;
+        border-width: 0.3906vw 0 0.3906vw 0.4688vw;
+    }
+    .section3 .crash_course.short2 {
+        top: 34.6%;
+        left: 31.2%;
+    }
+    .section3 .crash_course.short3 {
+        top: 34.6%;
+        left: 50.7%;
+    }
+    .section3 .crash_course.short4 {
+        top: 34.6%;
+        left: 70.2%;
+    }
+
+    /* 수강신청 버튼 */
+    .section3 .courseOrder_wrap {
+        top: 65.5%;
+        left: 12%;
+        width: 17%;
+    }
+    .section3 .courseOrder_wrap .courseOrder_btn span {
+        width: 100%;
+        padding: 1.4063vw 0;
+        font-size: 1.7188vw;
+        line-height: 1;
+        background: #43e4f8 ;
+        border-radius: 0.7813vw;
+    }
+    .section3 .courseOrder_wrap .courseOrder_btn span::after {
+        top: 50%; right: 4.3750vw; transform: translateY(-50%);
+        width: 0.0000vw;
+        height: 0;
+        border-style: solid;
+        border-width: 0.4688vw 0 0.4688vw 0.6250vw;
+    }
+
+    .section3 .courseOrder_wrap.order2 { left: 31.5%;}
+    .section3 .courseOrder_wrap.order2 .courseOrder_btn span {  background: #ffb057 ;}
+
+    .section3 .courseOrder_wrap.order3 { left: 51.3%;}
+    .section3 .courseOrder_wrap.order3 .courseOrder_btn span {  background: #b597fb ;}
+
+    .section3 .courseOrder_wrap.order4 { left: 71%;}
+    .section3 .courseOrder_wrap.order4 .courseOrder_btn span { background: #ff8685 ;}
+
+    /* special course */
+    .section3 .crash_course.special {
+        top: 74.6%;
+        left: 60.2%;
+        width: 25%;
+    }
+    .section3 .crash_course.special .crash_course_price {
+        font-size: 4.2969vw;
+        line-height: 1;
+        letter-spacing: -0.2344vw;
+        align-items: center;
+    }
+    .section3 .courseOrder_wrap.special { top: 79.2%; left: 64%; width: 21%;}
+    .section3 .courseOrder_wrap.special .courseOrder_btn span { background: #9cff94 ;}
+    .section3 .courseOrder_wrap.special .courseOrder_btn span::after {    right: 6.2500vw; }
+
+    .section3 .courseList_btn.special {
+        top: 81.2%;
+        left: 53%;
+    }
+    .section3 .courseList_btn.special span {
+        font-size: 1.4063vw;
+        line-height: 1;
+        letter-spacing: -0.0781vw;
+        background: #f5f5f5;
+        border: 0.0781vw solid #aeaeae;
+        padding: 0.3906vw 1.5625vw 0.3906vw 0.7813vw;
+        cursor: pointer;
+    }
+    .section3 .courseList_btn.special span::after {
+        top: 50%; right: 0.6250vw; transform: translateY(-50%);
+        width: 0.0000vw;
+        height: 0;
+        border-style: solid;
+        border-width: 0.3906vw 0 0.3906vw 0.4688vw;
+    }
+
+    /* section4 */
+    .section4 .super_course .super_course_fixed ul .disc_txt {
+        font-size: 1.5625vw;
+
+        line-height: 1;
+        letter-spacing: -0.1563vw;
+        /* background: #fe4c6e;
+        border-radius: 0.3906vw;
+        padding: 0.1563vw 0.7813vw; */
+    }
+    .section4 .super_course .super_course_fixed ul li:nth-child(2) {font-size: 1.5625vw; }
+
+    .section4 .super_course .super_course_price {
+
+       font-size: 3.2813vw;
+
+       line-height: 1;
+
+    }
+    .section4 .super_course .super_course_price span {
+        font-size: 1.5625vw ;
+    }
+    .section4 .super_course .courseList_btn {
+        margin-top: 0.7813vw;
+    }
+    .section4 .super_course .courseList_btn span {
+
+
+
+        font-size: 1.3281vw;
+
+        line-height: 1;
+        letter-spacing: -0.0781vw;
+        background: #f5f5f5;
+        border: 0.0781vw solid #aeaeae;
+        padding: 0.5469vw 1.5625vw 0.5469vw 0.7813vw;
+        cursor: pointer;
+    }
+    .section4 .super_course .courseList_btn span::after {
+          top: 50%; right: 0.6250vw; transform: translateY(-50%);
+        width: 0.0000vw;
+        height: 0;
+        border-style: solid;
+        border-width: 0.3906vw 0 0.3906vw 0.4688vw;
+
+    }
+
+    .section4 .super_course.super2 {left: 37.5%;}
+    .section4 .super_course.super3 {left: 63.8%;}
+
+    /* 수강신청 버튼 */
+    .section4 .courseOrder_wrap {
+
+        top: 79%;
+        left: 14.2%;
+        width: 19%;
+
+    }
+
+    .section4 .courseOrder_wrap .courseOrder_btn span {
+
+
+        width: 100%;
+        padding: 1.2500vw 0;
+
+        font-size: 1.7188vw;
+
+        line-height: 1;
+        background: #10e6ff ;
+        border-radius: 0.7813vw;
+        /* border: 0.0781vw solid red; */
+    }
+    .section4 .courseOrder_wrap .courseOrder_btn span::after {
+          top: 50%; right: 4.3750vw; transform: translateY(-50%);
+        width: 0.0000vw;
+        height: 0;
+        border-style: solid;
+        border-width: 0.4688vw 0 0.4688vw 0.6250vw;
+
+    }
+
+    .section4 .courseOrder_wrap.super2 {left: 40.7%;}
+    .section4 .courseOrder_wrap.super2 .courseOrder_btn span {  background: #ffb156 ;}
+
+
+    .section4 .courseOrder_wrap.super3 {left: 66.7%;}
+    .section4 .courseOrder_wrap.super3 .courseOrder_btn span {  background: #b596fb ;}
+
+
+    .sec.section4 .passAgree.super {
+        bottom: 3.1250vw;
+    }
+
+    /* section5 */
+    .section5 .dDay_wrap { top: 7%; left: 58%; width: 21.4844vw; height: 2.8125vw; }
+    .section5 .dDay_wrap span { width: 100%; padding: 0.3906vw 0;  font-size: 1.4844vw; line-height: 1.3; letter-spacing: -0.0781vw;  background: #000; border-radius: 0.7813vw; }
+    .section5 .dDay_wrap span b {color:#f4dd40}
+
+    .section5 .count_wrap span {width: 30%; font-size: 5.4688vw;   margin-left: 3%;}
+
+
+    /* section9 */
+    .tabWrap {
+
+        top: 36%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 78.2813vw;
+        height: 7.4219vw;
+    }
+    .title_tabWrap {
+        width: 100%;
+        background: #001af4;
+        border-radius: 1.5625vw;
+    }
+    .title_tabWrap ul {  }
+    .title_tabWrap li { width: calc(100% / 2); height: auto;    }
+    .title_tabWrap li a {   width: 100%; height: 100%;  font-size: 2.5000vw;  line-height: 7.4219vw; letter-spacing: -0.0781vw; background: #001af4;  }
+    .title_tabWrap li.active a { background: #f0f848; font-size:2.5000vw; border-radius: 1.5625vw; }
+
+    .tabWrap .sec_detail {
+        margin-top: 0.7813vw;
+    }
+
+
+    /* section10*/
+    .section10 .top {
+        background: url('../images/basic_pass_bg_10_01.jpg') center no-repeat;
+        background-size: cover;
+    }
+    .section10 .btm {
+        background: url('../images/basic_pass_bg_10_02.jpg') center no-repeat;
+        background-size: cover;
+    }
+    .section10 .slider_wrap {
+        margin: auto;
+        padding-top: 2.3438vw;
+        max-width: 100%;
+        height: 27.7344vw;
+    }
+
+
+
+    /* section12*/
+    .section12 .review_box .scroll_wrap {
+        height: 27.3438vw;
+    }
+    .section12 .review_box .scroll_wrap .reviewList_scroll  > div {
+        font-size: 2.1875vw;
+    }
+
+    @keyframes loop_scroll {
+        0%{
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(calc(-100% + 27.3438vw));
+        }
+    }
+
+
+    /* passNotice 유의사항 */
+    .passNotice .passNotice_area h2 {
+        padding: 6.2500vw 5.4688vw 1.5625vw 5.4688vw;
+        font-size: 2.1875vw;
+    }
+
+    /* 탭 전체 스타일 */
+    .passNotice .passNotice_tabs {
+        margin: auto;
+        margin-top: 0.7813vw;
+        padding-bottom: 3.1250vw;
+        width: 92%;
+        opacity: 1;
+    }
+
+    /* 탭 스타일 */
+    .passNotice .tab_item {
+        width: calc(100%/8);
+        line-height: 2.5;
+        font-size: 1.2500vw;
+        transition: all 0.2s ease;
+    }
+    .passNotice .tab_item::after {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 0.151vw;
+        height: 30%;
+        background: #77787c;
+    }
+    .passNotice .tab_item:hover {
+        opacity: 0.75;
+    }
+
+
+    /* 탭 컨텐츠 스타일 */
+    .passNotice .tab_content {
+        padding:0;
+        clear: both;
+        padding: 3.3333vw 4.1667vw;
+        min-height: 31.2500vw;
+    }
+    .passNotice .tab_content ul{
+        font-size: 1.0938vw;
+        line-height: 1.8750vw;
+        letter-spacing: -0.0937vw;
+    }
+    .passNotice .tab_content ul li{
+        padding: 0.1563vw 0;
+    }
+    .passNotice .tab_content ul ul {
+        padding-left: 1.1719vw;
+    }
+    .passNotice .tab_content ul ul li {
+        padding: 0;
+    }
+    .passNotice .tab_content .ps {
+        margin-top: 2.7344vw;
+        font-size: 1.2500vw;
+    }
+}
+@media screen and (max-width: 1200px){
+
+}
+@media screen and (max-width: 768px){
+    .new-event-view .mo-img {
+        display: block;
+    }
+
+    .new-event-view .pc-img {
+        display: none !important;
+    }
+
+    .new-event-view .section2 {
+        background: #5153c3;
+    }
+
+    /* .motion_intro .item .ani.cursor_appear {
+
+        margin-top: 4.9375vw;
+
+    }
+
+    .motion_intro .item .ani.intro_text2 {
+        top: 45%;
+
+    } */
+
+    .section1 .ani.img1 {
+        top: 16%;
+        left: 20.4%;
+        width: 61.8490vw;
+        height: 24.8698vw;
+    }
+    .section1 .ani.txt2 {
+        top: 32%;
+        left:0;
+        width: 100%;
+        height: 20.1823vw;
+    }
+
+    .section1 .box_txt {position: absolute; top: 51%; left: 50%; transform: translateX(-50%); width: 59%; opacity: 0; }
+    .section1 .box_txt ul {display: flex; flex-wrap: wrap ;justify-content: space-evenly; width: 100%;}
+
+    .section1 .box_txt ul li:nth-child(1) {width: 26.5625vw;height: 26.5625vw; margin-bottom: 5.7292vw;}
+    .section1 .box_txt ul li:nth-child(2) {width: 26.5625vw;height: 26.5625vw; margin-bottom: 5.7292vw;}
+    .section1 .box_txt ul li:nth-child(3) {width: 26.5625vw;height: 26.5625vw;}
+    .section1 .box_txt ul li:nth-child(4) {width: 26.5625vw;height: 26.5625vw;}
+
+    /*체크박스 커스텀 S*/
+    #sub .sec input[type="checkbox"] {
+        height: 3.9063vw;
+        width: 3.9063vw;
+    }
+
+    #sub .sec input[type="checkbox"]::after {
+        background: url(../images/ico_check.png) center no-repeat;
+        background-size: 100%;
+    }
+
+    /* agree_area 삭제하기 */
+    .sec .passAgree {
+        bottom: 11.0677vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    /***************************/
+
+    /****** 새로 정의 *****/
+    .sec .agree_wrap {
+        margin: auto;
+        width: calc(100% - 10.4167vw);
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3.9063vw;
+    }
+    /*****************************/
+
+    #sub .agree_area {
+        width: 88.5417vw;
+        height: auto;
+        color: #000;
+        font-size: 2.6042vw;
+        font-weight: 500;
+        letter-spacing: -0.1953vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+
+    #sub .agree_area span {
+        margin-left: 0.6510vw;
+    }
+
+    #sub .agree_area p {
+        margin-top: -1.3021vw;
+        margin-left: 7.5521vw;
+        color: rgba(255, 255, 255, .5);
+        font-size: 2.0833vw;
+        font-weight: 300;
+    }
+    #sub .agree_area .noticeBtn {
+        width: 19.5313vw;
+        height: 6.2500vw;
+        color: #434343 ;
+        font-size: 2.3438vw;
+        text-align: center;
+        background: #cfcfcf;
+        border-radius: 6.5104vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /** 250414 상분단 퍼블리싱 처리**/
+
+    .sec .title_wrap { margin: auto; padding: 11.0677vw 0 3.2552vw; width: calc(100% - 10.4167vw);text-align: center;letter-spacing: -0.3906vw; }
+    .sec .title_wrap h2 {color: #fff; font-size: 4.1667vw; font-weight: 400;  line-height: 1.4;}
+    .sec .title_wrap h1 {color: #f0f848; font-size: 8.4635vw; font-weight: 800; line-height: 1.4;letter-spacing: -0.5208vw;}
+    .sec .product_wrap {margin: auto; width: calc(100% - 9.8167vw);}
+
+    /* all_in_one */
+    .all_in_one {background: #5153c3  url('../images/mo_all_in_one.jpg') center top no-repeat; background-size: 100%;  padding-bottom: 6.5104vw;}
+    .all_in_one .title_wrap h1 b{color: #7bfffd;}
+    .all_in_one .product_wrap { margin: auto;  background: #fff; border: 0.6510vw solid #f8e353; border-radius: 3.9063vw;}
+    .all_in_one .product_wrap .top { display: flex;flex-direction: column;  padding: 6.5104vw 6.5104vw 0;}
+    .all_in_one .product_wrap .top .sub_txt { display: inline-block; color: #000; font-size: 2.8646vw; font-weight: 700; text-align: center; letter-spacing: -0.1302vw; padding: 0.9115vw 3.9063vw; border-radius: 6.5104vw; background: #f8e353; }
+    .all_in_one .product_wrap .top .prod_title { display: flex; flex-direction: column; align-items: center;color: #001af4; font-size: 11.7188vw; font-weight: 900; letter-spacing: -0.6510vw; text-align: center; }
+
+    .all_in_one .product_wrap .top .prod_title .lecture_list_btn  {  position: relative;display: inline-block; width: 19.5313vw;  color: #000;  font-size: 2.8646vw; font-weight: 600;
+        line-height: 1; letter-spacing: -0.1302vw; background: #fff;border: 0.1302vw solid #aeaeae; padding: 0.9115vw 2.6042vw 0.9115vw 1.3021vw;cursor: pointer; margin-left: 1.9531vw;}
+    .all_in_one .product_wrap .top .prod_title .lecture_list_btn::after {position: absolute; content: ''; top: 50%; right: 1.0417vw; transform: translateY(-50%);
+        width: 0.0000vw; height: 0; border-style: solid;border-width: 0.6510vw 0 0.6510vw 0.7813vw; border-color: transparent transparent transparent #000;}
+    .all_in_one .product_wrap .top  ul { margin: 9.1146vw 0; color: #000; font-size: 3.6458vw;letter-spacing: -0.3906vw; line-height: 1.3;}
+
+    .all_in_one .product_wrap .mid {padding:0 6.5104vw; height: auto; display: flex;justify-content: flex-end;align-items: center;}
+    .all_in_one .product_wrap .mid .price_fixed  {  width: 45%;}
+    .all_in_one .product_wrap .mid .price_fixed ul {display: flex; flex-direction: column; align-items: flex-end;}
+    .all_in_one .product_wrap .mid .price_fixed ul .disc_percent { margin-top: 1.9531vw; display: inline-block; color: #fff;  font-size: 3.9063vw; font-weight: 600; line-height: 1; letter-spacing: -0.2604vw;
+        background: #000; border-radius: 0.6510vw; padding: 0.6510vw 1.3021vw;}
+    .all_in_one .product_wrap .mid .price_fixed ul li:nth-child(2){  color: #b3b3b3; font-size: 4.5573vw;  text-decoration: line-through;}
+    .all_in_one .product_wrap .mid .price_sale { text-align: right;color: #ff1111; font-size: 11.7188vw;font-weight: 900;
+        line-height: 1;}
+    .all_in_one .product_wrap .btm {padding: 2.6042vw 2.6042vw 6.5104vw;}
+    .all_in_one .product_wrap .btm .buy_link { position: relative; display: inline-block;width: calc(100% - 5.2083vw); padding: 2.6042vw;
+        color:#000;font-size: 4.1667vw;  font-weight: 700; text-align: center; letter-spacing: -0.3906vw;
+        background: linear-gradient(to right, #f6f657 20%, #fff06c 60%, #f7e250 80%, #f6df4a);border-radius: 3.9063vw;}
+    .all_in_one .product_wrap .btm .buy_link ::after { position: absolute; content: '';top: 50%; right: 20.3125vw;
+            transform: translateY(-50%);width: 0.0000vw; height: 0; border-style: solid; border-width: 1.0417vw 0 1.0417vw 1.3021vw;
+            border-color: transparent transparent transparent #000;}
+    .all_in_one .product_wrap .btm .buy_link span {color: #001af4 ; margin-left: -2.6042vw;}
+
+    .all_in_one .agree_wrap .agree_area span {color: #fff;}
+
+    /* short_pass */
+    .short_pass .title_wrap h2 {color: #515151;}
+    .short_pass .title_wrap h1 {color: #001af4; font-size: 8.5938vw; }
+
+    .short_pass .product_wrap {display: flex;flex-wrap: wrap;justify-content: space-between;}
+    .short_pass .product_wrap .short_prod { margin-top: 0.6510vw; position: relative; width: 43.6198vw; height: 90.7552vw; background: url(../images/mo_short_prod1_bg.png) center top no-repeat; background-size: 100%;}
+    .short_pass .product_wrap .short_prod .prodTitle_wrap { position: absolute; top: 2%; width: 100%; text-align: center; letter-spacing: -0.3255vw;}
+    .short_pass .product_wrap .short_prod .prodTitle_wrap h4 { color: rgba(0, 0, 0, 0.7); font-size: 3.6458vw; font-weight: 500; text-align: center ;  }
+    .short_pass .product_wrap .short_prod .prodTitle_wrap h3 {color: #000; font-size: 4.5573vw; font-weight: 800; margin-top: 0.5208vw;}
+    .short_pass .prodPrice_wrap {position: absolute;top: 22.6%;left: 0; width: 100%; height: auto; text-align: center;}
+    .short_pass .prodPrice_wrap .crash_course_fixed ul .disc_percent { display: inline-block; color: #fff; font-size: 3.5156vw;font-weight: 600;line-height: 1; letter-spacing: -0.2604vw;background: #fe4c6e;  border-radius: 0.6510vw; padding: 0.2604vw 1.3021vw;}
+    .short_pass .prodPrice_wrap .crash_course_fixed ul li:nth-child(2) { margin-top: 1.5625vw; font-size: 3.2552vw; }
+    .short_pass .prodPrice_wrap .crash_course_fixed ul li:nth-child(2) span{ color: #7f7f7f;  text-decoration: line-through;}
+    .short_pass .prodPrice_wrap .crash_course_price {   color: #000;font-size: 8.4635vw;font-weight: 900;
+    line-height: 1.2; display: flex; align-items: center; justify-content: center;}
+    .short_pass .prodPrice_wrap .crash_course_price span {  font-size: 2.6042vw ;}
+
+    .short_pass .prodPrice_wrap .courseList_btn { margin-top: 0; }
+    .short_pass .prodPrice_wrap .courseList_btn span { position: relative;  display: inline-block; color: #000; font-size: 2.3438vw; font-weight: 600;  line-height: 1;
+        letter-spacing: -0.1302vw; background: #f5f5f5; border: 0.1302vw solid #aeaeae; padding: 0.9115vw 2.6042vw 0.9115vw 1.3021vw; cursor: pointer; }
+    .short_pass .prodPrice_wrap .courseList_btn span::after { position: absolute; content: ''; top: 50%; right: 1.0417vw; transform: translateY(-50%);
+        width: 0.0000vw; height: 0; border-style: solid; border-width: 0.6510vw 0 0.6510vw 0.7813vw;   border-color: transparent transparent transparent #000; }
+
+    .short_pass .prodBenefit_wrap {position: absolute; top: 58%;}
+    .short_pass .prodBenefit_wrap ul {padding: 0 1.9531vw; color: #000; font-size: 2.8646vw; letter-spacing: -0.2604vw; line-height: 1.2;}
+    .short_pass .prodBenefit_wrap ul .gry {color: #747474 ;}
+    .short_pass .prodBenefit_wrap ul .red {color: #cf0000 ;}
+
+    .short_pass .btn_wrap { position: absolute;  bottom: 4%; left: 0;  width: 100%;  text-align: center;}
+    .short_pass .btn_wrap .courseOrder_btn span {  position: relative;  display: inline-block;  width: 90%; padding: 2.3438vw 0; color: #2e3551; font-size: 3.6458vw; font-weight: 600; line-height: 1;  background: #43e4f8 ;  border-radius: 1.3021vw; }
+    .short_pass .btn_wrap .courseOrder_btn span::after {  position: absolute; content: ''; top: 50%; right: 10.6771vw; transform: translateY(-50%);  width: 0.0000vw; height: 0;  border-style: solid;  border-width: 0.7813vw 0 0.7813vw 1.0417vw;  border-color: transparent transparent transparent #21334b; }
+
+    .short_pass .product_wrap .short_prod.pass2 { background: url(../images/mo_short_prod2_bg.png) center top no-repeat; background-size: 100%;}
+    .short_pass .product_wrap .short_prod.pass3 { background: url(../images/mo_short_prod3_bg.png) center top no-repeat; background-size: 100%;}
+    .short_pass .product_wrap .short_prod.pass4 { background: url(../images/mo_short_prod4_bg.png) center top no-repeat; background-size: 100%;}
+
+    .short_pass .product_wrap .short_prod.pass3 .prodTitle_wrap h3,
+    .short_pass .product_wrap .short_prod.pass4 .prodTitle_wrap h3 {line-height: 1;white-space:initial; margin-top: 0.0000vw;}
+    .short_pass .product_wrap .short_prod.pass3 .prodTitle_wrap h3 span,
+    .short_pass .product_wrap .short_prod.pass4 .prodTitle_wrap h3 span {color: #ff0000; font-size: 3.2552vw; font-weight: 700; }
+
+    .short_pass .product_wrap .short_prod.pass3 .prodBenefit_wrap li:nth-child(1),
+    .short_pass .product_wrap .short_prod.pass4 .prodBenefit_wrap li:nth-child(1){letter-spacing: -0.2604vw;}
+
+    .short_pass .product_wrap .short_prod.pass2 .courseOrder_btn span {  color: #702f00; background: #ffb156;}
+    .short_pass .product_wrap .short_prod.pass2 .courseOrder_btn span::after {border-color: transparent transparent transparent #702f00;}
+
+    .short_pass .product_wrap .short_prod.pass3 .courseOrder_btn span {  color: #2b0978; background: #b596fb;}
+    .short_pass .product_wrap .short_prod.pass3 .courseOrder_btn span::after {border-color: transparent transparent transparent #2b0978;}
+
+    .short_pass .product_wrap .short_prod.pass4 .courseOrder_btn span {  color: #760e0e; background: #ff8585;}
+    .short_pass .product_wrap .short_prod.pass4 .courseOrder_btn span::after {border-color: transparent transparent transparent #760e0e;}
+
+    .short_pass .product_wrap.special .special_prod { position: relative; margin-top: 0.6510vw; width: 89.7135vw; height: 36.5885vw; background: url('../images/mo_special_prod_bg.png') center top no-repeat; background-size: 100%; }
+    .short_pass .product_wrap.special .special_title_wrap { position: absolute; top:28%; left: 0; width: 26.6927vw; height: 36.5885vw; text-align: center; letter-spacing: -0.1302vw; }
+    .short_pass .product_wrap.special .special_title_wrap h4 { color: #064401; font-size: 3.6458vw; font-weight: 500;}
+    .short_pass .product_wrap.special .special_title_wrap h2 {color: #000 ; font-size: 4.5573vw;font-weight: 700; line-height: 2;}
+    .short_pass .product_wrap.special .special_prodBenefit_wrap {position: absolute; top: 7%; left: 33%; color: #000 ;font-size: 2.8646vw; line-height: 1.2;letter-spacing: -0.2604vw;}
+    .short_pass .product_wrap.special .special_prodBenefit_wrap .mleft {margin-left: 10.4167vw; letter-spacing: -0.3906vw;}
+
+    .short_pass .product_wrap.special .special_course_wrap {position: absolute; bottom: 41%; left: 33%;}
+    .short_pass .product_wrap.special .special_course_wrap .courseList_btn span  { position: relative;  display: inline-block; color: #000; font-size: 2.3438vw; font-weight: 600;  line-height: 1;
+        letter-spacing: -0.1302vw; background: #f5f5f5; border: 0.1302vw solid #aeaeae; padding: 0.6510vw 2.6042vw 0.6510vw 1.3021vw; cursor: pointer; }
+
+    .short_pass .product_wrap.special .special_course_wrap .courseList_btn span::after  { position: absolute; content: ''; top: 50%; right: 1.0417vw; transform: translateY(-50%);
+        width: 0.0000vw; height: 0; border-style: solid; border-width: 0.6510vw 0 0.6510vw 0.7813vw;   border-color: transparent transparent transparent #000; }
+    .short_pass .product_wrap.special .special_prodPrice_wrap {position: absolute;display: flex; top: 42%; right: 3%;}
+    .short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_fixed ul {display: flex;flex-direction: column;align-items: flex-end;}
+    .short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_fixed ul .disc_percent { display: inline-block; color: #fff; font-size: 2.8646vw;font-weight: 600;line-height: 1; letter-spacing: -0.2604vw;background: #fe4c6e;  border-radius: 0.6510vw; padding: 0.6510vw 1.5625vw;}
+    .short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_fixed ul li:nth-child(2) {font-size: 2.6042vw; }
+    .short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_fixed ul li:nth-child(2) span{ color: #7f7f7f;  text-decoration: line-through;}
+    .short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_price {   color: #000;font-size: 7.1615vw;font-weight: 700;
+    line-height: 1; letter-spacing: -0.3906vw; display: flex; align-items: center; justify-content: center;}
+    .short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_price span {  font-size: 2.6042vw ;}
+
+    .short_pass .product_wrap.special .special_btn_wrap { position: absolute;  bottom: 10%; right: 3%;  text-align: center;}
+    .short_pass .product_wrap.special .special_btn_wrap .courseOrder_btn span {  position: relative;  display: inline-block;  width: 55.4688vw; height: 7.8125vw; padding:0; color: #0e7613; font-size: 2.8646vw; font-weight: 600; line-height: 7.8125vw;  background: #9cff94 ;  border-radius: 1.3021vw; }
+    .short_pass .product_wrap.special .special_btn_wrap .courseOrder_btn span::after {  position: absolute; content: ''; top: 50%; right: 20.3125vw; transform: translateY(-50%);  width: 0.0000vw; height: 0;  border-style: solid;  border-width: 0.7813vw 0 0.7813vw 1.0417vw;  border-color: transparent transparent transparent #0e7613; }
+
+    .sec.short_pass .agree_wrap {margin-bottom: 6.5104vw;}
+
+    /* super pass*/
+    .super_pass {background: #717dff  url('../images/super_pass_bg.jpg') center top no-repeat; background-size: 100%;   padding-bottom: 6.5104vw;}
+    .super_pass .title_wrap {padding-top: 11.7188vw;}
+
+    .super_pass .title_wrap h1 {font-size: 8.5938vw; margin-top: 1.9531vw; }
+
+    .super_pass .product_wrap {display: flex;flex-wrap: wrap; justify-content: space-between;}
+    .super_pass .product_wrap .super_prod { position: relative; width: 89.8438vw; height: 83.3333vw; background: url(../images/mo_super_prod1_bg.png) center top no-repeat;background-size: 100%;}
+
+    .super_pass .product_wrap .super_prod .prodTitle_wrap { position: absolute; top: 2.3%; width: 100%; text-align: center; letter-spacing: -0.3255vw;}
+    .super_pass .product_wrap .super_prod .prodTitle_wrap h1 { color: rgba(0, 0, 0, 1); font-size: 4.6875vw; font-weight: 700; text-align: center ; line-height: 1.5;  }
+    .super_pass .product_wrap .super_prod .prodTitle_wrap h2 {color: #000; font-size: 3.6458vw; font-weight: 500; line-height: 1; }
+    .super_pass .product_wrap .super_prod .prodPrice_wrap {position: absolute;top: 19%;left: 0; width: 100%; height: auto;text-align: center;}
+    .super_pass .product_wrap .super_prod .prodPrice_wrap .crash_course_fixed ul .disc_percent { display: inline-block; color: #fe4c6e; font-size: 3.2552vw;font-weight: 600;line-height: 1; letter-spacing: -0.2604vw;padding: 0.2604vw 1.3021vw;}
+    .super_pass .product_wrap .super_prod .prodPrice_wrap .crash_course_fixed ul li:nth-child(2) {font-size: 3.2552vw; }
+    .super_pass .product_wrap .super_prod .prodPrice_wrap .crash_course_fixed ul li:nth-child(2) span{ color: #7f7f7f;  text-decoration: line-through;}
+    .super_pass .product_wrap .super_prod .prodPrice_wrap .crash_course_price {   color: #000;font-size: 7.8125vw;font-weight: 700;
+    line-height: 1; display: flex; align-items: center; justify-content: center;}
+    .super_pass .product_wrap .super_prod .prodPrice_wrap .crash_course_price span {  font-size: 2.6042vw ;}
+
+    .super_pass .product_wrap .super_prod .prodPrice_wrap .courseList_btn { margin-top: 2.0833vw; }
+    .super_pass .product_wrap .super_prod .prodPrice_wrap .courseList_btn span { position: relative;  display: inline-block; color: #000; font-size: 2.3438vw; font-weight: 600;  line-height: 1;
+        letter-spacing: -0.1302vw; background: #f5f5f5; border: 0.1302vw solid #aeaeae; padding: 0.6510vw 2.6042vw 0.6510vw 1.3021vw; cursor: pointer; }
+    .super_pass .product_wrap .super_prod .prodPrice_wrap .courseList_btn span::after { position: absolute; content: ''; top: 50%; right: 1.0417vw; transform: translateY(-50%);
+        width: 0.0000vw; height: 0; border-style: solid; border-width: 0.6510vw 0 0.6510vw 0.7813vw;   border-color: transparent transparent transparent #000; }
+
+    .super_pass .product_wrap .super_prod .prodBenefit_wrap {position: absolute;display: flex; flex-wrap: wrap;justify-content: space-around;  top: 54%; left: 3%; width: 96%;}
+    .super_pass .product_wrap .super_prod .prodBenefit_wrap ul {width: 46%;  padding: 0; color: #000; font-size: 2.9948vw; letter-spacing: -0.2604vw; line-height: 1.3;}
+    .super_pass .product_wrap .super_prod .prodBenefit_wrap ul .gry {color: #747474 ;}
+    .super_pass .product_wrap .super_prod .prodBenefit_wrap ul .red {color: #cf0000 ;}
+
+    .super_pass .product_wrap .super_prod .discount_txt { position: absolute; display: inline-block; bottom: 19.5%;  width: 100%;  color: #20324d; font-size: 3.9063vw; font-weight: 600; text-align: center; letter-spacing: -0.3906vw;}
+    .super_pass .product_wrap .super_prod .btn_wrap { position: absolute;  bottom: 6.7%; left: 0;  width: 100%;  text-align: center;}
+    .super_pass .product_wrap .super_prod .btn_wrap .courseOrder_btn span {  position: relative;  display: inline-block;  width: 89%; padding: 2.9948vw 0; color: #2e3551; font-size: 3.6458vw; font-weight: 600; line-height: 1;  background: #10e6ff ;  border-radius: 1.3021vw; }
+    .super_pass .product_wrap .super_prod .btn_wrap .courseOrder_btn span::after {  position: absolute; content: ''; top: 50%; right: 30.4688vw; transform: translateY(-50%);  width: 0.0000vw; height: 0;  border-style: solid;  border-width: 0.7813vw 0 0.7813vw 1.0417vw;  border-color: transparent transparent transparent #21334b; }
+
+    .super_pass .product_wrap .super_prod.pass2 { margin-top: 1.5625vw; height: 91.1458vw; background: url(../images/mo_super_prod2_bg.png) center top no-repeat; background-size: 100%;}
+    .super_pass .product_wrap .super_prod.pass3 { margin-top: 1.5625vw; height: 91.1458vw; background: url(../images/mo_super_prod3_bg.png) center top no-repeat; background-size: 100%;}
+
+    .super_pass .product_wrap .super_prod.pass3 .prodTitle_wrap { top: 2.5%;}
+    .super_pass .product_wrap .super_prod.pass3 .prodTitle_wrap h1 { color: #fff; line-height: 1.2; white-space:initial;}
+    .super_pass .product_wrap .super_prod.pass3 .prodTitle_wrap h2 {color: #f4ff47;}
+
+    .super_pass .product_wrap .super_prod.pass2 .prodPrice_wrap,
+    .super_pass .product_wrap .super_prod.pass3 .prodPrice_wrap {top: 18%;}
+
+    .super_pass .product_wrap .super_prod.pass2 .prodPrice_wrap .courseList_btn,
+    .super_pass .product_wrap .super_prod.pass3 .prodPrice_wrap .courseList_btn { margin-top: 1.5625vw; }
+
+    .super_pass .product_wrap .super_prod.pass2 .prodBenefit_wrap,
+    .super_pass .product_wrap .super_prod.pass3 .prodBenefit_wrap {top: 49%;}
+
+    .super_pass .product_wrap .super_prod.pass3 .prodBenefit_wrap .purple_bg {display: inline-block; background: #d3c1fd;}
+    .super_pass .product_wrap .super_prod.pass3 .prodBenefit_wrap .sm_txt { color: #5100a6; font-size: 1.8229vw; opacity: .5;}
+
+    .super_pass .product_wrap .super_prod.pass2 .discount_txt {bottom: 17.5%; color: #702f00;}
+    .super_pass .product_wrap .super_prod.pass2 .btn_wrap .courseOrder_btn span {color: #702f00; background: #ffb156;}
+    .super_pass .product_wrap .super_prod.pass2 .btn_wrap .courseOrder_btn span::after {border-color: transparent transparent transparent #702f00;}
+
+    .super_pass .product_wrap .super_prod.pass3 .discount_txt {bottom: 17.5%; color: #2b0978;}
+    .super_pass .product_wrap .super_prod.pass3 .btn_wrap .courseOrder_btn span {color: #2b0978; background: #b596fb;}
+    .super_pass .product_wrap .super_prod.pass3 .btn_wrap .courseOrder_btn span::after {border-color: transparent transparent transparent #2b0978;}
+
+    .super_pass .prod_note { margin: auto; margin-top: 0; width: calc(100% - 10.4167vw); color: rgba(81, 0, 166, .5); font-size: 1.8229vw;  text-align: right; letter-spacing: -0.1302vw;}
+    .super_pass .agree_wrap .agree_area span {color: #fff;}
+
+
+
+
+
+    /*********************************/
+
+
+    /* section2 */
+    .section2 .courseList_btn {
+        top: 47%;
+        left: 40%;
+        width: 20%;
+        height: 4%;
+    }
+    .section2 .price_wrap {
+        top: 69%;
+        left: 17%;
+        width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .section2 .price_wrap .price_fixed  {
+        width: 45%;
+    }
+    .section2 .price_wrap .price_fixed ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .section2 .price_wrap .price_fixed ul .disc_percent {
+        margin-top: 1.9531vw;
+        display: inline-block;
+        color: #fff;
+        font-size: 3.9063vw;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -0.2604vw;
+        background: #000;
+        border-radius: 0.6510vw;
+        padding: 0.2604vw 1.3021vw;
+    }
+    .section2 .price_wrap .price_fixed ul li:nth-child(2){
+        color: #b3b3b3;
+        font-size: 4.5573vw;
+        text-decoration: line-through;
+    }
+    .section2 .price_wrap .price_sale {
+        /* width: 50%; */
+        text-align: right;
+        color: #ff1111;
+        font-size: 11.7188vw;
+        font-weight: 900;
+        line-height: 1;
+
+    }
+    .section2 .buy_link {
+        top: 79%;
+        width: 81%;
+        height: 8%;
+    }
+
+    .sec.section2 .passAgree.allinone {
+        bottom: 5.2083vw;
+    }
+
+    /* section3 */
+    .section3 .crash_course {
+        position: absolute;
+        top: 22.6%;
+        left: 5.6%;
+        width: 42.3%;
+        height: auto;
+        text-align: center;
+        /* border: 0.1302vw solid red; */
+    }
+    .section3 .crash_course .crash_course_fixed ul .disc_percent {
+        display: inline-block;
+        color: #fff;
+        font-size: 3.5156vw;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -0.2604vw;
+        background: #fe4c6e;
+        border-radius: 0.6510vw;
+        padding: 0.2604vw 1.3021vw;
+    }
+    .section3 .crash_course .crash_course_fixed ul li:nth-child(2) {font-size: 3.2552vw; line-height: 3; }
+    .section3 .crash_course .crash_course_fixed ul li:nth-child(2) span{
+        color: #7f7f7f;
+        text-decoration: line-through;
+    }
+    .section3 .crash_course .crash_course_price {
+        color: #000;
+        font-size: 8.4635vw;
+        font-weight: 900;
+        line-height: 0.5;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+    .section3 .crash_course .crash_course_price span {
+        font-size: 2.6042vw ;
+    }
+    .section3 .crash_course .courseList_btn {
+        margin-top: 4.1667vw;
+    }
+    .section3 .crash_course .courseList_btn span {
+        position: relative;
+        display: inline-block;
+        color: #000;
+        font-size: 2.3438vw;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -0.1302vw;
+        background: #f5f5f5;
+        border: 0.1302vw solid #aeaeae;
+        padding: 1.0417vw 2.6042vw 1.0417vw 1.3021vw;
+        cursor: pointer;
+    }
+    .section3 .crash_course .courseList_btn span::after {
+        position: absolute; content: ''; top: 50%; right: 1.0417vw; transform: translateY(-50%);
+        width: 0.0000vw;
+        height: 0;
+        border-style: solid;
+        border-width: 0.6510vw 0 0.6510vw 0.7813vw;
+        border-color: transparent transparent transparent #000;
+    }
+
+
+    .section3 .crash_course.short2 {
+        top: 22.6%;
+        left: 52%;
+    }
+    .section3 .crash_course.short3 {
+        top: 55%;
+        left: 5.6%;
+    }
+    .section3 .crash_course.short4 {
+        top: 55%;
+        left: 52%;
+    }
+
+    /* 수강신청 버튼 */
+    .section3 .courseOrder_wrap {
+        position: absolute;
+        top: 42.5%;
+        left: 7%;
+        width: 40%;
+        text-align: center;
+    }
+
+    .section3 .courseOrder_wrap .courseOrder_btn span {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        padding: 2.6042vw 0;
+        color: #2e3551 ;
+        font-size: 3.2552vw;
+        font-weight: 600;
+        line-height: 1.5;
+        background: #43e4f8 ;
+        border-radius: 1.3021vw;
+        /* border: 0.1302vw solid red; */
+    }
+    .section3 .courseOrder_wrap .courseOrder_btn span::after {
+        position: absolute; content: ''; top: 50%; right: 11.7188vw; transform: translateY(-50%);
+        width: 0.0000vw;
+        height: 0;
+        border-style: solid;
+        border-width: 0.7813vw 0 0.7813vw 1.0417vw;
+        border-color: transparent transparent transparent #21334b;
+    }
+
+    .section3 .courseOrder_wrap.order2 {  top: 42.5%; left: 53%;}
+    .section3 .courseOrder_wrap.order2 .courseOrder_btn span { color: #692b00 ; background: #ffb057 ;}
+    .section3 .courseOrder_wrap.order2 .courseOrder_btn span::after { border-color: transparent transparent transparent #692b00;}
+
+    .section3 .courseOrder_wrap.order3 { top: 74.8%;  left: 7%;}
+    .section3 .courseOrder_wrap.order3 .courseOrder_btn span { color: #300e7f ; background: #b597fb ;}
+    .section3 .courseOrder_wrap.order3 .courseOrder_btn span::after { border-color: transparent transparent transparent #300e7f;}
+
+    .section3 .courseOrder_wrap.order4 { top: 74.8%;  left: 53%;}
+    .section3 .courseOrder_wrap.order4 .courseOrder_btn span {color: #731410 ; background: #ff8685 ;}
+    .section3 .courseOrder_wrap.order4 .courseOrder_btn span::after { border-color: transparent transparent transparent #731410;}
+
+    /* special course */
+    .section3 .crash_course.special {
+        top: 85.6%;
+        left: 49.2%;
+        width: 43%;
+        /* border: 0.1302vw solid red; */
+        display: flex;
+        justify-content: flex-end;
+    }
+    .section3 .crash_course.special .crash_course_fixed ul .disc_percent {
+
+        font-size: 3.2552vw;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -0.2604vw;
+        padding: 0.5208vw 1.3021vw;
+    }
+    .section3 .crash_course.special li:nth-child(1) {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .section3 .crash_course.special .crash_course_fixed ul li:nth-child(2) {
+        font-size: 2.6042vw;
+        line-height: 1;
+    }
+
+    .section3 .crash_course.special .crash_course_price {
+        color: #000;
+        font-size: 7.1615vw;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: -0.3906vw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .section3 .courseOrder_wrap.special { top: 88.9%;  left: 35%;  width: 56%;}
+    .section3 .courseOrder_wrap.special .courseOrder_btn span {color: #0e7613 ; padding: 1.3021vw 0; background: #9cff94 ;}
+    .section3 .courseOrder_wrap.special .courseOrder_btn span::after {    right: 19.5313vw; border-color: transparent transparent transparent #0e7613;}
+    .section3 .courseList_btn.special {
+        top: 83.5%;
+        left: 75%;
+    }
+    .section3 .courseList_btn.special span {
+        font-size: 2.3438vw;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -0.1302vw;
+        border: 0.1302vw solid #aeaeae;
+        padding: 0.6510vw 2.6042vw 0.6510vw 1.3021vw;
+
+    }
+    .section3 .courseList_btn.special span::after {
+        position: absolute; content: ''; top: 50%; right: 1.0417vw; transform: translateY(-50%);
+        width: 0.0000vw;
+        height: 0;
+        border-width: 0.6510vw 0 0.6510vw 0.7813vw;
+    }
+
+    /* section4 */
+    .section4 .super_course {
+        position: absolute;
+        top: 18.4%;
+        left: 5.2%;
+        width: 88.8%;
+        height: auto;
+        /* border: 0.1302vw solid red; */
+        text-align: center;
+    }
+    .section4 .super_course .super_course_fixed ul .disc_txt {
+        display: inline-block;
+        color: #ff1a45;
+        font-size: 3.2552vw;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: -0.2604vw;
+    }
+    .section4 .super_course .super_course_fixed ul li:nth-child(2) {font-size: 3.2552vw; }
+    .section4 .super_course .super_course_fixed ul li:nth-child(2) span{
+        color: #7f7f7f;
+        text-decoration: line-through;
+    }
+    .section4 .super_course .super_course_price {
+    color: #000;
+    font-size: 7.8125vw;
+    font-weight: 900;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center
+    }
+    .section4 .super_course .super_course_price span {
+        font-size: 2.6042vw ;
+    }
+    .section4 .super_course .courseList_btn {
+        margin-top: 1.3021vw;
+    }
+    .section4 .super_course .courseList_btn span {
+        position: relative;
+        display: inline-block;
+        color: #000;
+        font-size: 2.2135vw;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: -0.1302vw;
+        background: #f5f5f5;
+        border: 0.1302vw solid #aeaeae;
+        padding: 0.9115vw 2.6042vw 0.9115vw 1.3021vw;
+        cursor: pointer;
+    }
+    .section4 .super_course .courseList_btn span::after {
+        position: absolute; content: ''; top: 50%; right: 1.0417vw; transform: translateY(-50%);
+        width: 0.0000vw;
+        height: 0;
+        border-style: solid;
+        border-width: 0.6510vw 0 0.6510vw 0.7813vw;
+        border-color: transparent transparent transparent #000;
+    }
+
+    .section4 .super_course.super2 { top: 44.2%; left: 5.2%;}
+    .section4 .super_course.super3 { top: 73.7%; left: 5.2%;}
+
+    /* 수강신청 버튼 */
+    .section4 .courseOrder_wrap {
+        position: absolute;
+        top: 34%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        text-align: center;
+    }
+
+    .section4 .courseOrder_wrap .courseOrder_btn span {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        padding: 3.3854vw 0;
+        color: #20324d ;
+        font-size: 3.6458vw;
+        font-weight: 600;
+        line-height: 1;
+        background: #10e6ff ;
+        border-radius: 1.3021vw;
+        /* border: 0.1302vw solid red; */
+    }
+    .section4 .courseOrder_wrap .courseOrder_btn span::after {
+        position: absolute; content: ''; top: 50%; right: 29.2500vw; transform: translateY(-50%);
+        width: 0.0000vw;
+        height: 0;
+        border-style: solid;
+        border-width: 1.3021vw 0 1.3021vw 1.5625vw;
+        border-color: transparent transparent transparent #20324d;
+    }
+
+    .section4 .courseOrder_wrap.super2 { top: 62%;left: 50%;}
+    .section4 .courseOrder_wrap.super2 .courseOrder_btn span { color: #702f00 ; background: #ffb156 ;}
+    .section4 .courseOrder_wrap.super2 .courseOrder_btn span::after { border-color: transparent transparent transparent #702f00;}
+
+    .section4 .courseOrder_wrap.super3 { top: 91.8%;left: 50%;}
+    .section4 .courseOrder_wrap.super3 .courseOrder_btn span { color: #2b0978 ; background: #b596fb ;}
+    .section4 .courseOrder_wrap.super3 .courseOrder_btn span::after { border-color: transparent transparent transparent #2b0978;}
+
+    .sec.section4 .passAgree.super {
+        bottom: 2.6042vw;
+    }
+    .sec.section4 .passAgree.super .agree_area span {
+        color: #fff;
+    }
+
+    /* section5 */
+    .section5 .dDay_wrap {top: 28.5%; left: 50%; transform: translateX(-50%); width: 46.6198vw; height: 4.6875vw; }
+    .section5 .dDay_wrap span {display: inline-block; width: 100%; padding: 0.2604vw 0; color:#fff ; font-size: 3.2552vw;font-weight: 600; letter-spacing: -0.1302vw; text-align: center; background: #000; border-radius: 0.9115vw; }
+    .section5 .dDay_wrap span b {color:#f4ff47}
+    .section5 .count_wrap {position: absolute; top: 50%;
+        left: 54%; transform: translateX(-50%); width: 39%; height: auto;
+        /* border: 0.1302vw solid red; */
+    }
+    .section5 .count_wrap span {display: inline-block;width: 30%;color: #000; font-size: 10.4167vw; font-weight: 700; text-align: center; margin-left: 3.8%;}
+    .section5 .count_wrap span:nth-child(1) {margin-left: 0;}
+    .section5 .link1 {top: 61%; left: 50%; transform: translateX(-50%); width: 80%; height: 5.5%;}
+
+    /* section6 */
+    .section6 .link1 {top: 18.5%; left: 50%; transform: translateX(-50%); width: 58%; height: 15.5%;}
+    .section6 .link2 {top: 37.5%; left: 50%; transform: translateX(-50%); width: 58%; height: 15.5%;}
+
+
+
+
+
+    /* section9 */
+    .tabWrap {
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        height: 9.1146vw;
+    }
+    .title_tabWrap {
+        width: 100%;
+        background: #6360c5;
+        border-radius: 1.9531vw; overflow: hidden;
+    }
+    .title_tabWrap ul { display: flex; }
+    .title_tabWrap li { width: calc(100% / 2); height: auto; text-align: center;  box-sizing: border-box; }
+    .title_tabWrap li a {  display: block; width: 100%; height: 100%;  font-size: 3.1250vw; color: #fff; font-weight: 700;line-height: 9.1146vw; letter-spacing: -0.1302vw; background: #001af4;  }
+    .title_tabWrap li.active a { background: #f6eb2d; color: #000;font-size: 3.1250vw; border-radius: 1.9531vw; }
+
+    .tabWrap .sec_detail {
+        margin-top: 1.3021vw;
+    }
+
+    /* section10*/
+    .section10 .top {
+        background: url('../images/mo_basic_pass_10_01.jpg') center no-repeat;
+        background-size: 100%;
+    }
+    .section10 .btm {
+        background: url('../images/mo_basic_pass_10_02.jpg') center top no-repeat;
+        background-size: 100%;
+    }
+    .section10 .slider_wrap {
+        margin: auto;
+        padding-top: 6.5104vw;
+        max-width: 100%;
+        height: 46.6146vw;
+    }
+
+    .section10 .book_swiper-container{ position: relative; width: 100%; height: auto; overflow: hidden;}
+    .section10 .book_swiper-container .swiper-wrapper {  transition-timing-function: linear;}
+
+    /* section11 */
+    .section11 .reviewSlider_area {
+        position: absolute;
+        top: 48.1%;
+        left: 23.7%;
+        width: 52.625%;
+        height: auto;
+    }
+    .reviewSlider_area .reviewSlider_swiper-container{ position: relative; width: 100%; height: auto;padding: 1.5625vw 0; border-radius: 6.5104vw; overflow: hidden;}
+    /* .reviewSlider_area .swiper-wrapper {  transition-timing-function: linear;} */
+
+    .reviewSlider_area .swiper-slide img{
+        filter: drop-shadow(0.0000vw 0.0000vw 0.7813vw rgba(0, 0, 0, 0.3));
+    }
+    .reviewSlider_area .reviewSlider_swiper-container .swiper-pagination { bottom: 2.0833vw !important;  }
+    .reviewSlider_area .reviewSlider_swiper-container .swiper-pagination-bullet { background: #fff; width: 1.5625vw; height: 1.5625vw; opacity: 1;}
+    .reviewSlider_area .reviewSlider_swiper-container .swiper-pagination-bullet-active {background: #5153c3; opacity: 1;}
+
+    .reviewSlider_area .reviewSlider_swiper-container .swiper-button-next {
+       display: none;
+    }
+
+    .reviewSlider_area .reviewSlider_swiper-container .swiper-button-prev {
+        display: none;
+    }
+
+
+
+    /* section12 */
+
+    .section12 .review_box {
+        position: absolute;
+        top: 44.5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 66% ;
+        height: auto;
+    }
+    .section12 .review_box .scroll_wrap {
+        overflow: hidden;
+        height: 20.8333vw;
+    }
+    .section12 .review_box .reviewList_scroll {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        animation: loop_scroll 70s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    .section12 .review_box .scroll_wrap .reviewList_scroll  > div {
+        width: calc(100% / 3);
+        color: #fff;
+        font-size: 1.8438vw;
+        text-align: center;
+        letter-spacing: -0.1302vw;
+    }
+
+    @keyframes loop_scroll {
+        0%{
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(calc(-100% + 20.8333vw));
+        }
+    }
+
+    /* passNotice  유의사항 */
+    .passNotice .tab_content {
+        display: none;
+        padding: 0;
+        clear: both;
+        overflow: hidden;
+        padding: 5.2083vw 0.0000vw 5.2083vw 0.0000vw;
+        min-height: 52.0833vw;
+    }
+
+    .passNotice .passNotice_area h2 {
+        /* margin-top: 11.7188vw; */
+        padding-left: 4.4271vw;
+        color: #192436;
+        font-size: 3.6458vw;
+    }
+
+    .passNotice .passNotice_tabs {
+        width: 96%;
+    }
+
+    .passNotice .tab_item {
+        position: relative;
+        width: calc(100%/8);
+        background-color: #dbdbdb;
+        line-height: 2.5;
+        font-size: 2.1229vw;
+        text-align: center;
+        color: #77787c;
+        display: block;
+        float: left;
+        text-align: center;
+        font-weight: bold;
+        transition: all 0.2s ease;
+    }
+
+    .passNotice .tab_content {
+        display: none;
+        padding: 0;
+        clear: both;
+        overflow: hidden;
+        padding: 5.2083vw 5.2083vw 5.2083vw 3.9063vw;
+        min-height: 52.0833vw;
+    }
+
+    .passNotice .tab_content ul {
+        color: #333;
+        font-size: 2.0833vw;
+        line-height: 4.0250vw;
+        letter-spacing: -0.1563vw;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .short_pass .prodPrice_wrap .crash_course_fixed ul .disc_percent {padding: 0.6604vw 1.3021vw;}
+    .short_pass .product_wrap.special .special_prodPrice_wrap .crash_course_fixed ul .disc_percent{padding: 1.0510vw 1.5625vw;}
+
+    /* .section3 .crash_course {top: 22%;}
+    .section3 .crash_course.short2 {top: 22%;}
+    .section3 .crash_course.short3 {top: 54.5%;}
+    .section3 .crash_course.short4 {top: 54.5%;}
+
+    .section4 .super_course {top:17.8%;}
+    .section4 .super_course.super2 {top:43.8%}
+    .section4 .super_course.super3 {top: 73.1%;} */
+
+}
+
+@media screen and (max-width: 480px){
+
+    /* .section2 .price_wrap .price_fixed ul .disc_percent {padding-top: 0.8604vw ;}
+
+    .section3 .crash_course .crash_course_fixed ul .disc_percent {
+        padding-top: 0.6604vw ;
+    }
+    .section3 .crash_course .courseList_btn {
+        margin-top: 3.1667vw;
+    }
+
+    .section3 .crash_course.special {        top: 85.8%;}
+    .section3 .crash_course.special .crash_course_fixed ul li:nth-child(2){
+        line-height: 1.4;
+    }
+    .section4 .super_course .courseList_btn {
+        margin-top: 0.8021vw;
+    } */
+
+    .section5 .count_wrap {
+        width: 42%;
+    }
+    .section5 .count_wrap span {
+        margin-left: 2%;
+    }
+
+
+}
+
+@media screen and (max-width: 360px){
+
+    .section12 .review_box .scroll_wrap .reviewList_scroll  > div {
+        letter-spacing: -2px;
+    }
+
+}
+
+

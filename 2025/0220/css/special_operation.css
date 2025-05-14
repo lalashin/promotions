@@ -1,0 +1,724 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ft_gmarket { font-family: 'GmarketSansMedium'; }
+
+/*공통 S*/
+.new-event-view {
+    position: relative;
+    background: #fff;
+}
+.new-event-view {
+    width: 100%;
+    margin: 0 auto;
+}
+.new-event-view .mo-img {
+    display: none;
+}
+
+.new-event-view .sec .inner {
+  max-width: 1280px; /*시안에 따라 1170px~1400px 유동적 조정*/
+  margin: 0 auto;
+  position: relative;
+}
+
+.new-event-view img {
+    width: 100%;
+}
+
+.new-event-view iframe {
+    bordeR: 0;
+}
+
+/*공통 E*/
+
+.new-event-view .section1 {background: #081030 url('../images/special_operation_bg_01.jpg') center no-repeat;}
+.new-event-view .section2 {background: #2532ae}
+.new-event-view .section3 {background: #151c5b url('../images/special_operation_bg_03.jpg') center no-repeat;}
+.new-event-view .section4 {background: #0f1337 url('../images/special_operation_bg_04.jpg') center no-repeat;}
+.new-event-view .section5 {background: #0f1337 url('../images/special_operation_bg_05.jpg') center no-repeat;}
+.new-event-view .section6 {background: #0f1337 url('../images/special_operation_bg_06.jpg') center no-repeat;}
+.new-event-view .section7 {background: #0f1337 url('../images/special_operation_bg_07.jpg') center no-repeat;}
+.new-event-view .section8 {background: #0f1337 url('../images/special_operation_bg_08.jpg') center no-repeat;}
+.new-event-view .section9 {background: #0f1337 url('../images/special_operation_bg_09.jpg') center no-repeat;}
+.new-event-view .section10 {background: #2aece5}
+.new-event-view .section11 {background: #b9ddff url('../images/special_operation_bg_11.jpg') center no-repeat;}
+.new-event-view .section12 {background: #0f1337 url('../images/special_operation_bg_12.jpg') center no-repeat;}
+
+
+/* section1 */
+.section1 .ani {position: absolute; opacity: 0;}
+.section1 .tlt1 {top: 9.3%; left: 28.7%;width:549px;height: 111px;}
+.section1 .tlt2 {top: 26.7%; left:13.5%;width:933px;height: 399px;}
+.section1 .tlt3 {top: 68.7%; left: 11%;width:987px;height: 151px;}
+
+.section1.show .ani.tlt1,
+.section1.show .ani.tlt3 {animation: fade-in-blur 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both}
+.section1.show .ani.tlt2 {animation: fade-in-blur1 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both}
+.section1.show .tlt1 {animation-delay: .3s;}
+.section1.show .tlt2 {animation-delay: .8s;}
+.section1.show .tlt3 {animation-delay: 2s;}
+
+/* section2 */
+.buy_wrap {position: absolute; top: 48%;  width: calc(100% - 80px); padding: 0 40px; }
+.buy_table { display: flex; justify-content: space-between; border-radius: 30px;
+    background: #fff;
+    /* border: 1px solid red; */
+    padding: 50px 60px;
+}
+.buy_table .prod_tit h1{ color: #000; font-size: 53px;font-weight: 900;white-space:pre-line; margin-top: 53px; line-height: 1.2;}
+.buy_table .prod_tit h1 em { display: inline-block; color: #2532ae; font-size: 48px; font-weight: 900; background: linear-gradient(to right,#d0d1ef, #bed2f1, #e8e7f7, #e4baed);;padding: 2px 7px;}
+.buy_table .fixed_price { margin-top: 86px;margin-left: 50px;}
+.buy_table .fixed_price span{ position: relative; font-size: 33px; letter-spacing: -.5px;  color: rgba(0, 0, 0, .6);}
+.buy_table .fixed_price span::before {position: absolute; content: ''; top: 4px; left:-12px; width: 302px; height: 12px; background: url(../images/ico_arrow.png) no-repeat; background-size: cover; }
+
+.discount_wrap ul {display: flex; width: 100%; flex-direction: column;    align-items: flex-end; margin-top: 19px;}
+.discount_wrap .dis_label span { position: relative; display: inline-block; color: #fff; font-size: 25px;  background: #ea1a46; padding: 4px 20px 0 20px; border-radius: 50px;}
+.discount_wrap .dis_label span::after {position: absolute;content: ''; border-bottom: 0px solid transparent; border-left: 7px solid transparent;  border-right: 10px solid transparent; border-top: 15px solid #ea1a46;  bottom: -10px; left: 31%; transform: rotate(20deg);  z-index: 9;}
+.discount_wrap .discount_price { color: #000; font-size: 43px ; font-weight: bold; letter-spacing: -1px;}
+.discount_wrap .discount_price b {font-size: 58px ;}
+.discount_wrap .buy_btn span { display: inline-block; width: 270px; height: 64px; margin-top: 78px;}
+
+.buy_label {position: absolute; top: 35%; left: 7.2%; width: 178px; height: 232px;}
+
+
+/* section3 */
+.section3 .ani {position: absolute;top: 24.9%; width: 380px;height: 460px;opacity: 0;}
+.section3 .rw1 { left: 3.2%;}
+.section3 .rw2 { left: 35.3%;}
+.section3 .rw3 { left: 67.2%;}
+
+.section3.show .ani { animation: slide-top 0.5s cubic-bezier(0.3, 0.8, 0.3, 1.3) both;}
+.section3.show .rw1 {animation-delay: .2s;}
+.section3.show .rw2 {animation-delay: .7s;}
+.section3.show .rw3 {animation-delay: 1.2s;}
+
+/* section4 */
+.section4 .go_link {position: absolute; top: 73%; left: 36%; width: 305px; height: 80px; }
+
+/* section5 */
+.section5 .ani { position: absolute; opacity: 0;}
+.section5 .to_right {top: 5.6%; left: 3.2%; width: 443px; height: 81px;}
+.section5 .to_top {top: 22%; left: 3.2%; width: 1200px; height: 485px;}
+
+.section5.show .ani.to_right {animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
+.section5.show .ani.to_top {animation: slide-top 0.5s 0.3s cubic-bezier(0.215, 0.610, 0.355, 1.000)  both;}
+
+/* section6 */
+.section6 .ani,
+.section6 .ani_t2 { position: absolute; opacity: 0;}
+
+.section6 .to_right {top: 6.3%; left: 3.2%; width: 596px; height: 81px;}
+.section6 .p1 {top: 21%; left: 12%; width: 306px; height: 150px; z-index: 4;}
+.section6 .p2 {top: 21%; left: 35%; width: 306px; height: 150px; z-index: 3;}
+.section6 .p3 {top: 21%; left: 57.3%; width: 306px; height: 150px; z-index: 2;}
+.section6 .p4 {top: 18%; left: 79%; width: 230px; height: 169px; z-index: 1;}
+
+.section6 .s1 {top: 49%; left: 12%; width: 236px; height: 150px; z-index: 6;}
+.section6 .s2 {top: 49%; left: 29%; width: 236px; height: 150px; z-index: 5;}
+.section6 .s3 {top: 49%; left: 46%; width: 236px; height: 150px; z-index: 4;}
+.section6 .s4 {top: 49%; left: 63%; width: 236px; height: 150px; z-index: 3;}
+.section6 .s5 {top: 73%; left: 63%; width: 286px; height: 147px; z-index: 2;}
+.section6 .s6 {top: 46%; left: 79%; width: 230px; height: 169px; z-index: 1;}
+
+.section6.show .ani.to_right {animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
+
+.section6.show .ani_t2 {animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
+.section6.show .ani_t2.p1{animation-delay: .2s;}
+.section6.show .ani_t2.p2{animation-delay: .4s;}
+.section6.show .ani_t2.p3{animation-delay: .6s;}
+.section6.show .ani_t2.p4{animation-delay: .8s;}
+
+.section6.show .ani_t2.s1{animation-delay: .8s;}
+.section6.show .ani_t2.s2{animation-delay: 1s;}
+.section6.show .ani_t2.s3{animation-delay: 1.2s;}
+.section6.show .ani_t2.s4{animation-delay: 1.4s;}
+.section6.show .ani_t2.s5{animation-delay: 1.6s;}
+.section6.show .ani_t2.s6{animation-delay: 1.8s;}
+
+/* section7 */
+.section7 .ani { position: absolute; opacity: 0;}
+.section7 .to_right {top: 7%;  left: 3.2%; width: 789px; height: 81px;}
+.section7 .to_top {top: 33.5%;  left: 3.2%; width: 1200px; height: 220px;}
+
+.section7.show .ani.to_right {animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
+.section7.show .ani.to_top {animation: slide-top 0.5s 0.3s cubic-bezier(0.215, 0.610, 0.355, 1.000)  both;}
+
+/* section8 */
+.section8 .ani { position: absolute; opacity: 0;}
+.section8 .to_right {top: 5%; left: 3.2%; width: 776px; height: 81px;}
+.section8 .to_top {top:24%; left: 3.2%; width: 1200px; height: 400px;}
+
+.section8.show .ani.to_right {animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
+.section8.show .ani.to_top {animation: slide-top 0.5s 0.3s cubic-bezier(0.215, 0.610, 0.355, 1.000)  both;}
+
+/* section9 */
+.section9 .ani { position: absolute; opacity: 0;}
+.section9 .to_right {top: 3%; left: 3.2%; width: 934px; height: 81px;}
+
+.section9 .tab_area {position: absolute; top: 15.3%; left: 0;width: calc(100% - 80px); opacity: 0;}
+.section9 .tab_area .title_tabWrap {width: 100%; padding: 0 40px; }
+.section9 .tab_area .title_tabWrap ul { display: flex; justify-content: space-between; }
+.section9 .tab_area .title_tabWrap li { width: 590px; height: 90px; text-align: center; border-radius: 20px; overflow: hidden;}
+.section9 .tab_area .title_tabWrap li a {  display: block; width: 100%; height: 100%;  font-size: 38px; color: #7e86c5; font-weight: 700; line-height: 90px; background: #2e335b;  }
+.section9 .tab_area .title_tabWrap li.active a { background: #2aece5; color: #0f1337;}
+.section9 .tab_area .sec_detail {width: 100%;padding: 0 40px; margin-top: 20px;}
+
+.section9.show .ani.to_right {animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;}
+.section9.show .tab_area {animation: slide-top 0.5s 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000)  both;}
+
+/* section10 */
+.section10 .ani { position: absolute; opacity: 0;}
+.section10 .to_top1 {top: 24.5%; left: 3.2%; width: 1200px; height: 350px;}
+.section10 .to_top2 {top: 50%; left: 3.2%; width: 1200px; height: 350px;}
+.section10 .to_top3 {top: 71.7%; left: 3.2%; width: 1200px; height: 350px;}
+
+.section10.show .ani { animation: slide-top 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;}
+.section10.show .to_top1 {animation-delay: .2s;}
+.section10.show .to_top2 {animation-delay: .7s;}
+.section10.show .to_top3 {animation-delay: 1.2s;}
+
+/* section11 */
+.buy_wrap.sec11 {top: 41%;}
+.buy_wrap.sec11 .buy_table {
+    border: 2px solid #000;
+}
+.buy_wrap.sec11 .buy_table .prod_tit h1 em { color: #ebf1fe; font-weight: 700; background:#0f1337 ;}
+.buy_wrap.sec11 .discount_wrap .buy_btn span {margin-top: 41px;}
+
+.buy_label.sec11 {top: 26%; }
+
+/* section12 */
+/* .section12 .typing_wrap {position: absolute; top: 20%; left: 50%; transform: translateX(-50%); width: 100%;} */
+/* .section12 .ani { position: absolute;}
+.section12 .to_top { top: 64%; left: 15.8%; width: 882px; height: 66px;}
+.section12.show .to_top {animation: scale-down-center 0.4s 4.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;} */
+
+.typing-container {position: absolute;top: 63%;left: 0;color: #fbf6ff;font-size: 64px; font-weight:700; font-family:'Pretendard'; width: 100%; word-break:keep-all; text-align: center; line-height: 1.2;}
+.typing-container .text_area{white-space:pre-line;}
+#cursor {
+    border-left: 2px solid #fff; /* 커서 스타일 */
+    animation: blink 0.7s infinite;
+    display: inline-block;
+    margin-left: 2px;
+    height: 64px; /* 폰트 크기와 동일하게 설정 */
+    vertical-align: middle;
+}
+.highlight {
+    color: #69fffa;
+}
+
+@keyframes fade-in-blur {
+    0% {filter: blur(30px); opacity: 0;}
+    100% {filter: blur(0); opacity: 1;}
+}
+@keyframes fade-in-blur1 {
+    0% {filter: blur(30px); opacity: 0;}
+    60% {filter: blur(0); opacity: 1;}
+    65% {
+        opacity: 0;
+      }
+      65.1% {
+        opacity: 1;
+      }
+      75% {
+        opacity: 1;
+      }
+      75.1% {
+        opacity: 0;
+      }
+      77% {
+        opacity: 0;
+      }
+      77.1% {
+        opacity: 1;
+      }
+      85% {
+        opacity: 1;
+      }
+      85.1% {
+        opacity: 0;
+      }
+      86% {
+        opacity: 0;
+      }
+      86.1% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+}
+@keyframes scale-down-center {
+    0% { transform: scale(1.5);opacity: 0;}
+    100% { transform: scale(1);opacity: 1;}
+}
+
+@keyframes slide-top {
+    0% {transform: translateY(100px);opacity: 0;}
+    100% { transform: translateY(0);opacity: 1;}
+}
+@keyframes slide-right {
+    0% {transform: translateX(-100px);opacity: 0;}
+    100% {transform: translateX(0);opacity: 1;}
+}
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes scale-down-center {
+  0% {transform: scale(2);opacity: 0;}
+  100% {transform: scale(1);opacity: 1;}
+}
+
+
+/* section13 */
+
+/* passNotice 유의사항 */
+.passNotice{background: #f6f6f6;}
+.passNotice .passNotice_area h2 { padding: 80px 70px 20px 70px; color: #192436; font-size: 28px;}
+
+/* 탭 전체 스타일 */
+.passNotice .passNotice_tabs { margin: auto; margin-top: 10px; width: 92%; opacity: 1;}
+
+/* 탭 스타일 */
+.passNotice .tab_item {
+    position: relative;
+    width: calc(100%/3);
+    background-color: #dbdbdb;
+    line-height: 2.5;
+    font-size: 16px;
+    text-align: center;
+    color: #77787c;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.passNotice .tab_item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 1px;
+    height: 30%;
+    background: #77787c;
+}
+.passNotice .tab_item.lat::after{
+    display: none;
+}
+.passNotice .tab_item:hover {
+    opacity: 0.75;
+}
+
+/* 라디오 버튼 UI삭제*/
+input[name="tab_item"] {
+    display: none;
+}
+
+/* 탭 컨텐츠 스타일 */
+.passNotice .tab_content {
+    display: none;
+    padding:0;
+    clear: both;
+    overflow: hidden;
+    padding: 40px 20px;
+    min-height: 400px;
+}
+.passNotice .tab_content ul{
+    color: #333;
+    font-size: 1.4rem;
+    line-height: 24px;
+    letter-spacing: -1.2px;
+    font-weight: 700;
+}
+.passNotice .tab_content ul li{
+    padding: 2px 0;
+}
+.passNotice .tab_content ul ul {
+    font-weight: 400;
+    padding-left: 15px;
+}
+.passNotice .tab_content ul ul li {
+    padding: 0;
+}
+.passNotice .tab_content .ps {
+    margin-top: 35px;
+}
+
+/* 선택 된 탭 콘텐츠를 표시 */
+#p1:checked ~ .p1_content,
+#p2:checked ~ .p2_content,
+#p3:checked ~ .p3_content,
+#p4:checked ~ .p4_content,
+#p5:checked ~ .p5_content,
+#p6:checked ~ .p6_content,
+#p7:checked ~ .p7_content,
+#p8:checked ~ .p8_content              {
+display: block;
+}
+
+/* 선택된 탭 스타일 */
+.passNotice .passNotice_tabs input:checked + .tab_item {
+    color: #101920;
+}
+
+
+/*하단 고정 띠배너*/
+.band_banner {   position: fixed; height: 110px; width: 100%;bottom: 0; left: 0;background: #2aece5;z-index: 10;}
+.band_banner .sub_txt {position: absolute; top: 20px; left: 40px; font-size: 20px; color: #2635c6; font-weight: 400; letter-spacing: 10px;}
+.band_banner .title_txt {position: absolute; top: 39px; left: 40px; font-size: 44px; color: #000; font-weight: 800; letter-spacing: -1px;}
+.band_banner .title_txt span {color: #2635c6;}
+.band_banner .title_txt br{display: none;}
+.band_banner .go_link {position: absolute; width: 300px; height: 70px; top:20px; right: 40px;}
+
+
+@media screen and (max-width: 1280px){
+    /* w 100% - 80px */
+    /* p 0 40px */
+
+    /* section1 */
+    .section1 .tlt1 {top: 9.3%; left: 28.2%;width:42.8906vw;height: 8.6719vw;}
+    .section1 .tlt2 {top: 26.7%; left:13%;width:72.8906vw;height: 31.1719vw;}
+    .section1 .tlt3 {top: 68.7%; left: 10.5%;width:77.1094vw;height: 11.7969vw;}
+
+    /* section2 */
+    .buy_wrap { top: 48%;  width: calc(100% - 6.2500vw); padding: 0 3.1250vw; }
+    .buy_table {  border-radius: 2.3438vw;
+        /* background: #fff; */
+        /* border: 0.0781vw solid red; */
+        padding: 3.9063vw 4.6875vw;
+    }
+    .buy_table .prod_tit h1{  font-size: 4.1406vw;white-space:pre-line; margin-top: 4.1406vw; line-height: 1.2;}
+    .buy_table .prod_tit h1 em {   font-size: 3.7500vw;  background: linear-gradient(to right,#d0d1ef, #bed2f1, #e8e7f7, #e4baed);;padding: 0.1563vw 0.5469vw;}
+    .buy_table .fixed_price { margin-top: 6.7188vw;margin-left: 3.9063vw;}
+    .buy_table .fixed_price span{  font-size: 2.5781vw; letter-spacing: -0.0391vw;  color: rgba(0, 0, 0, .6);}
+    .buy_table .fixed_price span::before {  top: 0.3125vw; left:-0.9375vw; width: 23.5938vw; height: 0.9375vw; background: url(../images/ico_arrow.png) no-repeat; background-size: 100%;  }
+
+    .discount_wrap ul { width: 100%; flex-direction: column;    align-items: flex-end; margin-top: 1.4844vw;}
+    .discount_wrap .dis_label span {    font-size: 1.9531vw;  background: #ea1a46; padding: 0.3125vw 1.5625vw 0 1.5625vw; border-radius: 3.9063vw;}
+    .discount_wrap .dis_label span::after { border-bottom: 0.0000vw solid transparent; border-left: 0.5469vw solid transparent;  border-right: 0.7813vw solid transparent; border-top: 1.1719vw solid #ea1a46;  bottom: -0.7813vw; left: 31%; transform: rotate(20deg);  }
+    .discount_wrap .discount_price {  font-size: 3.3594vw ;  letter-spacing: -0.0781vw;}
+    .discount_wrap .discount_price b {font-size: 4.5313vw ;}
+    .discount_wrap .buy_btn span {  width: 21.0938vw; height: 5.0000vw; margin-top: 6.0938vw;}
+
+    .buy_label { top: 35%; left: 7.2%; width: 13.9063vw; height: 18.1250vw;}
+
+    /* section3 */
+    .section3 .ani {width: 29.6875vw;height: 35.9375vw;}
+
+    /* section4 */
+    .section4 .go_link { top: 73%; left: 36%; width: 23.8281vw; height: 6.2500vw; }
+
+    /* section5 */
+    .section5 .to_right {top: 5.6%; left: 3.2%; width: 34.6094vw; height: 6.3281vw;}
+    .section5 .to_top {top: 22%; left: 3.2%; width: 93.7500vw; height: 37.8906vw;}
+
+    /* section6 */
+    .section6 .to_right {top: 6.3%; left: 3.2%; width: 46.5625vw; height: 6.3281vw;}
+    .section6 .p1 {top: 21%; left: 12%; width: 23.9063vw; height: 11.7188vw; }
+    .section6 .p2 {top: 21%; left: 35%; width: 23.9063vw; height: 11.7188vw; }
+    .section6 .p3 {top: 21%; left: 57.3%; width: 23.9063vw; height: 11.7188vw; }
+    .section6 .p4 {top: 18%; left: 79%; width: 17.9688vw; height: 13.2031vw; }
+
+    .section6 .s1 {top: 49%; left: 12%; width: 18.4375vw; height: 11.7188vw; }
+    .section6 .s2 {top: 49%; left: 29%; width: 18.4375vw; height: 11.7188vw; }
+    .section6 .s3 {top: 49%; left: 46%; width: 18.4375vw; height: 11.7188vw; }
+    .section6 .s4 {top: 49%; left: 63%; width: 18.4375vw; height: 11.7188vw; }
+    .section6 .s5 {top: 73%; left: 63%; width: 22.3438vw; height: 11.4844vw; }
+    .section6 .s6 {top: 46%; left: 79%; width: 17.9688vw; height: 13.2031vw; }
+
+    /* section7 */
+    .section7 .to_right {top: 7%;  left: 3.2%; width: 61.6406vw; height: 6.3281vw;}
+    .section7 .to_top {top: 33.5%;  left: 3.2%; width: 93.7500vw; height: 17.1875vw;}
+
+    /* section8 */
+    .section8 .to_right {top: 5%; left: 3.2%; width: 60.6250vw; height: 6.3281vw;}
+    .section8 .to_top {top:24%; left: 3.2%; width: 93.7500vw; height: 31.2500vw;}
+
+    /* section9 */
+    .section9 .to_right {top: 3%; left: 3.2%; width: 72.9688vw; height: 6.3281vw;}
+    .section9 .tab_area { top: 15.3%; left: 0;width: calc(100% - 6.2500vw); }
+    .section9 .tab_area .title_tabWrap {width: 100%; padding: 0 3.1250vw; }
+    .section9 .tab_area .title_tabWrap li { width: 46.0938vw; height: 7.0313vw;  border-radius: 1.5625vw; }
+    .section9 .tab_area .title_tabWrap li a {   width: 100%; height: 100%;  font-size: 2.9688vw;   line-height: 7.0313vw; background: #2e335b;  }
+    .section9 .tab_area .title_tabWrap li.active a { background: #2aece5; }
+    .section9 .tab_area .sec_detail {width: 100%;padding: 0 3.1250vw; margin-top: 1.5625vw;}
+
+    /* section10 */
+    .section10 .to_top1 {top: 24.5%; left: 3.2%; width: 93.7500vw; height: 27.3438vw;}
+    .section10 .to_top2 {top: 50%; left: 3.2%; width: 93.7500vw; height: 27.3438vw;}
+    .section10 .to_top3 {top: 71.7%; left: 3.2%; width: 93.7500vw; height: 27.3438vw;}
+
+    /* section11 */
+    .buy_wrap.sec11 .buy_table .prod_tit h1 em {   background:#0f1337 ;}
+    .buy_wrap.sec11 .discount_wrap .buy_btn span {margin-top: 3.2031vw;}
+    .buy_label.sec11 {top: 26%; }
+
+    /* section12 */
+    .typing-container {top: 63%;left: 0;font-size: 5.0000vw;   width: 100%; word-break:keep-all;  line-height: 1.2;}
+    .typing-container .text_area{white-space:pre-line;}
+    #cursor {
+        border-left: 0.1563vw solid #fff; /* 커서 스타일 */
+        animation: blink 0.7s infinite;
+
+        margin-left: 0.1563vw;
+        height: 5.0000vw; /* 폰트 크기와 동일하게 설정 */
+
+    }
+
+    /* section13 */
+    /* passNotice 유의사항 */
+    .passNotice .passNotice_area h2 {
+        padding: 6.2500vw 5.4688vw 1.5625vw 5.4688vw;
+        font-size: 2.1875vw;
+    }
+
+    /* 탭 전체 스타일 */
+    .passNotice .passNotice_tabs {
+        margin: auto;
+        margin-top: 0.7813vw;
+        width: 92%;
+        opacity: 1;
+    }
+
+    /* 탭 스타일 */
+    .passNotice .tab_item {
+        line-height: 2.5;
+        font-size: 1.2500vw;
+        transition: all 0.2s ease;
+    }
+    .passNotice .tab_item::after {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 0.151vw;
+        height: 30%;
+        background: #77787c;
+    }
+    .passNotice .tab_item:hover {
+        opacity: 0.75;
+    }
+
+
+    /* 탭 컨텐츠 스타일 */
+    .passNotice .tab_content {
+        padding:0;
+        clear: both;
+        padding: 3.3333vw 1.1667vw;
+        min-height: 31.2500vw;
+    }
+    .passNotice .tab_content ul{
+        font-size: 1.0938vw;
+        line-height: 1.8750vw;
+        letter-spacing: -0.0937vw;
+    }
+    .passNotice .tab_content ul li{
+        padding: 0.1563vw 0;
+    }
+    .passNotice .tab_content ul ul {
+        padding-left: 1.1719vw;
+    }
+    .passNotice .tab_content ul ul li {
+        padding: 0;
+    }
+    .passNotice .tab_content .ps {
+        margin-top: 2.7344vw;
+        font-size: 1.2500vw;
+    }
+
+
+    /*하단 고정 띠배너*/
+    .band_banner {    height: 8.5938vw; width: 100%;bottom: 0; left: 0;background: #2aece5;}
+    .band_banner .sub_txt { top: 1.5625vw; left: 3.1250vw; font-size: 1.5625vw;   letter-spacing: 0.7813vw;}
+    .band_banner .title_txt { top: 3.0469vw; left: 3.1250vw; font-size: 3.4375vw;   letter-spacing: -0.0781vw;}
+    .band_banner .go_link { width: 23.4375vw; height: 5.4688vw; top:1.5625vw; right: 3.1250vw;}
+}
+
+@media screen and (max-width: 768px){
+
+    .new-event-view .mo-img {
+        display: block;
+    }
+
+    .new-event-view .pc-img {
+        display: none !important;
+    }
+
+    .section1 .tlt1 {top: 11%;left: 14%;width: 72.5260vw;height: 19.9219vw;}
+    .section1 .tlt2 {top: 28.7%; left:3.5%;width:91.6667vw;height: 39.5833vw;}
+    .section1 .tlt3 {top: 57.3%; left: 0;width:94.7917vw;height: 23.4375vw;}
+
+    /* section2 */
+
+    .buy_wrap {position: absolute; top: 36.5%;  width: calc(100% - 10.4167vw); padding: 4.5573vw 5.2083vw; }
+    .buy_table { display: flex; flex-direction: column; justify-content: space-between; border-radius: 3.9063vw;
+        /* background: #fff; */
+        /* border: 0.1302vw solid red; */
+        padding: 0 7.8125vw 4.5573vw 7.8125vw;
+    }
+    .buy_table .prod_tit h1{ color: #000; font-size: 6.9010vw;font-weight: 900;white-space:initial; margin-top: 6.9010vw; line-height: 1.1; text-align: center;}
+    .buy_table .prod_tit h1 em { display: inline-block; color: #2532ae; font-size: 6.2500vw; font-weight: 900; background: linear-gradient(to right,#d0d1ef, #bed2f1, #e8e7f7, #e4baed);;padding: 0.2604vw 0.9115vw;}
+    .buy_table .fixed_price { margin-top: 6.5104vw;margin-left: 14.4531vw;}
+    .buy_table .fixed_price span{ position: relative; font-size: 5.2083vw; letter-spacing: -0.0651vw;  color: rgba(0, 0, 0, .7);}
+    .buy_table .fixed_price span::before {position: absolute; content: ''; top: 1.8229vw; left:-1.5625vw; width: 48.4375vw; height: 2.7344vw; background: url(../images/mo_ico_arrow.png) no-repeat; background-size: cover; }
+
+    .discount_wrap ul {display: flex; width: 100%; flex-direction: column;    align-items: center; margin-top: 1.5625vw;}
+    .discount_wrap .dis_label {display: flex;}
+    .discount_wrap .dis_label span { position: relative; display: inline-block; color: #fff; font-size: 3.2552vw;  background: #ea1a46; padding: 0.5208vw 2.6042vw 0 2.6042vw; border-radius: 6.5104vw;}
+    .discount_wrap .dis_label span::after {position: absolute;content: ''; border-bottom: 0.0000vw solid transparent; border-left: 0.9115vw solid transparent;  border-right: 1.3021vw solid transparent; border-top: 1.9531vw solid #ea1a46;  bottom: -1.3021vw; left: 31%; transform: rotate(20deg);  z-index: 9;}
+    .discount_wrap .dis_label span.mo_buy_label { color: #000; font-weight: 700; background: #ffd71f;padding: 0.5208vw 3.2552vw 0 3.2552vw;}
+    .discount_wrap .dis_label span.mo_buy_label::after{ display: none;}
+    .discount_wrap .dis_label span:nth-child(2) { margin-left: 2.6042vw;}
+    .discount_wrap .discount_price { color: #000; font-size: 5.5990vw ; font-weight: bold; letter-spacing: 0.3906vw; margin-top: 1.9531vw;}
+    .discount_wrap .discount_price b {font-size: 7.5521vw ;}
+    .discount_wrap .buy_btn span { display: inline-block; width: 79.1667vw; height: 10.4167vw; margin-top: 3.5156vw;}
+
+    .buy_label {position: absolute; top: 62%; left: 16.2%; width: 11.1979vw; height: 11.0677vw;}
+
+
+    /* section3 */
+    .section3 .ani {position: absolute; width: 91.9271vw;height: 35.6771vw;opacity: 0;}
+    .section3 .rw1 { top: 15.8%; left: 3.2%;}
+    .section3 .rw2 { top: 35.9%; left: 3.2%;}
+    .section3 .rw3 { top: 57.9%; left: 3.2%;}
+
+    /* section4 */
+    .section4 .go_link {position: absolute; top: 78%; left: 30%; width: 39.7135vw; height: 10.4167vw; }
+
+    /* section5 */
+    .section5 .to_right {top: 3.6%; left: 5.2%; width: 47.7865vw; height: 9.3750vw;}
+    .section5 .to_top {top: 15%; left: 5.2%; width:89.5833vw; height: 87.7604vw;}
+
+    /* section6 */
+    .section6 .to_right {top: 4.3%; left: 5.2%; width: 64.3229vw; height: 9.3750vw;}
+    .section6 .p1 {top: 23%; left: 5%; width: 25.2604vw; height: 18.8802vw; z-index: 4;}
+    .section6 .p2 {top: 23%; left: 29%; width: 25.2604vw; height: 18.8802vw; z-index: 3;}
+    .section6 .p3 {top: 23%; left: 52.3%; width: 25.2604vw; height: 18.8802vw; z-index: 2;}
+    .section6 .p4 {top: 21%; left: 76%; width: 18.2292vw; height: 20.9635vw; z-index: 1;}
+
+    .section6 .s1 {top: 53%; left: 5%; width: 20.0521vw; height: 18.8802vw; z-index: 6;}
+    .section6 .s2 {top: 53%; left: 23%; width: 20.0521vw; height: 18.8802vw; z-index: 5;}
+    .section6 .s3 {top: 53%; left: 40%; width: 20.0521vw; height: 18.8802vw; z-index: 4;}
+    .section6 .s4 {top: 53%; left: 58%; width: 20.0521vw; height: 18.8802vw; z-index: 3;}
+    .section6 .s5 {top: 74%; left: 58.5%; width: 37.2396vw; height: 19.1406vw; z-index: 2;}
+    .section6 .s6 {top: 51%; left: 76%; width: 18.2292vw; height: 20.9635vw; z-index: 1;}
+
+    /* section7 */
+    .section7 .to_right {top: 7%;  left: 5.2%; width: 83.2031vw; height: 9.3750vw;}
+    .section7 .to_top {top: 31.5%;  left: 5.2%; width: 89.5833vw; height: 28.6458vw;}
+
+    /* section8 */
+    .section8 .to_right {top: 5%; left: 5.2%; width: 83.8542vw; height: 9.3750vw;}
+    .section8 .to_top {top:20%; left: 5.2%; width: 89.5833vw; height: 57.2917vw;}
+
+    /* section9 */
+    .section9 .to_right {top: 3%; left: 5.2%; width: 86.5885vw; height: 9.3750vw;}
+
+    .section9 .tab_area {position: absolute; top: 14.3%; left: 0;width: calc(100% - 10.4167vw); opacity: 0;}
+    .section9 .tab_area .title_tabWrap {width: 100%; padding: 0 5.2083vw; }
+    .section9 .tab_area .title_tabWrap ul { display: flex; justify-content: space-between; }
+    .section9 .tab_area .title_tabWrap li { width: 43.0708vw; height: 10.4167vw; text-align: center; border-radius: 2.6042vw; overflow: hidden;}
+    .section9 .tab_area .title_tabWrap li a {  display: block; width: 100%; height: 100%;  font-size: 4.8177vw; color: #7e86c5; font-weight: 700; line-height: 10.4167vw; background: #2e335b;  }
+    .section9 .tab_area .title_tabWrap li.active a { background: #2aece5; color: #0f1337;}
+    .section9 .tab_area .sec_detail {width: 100%;padding: 0 5.2083vw; margin-top: 2.6042vw;}
+
+    /* section10 */
+    .section10 .to_top1 {top: 19.5%; left: 4.2%; width: 89.5833vw; height: 95.5729vw;}
+    .section10 .to_top2 {top: 48%; left: 4.2%; width: 89.5833vw; height: 81.2500vw;}
+    .section10 .to_top3 {top: 72.7%; left: 4.2%; width: 89.5833vw; height: 81.2500vw;}
+
+    /* section11 */
+    .buy_wrap.sec11 {top: 27%;}
+    .buy_wrap.sec11 .buy_table {
+        border: 0.2604vw solid #000;
+    }
+    .buy_wrap.sec11 .buy_table .prod_tit h1 em { color: #ebf1fe; font-weight: 700; background:#0f1337 ;}
+    .buy_wrap.sec11 .discount_wrap .buy_btn span {margin-top: 3.3385vw;}
+
+    .buy_label.sec11 {top: 57%; }
+
+    /* section12 */
+    .typing-container {position: absolute;top: 62%;left: 0;color: #fbf6ff;font-size: 8.3333vw; font-weight:700; font-family:'Pretendard'; width: 100%; word-break:keep-all; text-align: center; line-height: 1.2;}
+    .typing-container .text_area{white-space:pre-line; padding: 0 5.2083vw;}
+
+    #cursor {
+        border-left: 0.2604vw solid #fff; /* 커서 스타일 */
+        animation: blink 0.7s infinite;
+        display: inline-block;
+        margin-left: 0.2604vw;
+        height: 7.1615vw; /* 폰트 크기와 동일하게 설정 */
+        vertical-align: middle;
+    }
+
+
+    /* section13 */
+    /* passNotice  유의사항 */
+    .passNotice .tab_content {
+        display: none;
+        padding: 0;
+        clear: both;
+        overflow: hidden;
+        padding: 5.2083vw 0.0000vw 5.2083vw 0.0000vw;
+        min-height: 52.0833vw;
+    }
+
+    .passNotice .passNotice_area h2 {
+        /* margin-top: 11.7188vw; */
+        padding-left: 4.4271vw;
+        color: #192436;
+        font-size: 3.6458vw;
+    }
+
+    .passNotice .passNotice_tabs {
+        width: 96%;
+    }
+
+    .passNotice .tab_item {
+        position: relative;
+        background-color: #dbdbdb;
+        line-height: 2.5;
+        font-size: 2.1229vw;
+        text-align: center;
+        color: #77787c;
+        display: block;
+        float: left;
+        text-align: center;
+        font-weight: bold;
+        transition: all 0.2s ease;
+    }
+
+    .passNotice .tab_content {
+        display: none;
+        padding: 0;
+        clear: both;
+        overflow: hidden;
+        padding: 5.2083vw 5.2083vw 5.2083vw 3.9063vw;
+        min-height: 52.0833vw;
+    }
+
+    .passNotice .tab_content ul {
+        color: #333;
+        font-size: 2.0833vw;
+        line-height: 4.0250vw;
+        letter-spacing: -0.1563vw;
+        font-weight: 700;
+    }
+
+    /*하단 고정 띠배너*/
+    .band_banner {   position: fixed; height: 23.4375vw; width: 100%;bottom: 0; left: 0;background: #2aece5;z-index: 10;}
+    .band_banner .sub_txt {position: absolute; top: 3.9063vw; left: 2.6042vw; font-size: 2.6042vw; color: #2635c6; font-weight: 400; letter-spacing: 1.3021vw;}
+    .band_banner .title_txt {position: absolute; top: 8.5938vw; left: 2.6042vw; font-size: 6.5104vw; color: #000; font-weight: 800; letter-spacing: -0.1302vw; line-height: 1;}
+    .band_banner .title_txt span {color: #2635c6;}
+    .band_banner .title_txt br{display: block;}
+    .band_banner .go_link {position: absolute; width: 31.2500vw; height: 10.4167vw; top:7.0313vw; right: 2.6042vw;}
+
+}

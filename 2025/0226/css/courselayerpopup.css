@@ -1,0 +1,97 @@
+        .xi-icon {font-family: xeicon !important;}
+
+        .courseLayerPop { margin: 0 auto;max-width: 800px;}
+        .courseLayerPop {display: none;}
+        .courseLayerPop:before { display: block; content: "";position: fixed;left: 0; top: 0; width: 100%; height: 100%;background: rgba(0, 0, 0, .5);}
+        .courseLayerPop .layerBox { position: fixed;left: 50%; top: 50%;transform: translate(-50%, -50%); width: 800px; background: #fff; box-shadow: 1px 1px 7px 7px rgba(0, 0, 0, .1);border-radius: 30px;overflow: hidden;}
+        .courseLayerPop .layerBox .title_area {margin: auto;width: 100%;padding: 22px 0;color: #fff;background: #002060;text-align: left;}
+        .courseLayerPop .layerBox .title_area span {padding-left: 26px; font-size: 24px;font-weight: 500;}
+        .courseLayerPop .layerBox .title_area .iconClose {float: right;margin-right: 20px;width: 35px;height: 35px;color: #fff;font-size: 36px;line-height: 1;cursor: pointer;}
+        .courseLayerPop .layerBox .title_area .iconClose.xi-icon::before {content: "\e9af";}
+        .courseLayerPop .layerBox .notice {padding: 10px 30px; color: #ff0000;}
+        .courseLayerPop .layerBox .listBox { margin: auto; width: 95%; padding: 0 15px;line-height: 20px; font-size: 14px; background: #fff;}
+
+        .courseLayerPop .layerBox .listBox .course_table {height: auto;color: #333;font-size: 14px;font-weight: 400;line-height: 22px;letter-spacing: -0.5px;}
+        .courseLayerPop .layerBox .listBox .course_table .basic_table{width:98%;margin:10px 0;border-top:2px solid #164194;border-collapse:collapse;vertical-align:middle;font-size:100%;table-layout: fixed;}
+        .courseLayerPop .layerBox .listBox .course_table .basic_table caption{position:absolute;top:-500%;left:-500%}
+        .courseLayerPop .layerBox .listBox .course_table .basic_table tbody {display: block; width: 100%; max-height: 300px; overflow-y: auto; overflow-x: hidden;}
+        .courseLayerPop .layerBox .listBox .course_table  table thead,
+        .courseLayerPop .layerBox .listBox .course_table  table tbody tr {display: table; width: 100%;}
+        .courseLayerPop .layerBox .listBox .course_table .basic_table th,
+        .courseLayerPop .layerBox .listBox .course_table .basic_table td{font-size: 14px;text-align:center;padding: 10px;border-bottom:1px solid #d0d9ea; border-top:none;vertical-align:middle;line-height:15px}
+        .courseLayerPop .layerBox .listBox .course_table .basic_table thead th{background:#f4f6f9;color:#333;}
+        .courseLayerPop .layerBox .listBox .course_table .basic_table thead th:nth-child(1){width: 15%;}
+        .courseLayerPop .layerBox .listBox .course_table .basic_table thead th:nth-child(2){width: 10%;}
+        .courseLayerPop .layerBox .listBox .course_table .basic_table thead th:nth-child(3){width: 10%;}
+
+        .courseLayerPop .layerBox .listBox .course_table .basic_table tbody th{background:#f4f6f9;color:#444;}
+        .courseLayerPop .layerBox .listBox .course_table .basic_table tbody td:nth-child(1){width: 15%;}
+        .courseLayerPop .layerBox .listBox .course_table .basic_table tbody td:nth-child(2){width: 10%;}
+        .courseLayerPop .layerBox .listBox .course_table .basic_table tbody td:nth-child(3){width: 10%;}
+        .courseLayerPop .layerBox .listBox .course_table .basic_table tbody td:nth-child(4){text-align: left;}
+
+        .courseLayerPop .btn_box {text-align: center;  padding: 15px 0 25px 0;background: #fff;}
+        .btn {text-decoration: none !important; white-space: nowrap; display: inline-block;vertical-align: baseline;position: relative; cursor: pointer;
+            padding: 7px 10px; min-width: 100px; min-height: 20px;line-height: 25px;background: rgba(22, 65, 148, 1.0);color: #fff !important;
+            margin: 0 2px;text-align: center;font-weight: 400;box-sizing: border-box;vertical-align: middle;border-radius: 4px;}
+        .courseLayerPop .btn_box .gray {background: #373737;}
+        .courseLayerPop .btn_box .btnLine { color:#373737 !important ; background: #fff; border: 1px solid #373737; box-sizing: border-box;}
+
+
+        @media screen and (max-width: 768px) {
+            .courseLayerPop { margin: 0 auto;max-width: 100%;}
+            .courseLayerPop .layerBox {  width: 90%; border-radius: 3.9063vw;}
+            .courseLayerPop .layerBox .title_area {width: 100%;}
+            .courseLayerPop .layerBox .title_area span {font-size: 3.1250vw;}
+            .courseLayerPop .layerBox .title_area .iconClose {margin-right: 2.6042vw;width: 4.5573vw;height: 4.5573vw;font-size: 4.6875vw;line-height: 1;cursor: pointer;}
+            .courseLayerPop .layerBox .notice {padding: 1.3021vw 3.9063vw; font-size: 1.8229vw;}
+            .courseLayerPop .layerBox .listBox {width: 95%; padding: 0 1.9531vw;line-height: 2.6042vw; font-size: 1.8229vw; background: #fff;}
+            .courseLayerPop .layerBox .listBox .course_table {font-size: 1.8229vw;line-height: 2.8646vw;letter-spacing: -0.0651vw;}
+            .courseLayerPop .layerBox .listBox .course_table .basic_table{width:98%;margin:1.3021vw 0;border-top:0.2604vw solid #164194;font-size:100%;}
+            .courseLayerPop .layerBox .listBox .course_table .basic_table caption{top:-500%;left:-500%}
+            .courseLayerPop .layerBox .listBox .course_table .basic_table tbody { width: 100%; max-height: 39.0625vw; }
+            .courseLayerPop .layerBox .listBox .course_table  table thead,
+            .courseLayerPop .layerBox .listBox .course_table  table tbody tr { width: 100%;}
+            .courseLayerPop .layerBox .listBox .course_table .basic_table th,
+            .courseLayerPop .layerBox .listBox .course_table .basic_table td{font-size: 1.8229vw;padding: 1.3021vw; line-height:1.9531vw}
+
+            .courseLayerPop .btn_box {  padding: 1.9531vw 0 3.2552vw 0;background: #fff;}
+            .btn {text-decoration: none !important; white-space: nowrap;  cursor: pointer;
+                padding: 0.9115vw 1.3021vw; min-width: 13.0208vw; min-height: 2.6042vw;line-height: 3.2552vw;background: rgba(22, 65, 148, 1.0);
+                margin: 0 0.2604vw;border-radius: 0.5208vw;}
+
+
+
+        }
+
+        @media screen and (max-width: 360px) {
+            .courseLayerPop { margin: 0 auto;max-width: 500px;}
+            .courseLayerPop:before {  left: 0; top: 0; width: 100%; height: 100%;background: rgba(0, 0, 0, .5);}
+            .courseLayerPop .layerBox { left: 50%; top: 50%;transform: translate(-50%, -50%); width: 90%; background: #fff; box-shadow: 1px 1px 4px 4px rgba(0, 0, 0, .1);border-radius: 19px;}
+            .courseLayerPop .layerBox .title_area {margin: auto;width: 100%;padding: 9px 0;background: #002060;}
+            .courseLayerPop .layerBox .title_area span {padding-left: 16px; font-size: 15px;}
+            .courseLayerPop .layerBox .title_area .iconClose {margin-right: 13px;width: 22px;height: 22px;font-size: 23px;line-height: 1;cursor: pointer;}
+            .courseLayerPop .layerBox .title_area .iconClose.xi-icon::before {content: "\e9af";}
+            .courseLayerPop .layerBox .notice {padding: 6px 19px; font-size: 11px; }
+            .courseLayerPop .layerBox .listBox { margin: auto; width: 95%; padding: 0 9px;line-height: 13px; font-size: 9px; background: #fff;}
+
+            .courseLayerPop .layerBox .listBox .course_table {height: auto;font-size: 9px;line-height: 14px;letter-spacing: -0px;}
+            .courseLayerPop .layerBox .listBox .course_table .basic_table{width:98%;margin:6px 0;border-top:1px solid #164194;font-size:100%;}
+            .courseLayerPop .layerBox .listBox .course_table .basic_table caption{top:-500%;left:-500%}
+            .courseLayerPop .layerBox .listBox .course_table .basic_table thead th {font-size: 11px; padding: 2.3021vw 1.3021vw; line-height: 2.3021vw ;}
+            .courseLayerPop .layerBox .listBox .course_table .basic_table thead th:nth-child(1){width: 18%;}
+            .courseLayerPop .layerBox .listBox .course_table .basic_table thead th:nth-child(2){width: 10%;}
+            .courseLayerPop .layerBox .listBox .course_table .basic_table thead th:nth-child(3){width: 10%;}
+            .courseLayerPop .layerBox .listBox .course_table .basic_table tbody { width: 100%; max-height: 188px; overflow-y: auto; overflow-x: hidden;}
+            .courseLayerPop .layerBox .listBox .course_table .basic_table tbody td:nth-child(1){width: 18%;}
+            .courseLayerPop .layerBox .listBox .course_table .basic_table tbody td:nth-child(2){width: 10%;}
+            .courseLayerPop .layerBox .listBox .course_table .basic_table tbody td:nth-child(3){width: 10%;}
+            .courseLayerPop .layerBox .listBox .course_table .basic_table td{font-size: 10px;padding: 6px;border-bottom:1px solid #d0d9ea; border-top:none;line-height:9px}
+
+            .courseLayerPop .btn_box {  padding: 9px 0 16px 0;background: #fff;}
+            .btn { padding: 4px 6px; min-width: 62px; min-height: 13px;line-height: 16px;background: rgba(22, 65, 148, 1.0);
+                margin: 0 1px;border-radius: 2px;}
+
+
+
+        }

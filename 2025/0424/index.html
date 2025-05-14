@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="canonical" href="https://dev.miraeij.com/police/classes/online/pass/" />
+
+    <!-- Preload -->
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="https://cdn.plyr.io/static/fonts/gordita-medium.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="https://cdn.plyr.io/static/fonts/gordita-bold.woff2" />
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css"> -->
+    <link rel="stylesheet" href="https://dev.miraeij.com/css/xeicon.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://dev.miraeij.com/css/reset.css?1726021859">
+    <link rel="stylesheet" href="https://dev.miraeij.com/css/common.css?1741052678">
+    <link rel="stylesheet" href="https://dev.miraeij.com/css/content.css?1720662496">
+    <link rel="stylesheet" href="https://dev.miraeij.com/css/content2.css?1738308292">
+    <link rel="stylesheet" href="https://dev.miraeij.com/css/content3.css?1672279478">
+    <link rel="stylesheet" href="https://dev.miraeij.com/css/program.css?1739178111">
+    <link rel="stylesheet" href="https://dev.miraeij.com/css/custom.css?1672279571">
+    <link rel="stylesheet" href="https://dev.miraeij.com/css/responsive.css?1745212116">
+    <link rel="stylesheet" href="https://dev.miraeij.com/css/responsive2.css?1687847603">
+
+    <!--link rel="stylesheet" href="/police/css/reset.css?1680867484"-->
+    <link rel="stylesheet" href="https://dev.miraeij.com/police/css/layout.css?1737428296">
+    <link rel="stylesheet" href="https://dev.miraeij.com/police/css/compat.css?1680160990">
+    <link rel="stylesheet" href="https://dev.miraeij.com/police/css/header.css?1745365007">
+    <!-- <link rel="stylesheet" href="/police/css/footer.css"> -->
+
+    <link rel="stylesheet" href="https://dev.miraeij.com/police/css/main.css?1742457880">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="/police/css/swiper-bundle.min.css"> -->
+
+    <!-- scripts -->
+    <script type="text/javascript" src="https://dev.miraeij.com/js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://dev.miraeij.com/js/easing.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://dev.miraeij.com/js/common_0329.js?1724302261"></script>
+    <script type="text/javascript" src="https://dev.miraeij.com/js/function_jquery.js"></script>
+    <script type="text/javascript" src="https://dev.miraeij.com/js/function.js"></script>
+    <script type="text/javascript" src="https://dev.miraeij.com/smarteditor/js/HuskyEZCreator.js"></script>
+    <script type="text/javascript" src="https://dev.miraeij.com/js/calendar_beans_v2.0.js"></script>
+    <script type="text/javascript" src="https://dev.miraeij.com/js/jquery.form.js"></script>
+    <!--script type="text/javascript" src="/js/jquery-ui.min.js"></script-->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@11.1.1/swiper-bundle.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript" src="https://dev.miraeij.com/js/custom.js"></script>
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+
+    <script type="text/javascript" src="https://dev.miraeij.com/js/jquery.ajaxQueue.min.js"></script>
+    <script type="text/javascript" src="https://dev.miraeij.com/js/CommonMJ.js?1741657481"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.1/dist/sweetalert2.min.css" integrity="sha256-KIZHD6c6Nkk0tgsncHeNNwvNU1TX8YzPrYn01ltQwFg=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.1/dist/sweetalert2.all.min.js" integrity="sha256-hMcztVuowqlSORATzoB3LRGsqxhAtCDfpsd1yVk7Okw=" crossorigin="anonymous"></script>
+
+    <style>
+        .swal2-popup {
+                font-size:1.4rem;
+            }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+
+</head>
+<body>
+
+    <header><!--동일--></header>
+    <!--// header section -->
+
+    <!--250423 passup main-->
+    <link rel="stylesheet" href="css/passup.css">
+    <div id="mainBannerDiv">
+        <!--TopMainSlider-->
+        <!--
+            include getSitePath('include/TopMainSlider-passup.inc'); //처리하기
+        -->
+        <!-- <div data-include-path="include/TopMainSlider-passup.html"></div> -->
+        <!--250423 경찰승진 Big Slider-->
+        <div id="mainTopDiv">
+            <div class="TopSlider_wrapper">
+                <div class="TopSlider_area">
+                    <div class="TopSlider_swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div style="background: #444fc2 url(images/passup/top_slider_1.jpg) center top no-repeat;" class="pc_top"></div>
+                                <div style="background: url(images/passup/md_top_slider_1.jpg) center top no-repeat;background-size:contain" class="md_top"></div>
+                                <div style="background: url(images/passup/mo_top_slider_1.jpg) center top no-repeat;background-size:contain" class="mo_top"></div>
+                                <a href="/police/classes/online/pass/passUp/" class="go_link" target="_self" alt="경찰승진 미래패스"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination "></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<style>
+    .pc_top {display: block;}
+    .md_top {display: none;}
+    .mo_top {display: none;}
+
+    #mainTopDiv {width:100%;}
+    .TopSlider_wrapper {width: 100%; height:auto; margin-bottom:24px; }
+    .TopSlider_swiper-container{ position: relative; width: 100%; height: auto; overflow: hidden;}
+    .TopSlider_swiper-container .swiper-slide{
+        width: 100%;
+        height: 460px;
+        position: relative;
+    }
+
+    .TopSlider_swiper-container .swiper-slide div {
+        width: 100%;
+        height: 100%;
+    }
+    .TopSlider_swiper-container .swiper-slide .go_link {
+        position:absolute;
+        top:0; left:50%; transform:translateX(-50%); width:1200px; height:100%; background:red; opacity:0;z-index: 20;
+    }
+    /* Swiper pagination custom */
+    .TopSlider_swiper-container .swiper-pagination { text-align: center; bottom: 10px; }
+    .TopSlider_swiper-container .swiper-pagination-bullet { width: 10px; height: 10px; margin: 0 4px !important; background: rgba(255, 255, 255, .3);opacity: 1; transition:all .3s; }
+    .TopSlider_swiper-container .swiper-pagination-bullet-active {width: 32px;opacity: 1;border-radius: 10px;background-color: #fff; transition:all .3s; }
+    /*******/
+
+    /* Swiper navigation custom */
+    .TopSlider_swiper-container .swiper-button-prev,
+    .TopSlider_swiper-container .swiper-button-next {width: 20px; height: 35px; top: 52%; left: 50%; transform: translateX(-50%);  z-index: 30;}
+
+    .TopSlider_swiper-container .swiper-button-prev { margin-left: -600px; }
+    .TopSlider_swiper-container .swiper-button-next { margin-left: 600px; }
+    .TopSlider_swiper-container .swiper-button-prev:after,
+    .TopSlider_swiper-container .swiper-button-next:after { width: 100%; height: 100%; color: #fff; font-size: 36px; font-weight: 300;z-index: 40; }
+
+    /* .TopSlider_swiper-container .swiper-button-prev.swiper-button-disabled,
+    .TopSlider_swiper-container .swiper-button-next.swiper-button-disabled {pointer-events: auto;} */
+    /*******/
+
+    @media (max-width: 1200px) {
+        .pc_top {display: none !important;}
+        .md_top {display: block;}
+        .mo_top {display: none;}
+        .TopSlider_wrapper {width: 100%; height:auto; margin-bottom:4.1667vw; }
+        .TopSlider_swiper-container .swiper-slide {
+            height: 38.3333vw;
+        }
+        .TopSlider_swiper-container .swiper-slide div {
+            width: 100.0000vw;
+            height: 38.3333vw;
+            /* border:  0.0833vw solid red; */
+        }
+        .TopSlider_swiper-container .swiper-slide .go_link {
+            width:100%;
+        }
+
+         /* Swiper pagination custom */
+        .TopSlider_swiper-container .swiper-pagination { text-align: center; bottom: 20px; }
+        .TopSlider_swiper-container .swiper-pagination-bullet { width: 10px; height: 10px; margin: 0 4px !important; background: rgba(255, 255, 255, .3);opacity: 1;}
+        .TopSlider_swiper-container .swiper-pagination-bullet-active {width: 32px;opacity: 1;border-radius: 10px;background-color: #fff;}
+        /*******/
+
+        /* Swiper navigation custom */
+        .TopSlider_swiper-container .swiper-button-prev,
+        .TopSlider_swiper-container .swiper-button-next {width: 20px; height: 35px; top: 52%; left: 50%; transform: translateX(-50%); z-index: 30; }
+
+        .TopSlider_swiper-container .swiper-button-prev { margin-left: -48.0000vw; }
+        .TopSlider_swiper-container .swiper-button-next { margin-left: 48.0000vw; }
+        .TopSlider_swiper-container .swiper-button-prev:after,
+        .TopSlider_swiper-container .swiper-button-next:after { color: #fff; font-size: 36px; font-weight: 300; }
+        /*******/
+
+    }
+
+    @media (max-width: 768px) {
+        .pc_top {display: none !important;}
+        .md_top {display: none;}
+        .mo_top {display: block !important;}
+
+        .TopSlider_wrapper { margin-bottom: 5.2083vw;}
+
+        .TopSlider_swiper-container .swiper-slide{
+            width: 100%;
+            height: 104.1667vw;
+        }
+          .TopSlider_swiper-container .swiper-slide div {
+            width: 100%;
+            height: 100%;
+        }
+        .TopSlider_swiper-container .swiper-pagination{bottom:30px}
+     }
+
+      @media (max-width: 400px) {
+        .TopSlider_swiper-container .swiper-pagination{bottom:10px}
+      }
+
+
+</style>
+
+<script>
+    let TopSlider_mySwiper = new Swiper('.TopSlider_swiper-container', {
+        effect: 'fade',
+        slidesPerView: '1',
+        loop:true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        on: {
+            init: function () {
+                if (this.slides.length <= 1) {
+                    this.navigation.disable();
+                }
+            },
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 3000,
+        },
+
+    });
+</script>
+<!--//250423 경찰승진 Big Slider-->
+
+
+
+        <div class="middleArea main" id="mainContent">
+            <!--메인컨텐츠 S-->
+            <div class="main_wrapper passUp">
+                <div class="main_passupBnr_area">
+                    <div class="mainPassUpBnr_swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                               <a href="#"><img src="images/passup/top_bnr_1.jpg" class="pc_img" alt=""><img src="images/passup/mo_top_bnr_1.jpg" class="mo_img" alt=""></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"><img src="images/passup/top_bnr_2.jpg" class="pc_img" alt=""><img src="images/passup/mo_top_bnr_2.jpg" class="mo_img" alt=""></a>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination "></div>
+                    </div>
+                    <script>
+                        new Swiper('.mainPassUpBnr_swiper-container', {
+                            slidesPerView: '1',
+                            spaceBetween: 0,
+                            loop:true,
+                            pagination: {
+                                el: '.swiper-pagination',
+                                type: 'bullets',
+                                clickable: true,
+                            },
+                            autoplay: {
+                                delay: 3000,
+                            },
+                            breakpoints: {
+                                769: {
+                                    slidesPerView: '2',
+                                    spaceBetween: 16,
+                                },
+                            },
+                        });
+                      </script>
+                </div>
+            </div>
+
+            <div class="main_wrapper passUp_mb">
+                <!--passup ad-->
+                <div class="passupAD_area" data-banner="passupAD" style="padding-bottom:0px;">
+                    <div class="passupAD_slide_area">
+                        <div class="passupAD_swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="/police/promotion/analysis/passup24/">
+                                        <img src="images/passup/passup_ad.jpg" class="pc_img" alt="">
+                                        <img src="images/passup/mo_passup_ad.jpg" class="mo_img" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <script>
+                        new Swiper('.passupAD_swiper-container', {
+                            effect : 'fade',
+                            loop: true,
+                            pagination: { el: '.swiper-pagination', type: 'bullets', clickable: true, },
+                            autoplay: { delay: 5000, },
+                        });
+                    </script>
+                </div>
+                <!--//passup ad-->
+            </div>
+
+            <div class="wide_wrapper professorsIntro">
+                <div class="main_wrapper passUp_mb">
+                    <div class="professorsIntroSlider_area">
+                        <div class="professorsIntro_swiper-container">
+                            <div class="swiper-wrapper">
+                                <a href="/police/professor/main/59" class="swiper-slide">
+                                    <img src="images/passup/professor_1.png" class="pc_img" alt="">
+                                    <img src="images/passup/mo_professor_1.png" class="mo_img" alt="">
+                                    <div class="intro_box">
+                                        <ul>
+                                            <li class="pro_name">
+                                                <em>형사소송법 / 형법</em>
+                                                <p>신광은</p>
+                                            </li>
+                                            <li class="modifier_txt">원리와 사례로
+                                                쉽게 이해 완성</li>
+                                        </ul>
+
+                                    </div>
+                                </a>
+                                <a href="/police/professor/main/60" class="swiper-slide">
+                                    <img src="images/passup/professor_2.png" class="pc_img" alt="">
+                                    <img src="images/passup/mo_professor_2.png" class="mo_img" alt="">
+                                    <div class="intro_box">
+                                        <ul>
+                                            <li class="pro_name">
+                                                <em>실무종합</em>
+                                                <p>장정훈</p>
+                                            </li>
+                                            <li class="modifier_txt">이해 중심
+                                                빠르고 쉽게 고득점</li>
+                                        </ul>
+
+                                    </div>
+                                </a>
+                                <a href="/police/professor/main/113" class="swiper-slide">
+                                    <img src="images/passup/professor_3.png" alt="">
+                                    <div class="intro_box">
+                                        <ul>
+                                            <li class="pro_name">
+                                                <em>행정법</em>
+                                                <p>김정일</p>
+                                            </li>
+                                            <li class="modifier_txt">암기가
+                                                저절로 되는 행정법</li>
+                                        </ul>
+
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <script>
+                            new Swiper('.professorsIntro_swiper-container', {
+                                slidesPerView: '1.3',
+                                spaceBetween: 20,
+                                loop:true,
+                                autoplay: {
+                                    delay: 3000,
+                                },
+                                breakpoints: {
+                                    769: {
+                                        slidesPerView: '3',
+                                        spaceBetween: 8,
+                                        },
+                                },
+                            });
+                          </script>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_wrapper passUp_mb">
+                <div class="passUpBook_area">
+                    <h1 class="sub_tit pc_only"><span>교재안내</span></h1>
+                    <div class="book_box">
+                        <div class="recomm_wrap pc_only">
+                            <div class="bestBook_tit">
+                                <ul>
+                                    <li class="ico_best ft_gmarket"><span>BEST</span></li>
+                                    <li class="title">필수 추천 교재</li>
+                                </ul>
+                            </div>
+                            <div class="slider_area">
+                                <div class="recommBook_swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <a href="#" class="swiper-slide">
+                                            <div class="book_info">
+                                                <ul>
+                                                    <li class="subject">2025 신광은
+                                                        형법 각론 기출총정리</li>                                                </ul>
+                                                <div class="book_cover">
+                                                    <img src="images/passup/best_b1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="swiper-slide">
+                                            <div class="book_info">
+                                                <ul>
+                                                    <li class="subject">2025 신광은
+                                                        형법 각론 기출총정리</li>
+                                                </ul>
+                                                <div class="book_cover">
+                                                    <img src="images/passup/best_b1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-pagination "></div>
+                                </div>
+                                <script>
+                                   new Swiper('.recommBook_swiper-container', {
+                                        effect:'fade',
+                                        fadeEffect: {
+                                            crossFade: true
+                                        },
+                                        slidesPerView: '1',
+                                        spaceBetween: 10,
+                                        loop:true,
+                                        pagination: {
+                                            el: '.swiper-pagination',
+                                            type: 'bullets',
+                                            clickable: true,
+                                        },
+                                        autoplay: {
+                                            delay: 3000,
+                                        },
+                                        speed:1000,
+                                    });
+                                </script>
+                            </div>
+
+                        </div>
+                        <div class="newBook_wrap">
+                            <div class="slider_box">
+                                <a href="/police/textbook/?ssite_code=2" class="more_go"><span class="mo_only">신규 교재&nbsp;</span> 더보기<span class="allow mo_only"></span> </a>
+                                <h4>최신 경향 완벽 반영 신규 교재</h4>
+                                <div class="slider_area">
+                                    <div class="newBook_swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="newbook_info">
+                                                    <ul>
+                                                        <li class="book_cover"><img src="images/passup/new_b1.jpg" alt=""></li>
+                                                        <li class="author">실무교재 편찬위원</li>
+                                                        <li class="subject">2025 신광은
+                                                            형법 각론 기출총정리</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="newbook_info">
+                                                    <ul>
+                                                        <li class="book_cover"><img src="images/passup/new_b2.jpg" alt=""></li>
+                                                        <li class="author">실무교재 편찬위원</li>
+                                                        <li class="subject">2025 신광은
+                                                            형법 각론 기출총정리</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="newbook_info">
+                                                    <ul>
+                                                        <li class="book_cover"><img src="images/passup/new_b3.jpg" alt=""></li>
+                                                        <li class="author">실무교재 편찬위원</li>
+                                                        <li class="subject">2025 신광은
+                                                            형법 각론 기출총정리</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="newbook_info">
+                                                    <ul>
+                                                        <li class="book_cover"><img src="images/passup/new_b1.jpg" alt=""></li>
+                                                        <li class="author">실무교재 편찬위원</li>
+                                                        <li class="subject">2025 신광은
+                                                            형법 각론 기출총정리</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <script>
+                                       new Swiper('.newBook_swiper-container', {
+                                            slidesPerView: '3',
+                                            spaceBetween: 20,
+                                            loop:true,
+                                            navigation: {
+                                                nextEl: '.swiper-button-next',
+                                                prevEl: '.swiper-button-prev',
+                                            },
+                                            autoplay: {
+                                                delay: 3000,
+                                            },
+                                            breakpoints: {
+                                                769: {
+                                                    slidesPerView: '3',
+                                                    spaceBetween: 48,
+                                                    },
+                                            },
+                                        });
+                                    </script>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_wrapper passUp_mb">
+                <div class="passUpYoutube_area">
+                    <h1 class="sub_tit case2"><span>영상콘텐츠</span></h1>
+                    <div class="slider_box">
+                        <div class="slider_area">
+                            <div class="passUpyoutube_swiper-container">
+                                <div class="swiper-wrapper">
+                                    <a href="https://www.youtube.com/watch?v=hp33r1QEhhI&t=374s" target="_blank" class="swiper-slide">
+                                        <div class="passUpyoutube_info">
+                                            <ul>
+                                                <li class="thumbnail"><img src="https://img.youtube.com/vi/hp33r1QEhhI/maxresdefault.jpg" alt=""></li>
+                                                <li class="pname">장정훈</li>
+                                                <li class="ytitle">2026년 경찰 승진 시험 합격 대비 장정훈 교수님 실무종합 총평</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/watch?v=uSwFv8wh1cw&t=2053s" target="_blank" class="swiper-slide">
+                                        <div class="passUpyoutube_info">
+                                            <ul>
+                                                <li class="thumbnail"><img src="https://img.youtube.com/vi/uSwFv8wh1cw/maxresdefault.jpg" alt=""></li>
+                                                <li class="pname">신광은</li>
+                                                <li class="ytitle">경찰 승진 시험 신광은 교수님 형사소송법 해설강의</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/watch?v=q4v7quh0ZTw" target="_blank" class="swiper-slide">
+                                        <div class="passUpyoutube_info">
+                                            <ul>
+                                                <li class="thumbnail"><img src="https://img.youtube.com/vi/q4v7quh0ZTw/maxresdefault.jpg" alt=""></li>
+                                                <li class="pname">김정일</li>
+                                                <li class="ytitle">김정일 교수님 행정법 총평 & 커리큘럼 가이드행정법 총평 & 커리큘럼 가이드행정법 총평 & 커리큘럼 가이드</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.youtube.com/watch?v=PUhCDnTZ-5E" target="_blank" class="swiper-slide">
+                                        <div class="passUpyoutube_info">
+                                            <ul>
+                                                <li class="thumbnail"><img src="https://img.youtube.com/vi/PUhCDnTZ-5E/maxresdefault.jpg" alt=""></li>
+                                                <li class="pname">장정훈</li>
+                                                <li class="ytitle">행정조사기본법 경찰승진 실무종합</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <script>
+                                new Swiper('.passUpyoutube_swiper-container', {
+                                    slidesPerView: '1.5',
+                                    spaceBetween: 20,
+                                    loop:true,
+                                    autoplay: {
+                                        delay: 3000,
+                                    },
+                                    breakpoints: {
+                                        769: {
+                                            slidesPerView: '4',
+                                            spaceBetween: 10,
+                                        },
+                                    },
+                                });
+                              </script>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="main_wrapper">
+                <div class="passUpNotice_area">
+                    <div class="noticeTab_wrap">
+
+                        <div class="noticeCate_tab">
+                            <ul>
+                                <li class="active"><a href="#">온라인 공지</a></li>
+                                <li><a href="#">교수 공지</a></li>
+                            </ul>
+                        </div>
+                        <div class="notice_list">
+                            <a href="#" class="more_go">더보기</a>
+                            <ul class="list">
+                                <li><a href="#" class="ico_new">Aqua n Player PC 버전(Window) 업데이트 안내Aqua n Player PC 버전(Window) 업데이트 안내Aqua n Player PC 버전(Window) 업데이트 안내Aqua n Player PC 버전(Window) 업데이트 안내</a></li>
+                                <li><a href="#" class="ico_new">Aqua n Player PC 버전(Window) 업데이트 안내</a></li>
+                                <li><a href="#">Aqua n Player PC 버전(Window) 업데이트 안내</a></li>
+                                <li><a href="#">Aqua n Player PC 버전(Window) 업데이트 안내</a></li>
+                                <li><a href="#">Aqua n Player PC 버전(Window) 업데이트 안내</a></li>
+                            </ul>
+                        </div>
+                        <div class="notice_list">
+                            <ul class="list">
+                                <li><a href="#" class="ico_new">Aqua n Player PC 버전(Window) 업데이트 안내Aqua n Player PC 버전(Window) 업데이트 안내Aqua n Player PC 버전(Window) 업데이트 안내Aqua n Player PC 버전(Window) 업데이트 안내</a></li>
+                                <li><a href="#">Aqua n Player PC 버전(Window) 업데이트 안내</a></li>
+                                <li><a href="#">Aqua n Player PC 버전(Window) 업데이트 안내</a></li>
+                                <li><a href="#">Aqua n Player PC 버전(Window) 업데이트 안내</a></li>
+                                <li><a href="#">Aqua n Player PC 버전(Window) 업데이트 안내</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="reveiw_wrap">
+                        <h1 class="sub_tit"><span>수강후기</span><a href="#" class="more_go">더보기</a></h1>
+                        <ul class="list">
+                            <li><a href="#" class="ico_new">Aqua n Player PC 버전(Window) 업데이트 안내Aqua n Player PC 버전(Window) 업데이트 안내Aqua n Player PC 버전(Window) 업데이트 안내Aqua n Player PC 버전(Window) 업데이트 안내</a></li>
+                            <li><a href="#">Aqua n Player PC 버전(Window) 업데이트 안내</a></li>
+                            <li><a href="#">Aqua n Player PC 버전(Window) 업데이트 안내</a></li>
+                            <li><a href="#">Aqua n Player PC 버전(Window) 업데이트 안내</a></li>
+                            <li><a href="#">Aqua n Player PC 버전(Window) 업데이트 안내</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--왼쪽 스카이배너-->
+                <!--동일 소스 inc 로 넣기-->
+            <!--//왼쪽 스카이배너-->
+
+            <!--오른쪽 스카이배너-->
+            <div class="rightSky_bnr" data-banner="sky">
+                <div>
+                    <div class="wrap">
+                        <ul>
+                           <li><a href="/police/guide/pass_review/"><img src="images/passup/right_sky_bnr_1.png" alt=""></a></li>
+                           <li><a href="/police/promotion/discount/"><img src="images/passup/right_sky_bnr_2.png" alt=""></a></li>
+                           <li><a href="/police/mypage/consult/write.php#academy"><img src="images/passup/right_sky_bnr_3.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--//오른쪽 스카이배너-->
+
+
+            <!--메인컨텐츠 E-->
+        </div>
+
+
+    </div>
+
+    <script>
+        window.addEventListener('load', function(){
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function(el) {
+                var includePath = el.dataset.includePath;
+                if(includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp .onreadystatechange = function() {
+                        if(this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+
+            });
+        });
+
+        //탭메뉴
+        let noticeCateBtn = $(".noticeCate_tab > ul > li");
+        let noticeCateCont = $(".notice_list");
+        // console.log(localCont)
+            noticeCateCont.hide().eq(0).show();
+            noticeCateBtn.click(function (e) {
+            e.preventDefault();
+            let target = $(this);
+            let index = target.index();
+            noticeCateBtn.removeClass("active");
+            target.addClass("active");
+            noticeCateCont.css("display", "none");
+            noticeCateCont.eq(index).css("display", "block");
+            });
+
+
+    </script>
+
+
+
+    <!--//250423 passup main-->
+
+
+
+
+
+    <!--학습지원센터 일반경찰 동일-->
+    <!--경찰 관련 주요사이트 비노출-->
+    <footer><!--동일--></footer>
+
+
+
+</body>
+</html>

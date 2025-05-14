@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="canonical" href="https://www.miraeij.com/police/classes/online/pass/" />
+
+    <!-- Preload -->
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="https://cdn.plyr.io/static/fonts/gordita-medium.woff2" />
+    <link rel="preload" as="font" crossorigin type="font/woff2" href="https://cdn.plyr.io/static/fonts/gordita-bold.woff2" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+    <!-- <link rel="stylesheet" href="https://www.miraeij.com/css/xeicon.min.css"> -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://www.miraeij.com/css/reset.css?1659522810">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/common.css?1727415568">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/content.css?1696492200">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/content2.css?1718245044">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/content3.css?1672279478">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/program.css?1719466562">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/custom.css?1672279571">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/responsive.css?1675686393">
+    <link rel="stylesheet" href="https://www.miraeij.com/css/responsive2.css?1687847603">
+
+    <!--link rel="stylesheet" href="/police/css/reset.css?1680867484"-->
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/layout.css?1714615120">
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/compat.css?1680160990">
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/header.css?1732668130">
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/footer.css?1730335543">
+
+    <link rel="stylesheet" href="https://www.miraeij.com/police/css/main.css?1730181219">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="/police/css/swiper-bundle.min.css"> -->
+
+    <!-- scripts -->
+    <script type="text/javascript" src="https://www.miraeij.com/js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/easing.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/common_0329.js?1724302261"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/function_jquery.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/function.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/smarteditor/js/HuskyEZCreator.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/calendar_beans_v2.0.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/jquery.form.js"></script>
+    <!--script type="text/javascript" src="/js/jquery-ui.min.js"></script-->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@11.1.1/swiper-bundle.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript" src="https://www.miraeij.com/js/custom.js"></script>
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+
+    <script type="text/javascript" src="https://www.miraeij.com/js/jquery.ajaxQueue.min.js"></script>
+    <script type="text/javascript" src="https://www.miraeij.com/js/CommonMJ.js?1730181471"></script>
+</head>
+<body>
+
+<style>
+.pc-img {display: block;}
+.mo-img {display: none;}
+.xi-icon {font-family: xeicon !important;}
+
+.briefingLayerPop {  margin: 0 auto; max-width: 980px;}
+.briefingLayerPop {display: none;}
+.briefingLayerPop:before {display: block;  content: ""; position: fixed; left: 0;  top: 0;  width: 100%; height: 100%; background: rgba(0, 0, 0, .5);}
+.briefingLayerPop .layerBox { position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);   width: 980px;border-radius: 20px; overflow: hidden;  background: #fff;  box-shadow: 1px 1px 7px 7px rgba(0, 0, 0, .1);}
+.briefingLayerPop .layerBox .cont_wrap {display: flex; }
+.briefingLayerPop .layerBox  .input_wrap {padding: 40px; width: 410px;background: linear-gradient(45deg, #c4cdf8, #c1dfe1);}
+.briefingLayerPop .layerBox  .input_wrap .txt_area { color: #1E1E1E; font-size: 24px;letter-spacing: -1.2px;}
+.briefingLayerPop .layerBox  .input_wrap .txt_area h2{ color: #3A5AE9; font-size: 36px; font-weight: 700; line-height: 140%;}
+.briefingLayerPop .layerBox  .input_wrap .input_area  { margin-top: 24px; }
+.briefingLayerPop .layerBox  .input_wrap .input_area li {  padding-bottom: 7px; color: #1E1E1E; font-size: 12px;font-weight: 500;line-height: .8;}
+.briefingLayerPop .layerBox  .input_wrap .input_area .tlt{ margin-top: 12px; margin-bottom: 4px; font-size: 18px; font-weight: 600;}
+.briefingLayerPop .layerBox  .input_wrap .input_area li input[type="text"] {width: 100%;height: 44px;padding: 0 20px;color: #1E1E1E; border: 1px solid #E0E0E0; box-sizing: border-box;border-radius: 10px; background: rgba(255, 255, 255, .5);  }
+.briefingLayerPop .layerBox  .input_wrap .input_area li input[type="text"]::placeholder { font-size: 16px; }
+.briefingLayerPop .layerBox  .input_wrap .input_area textarea {padding: 0 20px; color: #1E1E1E; border: 1px solid #E0E0E0;box-sizing: border-box;  border-radius: 10px; background: rgba(255, 255, 255, .5);}
+
+.briefingLayerPop .layerBox  .input_wrap .note_area { margin: 24px 0; border-radius: 10px; background: rgba(255, 255, 255, .5);}
+
+.briefingLayerPop .layerBox  .input_wrap .note_area .notice_inner { padding: 20px; height: 98px; overflow-y: auto;  }
+.briefingLayerPop .layerBox  .input_wrap .note_area li { color: rgba(0, 0, 0, .7); font-size: 12px;}
+.briefingLayerPop .layerBox  .input_wrap .note_area input[type="checkbox"] {  display: inline-block;  position: absolute; left: -9999px;  opacity: 0; visibility: hidden;
+    width: 1px; height: 1px;   filter: alpha(opacity=0);     -ms-filter: alpha(opacity=0);    overflow: hidden;}
+.briefingLayerPop .layerBox  .input_wrap .note_area input[type="checkbox"] + label { display: inline-block;  padding-left: 30px; color: #1E1E1E;  cursor: pointer;
+    position: relative;  line-height: 24px;   font-size: 16px;  font-weight: 700;    }
+.briefingLayerPop .layerBox  .input_wrap .note_area input[type="checkbox"] + label:before { position: absolute;  left: 0; top: 50%; width: 20px;  height: 20px; box-sizing: border-box;
+    margin-top: -9px; border-radius: 5px !important;  background: #fff; border: 1px solid #ccc; line-height: 20px;text-align: center;  clear: both;
+    content: ''; display: block;  background-repeat: no-repeat; background-size: auto;  background-position: center center;}
+.briefingLayerPop .layerBox  .input_wrap .note_area input[type="checkbox"]:checked + label:before { background:#164194 url(icon_checked.png) center no-repeat; background-size: 80%;
+    border-color: #164194;}
+.briefingLayerPop .layerBox  .input_wrap .note_area .agreeWrap .fz10 {padding: 5px 0;  color:#1E1E1E; font-size: 10px; letter-spacing: -.5px;}
+.briefingLayerPop .layerBox  .input_wrap .note_area .agreeWrap .note_more { position:relative; float: right;width: 15px; height: 15px;  }
+.briefingLayerPop .layerBox  .input_wrap .note_area .agreeWrap .note_more::before{position: absolute; content: '\e942'; color: #1E1E1E; font-size: 16px; line-height: 1;  }
+.briefingLayerPop .layerBox  .input_wrap .note_area .agreeWrap .note_more.on::before {content: '\e945';}
+.briefingLayerPop .layerBox  .input_wrap .note_area .agreeWrap P{display: none; padding: 5px 20px;}
+.briefingLayerPop .layerBox  .input_wrap .note_area .agreeWrap P em{ display: inline-block; padding: 0 10px; font-size: 11px;}
+.briefingLayerPop .layerBox  .input_wrap .btn_area { width: 100%; height: 60px;}
+.briefingLayerPop .layerBox  .input_wrap .btn_area a {display: inline-block; width: 100%; height: 100%; color: #3A5AE9; font-size: 20px; font-weight: 700; text-align: center; line-height: 60px; border-radius: 12px; background: #FFE100;box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);}
+.briefingLayerPop .layerBox  .input_wrap .btn_area a:hover {box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.30);}
+.briefingLayerPop .layerBox  .input_wrap .close_area {margin: 10px 0; color: #686868; font-size: 16px; font-weight: 700; text-align: center;}
+.briefingLayerPop .layerBox  .input_wrap .close_area a{border-bottom:2px solid #686868d0;}
+
+
+@media screen and (max-width: 980px) {
+    .briefingLayerPop {  margin: 0 auto; max-width: 100;}
+    .briefingLayerPop:before {    left: 0;  top: 0;  width: 100%; height: 100%; background: rgba(0, 0, 0, .5);}
+    .briefingLayerPop .layerBox {  left: 50%; top: 50%; transform: translate(-50%, -50%);   width: 100%;border-radius: 2.0408vw;   background: #fff;  box-shadow: 0.1020vw 0.1020vw 0.7143vw 0.7143vw rgba(0, 0, 0, .1);}
+
+    .briefingLayerPop .layerBox  .input_wrap {padding: 4.0816vw; width: 41.8367vw;background: linear-gradient(45deg, #c4cdf8, #c1dfe1);}
+    .briefingLayerPop .layerBox  .input_wrap .txt_area {  font-size: 2.4490vw;letter-spacing: -0.1224vw;}
+    .briefingLayerPop .layerBox  .input_wrap .txt_area h2{  font-size: 3.6735vw;  line-height: 140%;}
+    .briefingLayerPop .layerBox  .input_wrap .input_area  { margin-top: 2.4490vw; }
+    .briefingLayerPop .layerBox  .input_wrap .input_area li {  padding-bottom: 0.7143vw;  font-size: 1.2245vw;line-height: .8;}
+    .briefingLayerPop .layerBox  .input_wrap .input_area .tlt{ margin-top: 1.2245vw; margin-bottom: 0.4082vw; font-size: 1.8367vw; }
+    .briefingLayerPop .layerBox  .input_wrap .input_area li input[type="text"] {width: 100%;height: 4.4898vw;padding: 0 2.0408vw; border: 0.1020vw solid #E0E0E0; border-radius: 1.0204vw; background: rgba(255, 255, 255, .5);  }
+    .briefingLayerPop .layerBox  .input_wrap .input_area li input[type="text"]::placeholder { font-size: 1.6327vw; }
+    .briefingLayerPop .layerBox  .input_wrap .input_area textarea {padding: 0 2.0408vw;  border: 0.1020vw solid #E0E0E0;  border-radius: 1.0204vw; background: rgba(255, 255, 255, .5);}
+
+    .briefingLayerPop .layerBox  .input_wrap .note_area { margin: 2.4490vw 0; border-radius: 1.0204vw; background: rgba(255, 255, 255, .5);}
+
+    .briefingLayerPop .layerBox  .input_wrap .note_area .notice_inner { padding: 2.0408vw; height: 10.0000vw; overflow-y: auto;  }
+    .briefingLayerPop .layerBox  .input_wrap .note_area li { color: rgba(0, 0, 0, .7); font-size: 1.2245vw;}
+    .briefingLayerPop .layerBox  .input_wrap .note_area input[type="checkbox"] {     left: -1020.3061vw;  opacity: 0; visibility: hidden;
+        width: 0.1020vw; height: 0.1020vw;   filter: alpha(opacity=0);     -ms-filter: alpha(opacity=0);    }
+    .briefingLayerPop .layerBox  .input_wrap .note_area input[type="checkbox"] + label {   padding-left: 3.0612vw;   cursor: pointer;
+        line-height: 2.4490vw;   font-size: 1.6327vw;      }
+    .briefingLayerPop .layerBox  .input_wrap .note_area input[type="checkbox"] + label:before {   left: 0; top: 50%; width: 2.0408vw;  height: 2.0408vw;
+        margin-top: -0.9184vw; border-radius: 0.5102vw !important;  background: #fff; border: 0.1020vw solid #ccc; line-height: 2.0408vw;  clear: both;
+            }
+    .briefingLayerPop .layerBox  .input_wrap .note_area input[type="checkbox"]:checked + label:before { background:#164194 url(icon_checked.png) center no-repeat; background-size: 80%;
+    }
+    .briefingLayerPop .layerBox  .input_wrap .note_area .agreeWrap .fz10 {padding: 0.5102vw 0;   font-size: 1.0204vw; letter-spacing: -0.0510vw;}
+    .briefingLayerPop .layerBox  .input_wrap .note_area .agreeWrap .note_more {  width: 1.5306vw; height: 1.5306vw;  }
+    .briefingLayerPop .layerBox  .input_wrap .note_area .agreeWrap .note_more::before{ content: '\e942';  font-size: 1.6327vw; line-height: 1;  }
+    .briefingLayerPop .layerBox  .input_wrap .note_area .agreeWrap .note_more.on::before {content: '\e945';}
+    .briefingLayerPop .layerBox  .input_wrap .note_area .agreeWrap P{ padding: 0.5102vw 2.0408vw;}
+    .briefingLayerPop .layerBox  .input_wrap .note_area .agreeWrap P em{  padding: 0 1.0204vw; font-size: 1.1224vw;}
+    .briefingLayerPop .layerBox  .input_wrap .btn_area { width: 100%; height: 6.1224vw;}
+    .briefingLayerPop .layerBox  .input_wrap .btn_area a { width: 100%; height: 100%;  font-size: 2.0408vw;   line-height: 6.1224vw; border-radius: 1.2245vw; background: #FFE100;box-shadow: 0.0000vw 0.0000vw 0.8163vw 0.0000vw rgba(0, 0, 0, 0.15);}
+    .briefingLayerPop .layerBox  .input_wrap .btn_area a:hover {box-shadow: 0.0000vw 0.0000vw 0.8163vw 0.0000vw rgba(0, 0, 0, 0.30);}
+    .briefingLayerPop .layerBox  .input_wrap .close_area {margin: 1.0204vw 0;  font-size: 1.6327vw;  }
+    .briefingLayerPop .layerBox  .input_wrap .close_area a{border-bottom:0.2041vw solid #686868d0;}
+}
+
+@media screen and (max-width: 768px) {
+
+    .pc-img {display: none;}
+    .mo-img {display: block;}
+
+    .briefingLayerPop {margin: 0 auto; max-width: 100%;}
+    .briefingLayerPop .layerBox { width: 63.4115vw;}
+    .briefingLayerPop .layerBox .cont_wrap {display: flex; flex-direction: column;}
+    .briefingLayerPop .layerBox .input_wrap { padding: 2.6042vw; width:calc(100% - 5.2083vw);background: linear-gradient(135deg, #c4dcf8, #dfc6f9);}
+    .briefingLayerPop .layerBox .input_wrap .input_area li input[type="text"]{height: 7.8125vw; border-radius: 1.5625vw;}
+    .briefingLayerPop .layerBox .input_wrap .input_area .tlt{ margin-top: 1.5625vw; margin-bottom: 0.5208vw; font-size: 2.3438vw; font-weight: 600;}
+    .briefingLayerPop .layerBox .input_wrap .input_area textarea {padding: 0 2.6042vw; height: 7.8125vw; border-radius: 1.5625vw;}
+    .briefingLayerPop .layerBox .input_wrap .note_area {margin: 2.3438vw 0;  border-radius: 1.5625vw;}
+    .briefingLayerPop .layerBox .input_wrap .note_area input[type="checkbox"] + label { font-size: 2.0833vw;line-height: 3.1250vw;}
+    .briefingLayerPop .layerBox .input_wrap .note_area input[type="checkbox"] + label:before { width: 2.6042vw; height: 2.6042vw;}
+    .briefingLayerPop .layerBox .input_wrap .note_area .notice_inner {    padding: 2.6042vw; height: 12.7604vw;}
+    .briefingLayerPop .layerBox .input_wrap .note_area .agreeWrap .fz10 {font-size: 1.3021vw;}
+    .briefingLayerPop .layerBox .input_wrap .btn_area a{height: 7.8125vw; font-size: 2.6042vw; line-height: 7.8125vw;}
+    .briefingLayerPop .layerBox .input_wrap .close_area {margin: 2.6042vw 0; font-size: 2.0833vw;}
+}
+
+</style>
+
+    <div class="briefingLayerPop">
+        <div class="layerBox">
+            <div class="cont_wrap">
+                <div class="main_img">
+                    <img src="main.jpg" class="pc-img"  alt="">
+                    <img src="mo_main.jpg" class="mo-img" alt="">
+                </div>
+                <div class="input_wrap">
+                    <div class="txt_area">
+                        <h4>설명회 진행일</h4>
+                        <h2>4월 27일(일) 오후 5시</h2>
+
+                    </div>
+                    <div class="input_area">
+                        <ul>
+                            <li class="tlt">이름</li>
+                            <li><input type="text" value="" placeholder=""></li>
+                            <li class="tlt">휴대폰</li>
+                            <li><input type="text" value="" placeholder=""></li>
+                            <li class="tlt">궁금하신 내용을 남겨주세요.(선택)</li>
+                            <li> <textarea name="opinion"  rows="2"></textarea></li>
+                        </ul>
+
+                    </div>
+                    <div class="note_area">
+                        <div class="notice_inner">
+                            <ul class="agreeWrap">
+                                <li>
+                                    <input type="checkbox" name="" value="Y" id="agreeA" class="class_chk cert-data">
+                                    <label for="agreeA">
+                                        전체 동의
+                                    </label>
+
+                                </li>
+                                <li class="fz10">
+                                    ※ 전체동의에는 필수 및 선택 동의가 포함되어 있으며, 개별적으로 동의를 선택하실 수 있습니다.
+                                </li>
+                            </ul>
+                            <ul class="agreeWrap menu">
+                                <li>
+                                    <input type="checkbox" name="agree" value="Y" id="agreeB" class="class_chk chk cert-data">
+                                    <label for="agreeB">
+                                        개인정보 수집/이용 동의(필수)
+                                    </label>
+                                    <a class="note_more xi-icon" href="#"></a>
+                                    <p>
+                                        1. 개인정보 수집 이용 목적<br>
+                                        <em>- 설명회 신청시 본인 확인 절차 진행 및 문의사항 응대</em><br>
+                                        <em>- 설명회 참여에 따른 혜택 지급</em><br>
+                                        2. 개인정보 수집 항목<br>
+                                        <em>- 신청인의 이름, 휴대폰번호</em><br>
+                                        3. 개인정보 이용기간 및 보유기간<br>
+                                        <em>- 본 수집, 활용목적 달성 시 또는 이용자의 삭제요청시까지</em><br>
+                                        4. 개인정보 제공 동의 거부 권리 및 동의 거부에 따른 불이익<br>
+                                        <em>- 귀하는 개인 정보 제공 동의를 거부할 권리가 있으며 동의 거부에 따른 불이익은 없으나, 설명회 참여 및 혜택 지급을 위해 반드시 필요한 사항으로 거부하실 경우 설명회 첨여 및 혜택 제공이 불가능함을 알려드립니다.</em>
+                                    </p>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="agree" value="Y" id="agreeC" class="class_chk chk cert-data">
+                                    <label for="agreeC">
+                                        개인정보 마케팅 활용 동의(선택)
+                                    </label>
+                                    <a class="note_more xi-icon" href="#"></a>
+                                    <p>
+                                        1. 개인정보 수집 이용 목적<br>
+                                        <em>- 사품 및 이벤트 안내</em><br>
+                                        2. 개인정보 수집 항목<br>
+                                        <em>- 신청인의 이름, 휴대폰번호</em><br>
+                                        3. 개인정보 이용기간 및 보유기간<br>
+                                        <em>- 본 수집, 활용목적 달성 시 또는 이용자의 삭제요청시까지</em><br>
+                                        4. 개인정보 마케팅 활용 거부 및 동의 거부에 따른 불이익<br>
+                                        <em>- 귀하는 개인 정보 마케팅 활용 동의를 거부할 권리가 있습니다. 동의를 거부하더라도 설명회 참여는 가능합니다.</em>
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="btn_area">
+                        <a href="#">설명회 참석 신청하기</a>
+                    </div>
+                    <div class="close_area">
+                        <a href="#" class="btnClose">다음에 신청하기</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="contents">
+        <h1 class="attend_btn">신청하기</h1>
+
+    </div>
+
+
+
+    <script>
+
+        let couponClose = function () {
+            jQuery(".briefingLayerPop").hide();
+        }
+
+        jQuery(".attend_btn").click(function () {
+            jQuery(".briefingLayerPop").show();
+            jQuery(".btnClose").click(function () {
+                couponClose();
+            });
+        });
+
+        $(function(){
+            $(".menu>li>a").click(function(){
+                if($(this).hasClass("on") === true) {
+                    $(this).removeClass("on");
+                }else{
+                    $(this).addClass("on");
+                    $(this).parent("li").siblings("li").children("a").removeClass("on")
+                }
+                $(this).next("p").slideToggle(200);
+                $(this).parent("li").siblings("li").children("p").slideUp(200);
+
+            });
+      });
+
+        $(document).ready(function() {
+			$("#agreeA").click(function() {
+				if($("#agreeA").is(":checked")) $("input[name=agree]").prop("checked", true);
+				else $("input[name=agree]").prop("checked", false);
+			});
+
+			$(".chk").click(function() {
+				var total = $(".chk").length;
+				var checked = $(".chk:checked").length;
+
+				if(total != checked) $("#agreeA").prop("checked", false);
+				else $("#agreeA").prop("checked", true);
+			});
+        });
+    </script>
+
+
+
+</body>
+</html>

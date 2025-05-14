@@ -1,0 +1,1216 @@
+.wrapper {overflow: visible;}
+/*공통 S*/
+.new-event-view {
+    position: relative;
+    background: #fff;
+}
+.new-event-view {
+    width: 100%;
+    margin: 0 auto;
+}
+.new-event-view .mo-img {
+    display: none;
+}
+
+.new-event-view .sec .inner {
+  max-width: 1280px; /*시안에 따라 1170px~1400px 유동적 조정*/
+  margin: 0 auto;
+  position: relative;
+}
+
+.new-event-view img {
+    width: 100%;
+}
+
+.new-event-view iframe {
+    bordeR: 0;
+}
+
+/*공통 E*/
+
+.new-event-view .section1 {background: #6029db url('../images/real_lecture_bg_01.jpg') center no-repeat;}
+.new-event-view .section2 {background: #240c58;}
+.new-event-view .section3 {background: #240c58;}
+.new-event-view .section4 {background: #240c58;}
+.new-event-view .section5 {background: #240c58;}
+.new-event-view .section7 {background: #6029db;}
+.new-event-view .section8 {background: #6029db;}
+.new-event-view .section9 {background: linear-gradient(to top, #23004d,#4900a3);}
+.new-event-view .section12 {background: #6029db url('../images/real_lecture_bg_12.jpg') center no-repeat;}
+.new-event-view .section14 {background: #1d1649 url('../images/real_lecture_bg_14.jpg') center no-repeat;}
+
+
+
+/* 최상단 모션*/
+
+.motion_intro {
+  background-color: #201d25;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  transform: translateX(-50%);
+  animation: opacity3 6s ease 1 forwards;
+  overflow-x: hidden;
+}
+
+.motion_intro .motion_wrap {
+  margin: auto;
+  width: 1920px;
+  height: 100%;
+}
+
+.item {
+  position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 1920px; height: 100%; overflow:hidden;
+  background-color: #201d25;
+  animation: opacity0 6s  ease  1 forwards;
+}
+
+.ani_area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.ani_area .ani {
+  position: absolute;
+}
+.ani_area .ani.txt1 {
+  top: 10%;
+  left: 25%;
+  width: 240px;
+  height: 43px;
+  animation: scale-down-center2 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+.ani_area .ani.txt2 {
+  top: 17%;
+  left: 55%;
+  width: 320px;
+  height: 38px;
+  animation: scale-down-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 0.6s;
+}
+.ani_area .ani.txt3 {
+  top: 30%;
+  left: 38%;
+  width: 857px;
+  height: 58px;
+  animation: scale-down-center2 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 0.3s;
+}
+.ani_area .ani.txt4 {
+  top: 48%;
+  left: 12%;
+  width: 1280px;
+  height: 84px;
+  animation: scale-down-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay:1.2s;
+}
+.ani_area .ani.txt5 {
+  top: 65%;
+  left: 38%;
+  width: 428px;
+  height: 42px;
+  animation: scale-down-center2 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 0.9s;
+}
+.ani_area .ani.txt6 {
+  top: 74%;
+  left: 55%;
+  width: 749px;
+  height: 62px;
+  animation: scale-down-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 1.5s;
+}
+.ani_area .ani.txt7 {
+  top: 86%;
+  left: 16%;
+  width: 404px;
+  height: 34px;
+  animation: scale-down-center2 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 1.2s;
+}
+.ani_area .ani.txt8 {
+  top: 91%;
+  left: 44%;
+  width: 607px;
+  height: 42px;
+  animation: scale-down-center2 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 0.45;
+}
+
+.item2 { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 1920px; height: 100%; overflow:hidden;
+  /* background: url(../images/main_bg_2.jpg) center no-repeat; */
+  background-color: #201d25;
+  animation: opacity2 6s ease 1 forwards;
+}
+.ani_area2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.ani_area2 .ani2 {
+  position: absolute;
+}
+.ani_area2 .ani2.txt {
+  top: 46.5%;
+  left: 23.5%;
+  width: 1031px;
+  height: 147px;
+  animation: scale-down-center3 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: 3.2s;
+}
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+  }
+}
+
+@keyframes scale-down-center2 {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+            filter: blur(0);
+  }
+  /* 100% {
+    filter: blur(3px);
+  } */
+}
+
+@keyframes scale-down-center3 {
+  0% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+  }
+}
+
+@keyframes opacity0 {0%{opacity: 0;}20%{opacity: 1;}60%{opacity: 1;}100%{opacity: 0;}}
+@keyframes opacity1 {0%{opacity: 0;}20%{opacity: 0;}40%{opacity: 1;}70%{opacity: 0;}100%{opacity: 0;}}
+@keyframes opacity2 {0%{opacity: 0;}40%{opacity: 0;}60%{opacity: 1;}85%{opacity: 1;}100%{opacity: 0;}}
+@keyframes opacity3 {0%{opacity: 1;}80%{opacity: 1;}100%{opacity: 0;}}
+
+
+/* section1 */
+.section1 .dDay {
+    position: absolute;
+    top: 91.8%;
+    left: 50%;
+    width: 50%;
+    text-align: center;
+    color: #6effad;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: -2.5px;
+    line-height: 1.2;
+}
+
+.section3 h1,
+.section4 h1,
+.section5 h1  {
+    position: absolute;
+    background: linear-gradient(to right, #43e7a8, #62dff3, #8580f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+  }
+
+  /* section3*/
+  .section3 .grow {
+    top: 41%;
+    right: 71%;
+    font-size: 120px;
+  }
+
+  .section4 .entry {
+    top: 39%;
+    right: 61.5%;
+    font-size: 113px;
+  }
+  .section4 .entry .number {
+    width: 300px;
+  }
+
+  .section5 .transfer {
+    top: 31%;
+    right: 59%;
+    font-size: 112px;
+  }
+  .section5 .transfer .nums {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+  }
+
+  /* section6 */
+  .new-event-view .section6 {background: #0f0622 url('../images/real_lecture_bg_06.jpg') center no-repeat;}
+  .section6 .ani {position: absolute; filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.7)); opacity: 0;}
+
+  .section6 .review1 {
+    top: 27%;
+    left: 10%;
+    width: 424px;
+    height: 190px;
+    z-index: 1;
+  }
+
+  .section6 .review2 {
+    top: 33%;
+    left: 40%;
+    width: 343px;
+    height: 190px;
+    z-index: 4;
+  }
+
+  .section6 .review3 {
+    top: 44%;
+    left: 4%;
+    width: 424px;
+    height: 190px;
+  }
+
+  .section6 .review4 {
+    top: 26%;
+    left: 63%;
+    width: 348px;
+    height: 190px;
+    z-index: 6;
+  }
+
+  .section6 .review5 {
+    top: 58%;
+    left: 7%;
+    width: 479px;
+    height: 221px;
+    z-index: 4;
+  }
+
+  .section6 .review6 {
+    top: 41%;
+    left: 67%;
+    width: 364px;
+    height: 227px;
+  }
+
+  .section6 .review7 {
+    top: 59%;
+    left: 52%;
+    width: 468px;
+    height: 157px;
+  }
+
+  .section6 .review8 {
+    top: 76%;
+    left: 56%;
+    width: 468px;
+    height: 203px;
+    z-index: 5;
+  }
+
+  .section6 .review9 {
+    top: 47%;
+    left: 37%;
+    width: 411px;
+    height: 190px;
+    z-index: 6;
+  }
+
+  .section6 .review10 {
+    top: 82%;
+    left: 14%;
+    width: 407px;
+    height: 190px;
+    z-index: 4;
+  }
+  .section6 .review11 {
+    top: 71%;
+    left: 26%;
+    width: 491px;
+    height: 190px;
+    z-index: 3;
+  }
+  .section6.show .ani {
+    animation:appear .3s linear forwards;
+  }
+  /* 1 step :1,7, 11*/
+  /* 2 step :3, 6, 10  */
+  /* 3 step : 2, 4, 5 */
+  /* 4 step : 8, 9 */
+  .section6.show .review3,
+  .section6.show .review6,
+  .section6.show .review10{
+    animation-delay:.6s
+  }
+  .section6.show .review2,
+  .section6.show .review4,
+  .section6.show .review5{
+    animation-delay:.9s
+  }
+  .section6.show .review8,
+  .section6.show .review9{
+    animation-delay:.12s
+  }
+
+@keyframes appear {
+    from{transform:translateY(20px); opacity:0;}
+    to{transform:translateY(0); opacity:1;}
+}
+
+/* section8 */
+  /* 슬라이더 */
+  .section8 .slider_area{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1400px;
+  }
+  .section8 .slider_area .swiper-slide {
+    background: #6029db;
+  }
+  .section8 h1  {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    background: linear-gradient(120deg, #ebcc71 40%,  #b77a41);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+  }
+
+.section8 h1 span {
+    font-family: 'SBAggroB';
+    font-size: 130px;
+}
+
+.section8 .satisfy {
+    top: 55%;
+    right: 70%;
+    font-size: 120px;
+  }
+
+.section8 .recommand {
+    top: 55%;
+    right: 36%;
+    font-size: 120px;
+  }
+.section8 .awareness {
+    top: 55%;
+    right: 6.5%;
+    font-size: 120px;
+    letter-spacing: -6px;
+  }
+
+/* section10 */
+.new-event-view .section10 {background:linear-gradient(to top, #000000,  #22004c); ; padding: 26px 0 140px 0;}
+.new-event-view .section10 .tabWrap {
+    margin: auto;
+    width: 1172px;
+}
+.title_tabWrap {
+    width: 100%;
+    background: #6029db;
+    border-radius: 20px; overflow: hidden;
+}
+.title_tabWrap ul { display: flex; }
+.title_tabWrap li { width: calc(100% / 2); height: auto; text-align: center;  box-sizing: border-box; }
+.title_tabWrap li a {  display: block; width: 100%; height: 100%;  font-size: 40px; color: #fff; font-weight: 700;line-height: 110px; letter-spacing: -1px; background: #6029db;  }
+.title_tabWrap li.active a { background: #f6eb2d; color: #6029db;font-size: 40px; border-radius: 20px; }
+
+.tabWrap .sec_detail {
+    margin-top: 10px;
+}
+
+/* section11 */
+.section11{ padding: 100px 0; text-align: center;}
+.section11 h4{margin-bottom: 50px;}
+.section11 .event_sticky{position: sticky; top: 100px; overflow: hidden; padding: 0 55px;}
+.section11 div.event_sticky{width: 1170px; top: 334px; height: 450px; border-radius: 20px; overflow: hidden;}
+
+
+/* section13 */
+
+/*체크박스 커스텀 S*/
+#sub .sec input[type="checkbox"] {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    cursor: pointer;
+    height: 38px;
+    outline: 0;
+    width: 38px;
+    border-radius: 5px;
+}
+#sub input[type="checkbox"] + label {padding-left: 10px;}
+#sub input[type="checkbox"] + label:before {
+    display: none;
+}
+#sub .sec input[type="checkbox"]::after {
+    content: '';
+    display: none;
+    height: 100%;
+    left: 0;
+    position: relative;
+    top: 0;
+    width:100%;
+    background: url(../images/ico_check.png) center no-repeat;
+    background-size: 100%;
+}
+#sub .sec input[type="checkbox"]:checked {
+    background: #fff;
+}
+#sub .sec input[type="checkbox"]:checked::after {
+    display: block;
+}/****체크박스 커스텀 E ************/
+
+/*라디오 커스텀 S*/
+#sub .sec input[type="radio"] {
+  position: static;
+  opacity: 1;
+  visibility: visible;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #fff;
+  cursor: pointer;
+  height: 38px;
+  outline: 0;
+  width: 38px;
+  border-radius: 5px;
+}
+#sub input[type="radio"] + label {padding-left: 10px;}
+#sub input[type="radio"] + label:before {
+  display: none;
+}
+#sub .sec input[type="radio"]::after {
+  content: '';
+  display: none;
+  height: 100%;
+  left: 0;
+  position: relative;
+  top: 0;
+  width:100%;
+  background: url(../images/ico_check.png) center no-repeat;
+  background-size: 100%;
+}
+#sub .sec input[type="radio"]:checked {
+  background: #fff;
+}
+#sub .sec input[type="radio"]:checked::after {
+  display: block;
+}
+/****라디오 커스텀 E ************/
+
+.new-event-view .section13 {background: #1d1649 url('../images/real_lecture_bg_13.jpg') center top no-repeat;}
+
+.section13 .inner.buy { background: url(../images/buy_bg_1.jpg) center top no-repeat; padding: 0px 86px; }
+.section13 .buy .buy_box {background: #47379d;
+    /* border: 1px solid red; */
+    border-radius: 30px;}
+
+/* 메인 상품 1 */
+.section13 .buy .buy_box .prod_wrap { padding: 40px; position: relative;}
+.section13 .prod_wrap .realPass_wrap { width: 100%; border: 1px solid #61e09d; box-sizing: border-box; border-radius: 20px; display: flex; background: #130c3b; }
+.section13 .prod_wrap .realPass_wrap .cover {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.section13 .prod_wrap .realPass_wrap .pLeft { width: 63%; border-right: 1px solid #41ebff ; }
+.section13 .prod_wrap .realPass_wrap .pLeft ul { padding: 46px 60px; }
+.section13 .prod_wrap .realPass_wrap .label { display: inline-block; padding: 4px 30px; color: #211850; font-size: 20px; border-radius: 50px; background: #6effaf;}
+.section13 .prod_wrap .realPass_wrap .prod_title{color: #6effaf; font-size: 68px; font-weight: 700; line-height: 1.3; margin-top: 7px; }
+.section13 .prod_wrap .realPass_wrap .condi_txt{ color: #fff; font-size: 20px; }
+.section13 .prod_wrap .realPass_wrap .pRight { width:30% ; padding: 30px; }
+.section13 .prod_wrap .realPass_wrap .order_chek {
+    display: flex;
+    justify-content: flex-end;
+}
+.section13 .prod_wrap .realPass_wrap .fixed_price {
+    margin-top: 10px;
+    color: #999;
+    font-size: 25px;
+    text-align: right;
+    line-height: 1.5;
+}
+.section13 .prod_wrap .realPass_wrap .fixed_price span {
+    position: relative;
+}
+.section13 .prod_wrap .realPass_wrap .fixed_price span::before {
+    position: absolute;
+    content: '';
+    top: 45%;
+    left: -8px;
+    width: 120%;
+    height: 2px;
+    background: #999;
+}
+.section13 .prod_wrap .realPass_wrap .fixed_price span::after {
+  position: absolute;
+    content: '';
+    top: 45%;
+    right: -14px;
+    width: 19px;
+    height: 28px;
+    background: url(../images/ico-arrow.png) center top no-repeat;
+}
+.section13 .prod_wrap .realPass_wrap .fixed_price b { font-size: 34px;}
+.section13 .prod_wrap .realPass_wrap .discount_price {color: #fff;font-size: 60px; font-weight:600;text-align: right;line-height: .8;}
+.section13 .prod_wrap .realPass_wrap .discount_price b {color: #6effaf; font-size: 86px; }
+
+.section13 .prod_wrap .realPass_wrap.chk { border: 8px solid #61e09d; box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}
+
+.section13 .prod_wrap.type2 { margin-top: -46px; display: flex;justify-content: space-between;}
+.section13 .prod_wrap.type2 .realPass_wrap {width: 48%;border: 1px solid #61e09d;box-sizing: border-box;
+    border-radius: 20px;display: flex;flex-direction: column;
+    background: #130c3b;position: relative;}
+.section13 .prod_wrap.type2 .realPass_wrap::before {position: absolute;content: '+'; width: 50px;height: 50px;top:-26px;left: 50%;transform: translateX(-50%);
+    color:#211850 ;font-size:48px ;line-height: 1; text-align: center; background: #61e09d;border-radius: 50px;}
+.section13 .prod_wrap.type2 .realPass_wrap .top {padding: 20px 25px 10px 25px;border-bottom: 1px solid #61e09d;}
+.section13 .prod_wrap.type2 .realPass_wrap .bottom { padding: 15px 0; margin: auto; width: 420px;}
+.section13 .prod_wrap.type2 .realPass_wrap .bottom ul {display: flex; justify-content: space-between;align-items: center;}
+.section13 .prod_wrap.type2 .realPass_wrap .prod_title{ color: #61e09d; font-size: 32px; text-align: center; margin-top: -25px;}
+.section13 .prod_wrap.type2 .realPass_wrap .fixed_price {  margin-top: 10px; color: #999; font-size: 21px; line-height: 1.4;}
+.section13 .prod_wrap.type2 .realPass_wrap .fixed_price span::before { left: 0; width: 100%;}
+.section13 .prod_wrap.type2 .realPass_wrap .fixed_price span::after {  display: none; }
+.section13 .prod_wrap.type2 .realPass_wrap .fixed_price  { font-size: 28px;}
+.section13 .prod_wrap.type2 .realPass_wrap .percent span { display: inline-block; color: #6effaf; font-size: 32px; font-weight: 500; line-height: 1.4; padding: 0 15px; border-radius: 50px; border: 3px solid #6effaf;}
+.section13 .prod_wrap.type2 .realPass_wrap .discount_price {color: #fff;font-size: 38px;text-align: center;line-height: .7;}
+.section13 .prod_wrap.type2 .realPass_wrap .discount_price b {color: #61e09d; font-size: 54px; }
+
+.section13 .prod_wrap.type2 .realPass_wrap.chk { border: 8px solid #61e09d; box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}
+
+/* 메인 상품 2 */
+.section13 .buy .buy_box.b2 {margin-top: 35px;}
+.section13 .prod_wrap.p2 .realPass_wrap {border: 1px solid #fbff74;}
+.section13 .prod_wrap.p2 .realPass_wrap .label {background:#fbff74 ;}
+.section13 .prod_wrap.p2 .realPass_wrap .prod_title {color: #fbff74;}
+.section13 .prod_wrap.p2 .realPass_wrap .discount_price b {color: #fbff74;}
+
+.section13 .prod_wrap.p2 .realPass_wrap.chk { border: 8px solid #fbff74; box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}
+
+.section13 .prod_wrap.p2.type2 .realPass_wrap { width: 100%;}
+.section13 .prod_wrap.p2.type2 .realPass_wrap::before {background:#fbff74 ;}
+.section13 .prod_wrap.p2.type2 .realPass_wrap .top{border-bottom: 1px solid #fbff74;}
+.section13 .prod_wrap.p2.type2 .realPass_wrap .percent span {color: #fff06e;  border: 3px solid #fff06e;}
+.section13 .prod_wrap.p2.type2 .realPass_wrap.chk { border: 8px solid #fbff74; box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;}
+
+
+.section13 .order_wrap {width: 1100px; height: 88px; margin: auto; display: flex; margin-top: 10px; border-radius: 20px; overflow: hidden;}
+.section13 .order_wrap div {display: flex; align-items: center;}
+.section13 .total_price { width: calc(100% - 270px); height: 100%; padding-left:32px; color: #000; font-size: 28px; font-weight: 500; background: #fff; justify-content: flex-start;}
+.section13 .total_price b{color: #ff3333; font-size: 42px; margin-left: 20px;}
+.section13 .btn_area { width: 270px; color: #fff; font-size: 32px;  background: #ff8533 ;justify-content: center;}
+.section13 .sor_txt { width: 1100px; margin: auto; color: #fff; font-weight: 300; padding: 30px 0 35px 0;}
+
+.section14 .video_area {
+    position: absolute;
+    width: 35%;
+    height: 21.7%;
+    overflow: hidden;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+.section14 .video_area.v1 {
+    top: 51.7%;
+    left: 12.5%;
+}
+
+/*section15*/
+.new-event-view .section15 {background: #020718 url('../images/real_lecture_bg_15.jpg') center top no-repeat;}
+/* 합격자 롤링 모션 */
+.section15 .miraeij-brand {
+    padding-bottom: 80px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.section15 .miraeij-brand .motion_area {
+    position: relative;
+    width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+}
+
+.section15 .miraeij-brand .motion_area .pass-list-wrap {
+    margin-top: -50px;
+}
+.section15 .miraeij-brand .motion_area .pass-list {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: perspective(320px) rotateX(40deg);
+    transform: perspective(320px) rotateX(40deg);
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.section15 .miraeij-brand .motion_area .pass-list::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient( to top, rgba(7,6,47,0), rgba(7,6,47,1)); ;
+    z-index: 5;
+}
+.section15 .miraeij-brand .motion_area .table-list {
+    width: 1600px;
+    height: 340px;
+    opacity: .7;
+}
+.section15 .miraeij-brand .table-track {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section15 .miraeij-brand .motion_area .table-track  p {
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2;
+    margin: 0;
+    letter-spacing: -1px;
+    width: 16.66666666666667%;
+
+}
+
+@keyframes loop_scroll {
+	0%{
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(calc(-100% + 400px));
+	}
+}
+
+.section15 .miraeij-brand .table-track {
+    animation: loop_scroll 40s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+
+
+@media screen and (max-width: 1280px){
+
+  /* 최상단 모션*/
+
+  .motion_intro {
+    left: 50%;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    transform: translateX(-50%);
+    /* animation: opacity3 10s ease 1 forwards; */
+  }
+
+  .motion_intro .motion_wrap {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .item {
+    top: 0; left: 50%; transform: translateX(-50%); width: 100%; height: 100%;
+    /* animation: opacity0 10s  ease  1 forwards; */
+  }
+
+  .ani_area {
+    width: 100%;
+    height: 100%;
+  }
+  .ani_area .ani.txt1 {
+    top: 8%;
+    left: 17%;
+    width: 15.75vw;
+    height: 4.3594vw;
+  }
+  .ani_area .ani.txt2 {
+    top: 14%;
+    left: 56%;
+    width: 21vw;
+    height: 2.9688vw;
+  }
+  .ani_area .ani.txt3 {
+    top: 25%;
+    left: 35%;
+    width: 56.9531vw;
+    height: 4.5313vw;
+  }
+  .ani_area .ani.txt4 {
+    top: 40%;
+    left: 1%;
+    width: 85vw;
+    height: 6.5625vw;
+  }
+  .ani_area .ani.txt5 {
+    top: 55%;
+    left: 34%;
+    width: 28.4375vw;
+    height: 3.2813vw;
+  }
+  .ani_area .ani.txt6 {
+    top: 63%;
+    left: 56%;
+    width: 41.5156vw;
+    height: 4.8438vw;
+  }
+  .ani_area .ani.txt7 {
+    top: 72%;
+    left: 6%;
+    width: 31.5625vw;
+    height: 2.6563vw;
+  }
+  .ani_area .ani.txt8 {
+    top: 82%;
+    left: 41%;
+    width: 39.4219vw;
+    height: 3.2813vw;
+  }
+
+  .item2 { top: 0; left: 50%; transform: translateX(-50%); width: 100%; height: 100%;
+    /* animation: opacity2 10s ease 1 forwards; */
+  }
+  .ani_area2 {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ani_area2 .ani2.txt {
+    top: 38.5%;
+    left: 8.5%;
+    width: 84.5469vw;
+    height: 11.4844vw;
+    animation: scale-down-center3 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 3s;
+  }
+
+    /* section1 */
+    .section1 .dDay {
+      top: 91.8%;
+      left: 50%;
+      width: 50%;
+      font-size: 3.2813vw;
+      letter-spacing: -0.1953vw;
+      line-height: 1.2;
+  }
+
+    /* section3*/
+    .section3 .grow {
+      top: 41%;
+      right: 71%;
+      font-size: 9.3750vw;
+    }
+
+    .section4 .entry {
+      top: 40%;
+      right: 62.5%;
+      font-size: 8.8281vw;
+    }
+    .section4 .entry .number {
+      width: 23.4375vw;
+    }
+
+    .section5 .transfer {
+      top: 31%;
+      right: 59%;
+      font-size: 8.7500vw;
+    }
+    .section5 .transfer .nums {
+      width: 15.6250vw;
+    }
+
+    .section6 .review1 {
+        top: 27%;
+        left: 10%;
+        width: 33.1250vw;
+        height: 14.8438vw;
+    }
+
+    .section6 .review2 {
+        top: 33%;
+        left: 40%;
+        width: 26.7969vw;
+        height: 14.8438vw;
+    }
+
+    .section6 .review3 {
+        top: 44%;
+        left: 4%;
+        width: 33.1250vw;
+        height: 14.8438vw;
+    }
+
+    .section6 .review4 {
+        top: 26%;
+        left: 63%;
+        width: 27.1875vw;
+        height: 14.8438vw;
+    }
+
+    .section6 .review5 {
+        top: 58%;
+        left: 7%;
+        width: 37.4219vw;
+        height: 17.2656vw;
+    }
+
+    .section6 .review6 {
+        top: 41%;
+        left: 67%;
+        width: 28.4375vw;
+        height: 17.7344vw;
+    }
+
+    .section6 .review7 {
+        top: 59%;
+        left: 52%;
+        width: 36.5625vw;
+        height: 12.2656vw;
+    }
+
+    .section6 .review8 {
+        top: 76%;
+        left: 56%;
+        width: 36.5625vw;
+        height: 15.8594vw;
+    }
+
+    .section6 .review9 {
+        top: 47%;
+        left: 37%;
+        width: 32.1094vw;
+        height: 14.8438vw;
+    }
+
+    .section6 .review10 {
+        top: 82%;
+        left: 14%;
+        width: 31.7969vw;
+        height: 14.8438vw;
+      }
+    .section6 .review11 {
+        top: 71%;
+        left: 26%;
+        width: 38.3594vw;
+        height: 14.8438vw;
+      }
+
+     /* section8 */
+    /* 슬라이더 */
+    .section8 .slider_area{
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 109.3750vw;
+    }
+
+    .section8 .slider_area .swiper-slide {
+      background: #860cff;
+    }
+
+    .section8 h1 span {
+        font-size: 10.1563vw;
+    }
+
+    .section8 .satisfy {
+        top: 55%;
+        right: 70%;
+        font-size: 9.3750vw;
+      }
+
+    .section8 .recommand {
+        top: 55%;
+        right: 36%;
+        font-size: 9.3750vw;
+      }
+    .section8 .awareness {
+        top: 55%;
+        right: 6.5%;
+        font-size: 9.3750vw;
+        letter-spacing: -0.4688vw;
+      }
+
+      /* section10 */
+        .new-event-view .section10 { padding: 2.0313vw 0 10.9375vw 0;}
+        .new-event-view .section10 .tabWrap {
+            margin: auto;
+            width: 91.5625vw;
+        }
+        .title_tabWrap {
+            width: 100%;
+            border-radius: 1.5625vw;
+        }
+        .title_tabWrap li { width: calc(100% / 2); height: auto;    }
+        .title_tabWrap li a {   width: 100%; height: 100%;  font-size: 3.1250vw;  line-height: 8.5938vw; letter-spacing: -0.0781vw; }
+        .title_tabWrap li.active a { font-size: 3.1250vw; border-radius: 1.5625vw; }
+
+        .tabWrap .sec_detail {
+            margin-top: 0.7813vw;
+        }
+
+        /* section11 */
+        .section11{ padding: 7.8125vw 0; }
+        .section11 h4{margin-bottom: 3.9063vw;}
+        .section11 .event_sticky{ top: 7.8125vw;  padding: 0 4.2969vw;}
+        .section11 div.event_sticky{width: 91.4063vw; top: 26.0938vw; height: 40.5969vw; border-radius: 1.5625vw; }
+
+        /* section13 */
+
+        /*체크박스 커스텀 S*/
+        #sub .sec input[type="checkbox"] {
+          height: 2.9688vw;
+          width: 2.9688vw;
+          border-radius: 0.3906vw;
+        }
+        /****체크박스 커스텀 E ************/
+
+        /*라디오 커스텀 S*/
+        #sub .sec input[type="radio"] {
+          height: 2.9688vw;
+          width: 2.9688vw;
+          border-radius: 0.3906vw;
+        }
+
+        /****라디오 커스텀 E ************/
+
+        .new-event-view .section13 {background: #1d1649 url('../images/real_lecture_bg_13.jpg') center top no-repeat;}
+
+        .section13 .inner.buy { background: url(../images/buy_bg_1.jpg) center top no-repeat; padding: 0.0000vw 6.7188vw; }
+        .section13 .buy .buy_box {background: #47379d;
+            /* border: 0.0781vw solid red; */
+            border-radius: 2.3438vw;}
+
+        /* 메인 상품 1 */
+        .section13 .buy .buy_box .prod_wrap { padding: 3.1250vw; }
+        .section13 .prod_wrap .realPass_wrap { width: 100%; border: 0.0781vw solid #61e09d;  border-radius: 1.5625vw;  background: #130c3b; }
+        .section13 .prod_wrap .realPass_wrap .cover { top: 0; left: 0; width: 100%; height: 100%;}
+        .section13 .prod_wrap .realPass_wrap .pLeft { width: 63%; border-right: 0.0781vw solid #41ebff ; }
+        .section13 .prod_wrap .realPass_wrap .pLeft ul { padding: 3.5938vw 4.6875vw; }
+        .section13 .prod_wrap .realPass_wrap .label {  padding: 0.3125vw 2.3438vw;  font-size: 1.5625vw; border-radius: 3.9063vw; background: #6effaf;}
+        .section13 .prod_wrap .realPass_wrap .prod_title{ font-size: 5.3125vw;  line-height: 1.3; margin-top: 0.5469vw; }
+        .section13 .prod_wrap .realPass_wrap .condi_txt{  font-size: 1.5625vw; }
+        .section13 .prod_wrap .realPass_wrap .pRight { width:30% ; padding: 2.3438vw; }
+
+        .section13 .prod_wrap .realPass_wrap .fixed_price {
+            margin-top: 0.7813vw;
+
+            font-size: 1.9531vw;
+
+            line-height: 1.5;
+        }
+
+        .section13 .prod_wrap .realPass_wrap .fixed_price span::before {
+
+
+            top: 45%;
+            left: -0.6250vw;
+            width: 120%;
+            height: 0.1563vw;
+            background: #999;
+        }
+        .section13 .prod_wrap .realPass_wrap .fixed_price span::after {
+
+
+            top: 45%;
+            right: -1.0938vw;
+            width: 1.4844vw;
+            height: 2.1875vw;
+            background: url(../images/ico-arrow.png) center top no-repeat;
+        }
+        .section13 .prod_wrap .realPass_wrap .fixed_price b { font-size: 2.6563vw;}
+        .section13 .prod_wrap .realPass_wrap .discount_price {font-size: 4.6875vw; line-height: .8;}
+        .section13 .prod_wrap .realPass_wrap .discount_price b { font-size: 6.7188vw; }
+
+        .section13 .prod_wrap .realPass_wrap.chk { border: 0.6250vw solid #61e09d; box-shadow: rgba(0, 0, 0, 0.19) 0.0000vw 0.7813vw 1.5625vw, rgba(0, 0, 0, 0.23) 0.0000vw 0.4688vw 0.4688vw;}
+
+        .section13 .prod_wrap.type2 { margin-top: -3.5938vw;}
+        .section13 .prod_wrap.type2 .realPass_wrap {width: 48%;border: 0.0781vw solid #61e09d;
+            border-radius: 1.5625vw;flex-direction: column;
+            background: #130c3b;}
+        .section13 .prod_wrap.type2 .realPass_wrap::before {content: '+'; width: 3.9063vw;height: 3.9063vw;top:-2.0313vw;left: 50%;transform: translateX(-50%);
+            font-size:3.7500vw ;line-height: 1;  background: #61e09d;border-radius: 3.9063vw;}
+        .section13 .prod_wrap.type2 .realPass_wrap .top {padding: 1.5625vw 1.9531vw 0.7813vw 1.9531vw;border-bottom: 0.0781vw solid #61e09d;}
+        .section13 .prod_wrap.type2 .realPass_wrap .bottom { padding: 1.1719vw 0; margin: auto; width: 32.8125vw;}
+        .section13 .prod_wrap.type2 .realPass_wrap .bottom ul {align-items: center;}
+        .section13 .prod_wrap.type2 .realPass_wrap .prod_title{  font-size: 2.5000vw;  margin-top: -1.9531vw;}
+        .section13 .prod_wrap.type2 .realPass_wrap .fixed_price {  margin-top: 0.7813vw;  font-size: 1.6406vw; line-height: 1.4;}
+        .section13 .prod_wrap.type2 .realPass_wrap .fixed_price span::before { left: 0; width: 100%;}
+
+        .section13 .prod_wrap.type2 .realPass_wrap .fixed_price  { font-size: 2.1875vw;}
+        .section13 .prod_wrap.type2 .realPass_wrap .percent span {   font-size: 2.5000vw;  line-height: 1.4; padding: 0 1.1719vw; border-radius: 3.9063vw; border: 0.2344vw solid #6effaf;}
+        .section13 .prod_wrap.type2 .realPass_wrap .discount_price {font-size: 2.9688vw;line-height: .7;}
+        .section13 .prod_wrap.type2 .realPass_wrap .discount_price b { font-size: 4.2188vw; }
+
+        .section13 .prod_wrap.type2 .realPass_wrap.chk { border: 0.6250vw solid #61e09d; box-shadow: rgba(0, 0, 0, 0.19) 0.0000vw 0.7813vw 1.5625vw, rgba(0, 0, 0, 0.23) 0.0000vw 0.4688vw 0.4688vw;}
+
+        /* 메인 상품 2 */
+        .section13 .buy .buy_box.b2 {margin-top: 2.7344vw;}
+        .section13 .prod_wrap.p2 .realPass_wrap {border: 0.0781vw solid #fbff74;}
+        .section13 .prod_wrap.p2 .realPass_wrap .label {background:#fbff74 ;}
+
+
+        .section13 .prod_wrap.p2 .realPass_wrap.chk { border: 0.6250vw solid #fbff74; box-shadow: rgba(0, 0, 0, 0.19) 0.0000vw 0.7813vw 1.5625vw, rgba(0, 0, 0, 0.23) 0.0000vw 0.4688vw 0.4688vw;}
+
+        .section13 .prod_wrap.p2.type2 .realPass_wrap { width: 100%;}
+        .section13 .prod_wrap.p2.type2 .realPass_wrap::before {background:#fbff74 ;}
+        .section13 .prod_wrap.p2.type2 .realPass_wrap .top{border-bottom: 0.0781vw solid #fbff74;}
+
+        .section13 .prod_wrap.p2.type2 .realPass_wrap.chk { border: 0.6250vw solid #fbff74; box-shadow: rgba(0, 0, 0, 0.19) 0.0000vw 0.7813vw 1.5625vw, rgba(0, 0, 0, 0.23) 0.0000vw 0.4688vw 0.4688vw;}
+
+
+        .section13 .order_wrap {width: 85.9375vw; height: 6.8750vw; margin: auto;  margin-top: 0.7813vw; border-radius: 1.5625vw; }
+        .section13 .order_wrap div { align-items: center;}
+        .section13 .total_price { width: calc(100% - 21.0938vw); height: 100%; padding-left:2.5000vw;  font-size: 2.1875vw;  background: #fff; }
+        .section13 .total_price b{ font-size: 3.2813vw; margin-left: 1.5625vw;}
+        .section13 .btn_area { width: 21.0938vw;  font-size: 2.5000vw;  background: #ff8533 ;}
+        .section13 .sor_txt { width: 85.9375vw; margin: auto;   padding: 2.3438vw 0 2.7344vw 0;}
+
+
+
+
+        /*section15*/
+
+        .section15 .miraeij-brand {padding-bottom: 6.2500vw}
+        .section15 .miraeij-brand .motion_area { width: 100%;}
+        .section15 .miraeij-brand .motion_area .pass-list-wrap { margin-top: -1.5625vw;}
+        .section15 .miraeij-brand .motion_area .table-list {
+            width: 100%;
+            height: 25.0000vw;
+        }
+        .section15 .miraeij-brand .motion_area .table-track  p {
+            padding: 0;
+            font-size: 1.4063vw;
+            line-height: 2;
+            margin: 0;
+            letter-spacing: -0.0781vw;
+            width: 20%;
+        }
+
+
+}
+
+@media screen and (max-width: 768px){
+
+    .new-event-view .mo-img {
+        display: block;
+    }
+
+    .new-event-view .pc-img {
+        display: none !important;
+    }
+    .motion_intro {display: none;}
+    .ani_area .ani.txt4 {
+      top: 40%;
+      left: 5%;
+      width: 85vw;
+      height: 6.5625vw;
+      animation: scale-down-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      animation-delay:1.2s;
+    }
+
+    .section1 .dDay {
+      top: 92.8%;
+      left: 47%;
+      width: 50%;
+      color: #46f8d8;
+      font-size: 2.8646vw;
+      letter-spacing: -0.1302vw;
+      line-height: 1.2;
+  }
+
+    .section8 .slider_area { width: 97%;}
+    .section8 .satisfy {
+      right: 73%;
+    }
+    .section8 .recommand {
+      right: 38%;
+    }
+
+    .new-event-view .section13 {
+        background: linear-gradient(to top,#3a168b, #361278);;
+    }
+
+    .section11 div.event_sticky {
+        width: 92.4063vw;
+    }
+
+    #sub .sec input[type="checkbox"] {
+      height: 3.3854vw;
+      width: 3.3854vw;
+      border-radius: 0.3906vw;
+    }
+    #sub .sec input[type="radio"] {
+        height: 3.3854vw;
+        width: 3.3854vw;
+        border-radius: 0.3906vw;
+    }
+
+    .section13 .inner.buy {
+      background:linear-gradient(to top,#361686, #37127d);;
+      padding: 0.0000vw 20px;
+    }
+    .section13 .prod_wrap .realPass_wrap .label {font-size: 2.3438vw;   }
+    .section13 .prod_wrap .realPass_wrap .prod_title {font-size: 6.5104vw;}
+
+    .section13 .prod_wrap .realPass_wrap .fixed_price span::after{
+      background-size: 100%;
+    }
+
+    .section13 .prod_wrap.type2 .realPass_wrap .prod_title {margin-top: -2.5531vw;font-size: 3.2552vw;}
+    .section13 .prod_wrap.type2 .realPass_wrap .fixed_price {font-size:2.3438vw ;}
+    .section13 .prod_wrap.type2 .realPass_wrap .discount_price b {font-size: 4.6875vw;}
+    .section13 .prod_wrap .realPass_wrap .condi_txt {font-size: 2.3438vw; font-weight: 300;}
+
+
+    .section13 .prod_wrap.type2 .realPass_wrap .percent span {border: 0.3906vw solid #6effaf;}
+    .section13 .prod_wrap.p2.type2 .realPass_wrap .percent span {border: 0.3906vw solid #fff06e;}
+    .section13 .order_wrap { width: 93.9375vw; margin-top: 4.5573vw; }
+    .section13 .sor_txt {width: 93.9375vw; font-size: 1.9531vw; padding: 2.3438vw 0 4.6875vw 0;}
+
+
+    .new-event-view .section14 {background:linear-gradient(to top,#250e60, #3d1994);;}
+    .new-event-view .section15 {background:linear-gradient(to top,#190053, #0f013f); ;}
+    .section15 .miraeij-brand .motion_area .pass-list::before {background: linear-gradient(to top, rgba(17, 0, 70, 0), rgba(17, 0, 70, 1));}
+}
+@media screen and (max-width: 560px){
+ input[type="radio"] {padding: 0;}
+
+}
+@media screen and (max-width: 360px){
+  .section13 .order_wrap {
+    width: 88.9375vw;
+  }
+  .section13 .sor_txt {
+    width: 88.9375vw;
+  }
+}
+
