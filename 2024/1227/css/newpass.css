@@ -1,0 +1,929 @@
+/*공통 S*/
+.new-event-view {
+    position: relative;
+    background: #fff;
+    overflow-x: hidden;
+}
+.new-event-view {
+    width: 100%;
+    margin: 0 auto;
+}
+.new-event-view .mo-img {
+    display: none;
+}
+
+.new-event-view .sec .inner {
+    max-width: 1280px; /*시안에 따라 1170px~1400px 유동적 조정*/
+    margin: 0 auto;
+    position: relative;
+}
+
+.new-event-view img {
+    width: 100%;
+}
+
+.new-event-view iframe {
+    bordeR: 0;
+}
+
+/*공통 E*/
+
+.new-event-view .section1 {background: #1a0e6a url('../images/newpass_bg_01.jpg') center no-repeat;}
+.new-event-view .section2 {background: #b7effd url('../images/newpass_bg_02.jpg') center no-repeat;}
+.new-event-view .section3 {background: url('../images/newpass_bg_03.jpg') center no-repeat;}
+.new-event-view .section4 {background: url('../images/newpass_bg_04.jpg') center no-repeat;}
+.new-event-view .section5 {background: #332e86;}
+
+.new-event-view .section10 {background: #1b1440;}
+.new-event-view .section11 {background: #f4f4f4 url('../images/newpass_bg_11.jpg') center no-repeat;}
+.new-event-view .section12 {background: #1e1c1c url('../images/newpass_bg_12.jpg') center no-repeat;}
+.new-event-view .section13 {background: #f1fafb url('../images/newpass_bg_13.jpg') center no-repeat;}
+.new-event-view .section14 {background: #f1fafb url('../images/newpass_bg_14.jpg') center no-repeat;}
+.new-event-view .section15 {background: #2d2887 url('../images/newpass_bg_15.jpg') center no-repeat;}
+.new-event-view .section16 {background: #2e2985 url('../images/newpass_bg_16.jpg') center no-repeat;}
+.new-event-view .section17 {background: #e2e2e2 url('../images/newpass_bg_17.jpg') center no-repeat;}
+.new-event-view .section18 {background: #e2e2e2 url('../images/newpass_bg_18.jpg') center no-repeat;}
+.new-event-view .section19 {background: #2b2a29;}
+.new-event-view .section22 {background: #dbdbdb;}
+
+
+/* right parallax menu*/
+.float_menu.show {
+    transition: all 0.5s ease;
+    display: block;
+}
+.float_menu {
+    position: fixed;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    z-index:99;
+    /* border: 1px solid red; */
+}
+.float_menu_title {
+    width: 170px;
+    height: 30px;
+    float: right;
+    margin-bottom: 25px;
+}
+.float_menu .float_menu_title .title_black {
+    display: block;
+}
+.float_menu .float_menu_title .title_white {
+    display: none;
+}
+.float_menu_list {
+    clear: right;
+}
+.float_menu_list li {
+    height: 50px;
+    background: url(../images/dot_bg.png) right 12px bottom no-repeat;
+}
+.float_menu_list li:last-child {
+    background: none;
+}
+.float_menu_list li a {
+    position: relative;
+    z-index: 10;
+    display: block;
+    color: #b1aeae;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+}
+.float_menu_list li a span {
+    position: relative;
+    padding-right: 35px;
+}
+
+.float_menu_list li a span::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    right: 9px;
+    width: 8px; height: 8px;
+    background: rgba(193,193,193,1);
+    border-radius: 50%;
+}
+
+.float_menu_list li:hover a,
+.float_menu_list li.active a{
+    color: #554bff;
+    font-weight: 700;
+}
+
+.float_menu_list li:hover a span::after,
+.float_menu_list li.active a span::after {
+    background: transparent;
+    border: 5px solid #554bff;
+    right: 5px;
+}
+
+/* color change*/
+.float_menu.change .float_menu_title .title_black {
+    display: none;
+}
+.float_menu.change .float_menu_title .title_white {
+    display: block;
+}
+
+.float_menu.change .float_menu_list li:hover a,
+.float_menu.change .float_menu_list li.active a{
+    color: #f6eb2d;
+}
+
+.float_menu.change .float_menu_list li:hover a span::after,
+.float_menu.change .float_menu_list li.active a span::after {
+    border: 5px solid #f6eb2d;
+}
+
+
+
+/* section1*/
+
+/* section2*/
+
+/* section5 상품단*/
+.section5 .inner.superPass {
+    padding: 40px 0;
+    position: relative;
+}
+.section5 .superPass .noti {
+    color: #7c71b4;
+    font-size: 18px;
+    text-align: right;
+    width: 89.625%;
+    margin: auto;
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+.section5 .superPass .superTable {
+    margin: auto;
+    margin-top: 14px;
+    width: 90.625%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    border-style: hidden;
+    box-shadow: 0 0 0 2px #b8b8b8;
+    background: #fff;
+    overflow: hidden;
+
+}
+
+.section5 .superPass .superTable tr{
+    border-bottom: 2px solid #b8b8b8 ;
+}
+.section5 .superPass .superTable th,
+.section5 .superPass .superTable td{
+    border-right: 2px solid #b8b8b8 ;
+}
+
+.section5 .superPass .superTable thead th,
+.section5 .superPass .superTable tbody th {
+    color: #4450c0;
+    font-size: 30px;
+    padding: 25px 0;
+    line-height: 1.2;
+}
+.prod_name .super {
+    background:#1d1a19 ;
+}
+.prod_name .super em {
+    color: #fff;
+    font-size: 35px;
+    line-height: 1;
+}
+.prod_name .super p {
+    color: #fff600;
+    font-size: 45px;
+    font-weight: 800;
+    line-height: .8;
+}
+.prod_name .super2 {
+    background:#4450c0 ;
+}
+.prod_name .super2 em{
+    color: #fff;
+    font-size: 35px;
+    line-height: 1;
+}
+.prod_name .super2 p {
+    color: #fff;
+    font-size: 35px;
+    line-height: .8;
+    font-weight: 700;
+}
+.prod_name .super3 {
+    background:#4450c0 ;
+}
+.prod_name .super3 em{
+    color: #fff;
+    font-size: 35px;
+    line-height: 1;
+}
+
+.prod_name .super3 p {
+    color: #fff;
+    font-size: 35px;
+    line-height: .8;
+    font-weight: 700;
+}
+.section5 .superPass .superTable tbody td{
+    padding: 40px 0;
+    color: #000;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: -1px;
+}
+.section5 .superPass .superTable tbody .sub_txt {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.section5 .superPass .superTable tbody .basic_benefit li {
+    font-size: 24px;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.section5 .superPass .superTable tbody .basic_benefit li.sub_txt {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.section5 .superPass .superTable tbody .prod_price_area {
+    background: #f0f0f0;
+}
+
+.section5 .superPass .superTable tbody .prod_price_area .dis_price {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    padding-top: 40px;
+}
+.section5 .superPass .superTable tbody .prod_price_area .dis_price::before {
+    position: absolute;
+    content: attr(data-title);
+    top: 0;
+    left: 20px;
+    width: 220px;
+    height: 37px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    background: #e30303;
+}
+
+.section5 .superPass .superTable tbody .prod_price_area .dis_price em {
+    color: #797979;
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: line-through;
+}
+.section5 .superPass .superTable tbody .prod_price_area .dis_price span {
+    font-size: 45px;
+    font-weight: 700;
+}
+.section5 .superPass .superTable tbody .prod_price_area .dis_price b {
+    color: #e30303;
+    font-size: 68px;
+    font-weight: 900;
+}
+
+.section5 .superPass .superTable tbody td:nth-child(2):hover {
+    background: #f0f0f0;
+}
+
+.section5 .prod_area {
+    position: absolute;
+    top: 6.5%;
+    box-sizing: border-box;
+}
+
+.section5 .superPass .event1 {
+    left: 16%;
+    width: 28.5%;
+    height: 90.3%;
+}
+.section5 .superPass .event2 {
+    left: 44.5%;
+    width: 25.5%;
+    height: 90.3%;
+}
+.section5 .superPass .event3 {
+    left: 70%;
+    width: 25.5%;
+    height: 90.3%;
+}
+.section5 .prod_area.on {
+    background: rgba(0, 0, 0, .5);
+    border: 8px solid #f6eb2d;
+    border-radius: 30px;
+}
+
+.section5 .prod_area.on::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 140px;
+    height: 140px;
+    background: url(../images/i_check.png) center no-repeat;
+}
+
+/*체크박스 커스텀 S*/
+#sub .sec input[type="checkbox"] {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    border: 2px solid #b7b7b7;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 40px;
+    outline: 0;
+    width: 40px;
+}
+#sub input[type="checkbox"] + label {padding-left: 10px;}
+#sub input[type="checkbox"] + label:before {
+    display: none;
+}
+
+#sub .sec input[type="checkbox"]::after {
+    border: solid #244c9a;
+    border-width: 0 2px 2px 0;
+    content: '';
+    display: none;
+    height: 70%;
+    left: 30%;
+    position: relative;
+    top: 5%;
+    transform: rotate(45deg);
+    width: 50%;
+}
+
+#sub .sec input[type="checkbox"]:checked {
+    background: #fff;
+    border: 2px solid #244c9a;
+    box-sizing: border-box;
+}
+
+#sub .sec input[type="checkbox"]:checked::after {
+    display: block;
+}
+
+/****체크박스 커스텀 E ************/
+
+
+/*동의 신청하기 공통 */
+.sec .inner.passAgree {
+    padding: 30px 0 80px 0;
+}
+#sub .agree_area {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    height: auto;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+
+#sub .agree_area span {
+    margin-left: 14px;
+}
+
+#sub .agree_area p {
+    margin-top: -10px;
+    margin-left: 58px;
+    color: rgba(255, 255, 255, .5);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#sub .agree_area input[type="checkbox"] {
+    height: 42px;
+    width: 42px;
+    border: 2px solid #797979;
+    background: #f0f0f0;
+}
+#sub .agree_area .noticeBtn:hover {
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.5));
+}
+
+.btn_area {
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between   ;
+    align-items: center;
+    width: 88%;
+}
+.btn_area .passBtn:hover {
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.5));
+}
+
+
+/* finalPass*/
+.section5 .finalPass{
+    position: relative;
+}
+.section5 .check_area.final {
+    position: absolute;
+    top: 78%;
+    left: 57.3%;
+    display: flex;
+    align-items: baseline;
+}
+
+.section5 .check_area.final span {
+    color: #363636 ;
+    font-size: 35px;
+    font-weight: 500;
+}
+.section5 .check_area.final b{
+    color: #e30303;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+.section5 .dDay {
+    position: absolute;
+    top: 7.5%;
+    left: 38%;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    line-height:1.2;
+    letter-spacing: -.5px;
+}
+
+.section5 .dDay b {
+    color: #ffff02;
+}
+
+.section5 .dDay_notice {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: #010101;
+    font-size: 20px;
+    line-height: 1.4;
+
+}
+.section5 .dDay_notice p {
+    position: relative;
+    padding-left: 20px;
+}
+.section5 .dDay_notice p.org {
+    color: #ff5102;
+}
+.section5 .dDay_notice span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    color: #010101;
+    font-size: 10px;
+}
+
+/* orderArea*/
+.orderArea div {
+    position: absolute;
+    color: #f6eb2d;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.orderArea .prodCheck_name {
+    top: 27%;
+    left: 16%;
+}
+
+.orderArea .total_price {
+    top: 19%;
+    left: 78%;
+}
+.orderArea .total_price span{
+    font-size: 37px;
+    font-weight: 900;
+}
+
+/* section11*/
+.section11 a {
+    position: absolute;
+    background: red;
+    opacity: 0.3;
+}
+
+.section11 .link1 {
+    top: 27%;
+    left: 3%;
+    width: 45%;
+    height: 20%;
+}
+
+.section11 .link2 {
+    top: 27%;
+    left: 51.5%;
+    width: 45%;
+    height: 20%;
+}
+
+/* section13*/
+.section13 .video_area {
+    position: absolute;
+    top: 31.3%;
+    left: 4.5%;
+    width: 44%;
+    height: 19%;
+    cursor: pointer;
+    border: 1px solid #4f7dfe;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* section16*/
+.tabWrap {
+    position: absolute;
+    top: 2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1172px;
+    height: 110px;
+
+}
+.title_tabWrap {
+    width: 100%;
+    background: #6360c5;
+    border-radius: 20px; overflow: hidden;
+
+}
+.title_tabWrap ul { display: flex; }
+.title_tabWrap li { width: calc(100% / 2); height: auto; text-align: center;  box-sizing: border-box; }
+.title_tabWrap li a {  display: block; width: 100%; height: 100%;  font-size: 40px; color: #fff; font-weight: 700;line-height: 110px; letter-spacing: -1px; background: #6360c5;  }
+.title_tabWrap li.active a { background: #f6eb2d; color: #2e2b88;font-size: 40px; border-radius: 20px; }
+
+
+.tabWrap .sec_detail {
+    margin-top: 10px;
+}
+
+/* section18*/
+.section18 .slider_wrap {
+    margin: auto;
+    max-width: 1920px;
+    height: 524px;
+    background: url('../images/newpaas_bg_18.jpg') center no-repeat;
+}
+
+.section18 .book_swiper-container{ position: relative; width: 100%; height: auto; overflow: hidden;}
+.section18 .book_swiper-container .swiper-wrapper {  transition-timing-function: linear;}
+
+
+
+/* section19*/
+.section19 .slider_wrap {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1060px;
+    padding: 0 55px;
+
+}
+.section19 .sec19_swiper-container{ position: relative; width: 100%;height: auto; overflow: hidden;}
+.section19 .sec19_swiper-container .swiper-slide{ }
+.section19 .swiper-button-prev,
+.section19 .swiper-button-next {
+    width: 31px;
+    height: 53px;
+    z-index: 2;
+    background-size: cover;
+}
+.section19 .swiper-button-prev {
+    background: url('../images/arrow_prev.png') no-repeat;
+}
+
+.section19 .swiper-button-next {
+    background: url('../images/allow_next.png') no-repeat;
+}
+
+.section19 .swiper-button-prev:after,
+.section19 .swiper-button-next:after {
+    display: none;
+}
+
+.section19 .link1 {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 48%;
+    height: 7.5%;
+    background: red;
+    opacity: 0.3;
+}
+
+/* section20*/
+.section20 a {
+    /* border: 1px solid red; */
+    position: absolute;
+    cursor: pointer;
+    width: 29.5%;
+    height: 17%;
+}
+.section20 .video_area1 {
+    top: 49.3%;
+    left: 4%;
+}
+.section20 .video_area2 {
+    top: 49.3%;
+    left: 35%;
+}
+.section20 .video_area3 {
+    top: 49.3%;
+    left: 67%;
+}
+.section20 .video_area4 {
+    top: 73.5%;
+    left: 20%;
+}
+.section20 .video_area5 {
+    top: 73.5%;
+    left: 51%;
+}
+
+/* section21*/
+.section21 .link1 {
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    width: 33%;
+    height: 7.5%;
+    background: red;
+    opacity: 0.3;
+}
+
+/* section22 유의사항 */
+.section22 .passNotice_area h2 {
+    padding: 80px 70px 20px 70px;
+    color: #192436;
+    font-size: 28px;
+}
+
+/* 탭 전체 스타일 */
+.section22 .passNotice_tabs {
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 40px;
+    width: 92%;
+    opacity: 1;
+}
+
+/* 탭 스타일 */
+.section22 .tab_item {
+    position: relative;
+    width: calc(100%/8);
+    background-color: #dbdbdb;
+    line-height: 2.5;
+    font-size: 16px;
+    text-align: center;
+    color: #77787c;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+.section22 .tab_item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 1px;
+    height: 30%;
+    background: #77787c;
+}
+.section22 .tab_item.lat::after{
+    display: none;
+}
+.section22 .tab_item:hover {
+    opacity: 0.75;
+}
+
+/* 라디오 버튼 UI삭제*/
+input[name="tab_item"] {
+    display: none;
+}
+
+/* 탭 컨텐츠 스타일 */
+.section22 .tab_content {
+    display: none;
+    padding:0;
+    clear: both;
+    overflow: hidden;
+    padding: 40px 40px 40px 30px;
+    min-height: 400px;
+}
+.section22 .tab_content ul{
+    color: #333;
+    font-size: 1.4rem;
+    line-height: 24px;
+    letter-spacing: -1.2px;
+    font-weight: 700;
+}
+.section22 .tab_content ul li{
+    padding: 2px 0;
+}
+.section22 .tab_content ul ul {
+    font-weight: 400;
+    padding-left: 15px;
+}
+.section22 .tab_content ul ul li {
+    padding: 0;
+}
+.section22 .tab_content .ps {
+    margin-top: 35px;
+}
+
+
+/* 선택 된 탭 콘텐츠를 표시 */
+#p1:checked ~ .p1_content,
+#p2:checked ~ .p2_content,
+#p3:checked ~ .p3_content,
+#p4:checked ~ .p4_content,
+#p5:checked ~ .p5_content,
+#p6:checked ~ .p6_content,
+#p7:checked ~ .p7_content,
+#p8:checked ~ .p8_content              {
+display: block;
+}
+
+/* 선택된 탭 스타일 */
+.section22 .passNotice_tabs input:checked + .tab_item {
+    color: #101920;
+}
+
+
+/*하단 고정 띠배너*/
+.band_banner {
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #ffe900;
+    z-index: 10;
+}
+.band_banner .inner {
+    position: relative;
+    width: 1280px;
+    height: 150px;
+}
+
+.band_banner .dday_txt {
+    position: absolute;
+    top: 13.5%;
+    left: 4.2%;
+    width: 48%;
+    font-size: 42px;
+    font-weight: 800;
+    color: #1f1a28;
+    text-align: left;
+    line-height: 1.2;
+    letter-spacing:-2px;
+}
+.band_banner .dday_txt em {
+    color: #321cbb;
+    font-weight: 800;
+}
+.band_banner .link1 {
+    position: absolute;
+    top: 20%;
+    right: 4.5%;
+    width: 20.5%;
+    height: 90px;
+    opacity: 1;
+    background: url(../images/band_btn.png) center no-repeat;
+    background-size: cover;
+}
+
+.band_banner .d_day_area {
+    position: absolute;
+    top: 33%;
+    left: 50.5%;
+    width: 30%;
+    height: 40%;
+    color: #321cbb;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+
+
+
+@media screen and (max-width: 1280px){
+
+    /* section18*/
+    .slider_wrap {
+        margin: auto;
+        max-width: none;
+        height: 40.9375vw;
+        background: url('../images/newpaas_18.jpg') center no-repeat;
+        background-size: 100%;
+    }
+
+    /* section22 유의사항 */
+    .section22 .passNotice_area h2 {
+        padding: 6.2500vw 5.4688vw 1.5625vw 5.4688vw;
+        font-size: 2.1875vw;
+    }
+
+    /* 탭 전체 스타일 */
+    .section22 .passNotice_tabs {
+        margin: auto;
+        margin-top: 0.7813vw;
+        padding-bottom: 3.1250vw;
+        width: 92%;
+        opacity: 1;
+    }
+
+    /* 탭 스타일 */
+    .section22 .tab_item {
+        width: calc(100%/8);
+        line-height: 2.5;
+        font-size: 1.2500vw;
+        transition: all 0.2s ease;
+    }
+    .section22 .tab_item::after {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        width: 0.0781vw;
+        height: 30%;
+        background: #77787c;
+    }
+    .section22 .tab_item:hover {
+        opacity: 0.75;
+    }
+
+
+    /* 탭 컨텐츠 스타일 */
+    .section22 .tab_content {
+        padding:0;
+        clear: both;
+        padding: 3.1250vw 3.1250vw 3.1250vw 2.3438vw;
+        min-height: 31.2500vw;
+    }
+    .section22 .tab_content ul{
+        font-size: 1.0938vw;
+        line-height: 1.8750vw;
+        letter-spacing: -0.0937vw;
+    }
+    .section22 .tab_content ul li{
+        padding: 0.1563vw 0;
+    }
+    .section22 .tab_content ul ul {
+        padding-left: 1.1719vw;
+    }
+    .section22 .tab_content ul ul li {
+        padding: 0;
+    }
+    .section22 .tab_content .ps {
+        margin-top: 2.7344vw;
+    }
+
+
+}
+
+@media screen and (max-width: 768px){
+
+    .new-event-view .mo-img {
+        display: block;
+    }
+
+    .new-event-view .pc-img {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width: 400px){}

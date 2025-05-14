@@ -1,0 +1,317 @@
+.event-view {
+    background: #fff;
+}
+
+.event-view {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+.event-view .section1 {background: #161822;}
+.event-view .section2 {background: #161822;}
+.event-view .section3 {background: url('../images/healing_bg_03.jpg') center no-repeat;}
+.event-view .section4 {background: url('../images/healing_bg_04.jpg') center no-repeat;}
+
+/*video_intro*/
+.video_intro{background-color: #000;position: absolute;left: 0;top: 0;z-index: 100;height: 880px;animation: opacity0 0.7s ease 9s 1 forwards;pointer-events: none;}
+.video_intro *{pointer-events: none;}
+.videoPlay_area {
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    z-index: 50;
+}
+.videoPlay_area video{width: inherit;height: inherit;object-fit: inherit;}
+.videoPlay_area .video_filter{width: 100%;height: 100%;position: absolute;left: 0;top: 0;background: no-repeat center center/cover url(../images/healing_intro_video_filter.png);}
+@keyframes opacity0 {0%{opacity: 1;}100%{opacity: 0;}}
+
+/*section1*/
+.section1 .ani_txt {
+    position: absolute;
+    top: 74.5%;
+    left: 4.7%;
+    width: 249px;
+    height: 129px;
+    animation: aniTxt 1.5s ease infinite;
+    z-index: 10;
+}
+@keyframes aniTxt {0%, 100% {transform: translateY(0px);}50% {transform: translateY(15px);}}
+
+
+.section1 .ani_area {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 470px;  
+    width: 611px;
+    height: 960px;
+    overflow: hidden;
+}
+
+.section1 .ani_area::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, rgba(22, 24, 34, 1) 30%, rgba(22, 24, 34, 0) 100%);
+}
+.section1 .img_rolling {
+    position: absolute;    
+    animation: bottomToRolling 15s linear infinite;    
+}
+@keyframes bottomToRolling {0%{top: 0;}100%{top: -1732px;}}
+/*section2*/
+.section2 .jb-a {
+    position: absolute;
+    width: 376px;  
+    height: 512px;
+    margin: 0px auto;
+    cursor: pointer;
+}
+.section2 em.rw1 {
+    top: 18%;
+    left: 4%;
+}
+.section2 em.rw2 {
+    top: 18%;
+    left: 35.5%;  
+}
+.section2 em.rw3 {
+    top: 55.5%;
+    left: 35.5%;  
+}
+.section2 em.rw4 {
+    top: 55.5%;
+    left: 66.5%;
+}
+
+.section2 .jb-c {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.section2 .jb-a:hover .jb-c {
+    opacity: 1;
+}
+
+
+.section3 .video_area {
+    position: absolute;   
+    width: 34%;
+    height: 15.5%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+.section3 .video_area.v1 {
+    top: 35.3%;
+    left: 14.9%;
+}
+.section3 .video_area.v2 {
+    top: 35.3%;
+    left: 61.7%;
+}
+.section3 .video_area.v3 {
+    top: 53.6%;
+    left: 14.9%;
+}
+.section3 .video_area.v4 {
+    top: 53.6%;
+    left: 61.7%;
+}
+.section3 .video_area.v5 {
+    top: 71.8%;
+    left: 14.9%;
+}
+.section3 .video_area.v6 {
+    top: 71.8%;
+    left: 61.7%;
+}
+.section3 .video_area a {
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
+
+@media screen and (max-width: 1280px){
+
+
+    /*section1*/
+    .section1 .ani_txt {        
+        top: 74.5%;
+        left: 4.7%;
+        width: 19.4531vw;
+        height: 10.0781vw;
+        animation: aniTxt 1.5s ease infinite;        
+    }
+
+    .section1 .ani_area {    
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 36.7188vw;  
+        width: 47.7344vw;
+        height: 75.0000vw;        
+    }
+    
+    .section1 .ani_area::after {   
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 15.6250vw;
+        background: linear-gradient(to top, rgba(22, 24, 34, 1) 30%, rgba(22, 24, 34, 0) 100%);
+    }
+
+    /*section2*/
+    .section2 .jb-a {        
+        width: 29.3750vw;  
+        height: 40.0000vw;
+        margin: 0.0000vw auto;
+        cursor: pointer;
+    }
+
+
+}
+
+@media screen and (max-width: 768px){
+    .event-view .mo-img {
+        display: block;
+    }
+
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    /*section1*/
+    .section1 .ani_txt {
+        position: absolute;
+        top: 74.5%;
+        left: 3.7%;
+        width: 19.2708vw;
+        height: 9.8958vw;
+        animation: aniTxt 1.5s ease infinite;
+        z-index: 10;
+    }
+
+    .section1 .ani_area {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 27.8646vw;
+        width: 35.1563vw;
+        height: 59.8958vw;
+        overflow: hidden;
+    }
+    
+    .section1 .ani_area::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 26.0417vw;
+        background: linear-gradient(to top, rgba(15, 19, 41, 1) 30%, rgba(15, 19, 41, 0) 100%);
+    }
+    .section1 .img_rolling {
+        position: absolute;    
+        animation: bottomToRolling 12s linear infinite;    
+    }
+    @keyframes bottomToRolling {0%{top: 0;}100%{top: -99.7396vw;}}
+
+    /*section2*/
+    .section2 .jb-a {
+        position: absolute;
+        width: 30.5990vw;  
+        height: 41.6667vw;
+        margin: 0px auto;
+        cursor: pointer;
+    }
+
+    .section2 em.rw1 {
+        top: 19%;
+        left: 2%;
+    }
+    .section2 em.rw2 {
+        top: 19%;
+        left: 34.5%;  
+    }
+    .section2 em.rw3 {
+        top: 55.5%;
+        left: 34.5%;  
+    }
+    .section2 em.rw4 {
+        top: 55.5%;
+        left: 66.5%;
+    }
+
+    .section3 .video_area {
+        position: absolute;   
+        width: 36%;
+        height: 16.5%;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        overflow: hidden;
+        cursor: pointer;
+        /* border: 1px solid red; */
+    }
+
+    .section3 .video_area.v1 {
+        top: 35.3%;
+        left: 13.9%;
+    }
+    .section3 .video_area.v2 {
+        top: 35.3%;
+        left: 62%;
+    }
+    .section3 .video_area.v3 {
+        top: 54.8%;
+        left: 13.9%;
+    }
+    .section3 .video_area.v4 {
+        top: 54.8%;
+        left: 62%;
+    }
+    .section3 .video_area.v5 {
+        top: 74.5%;
+        left: 13.9%;
+    }
+    .section3 .video_area.v6 {
+        top: 74.5%;
+        left: 62%;
+    }
+
+
+
+
+}

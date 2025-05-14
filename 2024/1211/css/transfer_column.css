@@ -1,0 +1,720 @@
+.event-view {
+    background: #fff;
+}
+
+.event-view {
+
+}
+
+.event-view .mo-img {
+    display: none;
+}
+
+.event-view .sec {
+    width: 100%;
+    /* max-width: 3000px; */
+    margin: 0 auto;
+}
+
+.event-view .sec .inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.event-view img {
+    width: 100%;
+}
+
+.event-view iframe {
+    bordeR: 0;
+}
+
+.event-view .section1 {background: #4985a9 url('../images/transfer_column_bg_01.jpg') center no-repeat;}
+.event-view .section2 {background:  url('../images/transfer_column_bg_02.jpg') center no-repeat;}
+.event-view .section4 {background:  url('../images/transfer_column_bg_04.jpg') center no-repeat;}
+.event-view .section5 {background: #fafafa;}
+.event-view .section6 {background: #fafafa;}
+.event-view .section7 {background: #fafafa;}
+.event-view .section8 {background: #fafafa;}
+.event-view .section9 {background: #fafafa;}
+.event-view .section10 {background: #fafafa;}
+.event-view .section11 {background: #fafafa;}
+.event-view .section12 {background: #0d0d0d url('../images/transfer_column_bg_07_01.jpg') center no-repeat;}
+.event-view .section13 {background: #0d0d0d}
+.event-view .section14 {background: #0d0d0d;}
+.event-view .section15 {background: #0d0d0d}
+
+/* section1*/
+
+.section1 .ani_allow {
+    position: absolute;
+    top: 72.5%;
+    left:48.8%; 
+    width: 30px;
+    height: 30px;
+    animation: aniTxt 1.5s ease infinite;
+    z-index: 10;
+}
+
+@keyframes aniTxt {0%, 100% {transform: translateY(0px);} 50% {transform: translateY(15px);}}
+
+/* section2*/
+.section2 em {
+    position: absolute;
+}
+
+.section2 .ani_blink {
+    top: 67%;
+    left: 29.7%;
+    width: 228px;
+    height: 133px;
+    animation: blink-1 1.5s infinite both;
+}
+
+@keyframes blink-1 {0%,50%, 100% { opacity: 1;} 25%,75% { opacity: 0; }}
+
+.section2 .ani_line {
+    top: 58.5%;
+    left: 59.5%;
+    width: 344px;
+    height: 350px;
+    animation: mask 1.5s infinite both;
+}
+
+@keyframes mask {
+    0% {clip-path: polygon(0 1%, 0 1%, 0 100%, 0% 100%);}
+    100% {clip-path: polygon(0 1%, 100% 1%, 100% 100%, 0% 100%);}
+}
+
+.section2 .txt_img { 
+    top: 74.3%;
+    right: 10.5%;
+    width: 270px;
+    height: 105px;;
+}
+
+/* section3*/
+.section3 .donut_graph {
+    position: absolute;   
+    /* border: 1px solid red; */
+}
+
+.section3 .donut_graph.d1 {
+    top: 17.9%;
+    left: 12.5%;
+    width: 328px;
+    height: 328px;
+}
+.section3 .chart1_over {
+    position: absolute;
+    top: 17.9%;
+    left: 12.5%;
+    width: 328px;
+    height: 328px;
+}
+
+.section3 .donut_graph.d2 {
+    top: 18.7%;
+    left: 51.1%;
+    width: 330px;
+    height: 330px;
+}
+.section3 .chart2_over {
+    position: absolute;
+    top: 17.4%;
+    left: 54.6%;
+    width: 415px;
+    height: 313px;
+}
+
+.section3 .donut_graph.d3 {
+    top: 42.9%;
+    left: 11%;
+    width: 328px;
+    height: 328px;
+}
+.section3 .chart3_over {
+    position: absolute;
+    top: 41.9%;
+    left: 13.6%;
+    width: 431px;
+    height: 300px;
+}
+
+.section3 .donut_graph.d4 {
+    top: 66.2%;
+    left: 37%;
+    width: 328px;
+    height: 328px;
+}
+.section3 .chart4_over {
+    position: absolute;
+    top: 64%;
+    left: 14.6%;
+    width: 884px;
+    height: 300px;
+}
+
+/* section4*/
+
+.section4 .graphSlider {
+    position: absolute;    
+    width: 1100px;
+    height: 447px;
+}
+.section4 .ani {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+}
+.section4 .graphSlider.graph1 {
+    top: 22.5%;
+    left: 7%;
+}
+.section4 .graphSlider.graph2 {
+    top: 47%;
+    left: 7%;
+}
+.section4 .graphSlider.graph3 {
+    top: 71.5%;
+    left: 7%;
+}
+
+.graph_swiper-container{ position: relative; width: 100%; height: auto; overflow: hidden;}
+.graph_swiper-container .swiper-slide{position: relative;}
+
+
+
+.section4.show  .swiper-slide .stick1 {
+    top: 78.4%;
+    right: 8.7%;
+    background: #2C6CED;
+    animation: scale-up-ver-bottom-1 1.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
+}
+
+.section4.show .swiper-slide .stick2 {
+    top: 78.1%;
+    right: 8.7%;
+    background: #1EBC71;
+    animation: scale-up-ver-bottom-2 1.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
+}
+
+.section4.show .swiper-slide .stick3 {
+    top: 78.5%;
+    right: 8.7%;
+    background: #FF9D25;
+    animation: scale-up-ver-bottom-3 1.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
+}
+  
+
+@keyframes scale-up-ver-bottom-1 {
+    0% {
+        transform: scaleY(0.4);
+        transform-origin: 0% 100%;
+    }
+    70% {
+        transform: scaleY(7);
+        transform-origin: 0% 100%;
+    }
+    100% {
+        transform: scaleY(7);
+        transform-origin: 0% 100%;
+    }
+}
+
+@keyframes scale-up-ver-bottom-2 {
+    0% {
+        transform: scaleY(0.4);
+        transform-origin: 0% 100%;
+    }
+    70% {
+        transform: scaleY(4.5);
+        transform-origin: 0% 100%;
+    }
+    100% {
+        transform: scaleY(4.5);
+        transform-origin: 0% 100%;
+    }
+}
+
+@keyframes scale-up-ver-bottom-3 {
+    0% {
+        transform: scaleY(0.4);
+        transform-origin: 0% 100%;
+    }
+    70% {
+        transform: scaleY(4.9);
+        transform-origin: 0% 100%;
+    }
+    100% {
+        transform: scaleY(4.9);
+        transform-origin: 0% 100%;
+    }
+}
+
+/* section10*/
+.section10 .donut_graph {
+    position: absolute;   
+    /* border: 1px solid red; */
+}
+
+.section10 .donut_graph.d5 {
+    top: 30.5%;
+    left: 37%;
+    width: 328px;
+    height: 328px;
+}
+.section10 .chart5_over {
+    position: absolute;
+    top: 22%;
+    left: 16.3%;
+    width: 860px;
+    height: 302px;
+}
+
+/* section11*/
+.section11 .video_area {
+    position: absolute;   
+    width: 23%;
+    height: 26%;   
+    overflow: hidden;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+.section11 .video_area.v1 {
+    top: 26.3%;
+    left: 8.5%;
+}
+
+.section11 .video_area.v2 {
+    top: 26.3%;
+    left: 38.5%;
+}
+
+.section11 .video_area.v3 {
+    top: 26.3%;
+    left: 68.5%;
+}
+
+/* section12*/
+.section12 .donut_graph {
+    position: absolute;   
+    /* border: 1px solid red; */
+}
+
+.section12 .donut_graph.d6 {
+    top: 38.5%;
+    left: 33.5%;
+    width: 418px;
+    height: 418px;
+}
+.section12 .chart6_over {
+    position: absolute;
+    top: 38.5%;
+    left: 33.5%;
+    width: 418px;
+    height: 418px;
+}
+
+
+@media screen and (max-width: 1280px){
+    .section1 .ani_allow {    
+        top: 72.5%;
+        left:48.8%; 
+        width: 2.3438vw;
+        height: 2.3438vw;
+    }
+
+    .section2 .ani_blink {
+        top: 67%;
+        left: 29.7%;
+        width: 17.8125vw;
+        height: 10.3906vw;
+    }
+
+    .section2 .ani_line {
+        top: 58.5%;
+        left: 59.5%;
+        width: 26.8750vw;
+        height: 27.3438vw;
+    }
+
+    .section2 .txt_img { 
+        top: 74.3%;
+        right: 10.5%;
+        width: 21.0938vw;
+        height: 8.2031vw;;
+    }
+
+    .section3 .donut_graph.d1 {
+        top: 17.9%;
+        left: 12.5%;
+        width: 25.6250vw;
+        height: 25.6250vw;
+    }
+    .section3 .chart1_over {
+        
+        top: 17.9%;
+        left: 12.5%;
+        width: 25.6250vw;
+        height: 25.6250vw;
+    }
+    
+    .section3 .donut_graph.d2 {
+        top: 18.7%;
+        left: 51.1%;
+        width: 25.7813vw;
+        height: 25.7813vw;
+    }
+    .section3 .chart2_over {
+        
+        top: 17.4%;
+        left: 54.6%;
+        width: 32.4219vw;
+        height: 24.4531vw;
+    }
+    
+    .section3 .donut_graph.d3 {
+        top: 42.9%;
+        left: 11%;
+        width: 25.6250vw;
+        height: 25.6250vw;
+    }
+    .section3 .chart3_over {
+        
+        top: 41.9%;
+        left: 13.6%;
+        width: 33.6719vw;
+        height: 23.4375vw;
+    }
+    
+    .section3 .donut_graph.d4 {
+        top: 66.2%;
+        left: 37%;
+        width: 25.6250vw;
+        height: 25.6250vw;
+    }
+    .section3 .chart4_over {
+        
+        top: 64%;
+        left: 14.6%;
+        width: 69.0625vw;
+        height: 23.4375vw;
+    }
+
+    /* section4*/
+
+    .section4 .graphSlider {
+        position: absolute;    
+        width: 85.9375vw;
+        height: 34.9219vw;
+    }
+    .section4 .ani {
+        position: absolute;
+        width: 1.8750vw;
+        height: 1.8750vw;
+    }
+
+    
+    /* section10*/
+    .section10 .donut_graph.d5 {
+        top: 30.5%;
+        left: 37%;
+        width: 25.6250vw;
+        height: 25.6250vw;
+    }
+    .section10 .chart5_over {        
+        top: 22%;
+        left: 16.3%;
+        width: 67.1875vw;
+        height: 23.5938vw;
+    }
+
+    /* section12*/
+
+    .section12 .donut_graph.d6 {
+        top: 38.5%;
+        left: 33.5%;
+        width: 32.6563vw;
+        height: 32.6563vw;
+    }
+    .section12 .chart6_over {        
+        top: 38.5%;
+        left: 33.5%;
+        width: 32.6563vw;
+        height: 32.6563vw;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 768px){
+
+    .event-view .mo-img {
+        display: block;
+    }
+
+    .event-view .pc-img {
+        display: none !important;
+    }
+
+    /* section1*/
+
+    .section1 .ani_allow {
+        position: absolute;
+        top: 84.5%;
+        left: 46.8%;
+        width: 6.5104vw;
+        height: 6.5104vw;
+        animation: aniTxt 1.5s ease infinite;
+        z-index: 10;
+    }
+
+    .section2 .ani_blink {
+        top: 49.5%;
+        left: 24.7%;
+        width: 42.8385vw;
+        height: 23.9583vw;
+        animation: blink-1 1.5s infinite both;
+    }
+
+    .section2 .ani_line {
+        top: 72%;
+        left: 23.5%;
+        width: 56.1198vw;
+        height: 56.7708vw;
+        animation: mask 1.5s infinite both;
+    }
+
+    .section2 .txt_img { 
+        top: 80.3%;
+        right: 14.5%;
+        width: 48.9583vw;
+        height: 11.7188vw;;
+    }
+   
+    .section3 .donut_graph.d1 {
+        top: 11.9%;
+        left: 20.5%;
+        width: 58.7240vw;
+        height: 58.7240vw;
+    }
+    .section3 .chart1_over {
+        position: absolute;
+        top: 15.9%;
+        left: 23.5%;
+        width: 52.4740vw;
+        height: 9.8958vw;
+    }
+
+    .section3 .donut_graph.d2 {
+        top: 25.1%;
+        left: 20.5%;
+        width: 58.7240vw;
+        height: 58.7240vw;
+    }
+    .section3 .chart2_over {
+        position: absolute;
+        top: 25.8%;
+        left: 23.4%;
+        width:50.9115vw;
+        height: 46.3542vw;
+    }
+
+    .section3 .donut_graph.d3 {
+        top: 43.5%;
+        left: 20.5%;
+        width:55.9896vw;
+        height: 55.9896vw;
+    }
+    .section3 .chart3_over {
+        position: absolute;
+        top: 42%;
+        left: 13.6%;
+        width: 76.1719vw;
+        height: 57.8125vw;
+    }
+
+    .section3 .donut_graph.d4 {
+        top: 68.7%;
+        left: 20.5%;
+        width:55.9896vw;
+        height: 55.9896vw;
+    }
+    .section3 .chart4_over {
+        position: absolute;
+        top: 66.8%;
+        left: 9%;
+        width: 77.4740vw;
+        height: 59.7656vw;
+    }
+
+    .section4 .inner {
+        overflow-x: hidden;
+    }
+    .section4 .graphSlider {
+        position: absolute;    
+        width: 100%;
+        height: auto;
+    }
+    .section4 .ani {
+        position: absolute;
+        width: 2.5%;
+        height: 3.1250vw;
+    }
+    .section4 .graphSlider.graph1 {
+        top: 24.5%;
+        left: 7%;
+    }
+    .section4 .graphSlider.graph2 {
+        top: 48%;
+        left: 7%;
+    }
+    .section4 .graphSlider.graph3 {
+        top: 71.5%;
+        left: 7%;
+    }
+
+    .graph_swiper-container{ position: relative; width:100%; height: auto;border-radius: 30px; overflow: hidden;}
+    .graph_swiper-container .swiper-slide{position: relative; border-radius: 30px; overflow: hidden;}
+
+    .section4.show  .swiper-slide .stick1 {
+        top: 79.3%;
+        right: 7.7%;
+        background: #2C6CED;
+        animation: scale-up-ver-bottom-1 1.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
+    }
+
+    .section4.show .swiper-slide .stick2 {
+        top: 79.3%;
+        right: 7.7%;
+        background: #1EBC71;
+        animation: scale-up-ver-bottom-2 1.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
+    }
+
+    .section4.show .swiper-slide .stick3 {
+        top: 79.3%;
+        right: 7.7%;
+        background: #FF9D25;
+        animation: scale-up-ver-bottom-3 1.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
+    }
+
+    @keyframes scale-up-ver-bottom-1 {
+        0% {
+            transform: scaleY(0.4);
+            transform-origin: 0% 100%;
+        }
+        70% {
+            transform: scaleY(7.5);
+            transform-origin: 0% 100%;
+        }
+        100% {
+            transform: scaleY(7.5);
+            transform-origin: 0% 100%;
+        }
+    }
+    
+    @keyframes scale-up-ver-bottom-2 {
+        0% {
+            transform: scaleY(0.4);
+            transform-origin: 0% 100%;
+        }
+        70% {
+            transform: scaleY(5);
+            transform-origin: 0% 100%;
+        }
+        100% {
+            transform: scaleY(5);
+            transform-origin: 0% 100%;
+        }
+    }
+    
+    @keyframes scale-up-ver-bottom-3 {
+        0% {
+            transform: scaleY(0.4);
+            transform-origin: 0% 100%;
+        }
+        70% {
+            transform: scaleY(5.4);
+            transform-origin: 0% 100%;
+        }
+        100% {
+            transform: scaleY(5.4);
+            transform-origin: 0% 100%;
+        }
+    }
+
+    /* section10*/
+    .section10 .donut_graph {
+        position: absolute;   
+        /* border: 0.1302vw solid red; */
+    }
+
+    .section10 .donut_graph.d5 {
+        top: 37.5%;
+        left: 18%;
+        width: 63.5417vw;
+        height: 63.5417vw;
+    }
+    .section10 .chart5_over {
+        position: absolute;
+        top: 18.5%;
+        left: 5.3%;
+        width: 85.9375vw;
+        height: 72.7865vw;
+    }
+
+
+    /* section11*/
+    .section11 .video_area {
+        position: absolute;   
+        width: 79%;
+        height: 26%;   
+        overflow: hidden;
+        cursor: pointer;
+        /* border: 0.1302vw solid red; */
+    }
+    .section11 .video_area.v1 {
+        top: 8.3%;
+        left: 10.5%;
+    }
+
+    .section11 .video_area.v2 {
+        top: 39.5%;
+        left: 10.5%;
+    }
+
+    .section11 .video_area.v3 {
+        top: 69.3%;
+        left: 10.5%;
+    }
+
+    /* section12*/
+    .section12 .donut_graph {
+        position: absolute;   
+        /* border: 0.1302vw solid red; */
+    }
+
+    .section12 .donut_graph.d6 {
+        top: 45.5%;
+        left: 16.5%;
+        width: 66.4063vw;
+        height: 66.4063vw;
+    }
+    .section12 .chart6_over {
+        position: absolute;
+        top: 50.5%;
+        left: 27.5%;
+        width: 40.1042vw;
+        height: 48.8281vw;
+    }
+
+
+
+
+
+}
+
